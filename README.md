@@ -12,12 +12,12 @@ This is code, notes, and snippets about C#
 *   [https://www.w3schools.com/cs/](https://www.w3schools.com/cs/)
 
 **#naming convention:** 
-* **Variable naming 要 camel case** 
-* **Method name 大階開頭** 
-* **Access modifier 細階** 
-* **void 細階**
-* **type 細階**
-* **class name 大階**
+*  **Variable naming 要 camel case** 
+*  **Method name 大階開頭** 
+*  **Access modifier 細階** 
+*  **void 細階**
+*  **type 細階**
+*  **class name 大階**
 
 **#C# cheatsheet: [https://github.com/hcmue/CSharp-Cheatsheet](https://github.com/hcmue/CSharp-Cheatsheet)**
 **#.NET Framework API 參考:** \
@@ -25,7 +25,7 @@ This is code, notes, and snippets about C#
 
 **#using System:[https://docs.microsoft.com/zh-tw/dotnet/api/system?view=netframework-4.8](https://docs.microsoft.com/zh-tw/dotnet/api/system?view=netframework-4.8)**
 
-**#System Namespace:**
+**#System Namespace:** \
 The [System](https://docs.microsoft.com/en-us/dotnet/api/system?view=netframework-4.8) namespace contains fundamental classes and base classes that define commonly-used value and reference data types, events and event handlers, interfaces, attributes, and processing exceptions .using System means that we can use classes from the System namespace.
 
 
