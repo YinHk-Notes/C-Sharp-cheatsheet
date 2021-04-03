@@ -8,8 +8,8 @@ This is code, notes, and snippets about C#
 
 
 
-*   [https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/intro-to-csharp/](https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/intro-to-csharp/)
-*   [https://www.w3schools.com/cs/](https://www.w3schools.com/cs/)
+*   **[https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/intro-to-csharp/](https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/intro-to-csharp/)**
+*   **[https://www.w3schools.com/cs/](https://www.w3schools.com/cs/)**
 
 **#naming convention:** 
 *  **Variable naming 要 camel case** 
@@ -19,7 +19,7 @@ This is code, notes, and snippets about C#
 *  **type 細階**
 *  **class name 大階**
 
-**#C# cheatsheet: [https://github.com/hcmue/CSharp-Cheatsheet](https://github.com/hcmue/CSharp-Cheatsheet)**
+**#C# cheatsheet: [https://github.com/hcmue/CSharp-Cheatsheet](https://github.com/hcmue/CSharp-Cheatsheet)** \
 **#.NET Framework API 參考:** \
 **[https://docs.microsoft.com/zh-tw/dotnet/api/?view=netframework-4.8](https://docs.microsoft.com/zh-tw/dotnet/api/?view=netframework-4.8)**
 
