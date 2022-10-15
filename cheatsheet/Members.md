@@ -35,6 +35,87 @@ const int weeks = 52;
 const int days = 365;
 ```
 
+### Properties
+
+Properties **enable a class to expose a public way of getting and setting values**,  while hiding implementation or verification code.  Properties combine aspects of both **fields** and **methods**.
+
+<aside>
+💬 類似field, 但可public 得到和設定其value
+</aside>
+
+- Properties **enable a class to expose a public way of getting and setting values**, while hiding implementation or verification code.
+- A [get](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/get) property accessor is used to **return the property value**, and a [set](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/set) property accessor is used to **assign a new value**. These accessors can have different access levels. For more information, see [Restricting Accessor Accessibility](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/restricting-accessor-accessibility).**
+- The [**value**](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/value) keyword is used to define the value being assigned by the set accessor.
+
+**syntax:**
+
+```csharp
+<Access Specifier> <Return Type> <property Name>{
+	get{ return the field’s value  ;}
+	set{  the field’s variable  = value;}
+}
+```
+
+Eg:
+
+```csharp
+
+class Person{
+  
+	private string name; // field
+  public string Name   // property{
+    get { return name; }
+    set { name = value; }
+  }
+}
+class Program{
+  static void Main(string[] args){
+
+    Person myObj = new Person();
+    myObj.Name = "Liam";
+
+    Console.WriteLine(myObj.Name);
+  }
+}
+```
+
+**OR**
+
+```csharp
+class Person{
+  public string Name  // property
+  { get; set; }
+}
+class Program{
+  static void Main(string[] args){
+
+    Person myObj = new Person();
+    myObj.Name = "Liam";
+    Console.WriteLine(myObj.Name);
+  }
+}
+```
+
+<aside>
+💬 Propety’s name is **same** to the field’s name, but need to **capitalize first word**.
+
+</aside>
+
+**The get accessor:** 
+
+<aside>
+📌 The body of the get accessor resembles that of a method. It must **return a value of the property type**.
+
+</aside>
+
+**The set accessor :** 
+
+<aside>
+📌 a method whose return type is [void](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/void). It uses an **implicit parameter called value**, whose type is the type of the property.
+
+</aside>
+
+
 [Fields](https://www.notion.so/Fields-cee8a2b63e21426f9125e3c76ce68494)
 
 [Constant](https://www.notion.so/Constant-05eccd7af10f40f8b7c2b7a76ada485b)
