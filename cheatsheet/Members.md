@@ -110,7 +110,7 @@ class Program{
 **The set accessor:** 
 
 <aside>
-📌 a method whose return type is [void](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/void). It uses an **implicit parameter called value**, whose type is the type of the property.
+📌 a method whose return type is [void](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/void). It uses an implicit parameter called value, whose type is the type of the property.
 </aside>
 
 
