@@ -24,6 +24,17 @@ private DateTime date;
 public string day;
 ```
 
+### Constant
+
+Constants are **declared with the const modifier.**
+Constants are immutable values which are known at compile time and do not change for the life of the program. Constants are declared with the const modifier. Only the C# built-in types (excluding [System.Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) may be declared as const. eg
+
+```csharp
+const int months = 12;
+const int weeks = 52;
+const int days = 365;
+```
+
 [Fields](https://www.notion.so/Fields-cee8a2b63e21426f9125e3c76ce68494)
 
 [Constant](https://www.notion.so/Constant-05eccd7af10f40f8b7c2b7a76ada485b)
