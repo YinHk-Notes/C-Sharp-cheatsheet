@@ -11,6 +11,8 @@ public static void Display(IEnumerable<int> numbers){
 }
 ```
 
-
+<aside>
+⚠️ You cannot use void as the **type of a variable**
+</aside>
 
 
