@@ -8,4 +8,6 @@ My learning note & material for C#
 ### ref
 https://learn.microsoft.com/en-us/dotnet/csharp/
 
+https://www.javatpoint.com/c-sharp-tutorial
+
 https://youtu.be/GhQdlIFylQ8
