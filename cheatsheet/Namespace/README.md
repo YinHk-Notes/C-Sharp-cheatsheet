@@ -1,4 +1,4 @@
-### Namespace
+## Namespace
 
 ### Why using namespace?
 - namespaces used to organize its many classes.
