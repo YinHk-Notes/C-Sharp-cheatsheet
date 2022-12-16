@@ -11,4 +11,8 @@ struct Coordinate
 Coordinate point = new Coordinate();
 ```
 
-
+- struct can include constructors, constants, fields, methods, properties, indexers, operators, events & nested types.
+- struct cannot include a parameterless constructor or a destructor.
+- struct can implement interfaces, same as class.
+- struct cannot inherit another structure or class, and it cannot be the base of a class.
+- struct members cannot be specified as abstract, sealed, virtual, or protected.
