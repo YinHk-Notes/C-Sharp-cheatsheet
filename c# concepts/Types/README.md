@@ -17,6 +17,21 @@ The variables in C#, are categorized into the following types:
     ```
     **Built-in value types**
     
+| Type | Size (in bits) | Range | Default |
+| --- | --- | --- | --- |
+| sbyte | 8 | -128 to 127 | 0 |
+| byte | 8 | 0 to 255 | 0 |
+| short | 16 | -32768 to 32767 | 0 |
+| ushort | 16 | 0 to 65535 | 0 |
+| int | 32 | -2147483648 to 2147483647 | 0 |
+| uint | 32 | 0 to 4294967295 | 0 |
+| long | 64 | -9223372036854775808 to 9223372036854775807 | 0L |
+| double | 64 | (+/-)5.0 x 10-324 to (+/-)1.7 x 10308 | 0.0D |
+| float | 32 | -3.4 x 1038 to + 3.4 x 1038 | 0.0F |
+| decimal | 128 | 128 | 0.0M |
+| ulong | 64 | 0 to 18446744073709551615 | 0 |
+| char | 16 | 0 to 65535 | '\0’ |
+| bool |  | True or False | False |
     
     > **structs** are also value types
     
