@@ -17,8 +17,10 @@ The variables in C#, are categorized into the following types:
     
    
 - **Reference Types**
+
+    The **reference types** do not contain the actual data stored in a variable, but they contain a reference to the variables.
     
-    A type that is defined as a [class](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/class), [delegate](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/delegate), array, or [interface](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/interface) is a ***reference type***
+    A type that is defined as a [class](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/class), [delegate](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/delegate), array, or [interface](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/interface) 
 
 ### value types vs reference type
 **Value types** differ from reference types in that variables of the value types directly contain their data, whereas variables of the **reference types** store references to their data, the latter being known as **objects**.
