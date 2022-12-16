@@ -10,4 +10,15 @@ enum Season
     Autumn,
     Winter
 }
+
+enum WeekDays
+{
+    Monday,
+    Tuesday,
+    Wednesday,
+    Thursday,
+    Friday,
+    Saturday,
+    Sunday
+}
 ```
