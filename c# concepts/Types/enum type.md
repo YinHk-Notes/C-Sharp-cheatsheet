@@ -47,4 +47,17 @@ enum Categories
     BeautyCare,     // 8
     Fashion         // 9
 }
+
+//You can also explicitly specify the associated constant values
+enum Categories
+{
+    Electronics = 1,  
+    Food = 5, 
+    Automotive = 6, 
+    Arts = 10, 
+    BeautyCare = 11, 
+    Fashion = 15,
+    WomanFashion = 15
+}
+
 ```
