@@ -22,3 +22,17 @@ enum WeekDays
     Sunday
 }
 ```
+
+### Enum Values
+If values are not assigned to enum members, then the compiler will assign integer values to each member starting with zero by default.
+```cs
+enum Categories
+{
+    Electronics,    // 0
+    Food,           // 1
+    Automotive = 6, // 6
+    Arts,           // 7
+    BeautyCare,     // 8
+    Fashion         // 9
+}
+```
