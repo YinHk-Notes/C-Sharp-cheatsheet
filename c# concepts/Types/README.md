@@ -72,6 +72,16 @@ Type casting is when you assign a value of one data type to another [type.In](ht
 - **Implicit Casting** (automatically) - converting a smaller type to a larger type size char → int → long → float → double
 - **Explicit Casting** (manually) - converting a larger type to a smaller size type. Explicit casting must be done manually by placing the type in parentheses in front of the value double → float → long → int → char
 
+Implicit: a built-in numeric types, an implicit conversion can be made when the value to be stored can fit into the variable without being truncated or rounded off. 
+```cs
+int num = 2147483647;
+long bigNum = num;
+```
+
+
 [Casting and type conversions - C# Programming Guide](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/casting-and-type-conversions)
+
+
+
 
 [](https://www.w3schools.com/cs/cs_type_casting.asp)
