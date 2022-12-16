@@ -33,8 +33,12 @@ The variables in C#, are categorized into the following types:
     | char | 16 | 0 to 65535 | '\0’ |
     | bool |  | True or False | False |
     
-    > **structs** are also value types
     
+    > **struct**, **enum**, **Nullable type** are also value types
+    
+    
+    **Nullable types**: \
+    A nullable value type T? represents all values of its underlying value type T and an additional null value
    
 - **Reference Types**
 
