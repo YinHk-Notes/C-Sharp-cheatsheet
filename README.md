@@ -1,4 +1,4 @@
-<p align="center"><img src="https://github.com/YinHk-Notes/Csharp/blob/main/csharp-logo.png" height="200px"></p>
+<p align="center"><img src="./csharp-logo.png" height="200px"></p>
 
 ## Csharp
 My learning note & material for C#
