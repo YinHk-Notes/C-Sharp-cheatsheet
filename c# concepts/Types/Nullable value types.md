@@ -10,6 +10,8 @@ eg:
 ```cs
 Nullable<int> i = null;
 ```
+
+use the `'?'` operator to shorthand the syntax e.g. `int?`, `long?` instead of using `Nullable<T>`.
 ```cs
 double? pi = 3.14;
 char? letter = 'a';
