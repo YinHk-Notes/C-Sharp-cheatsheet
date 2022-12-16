@@ -4,7 +4,7 @@ The variables in C#, are categorized into the following types:
 
 - **Value Types**
     
-    Can be assigned a value directly.
+    The value types directly contain data, can be assigned a value directly.
   
     **eg:** 
     ```csharp
