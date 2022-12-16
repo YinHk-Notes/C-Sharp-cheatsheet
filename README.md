@@ -9,6 +9,8 @@ https://learn.microsoft.com/en-us/dotnet/csharp/
 
 https://www.javatpoint.com/c-sharp-tutorial
 
+https://www.tutorialspoint.com/csharp/index.htm
+
 https://www.youtube.com/watch?v=gfkTfcpWqAY
 
 https://youtu.be/GhQdlIFylQ8
