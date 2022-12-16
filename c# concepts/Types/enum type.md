@@ -26,6 +26,18 @@ enum WeekDays
 ### Enum Values
 If values are not assigned to enum members, then the compiler will assign integer values to each member starting with zero by default.
 ```cs
+enum WeekDays
+{
+    Monday,     // 0
+    Tuesday,    // 1
+    Wednesday,  // 2
+    Thursday,   // 3
+    Friday,     // 4
+    Saturday,   // 5
+    Sunday      // 6
+}
+
+
 enum Categories
 {
     Electronics,    // 0
