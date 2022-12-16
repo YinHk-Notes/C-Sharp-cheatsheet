@@ -28,3 +28,19 @@ int?[] arr = new int?[10];
 int? i = null;
 double? D = null;
 ```
+
+Conversion from a nullable value type to an underlying type.
+Use the `'??'` operator to assign a nullable type to a non-nullable type
+```cs
+int? a = 28;
+int b = a ?? -1;
+Console.WriteLine($"b is {b}");  // output: b is 28
+
+int? c = null;
+int d = c ?? -1;
+Console.WriteLine($"d is {d}");  // output: d is -1
+```
+
+
+
+
