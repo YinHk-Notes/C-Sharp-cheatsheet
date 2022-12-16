@@ -24,4 +24,7 @@ bool? flag = null;
 
 // An array of a nullable value type:
 int?[] arr = new int?[10];
+
+int? i = null;
+double? D = null;
 ```
