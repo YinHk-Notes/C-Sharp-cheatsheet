@@ -75,3 +75,10 @@ enum Categories: byte
     Fashion = 15
 }
 ```
+
+Access `enum` \
+An enum can be accessed using the dot syntax: `enum.member`
+
+
+
+
