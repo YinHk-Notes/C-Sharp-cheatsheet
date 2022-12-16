@@ -20,7 +20,7 @@ struct Coordinate
 Coordinate point = new Coordinate();
 ```
 
-> `struct` share **most of the same syntax** as classes, **but more limited** than classes in the following ways:
+`struct` share **most of the same syntax** as classes, **but more limited** than classes in the following ways:
 
 - Within a struct declaration, **fields cannot be initialized unless they are declared as const or static**.
 A struct **cannot declare a parameterless constructor** (a constructor without parameters) or a finalizer.
