@@ -1,4 +1,5 @@
 ## Types
+![](./datatypes.png)
 
 The variables in C#, are categorized into the following types: 
 
