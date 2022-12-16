@@ -4,8 +4,7 @@ The variables in C#, are categorized into the following types:
 
 - **Value Types**
     
-    **eg:**
-    
+    **eg:** 
     ```csharp
     byte num = 0xA;
     
@@ -14,16 +13,13 @@ The variables in C#, are categorized into the following types:
     char c = 'Z';
     ```
     
-    **structs are also value types** 
+    > **structs** are also value types
     
    
 - **Reference Types**
     
     A type that is defined as a [class](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/class), [delegate](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/delegate), array, or [interface](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/interface) is a ***reference type***
     
-    [The C# type system](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/)
-    
-    [](https://www.w3schools.com/cs/cs_data_types.asp)
 
 ### **C# Type Casting**
 
