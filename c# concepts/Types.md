@@ -1,5 +1,6 @@
 ## Types
-You use the [**struct](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/struct), [class](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/class),** [**interface](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/interface),** and [**enum](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/enum)** constructs to create your own custom types
+
+The variables in C#, are categorized into the following types: 
 
 - **Value Types/Data Types**
     
