@@ -37,7 +37,7 @@ The variables in C#, are categorized into the following types:
     char* cptr;
     int* iptr;
    ```
-  
+  > A pointer is a variable whose value is the address of another variable
 
 ### value types vs reference type
 **Value types** differ from reference types in that variables of the value types directly contain their data, whereas variables of the **reference types** store references to their data, the latter being known as **objects**. 
