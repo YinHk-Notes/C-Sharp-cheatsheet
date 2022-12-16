@@ -61,3 +61,17 @@ enum Categories
 }
 
 ```
+
+enum can be of any numeric data type such as byte, sbyte, short, ushort, int, uint, long, or ulong. However, an enum cannot be a string type.  Specify the type after `enum` name as `: type`
+
+```cs
+enum Categories: byte
+{
+    Electronics = 1,  
+    Food = 5, 
+    Automotive = 6, 
+    Arts = 10, 
+    BeautyCare = 11, 
+    Fashion = 15
+}
+```
