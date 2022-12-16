@@ -2,7 +2,7 @@
 
 The variables in C#, are categorized into the following types: 
 
-- **Value Types/Data Types**
+- **Value Types**
     
     **eg:**
     
@@ -13,9 +13,9 @@ The variables in C#, are categorized into the following types:
     
     char c = 'Z';
     ```
-    ```
-    💬 structs are also value types
-    ```
+    
+    **structs are also value types** 
+    
    
 - **Reference Types**
     
