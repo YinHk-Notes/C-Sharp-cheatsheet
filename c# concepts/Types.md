@@ -14,6 +14,8 @@ The variables in C#, are categorized into the following types:
     
     char c = 'Z';
     ```
+    **Built-in value types**
+    
     
     > **structs** are also value types
     
