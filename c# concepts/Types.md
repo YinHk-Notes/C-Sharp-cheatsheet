@@ -24,7 +24,7 @@ The variables in C#, are categorized into the following types:
     
     A type that is defined as a [class](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/class), [delegate](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/delegate), array, or [interface](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/interface) 
 
-- **Pointer Type**
+- **Pointer Types**
     
   Store the memory address of another type. Pointers in C# have the same capabilities as the pointers in C or C++.
   
