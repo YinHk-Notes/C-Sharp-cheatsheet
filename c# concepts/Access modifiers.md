@@ -25,6 +25,38 @@
 |`struct`|`private`|`public` `internal` `private`|
 
 ### `internal`
+```cs
+public class BaseClass
+{  
+    // Only accessible within the same assembly.
+    internal static int x = 0;
+}
+```
+```cs
+// This example contains two files, Assembly1.cs and Assembly1_a.cs. 
+// The first file contains an internal base class, BaseClass. 
+// In the second file, an attempt to instantiate BaseClass will produce an error.
+
+
+// Assembly1.cs  
+// Compile with: /target:library  
+internal class BaseClass
+{  
+   public static int intM = 0;  
+}  
+
+// Assembly1_a.cs  
+// Compile with: /reference:Assembly1.dll  
+class TestAccess
+{  
+   static void Main()
+   {  
+      var myBase = new BaseClass();   // CS0122  
+   }  
+}
+```
+
+
 
 ### Assembly
 `.NET` **assemblies** are collections of compiled types (classes and other types) and resources
