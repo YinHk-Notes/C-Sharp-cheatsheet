@@ -180,6 +180,49 @@ class DerivedClass2 : BaseClass
     }
 }
 ```
+### `file`
+Beginning with **C# 11**, the `file` contextual keyword is a type modifier.
+The file modifier restricts a top-level type's scope and visibility to the file in which it's declared. The file modifier will generally be applied to types written by a source generator. The `file` modifier declares a file-local type.
+
+```cs
+file class HiddenWidget
+{
+    // implementation
+}
+```
+```cs
+// In File1.cs:
+file interface IWidget
+{
+    int ProvideAnswer();
+}
+
+file class HiddenWidget
+{
+    public int Work() => 42;
+}
+
+public class Widget : IWidget
+{
+    public int ProvideAnswer()
+    {
+        var worker = new HiddenWidget();
+        return worker.Work();
+    }
+}
+```
+```cs
+// In File2.cs:
+// Doesn't conflict with HiddenWidget
+// declared in File1.cs
+public class HiddenWidget
+{
+    public void RunTask()
+    {
+        // omitted
+    }
+}
+```
 
 ### Assembly
 `.NET` **assemblies** are collections of compiled types (classes and other types) and resources
