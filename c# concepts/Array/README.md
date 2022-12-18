@@ -116,9 +116,23 @@ int[, , , ,] arr5d; // five-dimensional array
 int[,] arr2d = new int[3,2]{ {1, 2}, {3, 4}, {5, 6} };
 // or 
 int[,] arr2d = { {1, 2}, {3, 4}, {5, 6} };
-
 ```
 
+Accessing the Elements of a Multidimensional Array
+```cs
+int[,] matrix =
+{
+    {1, 2, 3, 4},
+    {5, 6, 7, 8},
+};
+
+//Access matrix
+matrix[row, col];
+matrix[0, 0];  //1
+matrix[0, 1];  //2
+matrix[1, 2];  //7
+matrix[1, 3];  //8
+```
 
 
 https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/
