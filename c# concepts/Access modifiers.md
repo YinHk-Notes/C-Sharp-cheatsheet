@@ -56,7 +56,8 @@ class TestAccess
 }
 ```
 ```cs
-// In this example, use the same files you used in example 1, and change the accessibility level of BaseClass to public. 
+// In this example, use the same files you used in example 1, 
+// and change the accessibility level of BaseClass to public. 
 // Also change the accessibility level of the member intM to internal. In this case, you can instantiate the class, 
 // but you cannot access the internal member.
 
