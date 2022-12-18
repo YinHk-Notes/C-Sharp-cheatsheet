@@ -28,3 +28,11 @@ Console.Write();
 // Clears the console buffer and corresponding console window of display information
 Console.Clear();
 
+// Read the next character from the standard input stream, or a negative one (-1) if there are currently no more characters to be read
+Console.Read();
+
+// Read the next line of characters from the standard input stream
+Console.ReadLine();
+
+
+
