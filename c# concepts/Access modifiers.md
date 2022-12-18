@@ -16,6 +16,8 @@
 |`internal`|	The code is only accessible within its own assembly, but not from another assembly. Access is limited to the current assembly. Used to limit the access to the elements of the class only to files from the same assembly, i.e. the same project in Visual Studio. When we create several projects in Visual Studio, the classes from will be compiled in different assemblies.|
 |`protected internal`| Access is limited to the **current assembly or types derived from the containing class**.|
 |`private protected`|Access is limited to the containing class or types derived from the containing class **within the current assembly**.|
+|`file`|restricts a top-level type's scope and visibility to the file in which it's declared.|
+
 
 |Members|Default|Allowed declared accessibility|
 |-|-|-|
