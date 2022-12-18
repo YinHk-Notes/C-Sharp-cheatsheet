@@ -72,8 +72,7 @@ public static void Main()
                 + " Sorry you can't vote");
         }
     }
+}
 */
 
-
-}
 
