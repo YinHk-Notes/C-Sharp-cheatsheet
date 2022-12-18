@@ -15,6 +15,10 @@ class TestArraysClass
 
         // Declare a two dimensional array.
         int[,] multiDimensionalArray1 = new int[2, 3];
+        
+        // Declare and initialize an array.
+        int[,] theArray = new int[5, 10];
+        System.Console.WriteLine("The array has {0} dimensions.", theArray.Rank); //Output: The array has 2 dimensions
 
         // Declare and set array element values.
         int[,] multiDimensionalArray2 = { { 1, 2, 3 }, { 4, 5, 6 } };
