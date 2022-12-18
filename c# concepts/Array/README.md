@@ -1,4 +1,7 @@
 ## Array
+
+When we declare an array type variable, it is a **reference**
+
 ```cs
 class TestArraysClass
 {
