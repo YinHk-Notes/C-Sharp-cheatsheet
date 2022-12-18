@@ -1,5 +1,6 @@
 ## Access modifiers
-**Access modifiers** are keywords used to specify the declared accessibility of a member or a type. This section introduces the five access modifiers:
+
+**Access modifiers** are keywords used to specify the declared accessibility of a member or a type. It determine the access Levels of the code. This section introduces the five access modifiers:
 
 - `public`
 - `protected`
