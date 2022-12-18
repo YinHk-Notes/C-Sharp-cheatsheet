@@ -100,6 +100,12 @@ for (int index = 0; index < array.Length; index++)
 
 ### Multidimensional Arrays
 > `[,]` declares two-dimensional array, `[, ,]` declares three-dimensional array, `[, , ,]` declares four-dimensional array, and so on.
+```cs
+int[,] arr2d; // two-dimensional array
+int[, ,] arr3d; // three-dimensional array
+int[, , ,] arr4d ; // four-dimensional array
+int[, , , ,] arr5d; // five-dimensional array
+```
 
 
 https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/
