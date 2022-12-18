@@ -7,7 +7,7 @@ class TestArraysClass
         // Declare a single-dimensional array of 5 integers.
         int[] array1 = new int[5];
 
-        // Declare and set array element values.
+        // Declare and initialize with values.
         int[] array2 = new int[] { 1, 3, 5, 7, 9 };
 
         // Alternative syntax.
