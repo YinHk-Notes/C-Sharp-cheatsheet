@@ -1,4 +1,5 @@
 // public static class Console
+// Inheritance: Object -> Console
 // Represents the standard input, output, and error streams for console applications. 
 // This class cannot be inherited.
 
