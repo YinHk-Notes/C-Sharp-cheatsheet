@@ -3,6 +3,9 @@
 ## Csharp
 My learning note & material for C#
 
+### .NET
+https://learn.microsoft.com/en-us/dotnet/
+
 
 ### ref
 https://learn.microsoft.com/en-us/dotnet/csharp/
@@ -18,3 +21,4 @@ https://www.youtube.com/watch?v=gfkTfcpWqAY
 https://youtu.be/GhQdlIFylQ8
 
 https://www.youtube.com/watch?v=GhQdlIFylQ8
+
