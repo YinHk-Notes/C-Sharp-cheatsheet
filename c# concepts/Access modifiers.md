@@ -1,11 +1,11 @@
 ## Access modifiers
-**Access modifiers** are keywords used to specify the declared accessibility of a member or a type. This section introduces the four access modifiers:
+**Access modifiers** are keywords used to specify the declared accessibility of a member or a type. This section introduces the five access modifiers:
 
 - `public`
 - `protected`
 - `internal`
 - `private`
-
+- `file`
 
 |Modifier|Description|
 |-|-|
