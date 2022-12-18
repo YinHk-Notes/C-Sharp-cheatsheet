@@ -105,7 +105,7 @@ class B : A
 ```
 
 ### `protected internal`
-This combination is a member access modifier. A protected internal member is accessible from the current assembly or from types that are derived from the containing class.
+A `protected internal` member is accessible from the current assembly or from types that are derived from the containing class.
 ```cs
 // Assembly1.cs
 // Compile with: /target:library
@@ -139,6 +139,42 @@ class DerivedClass : BaseClass
 
         // OK, because this class derives from BaseClass.
         derivedObject.myValue = 10;
+    }
+}
+```
+### `private protected`
+ A `private protected` member is accessible by types derived from the containing class, **but only within its containing assembly**.
+```cs
+public class BaseClass
+{
+    private protected int myValue = 0;
+}
+
+public class DerivedClass1 : BaseClass
+{
+    void Access()
+    {
+        var baseObject = new BaseClass();
+
+        // Error CS1540, because myValue can only be accessed by
+        // classes derived from BaseClass.
+        // baseObject.myValue = 5;
+
+        // OK, accessed through the current derived class instance
+        myValue = 5;
+    }
+}
+```
+```cs
+// Assembly2.cs
+// Compile with: /reference:Assembly1.dll
+class DerivedClass2 : BaseClass
+{
+    void Access()
+    {
+        // Error CS0122, because myValue can only be
+        // accessed by types in Assembly1
+        // myValue = 10;
     }
 }
 ```
