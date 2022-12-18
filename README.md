@@ -1,6 +1,6 @@
 <p align="center"><img src="./csharp-logo.png" height="200px"></p>
 
-## Csharp
+## C#
 My learning note & material for C#
 
 ### .NET
