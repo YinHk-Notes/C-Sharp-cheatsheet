@@ -21,7 +21,7 @@
 
 - `static` methods and properties **cannot access non-static fields and events** in their containing type, and they cannot access an instance variable of any object unless it's explicitly passed in a method parameter.
 
-Although a field cannot be declared as **`static` const**, a [const](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/const) field is essentially static in its behavior. It belongs to the type, not to instances of the type. Therefore, const fields can be accessed by using the same `ClassName.MemberName` notation that's used for `static` fields. No object instance is required.
+Although a field cannot be declared as **`static` const**, a [const](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/const) field is essentially `static` in its behavior. It belongs to the type, not to instances of the type. Therefore, `const` fields can be accessed by using the same `ClassName.MemberName` notation that's used for `static` fields. No object instance is required.
 
 
 > ⚠️ C# **does not support `static` local variables** (that is, variables that are declared in method scope)
