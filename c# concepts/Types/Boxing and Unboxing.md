@@ -25,3 +25,20 @@ i = (int)o;  // unboxing
 
 > Boxing is implicit; unboxing is explicit.
 
+
+The casting of a boxed value is not permitted. The following will throw an exception:
+```cs
+int i = 10;
+object o = i; // boxing
+double d = (double)o; // runtime exception
+```
+First do unboxing and then do casting is no problem
+
+```cs
+int i = 10;
+object o = i; // boxing
+double d = (double)(int)o; // valid
+```
+
+
+
