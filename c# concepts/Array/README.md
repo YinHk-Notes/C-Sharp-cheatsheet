@@ -1,6 +1,6 @@
 ## Array
 In C# the arrays have fixed length, which is set at the time of their instantiation and determines the total number of elements. Once the length of an array is set we cannot change it anymore.
-When we declare an array type variable, it is a **reference**
+When we declare an array type variable, it is a **reference**. Arrays are reference types
 
 ```cs
 class TestArraysClass
@@ -79,4 +79,14 @@ foreach(var item in evenNums)
 foreach(var city in cities)
     Console.WriteLine(city);  
 ```
+
+Passing Array as Argument
+```cs
+public static void UpdateArray(int[] arr)
+{
+    for(int i = 0; i < arr.Length; i++)
+        arr[i] = arr[i] + 10;   
+}
+```
+
 https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/
