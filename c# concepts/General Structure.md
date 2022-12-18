@@ -4,29 +4,43 @@ C# programs can consist of one or more files. Each file can contain zero or more
 ```cs
 // A skeleton of a C# program 
 using System;
-namespace YourNamespace{
+namespace YourNamespace
+{
     
-		class YourClass {
+    class YourClass 
+    {
+    
     }
 
-    struct YourStruct{
+    struct YourStruct
+    {
+    
     }
 
-    interface IYourInterface {
+    interface IYourInterface 
+    {
+    
     }
 
     delegate int YourDelegate();
 
-    enum YourEnum {
+    enum YourEnum 
+    {
+    
     }
 
-    namespace YourNestedNamespace{
-        struct YourStruct {
+    namespace YourNestedNamespace
+    {
+        struct YourStruct 
+	{
+	
         }
     }
 
-    class YourMainClass{
-        static void Main(string[] args) {
+    class YourMainClass
+    {
+        static void Main(string[] args) 
+	{
             //Your program starts here...
         }
     }
