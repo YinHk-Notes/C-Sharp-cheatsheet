@@ -21,7 +21,7 @@
 |-|-|-|
 |`enum`|`public`|None|
 |`class`|`private`|`public` `protected` `internal` `private` `protected internal` `private protected`|
-
+|`interface`|`public`|`public` `protected` `internal` `private*` `protected internal` `private protected`|
 
 ### Assembly
 `.NET` **assemblies** are collections of compiled types (classes and other types) and resources
