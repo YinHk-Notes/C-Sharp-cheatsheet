@@ -7,9 +7,9 @@
 ### Namespaces have the following properties:
 
 - They organize large code projects.
-- They're delimited by using the . operator.
+- They're delimited by using the `.` operator.
 - The using directive obviates the requirement to specify the name of the namespace for every class.
-- The global namespace is the "root" namespace: global::System will always refer to the .NET System namespace.
+- The global namespace is the "root" namespace: global`::`System will always refer to the .NET System namespace.
 
 
 
