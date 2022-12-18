@@ -30,6 +30,15 @@ Console.Clear();
 
 // Read the next character from the standard input stream, or a negative one (-1) if there are currently no more characters to be read
 Console.Read();
+/*
+ eg:
+  int x;
+        Console.WriteLine("Enter your Character to get Decimal number");
+  
+        // using the method
+        x = Console.Read();
+        Console.WriteLine(x);
+*/
 
 // Read the next line of characters from the standard input stream
 Console.ReadLine();
