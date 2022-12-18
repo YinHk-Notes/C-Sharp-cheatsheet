@@ -5,7 +5,7 @@
 - `delegate`
 - `record`
 
-Built-in reference types:
+**Built-in reference types:**
 - `dynamic`
 - `object`
 - `string`
