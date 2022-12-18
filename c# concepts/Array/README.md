@@ -10,13 +10,13 @@ class TestArraysClass
         // Declare a single-dimensional array of 5 integers.
         int[] array1 = new int[5];
 
-        // Declare and initialize with values.
-        int[] array2 = new int[] { 1, 3, 5, 7, 9 };
-        string[] weekDays = new string[] { "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" };
-        
         //Array Declaration & Initialization with specified length
         int[] nums = new int[5]{ 2, 4, 6, 8, 10 }; 
         string[] cities = new string[3]{ "Mumbai", "London", "New York" };
+        
+        // Declare and initialize with values.
+        int[] array2 = new int[] { 1, 3, 5, 7, 9 };
+        string[] weekDays = new string[] { "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" };
 
         // Alternative syntax.
         int[] array3 = { 1, 2, 3, 4, 5, 6 };
@@ -49,9 +49,9 @@ evenNums[0] = 2;
 evenNums[1] = 4;
 ...
 // or
-evenNums = new int[]{ 2, 4, 6, 8, 10 };
-//or
 evenNums = new int[5]{ 2, 4, 6, 8, 10 };
+//or
+evenNums = new int[]{ 2, 4, 6, 8, 10 };
 ```
 
 Accessing Array Elements
