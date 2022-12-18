@@ -24,10 +24,6 @@
 |`interface`|`public`|`public` `protected` `internal` `private*` `protected internal` `private protected`|
 |`struct`|`private`|`public` `internal` `private`|
 
-### `protected internal`
-
-
-
 ### `internal`
 ```cs
 public class BaseClass
@@ -110,6 +106,42 @@ class B : A
 
 ### `protected internal`
 This combination is a member access modifier. A protected internal member is accessible from the current assembly or from types that are derived from the containing class.
+```cs
+// Assembly1.cs
+// Compile with: /target:library
+public class BaseClass
+{
+   protected internal int myValue = 0;
+}
+
+class TestAccess
+{
+    void Access()
+    {
+        var baseObject = new BaseClass();
+        baseObject.myValue = 5;
+    }
+}
+```
+```cs
+// Assembly2.cs
+// Compile with: /reference:Assembly1.dll
+class DerivedClass : BaseClass
+{
+    static void Main()
+    {
+        var baseObject = new BaseClass();
+        var derivedObject = new DerivedClass();
+
+        // Error CS1540, because myValue can only be accessed by
+        // classes derived from BaseClass.
+        // baseObject.myValue = 10;
+
+        // OK, because this class derives from BaseClass.
+        derivedObject.myValue = 10;
+    }
+}
+```
 
 ### Assembly
 `.NET` **assemblies** are collections of compiled types (classes and other types) and resources
