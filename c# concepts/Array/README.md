@@ -45,6 +45,9 @@ It is not necessary to declare and initialize an array in a single statement. Yo
 int[] evenNums;
 
 evenNums = new int[5];
+evenNums[0] = 2;
+evenNums[1] = 4;
+...
 // or
 evenNums = new int[]{ 2, 4, 6, 8, 10 };
 //or
