@@ -224,7 +224,3 @@ public class HiddenWidget
 }
 ```
 
-### Assembly
-`.NET` **assemblies** are collections of compiled types (classes and other types) and resources
-
-
