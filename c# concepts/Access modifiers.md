@@ -17,11 +17,13 @@
 |protected internal| Access is limited to the current assembly or types derived from the containing class.|
 |private protected|Access is limited to the containing class or types derived from the containing class within the current assembly.|
 
+|Members|Default|Allowed declared accessibility|
+|-|-|-|
+|`enum`|`public`|None|
+|`class`|`private`|`public` `protected` `internal` `private` `protected internal` `private protected`|
+
 
 ### Assembly
 `.NET` **assemblies** are collections of compiled types (classes and other types) and resources
 
 
-|Members|Default|Allowed declared accessibility of the member|
-|-|-|
-|enum|public|None|
