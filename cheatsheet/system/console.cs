@@ -14,5 +14,14 @@ Console.Write();
 /*
   The difference between Write(…) and WriteLine(…) is that the Write(…) method prints on the console what it is provided between the parentheses but does nothing in addition while the method WriteLine(…) means directly “write line”. 
   This method does what the Write(…) one does but in addition goes to a new line.
+  
+  eg: 
+  Console.WriteLine("I love");
+  Console.Write("this ");
+  Console.Write("Book!");
+  
+  output
+  I love
+  this Book!  //same line
  */    
 
