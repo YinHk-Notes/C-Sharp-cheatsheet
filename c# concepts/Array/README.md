@@ -67,4 +67,16 @@ for(int i = 0; i < evenNums.Length; i++)
     Console.WriteLine(evenNums[i]);  
 
 ```
+
+Accessing Array using foreach Loop
+```cs
+int[] evenNums = { 2, 4, 6, 8, 10}; 
+string[] cities = { "Mumbai", "London", "New York" }; 
+
+foreach(var item in evenNums)
+    Console.WriteLine(item);   
+
+foreach(var city in cities)
+    Console.WriteLine(city);  
+```
 https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/
