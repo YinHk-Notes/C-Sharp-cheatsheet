@@ -105,7 +105,15 @@ int[,] arr2d; // two-dimensional array
 int[, ,] arr3d; // three-dimensional array
 int[, , ,] arr4d ; // four-dimensional array
 int[, , , ,] arr5d; // five-dimensional array
+
+/* example */
+
+int[,] arr2d = new int[3,2]{ {1, 2}, {3, 4}, {5, 6} };
+// or 
+int[,] arr2d = { {1, 2}, {3, 4}, {5, 6} };
+
 ```
+
 
 
 https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/
