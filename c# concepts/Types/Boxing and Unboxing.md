@@ -11,7 +11,7 @@ the process of converting a VALUE type to reference type.  It wraps the value in
 
 ```cs
 int i = 123;
-// The following line boxes i.
+// Boxing copies the value of i into object o
 object o = i;
 ```
 
