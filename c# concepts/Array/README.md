@@ -88,5 +88,13 @@ public static void UpdateArray(int[] arr)
         arr[i] = arr[i] + 10;   
 }
 ```
-
+Printing an Array to the Console
+```cs
+string[] array = { "one", "two", "three", "four" };
+for (int index = 0; index < array.Length; index++)
+{
+// Print each element on a separate line
+Console.WriteLine("Element[{0}] = {1}", index, array[index]);
+}
+```
 https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/
