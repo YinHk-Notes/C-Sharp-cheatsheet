@@ -25,3 +25,28 @@ foreach (var v in productQuery)
 }
 ```
 
+```cs
+var student = new { Id = 1, FirstName = "James", LastName = "Bond" };
+Console.WriteLine(student.Id); //output: 1
+Console.WriteLine(student.FirstName); //output: James
+Console.WriteLine(student.LastName); //output: Bond
+```
+
+```cs
+var student = new { 
+                    Id = 1, 
+                    FirstName = "James", 
+                    LastName = "Bond",
+                    Address = new { Id = 1, City = "London", Country = "UK" }
+                };
+```
+
+You can create an array of anonymous types also.
+```cs
+var students = new[] {
+            new { Id = 1, FirstName = "James", LastName = "Bond" },
+            new { Id = 2, FirstName = "Steve", LastName = "Jobs" },
+            new { Id = 3, FirstName = "Bill", LastName = "Gates" }
+    };
+
+```
