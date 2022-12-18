@@ -20,3 +20,8 @@
 
 ### Assembly
 `.NET` **assemblies** are collections of compiled types (classes and other types) and resources
+
+
+|Members|Default|Allowed declared accessibility of the member|
+|-|-|
+|enum|public|None|
