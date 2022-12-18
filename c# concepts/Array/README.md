@@ -165,7 +165,27 @@ and the second bracket specifies the dimensions of the array which is going to b
 int[][] jArray1 = new int[2][]; // can include two single-dimensional arrays 
 int[][,] jArray2 = new int[3][,]; // can include three two-dimensional arrays 
 ```
+```cs
+int[][] jaggedArray = new int[3][];
 
+jaggedArray[0] = new int[5];
+jaggedArray[1] = new int[4];
+jaggedArray[2] = new int[2];
+
+jaggedArray[0] = new int[] { 1, 3, 5, 7, 9 };
+jaggedArray[1] = new int[] { 0, 2, 4, 6 };
+jaggedArray[2] = new int[] { 11, 22 };
+
+//or
+
+int[][] jaggedArray2 = new int[][]
+{
+    new int[] { 1, 3, 5, 7, 9 },
+    new int[] { 0, 2, 4, 6 },
+    new int[] { 11, 22 }
+};
+
+```
 
 
 
