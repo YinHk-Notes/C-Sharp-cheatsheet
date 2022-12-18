@@ -15,4 +15,20 @@
 
 The namespace keyword is used to declare a scope. The ability to create scopes within your project helps organise code and lets you create globally-unique types.
 
-
+```cs
+namespace N1     // N1
+{
+    class C1      // N1.C1
+    {
+        class C2   // N1.C1.C2
+        {
+        }
+    }
+    namespace N2  // N1.N2
+		{
+        class C2   // N1.N2.C2
+        {
+        }
+    }
+}
+```
