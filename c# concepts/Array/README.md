@@ -59,6 +59,11 @@ Accessing Array Elements
 myArray[index]
 ```
 
+Length of array
+```cs
+array.Length;
+```
+
 Accessing Array using for Loop
 ```cs
 int[] evenNums = { 2, 4, 6, 8, 10 };
