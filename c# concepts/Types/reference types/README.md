@@ -4,6 +4,7 @@
 - `interface`
 - `delegate`
 - `record`
+- `Array`
 
 **Built-in reference types:**
 - `dynamic`
