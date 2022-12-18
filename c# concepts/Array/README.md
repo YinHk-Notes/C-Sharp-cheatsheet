@@ -53,4 +53,9 @@ evenNums = new int[]{ 2, 4, 6, 8, 10 };
 //or
 evenNums = new int[5]{ 2, 4, 6, 8, 10 };
 ```
+
+Accessing Array Elements
+```cs
+myArray[index]
+```
 https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/
