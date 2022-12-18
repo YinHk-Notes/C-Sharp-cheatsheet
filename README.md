@@ -3,7 +3,7 @@
 ## Csharp
 My learning note & material for C#
 
-### .NET
+### .NET doc
 https://learn.microsoft.com/en-us/dotnet/
 
 
