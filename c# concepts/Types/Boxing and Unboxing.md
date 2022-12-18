@@ -18,6 +18,10 @@ object o = i;
 ### Unboxing 
 Unboxing is the reverse of boxing. the process of converting a reference type to value type. Unboxing extract the value from the reference type and assign it to a value type. Unboxing extracts the value type from the object.
 
+```cs
+o = 123;
+i = (int)o;  // unboxing
+```
 
 > Boxing is implicit; unboxing is explicit.
 
