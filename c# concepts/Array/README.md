@@ -97,4 +97,9 @@ for (int index = 0; index < array.Length; index++)
     Console.WriteLine("Element[{0}] = {1}", index, array[index]);
 }
 ```
+
+### Multidimensional Arrays
+> `[,]` declares two-dimensional array, `[, ,]` declares three-dimensional array, `[, , ,]` declares four-dimensional array, and so on.
+
+
 https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/
