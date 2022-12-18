@@ -93,8 +93,8 @@ Printing an Array to the Console
 string[] array = { "one", "two", "three", "four" };
 for (int index = 0; index < array.Length; index++)
 {
-// Print each element on a separate line
-Console.WriteLine("Element[{0}] = {1}", index, array[index]);
+    // Print each element on a separate line
+    Console.WriteLine("Element[{0}] = {1}", index, array[index]);
 }
 ```
 https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/
