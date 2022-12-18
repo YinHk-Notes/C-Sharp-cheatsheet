@@ -12,6 +12,8 @@ https://aws.amazon.com/what-is/net/?nc1=h_ls
 ### .NET doc
 https://learn.microsoft.com/en-us/dotnet/
 
+### .NET API Reference
+https://learn.microsoft.com/en-us/dotnet/api/?view=net-7.0
 
 ### ref
 https://learn.microsoft.com/en-us/dotnet/csharp/
