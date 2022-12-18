@@ -24,7 +24,8 @@
 |`interface`|`public`|`public` `protected` `internal` `private*` `protected internal` `private protected`|
 |`struct`|`private`|`public` `internal` `private`|
 
-### 
+### `protected internal`
+
 
 
 ### `internal`
@@ -107,6 +108,8 @@ class B : A
 }
 ```
 
+### `protected internal`
+This combination is a member access modifier. A protected internal member is accessible from the current assembly or from types that are derived from the containing class.
 
 ### Assembly
 `.NET` **assemblies** are collections of compiled types (classes and other types) and resources
