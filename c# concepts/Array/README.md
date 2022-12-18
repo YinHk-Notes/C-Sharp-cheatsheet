@@ -157,4 +157,17 @@ for (int row = 0; row < matrix.GetLength(0); row++)
 }
 ```
 
+### Jagged arrays
+Arrays of arrays, which we call jagged arrays. Jagged arrays store arrays instead of literal values.
+A jagged array is initialized with two square brackets `[][]`. The first bracket specifies the size of an array,
+and the second bracket specifies the dimensions of the array which is going to be stored
+```cs
+int[][] jArray1 = new int[2][]; // can include two single-dimensional arrays 
+int[][,] jArray2 = new int[3][,]; // can include three two-dimensional arrays 
+```
+
+
+
+
+
 https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/
