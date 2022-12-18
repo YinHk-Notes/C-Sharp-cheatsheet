@@ -39,4 +39,15 @@ class TestArraysClass
     }
 }
 ```
+
+It is not necessary to declare and initialize an array in a single statement. You can first declare an array then initialize i
+```cs
+int[] evenNums;
+
+evenNums = new int[5];
+// or
+evenNums = new int[]{ 2, 4, 6, 8, 10 };
+//or
+evenNums = new int[5]{ 2, 4, 6, 8, 10 };
+```
 https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/
