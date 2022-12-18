@@ -46,7 +46,7 @@ Console.ReadLine();
 /* 
 eg:
 public static void Main()
-    {
+{
         int age;
         string name;
  
