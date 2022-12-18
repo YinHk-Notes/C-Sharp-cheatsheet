@@ -11,6 +11,6 @@
 |Modifier|Description|
 |-|-|
 |`public`|	The code is accessible for all classes|
-|`private`|The code is only accessible within the same class|
+|`private`|The code is only accessible within the same class, cannot be accessed from any other class|
 |`protected`|	The code is accessible within the same class, or in a class that is inherited from that class. You will learn more about inheritance in a later chapter|
 |`internal`|	The code is only accessible within its own assembly, but not from another assembly. used to limit the access to the elements of the class only to files from the same assembly, i.e. the same project in Visual Studio. When we create several projects in Visual Studio, the classes from will be compiled in different assemblies.|
