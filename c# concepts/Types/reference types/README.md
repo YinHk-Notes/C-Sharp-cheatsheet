@@ -1,4 +1,4 @@
-## Reference tyoes
+## Reference types
 
 - `class`
 - `interface`
