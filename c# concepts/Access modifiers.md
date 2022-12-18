@@ -24,6 +24,9 @@
 |`interface`|`public`|`public` `protected` `internal` `private*` `protected internal` `private protected`|
 |`struct`|`private`|`public` `internal` `private`|
 
+### 
+
+
 ### `internal`
 ```cs
 public class BaseClass
@@ -80,6 +83,30 @@ public class TestAccess
    }  
 }
 ```
+### `protected`
+```cs
+class A
+{
+    protected int x = 123;
+}
+
+class B : A
+{
+    static void Main()
+    {
+        var a = new A();
+        var b = new B();
+
+        // Error CS1540, because x can only be accessed by
+        // classes derived from A.
+        // a.x = 10;
+
+        // OK, because this class derives from A.
+        b.x = 10;
+    }
+}
+```
+
 
 ### Assembly
 `.NET` **assemblies** are collections of compiled types (classes and other types) and resources
