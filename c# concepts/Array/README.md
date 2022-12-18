@@ -213,6 +213,26 @@ jArray[1][1, 0]; //returns 9
                                              
 jArray[1][1, 1]; //returns 10
 ```
+If you add one more bracket then it will be array of array of arry.
+```cs
+int[][][] intJaggedArray = new int[2][][] 
+                            {
+                                new int[2][]  
+                                { 
+                                    new int[3] { 1, 2, 3},
+                                    new int[2] { 4, 5} 
+                                },
+                                new int[1][]
+                                { 
+                                    new int[3] { 7, 8, 9}
+                                }
+                            };
 
+Console.WriteLine(intJaggedArray[0][0][0]); // 1
+
+Console.WriteLine(intJaggedArray[0][1][1]); // 5
+    
+Console.WriteLine(intJaggedArray[1][0][2]); // 9
+```
 
 https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/
