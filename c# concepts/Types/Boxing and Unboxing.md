@@ -7,7 +7,7 @@ convert them from one type to another, this conversion processes are called **bo
 
 
 ### Boxing
-the process of converting a VALUE type to reference type. It wraps the value inside a System.Object instance and stores it on the managed heap.
+the process of converting a VALUE type to reference type.  It wraps the value inside a System.Object instance and stores it on the managed heap.
 
 ### Unboxing 
 Unboxing is the reverse of boxing. the process of converting a reference type to value type. Unboxing extract the value from the reference type and assign it to a value type. Unboxing extracts the value type from the object.
