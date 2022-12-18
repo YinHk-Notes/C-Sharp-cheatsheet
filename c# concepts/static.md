@@ -10,7 +10,7 @@
 
 - Use the `static` modifier to declare a `static` member,  which belongs to the type itself rather than to a specific object. 
 - `static` **cannot be instantiated**. 
-- The `static` modifier can be used with **classes**, **fields**, **methods**, **properties**, **operators**, **events**, and `constructors`. 
+- The `static` modifier can be used with **classes**, **fields**, **methods**, **properties**, **operators**, **events**, and **constructors**. 
 - A **non-static class** can contain `static` **methods**, **fields**, **properties**, or **events**. 
 - `static` class **should have `static` member only**, a `static` class can only contain `static` data members, `static` methods, and a `static` constructor. It is **not allowed to create objects of the static class**.  
 - `static` class **cannot be instantiated** [create objects of the static class], and **cannot inherit a `static` class from another class**.
