@@ -24,6 +24,7 @@
 |`interface`|`public`|`public` `protected` `internal` `private*` `protected internal` `private protected`|
 |`struct`|`private`|`public` `internal` `private`|
 
+### `internal`
 
 ### Assembly
 `.NET` **assemblies** are collections of compiled types (classes and other types) and resources
