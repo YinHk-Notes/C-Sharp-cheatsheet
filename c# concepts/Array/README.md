@@ -58,4 +58,13 @@ Accessing Array Elements
 ```cs
 myArray[index]
 ```
+
+Accessing Array using for Loop
+```cs
+int[] evenNums = { 2, 4, 6, 8, 10 };
+
+for(int i = 0; i < evenNums.Length; i++)
+    Console.WriteLine(evenNums[i]);  
+
+```
 https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/
