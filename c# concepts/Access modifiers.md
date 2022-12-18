@@ -55,8 +55,30 @@ class TestAccess
    }  
 }
 ```
+```cs
+// In this example, use the same files you used in example 1, and change the accessibility level of BaseClass to public. 
+// Also change the accessibility level of the member intM to internal. In this case, you can instantiate the class, 
+// but you cannot access the internal member.
 
 
+// Assembly2.cs  
+// Compile with: /target:library  
+public class BaseClass
+{  
+   internal static int intM = 0;  
+}
+
+// Assembly2_a.cs  
+// Compile with: /reference:Assembly2.dll  
+public class TestAccess
+{  
+   static void Main()
+   {  
+      var myBase = new BaseClass();   // Ok.  
+      BaseClass.intM = 444;    // CS0117  
+   }  
+}
+```
 
 ### Assembly
 `.NET` **assemblies** are collections of compiled types (classes and other types) and resources
