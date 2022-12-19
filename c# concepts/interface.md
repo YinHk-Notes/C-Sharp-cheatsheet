@@ -67,6 +67,16 @@ class ImplementationClass : ISampleInterface
 }
 ```
 
+### Implementing an Interface
+A `class` or a `Struct` can implement one or more interfaces using colon `:`
+```cs
+class ClassName : InterfaceName
+{
+
+}
+```
+
+
 *1.**介面只能宣告，不能實作，且只能為公開(public)***。 *預設就是公開所以不用特別加上public*
 
 *2.**介面可以繼承介面***
