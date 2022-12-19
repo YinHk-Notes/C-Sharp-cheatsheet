@@ -59,3 +59,11 @@ public class Location
    }
 }
 ```
+An expression body definition for a constructor typically consists of a single assignment expression or a method call that handles the constructor's arguments or initializes instance state.
+```cs
+public class Location
+{
+   private string locationName;
+   public Location(string name) => Name = name;
+}
+```
