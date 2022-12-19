@@ -86,6 +86,19 @@ public class Manager : Employee
     }
 }
 ```
+If a base-class constructor isn't called explicitly by using the base keyword, the parameterless constructor, if there's one, is called implicitly. This means that the following constructor declarations are effectively the same:
+```cs
+public Manager(int initialData)
+{
+    //Add further instructions here.
+}
+
+//same as 
+public Manager(int initialData) : base()
+{
+    //Add further instructions here.
+}
+```
 
 ### static constructor
 A `static` constructor is used to initialize any static data, or to perform a particular action that needs to be performed once only.
