@@ -25,6 +25,30 @@ class Car
   }
 }
 ```
+```cs
+class Car
+{
+  public string model;
+  public string color;
+  public int year;
+
+  // Create a class constructor with multiple parameters
+  public Car(string modelName, string modelColor, int modelYear)
+  {
+    model = modelName;
+    color = modelColor;
+    year = modelYear;
+  }
+
+  static void Main(string[] args)
+  {
+    Car Ford = new Car("Mustang", "Red", 1969);
+    Console.WriteLine(Ford.color + " " + Ford.year + " " + Ford.model);
+  }
+}
+
+
+```
 
 ### static constructor
 A static constructor is used to initialize any static data, or to perform a particular action that needs to be performed once only.
