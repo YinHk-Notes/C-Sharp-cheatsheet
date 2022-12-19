@@ -35,3 +35,18 @@ class Program
   }
 }
 ```
+
+If you try to **access a sealed class**, C# will generate an **error**:
+```cs
+sealed class Vehicle 
+{
+  ...
+}
+
+//error
+class Car : Vehicle 
+{
+  ...
+}
+```
+
