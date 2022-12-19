@@ -23,3 +23,8 @@ ClassName
    ....
 }
 ```
+
+### Creating objects
+```
+ClassName objName = new ClassName();
+```
