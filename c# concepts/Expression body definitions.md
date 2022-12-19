@@ -25,3 +25,23 @@ int GetRectangleArea(int length, int breadth)
 // can be written as 
 int GetRectangleArea(int length, int breadth) => length * breadth;
 ```
+For Read-only properties, you can use expression body definition to implement a read-only property. 
+```cs
+PropertyType PropertyName => expression;
+```
+
+```cs
+public class Location
+{
+   private string locationName;
+
+   public Location(string name)
+   {
+      locationName = name;
+   }
+
+   public string Name => locationName;
+}
+```
+
+
