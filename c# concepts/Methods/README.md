@@ -2,7 +2,7 @@
 
 Syntax
 ```
-<Access Specifier> <Return Type> <Method Name>(Parameter List) {
-    ...statement...
+<Access Specifier> <Return Type> <Method Name> (Parameter List) {
+    //...statement...
 }
 ```
