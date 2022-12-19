@@ -9,3 +9,25 @@ string name = "C# Corner"; // Explicitly typed.
 var age = 30;
 ```
 
+We can use the var keyword to declare array data types where we don't have predefined datatypes
+```cs
+using System;  
+using System.Text;  
+using System.Collections;  
+  
+namespace ConsoleApplication1  
+{  
+    class Program  
+    {  
+        static void Main(string[] args)  
+        {  
+            var aInt = new int[] { 1, 2, 3, 4, 5, 6 };  
+            foreach (var item in aInt)  
+            {  
+                Console.Write(item.ToString());  
+            }  
+            Console.Read();  
+        }  
+    }  
+} 
+```
