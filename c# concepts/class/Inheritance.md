@@ -4,7 +4,27 @@
 - Base Class (parent) - the class being inherited from
 
 To inherit from a class, use the `:` symbol.
+```cs
+public class A
+{
+    public void Method1()
+    {
+        // Method implementation.
+    }
+}
 
+public class B : A
+{ }
+
+public class Example
+{
+    public static void Main()
+    {
+        B b = new ();
+        b.Method1();
+    }
+}
+```
 ```cs
 class Vehicle  // base class (parent) 
 {
