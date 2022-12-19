@@ -15,3 +15,11 @@ public ClassName
    ....
 }
 ```
+private class
+```cs
+//No need tospecify private which is default 
+ClassName 
+{
+   ....
+}
+```
