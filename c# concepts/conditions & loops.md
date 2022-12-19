@@ -46,3 +46,7 @@ while (i < 10) // condition
     i++; // increment
 }
 ```
+### Ternary Operator
+```
+condition ? statement 1 : statement 2
+```
