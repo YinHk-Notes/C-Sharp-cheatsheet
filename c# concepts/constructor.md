@@ -99,6 +99,26 @@ public Manager(int initialData) : base()
     //Add further instructions here.
 }
 ```
+> If a base class doesn't offer a parameterless constructor, the derived class must make an explicit call to a base constructor by using base
+
+A constructor can invoke another constructor in the same object by using the `this` keyword. Used tocalled previous same constructor in the same class.
+```cs
+public Employee(int weeklySalary, int numberOfWeeks) : this(weeklySalary * numberOfWeeks)
+{
+    //...
+}
+
+//same as 
+public Employee(int annualSalary)
+{
+    Salary = annualSalary;
+}
+
+public Employee(int weeklySalary, int numberOfWeeks)
+{
+    Salary = weeklySalary * numberOfWeeks;
+}
+```
 
 ### static constructor
 A `static` constructor is used to initialize any static data, or to perform a particular action that needs to be performed once only.
