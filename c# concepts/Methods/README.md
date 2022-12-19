@@ -1,6 +1,7 @@
 ## Method
 
-```cs
+Syntax
+```
 <Access Specifier> <Return Type> <Method Name>(Parameter List) {
     ...statement...
 }
