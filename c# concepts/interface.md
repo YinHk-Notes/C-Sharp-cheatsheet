@@ -76,6 +76,26 @@ class ClassName : InterfaceName
 }
 ```
 
+```cs
+interface IFile
+{
+    void ReadFile();
+    void WriteFile(string text);
+}
+
+class FileInfo : IFile
+{
+    public void ReadFile()
+    {
+        Console.WriteLine("Reading File");
+    }
+
+    public void WriteFile(string text)
+    {
+        Console.WriteLine("Writing to file");
+    }
+}
+```
 
 *1.**介面只能宣告，不能實作，且只能為公開(public)***。 *預設就是公開所以不用特別加上public*
 
