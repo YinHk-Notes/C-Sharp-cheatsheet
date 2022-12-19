@@ -44,4 +44,18 @@ public class Location
 }
 ```
 
+You can use expression body definitions to implement property `get` and `set` accessors.
+```cs
+public class Location
+{
+   private string locationName;
 
+   public Location(string name) => Name = name;
+
+   public string Name
+   {
+      get => locationName;
+      set => locationName = value;
+   }
+}
+```
