@@ -28,3 +28,8 @@ ClassName
 ```
 ClassName objName = new ClassName();
 ```
+
+### Access the object 
+```
+ClassName objName
+```
