@@ -1,7 +1,7 @@
 ## Variable
 
 ### declare variable:
-
+C# allows variables to be declared as **explicit type** or **implicit type**.
 syntax:
 ```
 type variable_name
