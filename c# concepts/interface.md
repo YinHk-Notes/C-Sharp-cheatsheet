@@ -11,6 +11,7 @@
 - Interfaces can contain properties and methods, but not fields/variables
 - Interface members are by default `abstract` and `public`
 - An interface cannot contain a constructor (as it cannot be used to create objects)
+- A class or struct can **implement multiple interfaces**.
 
 **Why and when to use interfaces?**
 - To achieve security - hide certain details and only show the important details of an object (interface).
@@ -96,6 +97,47 @@ class FileInfo : IFile
     }
 }
 ```
+> Interface members must be implemented with the public modifier; otherwise, the compiler will give compile-time errors.
+
+### Implementing Multiple Interfaces
+seperate by `,`
+```cs
+interface IFile
+{
+    void ReadFile();
+}
+
+interface IBinaryFile
+{
+    void OpenBinaryFile();
+    void ReadFile();
+}
+
+class FileInfo : IFile, IBinaryFile
+{
+    void IFile.ReadFile()
+    {
+        Console.WriteLine("Reading Text File");
+    }
+
+    void IBinaryFile.OpenBinaryFile()
+    {
+        Console.WriteLine("Opening Binary File");
+    }
+
+    void IBinaryFile.ReadFile()
+    {
+        Console.WriteLine("Reading Binary File");
+    }
+
+    public void Search(string text)
+    {
+        Console.WriteLine("Searching in File");
+    }
+}
+
+```
+
 
 *1.**介面只能宣告，不能實作，且只能為公開(public)***。 *預設就是公開所以不用特別加上public*
 
