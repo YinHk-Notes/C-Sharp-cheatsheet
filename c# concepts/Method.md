@@ -21,3 +21,10 @@ void SampleMethod(){
 }
 ```
 
+### Method Overloading
+With method overloading, multiple methods can have the same name with **different parameters** or **different type of parameters**.
+```cs
+int MyMethod(int x)
+float MyMethod(float x)
+double MyMethod(double x, double y)
+```
