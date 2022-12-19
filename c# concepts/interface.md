@@ -135,7 +135,6 @@ class FileInfo : IFile, IBinaryFile
         Console.WriteLine("Searching in File");
     }
 }
-
 ```
 
 ### Default Interface Methods
@@ -184,7 +183,13 @@ public class Program
 }
 ```
 
+### Modifiers in Interfaces
 
+C# 8.0 allows `private`, `protected`, `internal`, `public`, `virtual`, `abstract`, `sealed`, `static`, `extern`, and `partial` modifiers in an interface.
+- he default access level for all interface members is public.
+- An interface member whose declaration includes a body is a `virtual` member unless the `sealed` or `private` modifier is used.
+- A `private` or `sealed` function member of an interface must have implementation body.
+- Interfaces may declare `static` members which can be accessed by interface name.
 
 
 *1.**介面只能宣告，不能實作，且只能為公開(public)***。 *預設就是公開所以不用特別加上public*
