@@ -47,7 +47,14 @@ class Car
   }
 }
 
-
+```
+A constructor can be implemented as a single statement, you can use an expression body definition
+```cs
+public class Location
+{
+   private string locationName;
+   public Location(string name) => Name = name;
+}
 ```
 
 ### static constructor
