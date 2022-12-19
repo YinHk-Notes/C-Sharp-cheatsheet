@@ -6,3 +6,25 @@
 - Constructors enable the programmer to set default values, limit instantiation, and write code that is flexible and easy to read.
 - A constructor is a method whose name is the same as the name of its class.
 - Cobstructor does not include a return type. 
+
+```cs
+class Car
+{
+  public string model;
+
+  // Create a class constructor with a parameter
+  public Car(string modelName)
+  {
+    model = modelName;
+  }
+
+  static void Main(string[] args)
+  {
+    Car Ford = new Car("Mustang");
+    Console.WriteLine(Ford.model);
+  }
+}
+```
+
+### static constructor
+A static constructor is used to initialize any static data, or to perform a particular action that needs to be performed once only.
