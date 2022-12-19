@@ -12,3 +12,19 @@ foreach (type variableName in arrayName)
   // code block to be executed
 }
 ```
+
+### Switch
+```cs
+switch(expression) 
+{
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+    break;
+}
+```
