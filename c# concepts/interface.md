@@ -6,6 +6,33 @@
 - An interface can contain **declarations of methods, properties, indexers, and events**. However, it **cannot contain fields, auto-implemented properties**.
 
 ```cs
+// Interface
+interface IAnimal 
+{
+  void animalSound(); // interface method (does not have a body)
+}
+
+// Pig "implements" the IAnimal interface
+class Pig : IAnimal 
+{
+  public void animalSound() 
+  {
+    // The body of animalSound() is provided here
+    Console.WriteLine("The pig says: wee wee");
+  }
+}
+
+class Program 
+{
+  static void Main(string[] args) 
+  {
+    Pig myPig = new Pig();  // Create a Pig object
+    myPig.animalSound();
+  }
+}
+```
+
+```cs
 interface ISampleInterface
 {
     void SampleMethod();
