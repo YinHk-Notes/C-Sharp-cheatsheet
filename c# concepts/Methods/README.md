@@ -11,7 +11,8 @@ Syntax
 
 ### Void method
 ```CS
-void isn't allowed in the parameter list of a method. A method that takes no parameters and returns no value, the return type is “void”.
+void isn't allowed in the parameter list of a method. A method that takes no parameters and returns no value, 
+the return type is “void”.
 
 
 ```CS
