@@ -56,6 +56,25 @@ public class Location
    public Location(string name) => Name = name;
 }
 ```
+Classes and structs can also define multiple constructors, and neither is required to define a parameterless constructor.
+```cs
+public class Employee
+{
+    public int Salary;
+
+    public Employee() { }
+
+    public Employee(int annualSalary)
+    {
+        Salary = annualSalary;
+    }
+
+    public Employee(int weeklySalary, int numberOfWeeks)
+    {
+        Salary = weeklySalary * numberOfWeeks;
+    }
+}
+```
 
 ### static constructor
 A `static` constructor is used to initialize any static data, or to perform a particular action that needs to be performed once only.
