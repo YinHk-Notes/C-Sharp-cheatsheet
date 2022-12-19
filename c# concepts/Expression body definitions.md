@@ -67,3 +67,14 @@ public class Location
    public Location(string name) => Name = name;
 }
 ```
+An expression body definition for a finalizer typically contains cleanup statements, such as statements that release unmanaged resources.
+```cs
+public class Destroyer
+{
+   public override string ToString() => GetType().Name;
+
+   ~Destroyer() => Console.WriteLine($"The {ToString()} finalizer is executing.");
+}
+```
+
+https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members
