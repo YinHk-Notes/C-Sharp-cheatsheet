@@ -75,6 +75,17 @@ public class Employee
     }
 }
 ```
+Constructors that take parameters must be called through a **`new`** statement or a **`base`** statement.
+A constructor can use the `base` keyword to call **the constructor of a base class**. 
+```cs
+public class Manager : Employee
+{
+    public Manager(int annualSalary) : base(annualSalary)
+    {
+        //Add further instructions here.
+    }
+}
+```
 
 ### static constructor
 A `static` constructor is used to initialize any static data, or to perform a particular action that needs to be performed once only.
