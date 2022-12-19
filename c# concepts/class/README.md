@@ -8,3 +8,10 @@ public static ClassName
    ....
 }
 ```
+public class
+```cs
+public ClassName 
+{
+   ....
+}
+```
