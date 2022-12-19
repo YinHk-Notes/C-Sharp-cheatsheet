@@ -138,6 +138,54 @@ class FileInfo : IFile, IBinaryFile
 
 ```
 
+### Default Interface Methods
+
+C# 8.0 added support for virtual extension methods in interface with concrete implementations.
+default interface methods that **does not need to be implemented in a class or struct**.
+```cs
+interface IFile
+{
+    void ReadFile();
+    void WriteFile(string text);
+
+    void DisplayName()
+    {
+        Console.WriteLine("IFile");
+    }
+}
+```
+Note that a class does not inherit default methods from its interfaces; so, you cannot access it using the class instance.
+```cs
+class FileInfo : IFile
+{
+    public void ReadFile()
+    {
+        Console.WriteLine("Reading File");
+    }
+
+    public void WriteFile(string text)
+    {
+        Console.WriteLine("Writing to file");
+    }
+}
+
+public class Program
+{
+    public static void Main()
+    {
+        IFile file1 = new FileInfo();
+        file1.ReadFile(); 
+        file1.WriteFile("content"); 
+        file1.DisplayName();
+
+        FileInfo file2 = new FileInfo();
+        //file2.DisplayName(); //compile-time error 
+    }
+}
+```
+
+
+
 
 *1.**介面只能宣告，不能實作，且只能為公開(public)***。 *預設就是公開所以不用特別加上public*
 
