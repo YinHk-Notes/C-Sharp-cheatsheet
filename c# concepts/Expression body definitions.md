@@ -5,3 +5,11 @@ syntax:
 ```
 member => expression;
 ```
+Expression body definitions can be used with the following type members:
+
+- Method
+- Read-only property
+- Property
+- Constructor
+- Finalizer
+- Indexer
