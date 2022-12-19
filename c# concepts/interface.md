@@ -12,7 +12,7 @@
 - Interface members are by default `abstract` and `public`
 - An interface cannot contain a constructor (as it cannot be used to create objects)
 
-Why and when to use interfaces?
+**Why and when to use interfaces?**
 - To achieve security - hide certain details and only show the important details of an object (interface).
 - C# does not support "multiple inheritance" (a class can only inherit from one base class). However, it can be achieved with interfaces, because the class can implement multiple interfaces.
 
