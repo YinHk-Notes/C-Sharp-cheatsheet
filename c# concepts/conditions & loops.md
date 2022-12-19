@@ -30,6 +30,12 @@ switch(expression)
 ```
 
 ### while loop
+```
+While(condition)
+{
+    //code block
+}
+```
 ```cs
 int i = 0; // initialization
 
