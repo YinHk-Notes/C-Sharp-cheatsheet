@@ -15,6 +15,9 @@ https://learn.microsoft.com/en-us/dotnet/
 ### .NET API Reference
 https://learn.microsoft.com/en-us/dotnet/api/?view=net-7.0
 
+### tutorial - 4 hour
+https://youtu.be/wxznTygnRfQ
+
 ### ref
 https://learn.microsoft.com/en-us/dotnet/csharp/
 
