@@ -9,4 +9,13 @@ ArrayList al = new ArrayList();
 ArrayList al = new ArrayList(ICollection);  //contains elements copied from the specified collection and that has the same initial capacity as the number of elements copied.
 
 
+// Method
+
+// add element
+al.Add(Object);
+
+// Adds the elements of an ICollection to the end of the ArrayList.
+al.(ICollection c);
+
+
 
