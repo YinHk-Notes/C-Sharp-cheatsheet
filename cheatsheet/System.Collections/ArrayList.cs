@@ -32,3 +32,19 @@ list.BinarySearch(index, count, value, comparer);
   index:  starting index of the range to search.
   count:  the length of the range to search.
  */
+
+//Removes all elements from the ArrayList.
+public virtual void Clear ();
+list.Clear();
+
+
+
+
+
+
+
+
+
+
+
+
