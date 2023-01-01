@@ -3,19 +3,18 @@
 // Derived: System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection
 // Implements: ICollection, IEnumerable, IList, ICloneable
 
+using System.Collections;
 
 // Declare an ArrayList
-ArrayList al = new ArrayList();   
-ArrayList al = new ArrayList(ICollection);  //contains elements copied from the specified collection and that has the same initial capacity as the number of elements copied.
+ArrayList list = new ArrayList();   
+ArrayList list = new ArrayList(ICollection);  //contains elements copied from the specified collection and that has the same initial capacity as the number of elements copied.
 
 
-// Method
+//Add an element
+list.Add(e);
 
-// add element
-al.Add(Object);
-
-// Adds the elements of an ICollection to the end of the ArrayList.
-al.(ICollection c);
+//Add the elements of an ICollection c to the end of the ArrayList.
+list.(ICollection c);
 
 
 
