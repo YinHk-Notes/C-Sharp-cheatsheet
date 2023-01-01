@@ -16,11 +16,13 @@ public virtual int Add (object? value);
 list.Add(value);
 
 //Add the elements of an ICollection c to the end of the ArrayList.
+public virtual void AddRange (System.Collections.ICollection c);
 list.AddRange(c);
 
 //Search a specific element in the sorted ArrayList or a portion of it, and returns the zero-based index of the element.
 public virtual int BinarySearch (object? value);
-list.BinarySearch()
+list.BinarySearch(value);
   
-
+public virtual int BinarySearch (object? value, System.Collections.IComparer? comparer);
+list.BinarySearch(value, comparer);
 
