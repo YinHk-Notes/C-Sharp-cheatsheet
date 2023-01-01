@@ -14,7 +14,7 @@ ArrayList list = new ArrayList(ICollection);  //contains elements copied from th
 list.Add(Object o);
 
 //Add the elements of an ICollection c to the end of the ArrayList.
-list.(ICollection c);
+list.AddRange(ICollection c);
 
 
 
