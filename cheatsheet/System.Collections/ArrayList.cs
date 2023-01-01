@@ -9,7 +9,6 @@ using System.Collections;
 ArrayList list = new ArrayList();   
 ArrayList list = new ArrayList(ICollection);  //contains elements copied from the specified collection and that has the same initial capacity as the number of elements copied.
 
-
 //Add an object o to the end of of the ArrayList
 list.Add(Object o);
 
