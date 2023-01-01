@@ -15,5 +15,6 @@ list.Add(Object o);
 //Add the elements of an ICollection c to the end of the ArrayList.
 list.AddRange(ICollection c);
 
-
+//Search a specific element in the sorted ArrayList or a portion of it.
+list
 
