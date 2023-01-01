@@ -24,5 +24,11 @@ public virtual int BinarySearch (object? value);
 list.BinarySearch(value);
   
 public virtual int BinarySearch (object? value, System.Collections.IComparer? comparer);
-list.BinarySearch(value, comparer);
+list.BinarySearch(value, comparer);           //The IComparer implementation to use when comparing elements.              
 
+public virtual int BinarySearch (int index, int count, object? value, System.Collections.IComparer? comparer);
+list.BinarySearch(index, count, value, comparer);       
+/*  
+  index:  starting index of the range to search.
+  count:  the length of the range to search.
+ */
