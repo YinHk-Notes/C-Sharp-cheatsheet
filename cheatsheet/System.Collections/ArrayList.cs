@@ -6,15 +6,21 @@
 using System.Collections;
 
 // Declare an ArrayList
-ArrayList list = new ArrayList();   
-ArrayList list = new ArrayList(ICollection);  //contains elements copied from the specified collection and that has the same initial capacity as the number of elements copied.
+ArrayList list = new ArrayList();               //empty and has the default capacity.
+ArrayList list = new ArrayList(ICollection c);  //contains elements copied from the specified collection and that has the same initial capacity as the number of elements copied.
+ArrayList list = new ArrayList(int capacity);   //empty and has the specified initial capacity.
 
-//Add an object o to the end of of the ArrayList
-list.Add(Object o);
+
+//Add an object o to the end of of the ArrayList, return the index of the value to be added.
+public virtual int Add (object? value);
+list.Add(Object value);
 
 //Add the elements of an ICollection c to the end of the ArrayList.
 list.AddRange(ICollection c);
 
-//Search a specific element in the sorted ArrayList or a portion of it.
-list
+//Search a specific element in the sorted ArrayList or a portion of it, and returns the zero-based index of the element.
+public virtual int BinarySearch (object? value);
+list.BinarySearch()
+  
+
 
