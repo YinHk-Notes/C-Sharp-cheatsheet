@@ -37,7 +37,9 @@ list.BinarySearch(index, count, value, comparer);
 public virtual void Clear ();
 list.Clear();
 
-
+//Creates a shallow copy of the ArrayList, return a shallow copy of the ArrayList.
+public virtual object Clone ();
+list.Clone();
 
 
 
