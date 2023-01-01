@@ -41,7 +41,9 @@ list.Clear();
 public virtual object Clone ();
 list.Clone();
 
-
+//Check whether an element is in the ArrayList, return true or false
+public virtual bool Contains (object? item);
+list.Contains(element);
 
 
 
