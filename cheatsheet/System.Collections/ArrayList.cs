@@ -13,7 +13,7 @@ ArrayList list = new ArrayList(int capacity);   //empty and has the specified in
 
 //Add an object o to the end of of the ArrayList, return the index of the value to be added.
 public virtual int Add (object? value);
-list.Add(Object value);
+list.Add(object value);
 
 //Add the elements of an ICollection c to the end of the ArrayList.
 list.AddRange(ICollection c);
