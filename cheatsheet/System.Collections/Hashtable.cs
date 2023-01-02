@@ -7,6 +7,13 @@ using System.Collections;
 
 public class Hashtable : ICloneable, System.Collections.IDictionary, System.Runtime.Serialization.IDeserializationCallback, System.Runtime.Serialization.ISerializable
 
+//Declare Hashtable
+Hashtable ht = new Hashtable();
+Hashtable ht = new Hashtable(int capacity, float loadFactor, System.Collections.IEqualityComparer? equalityComparer);
+Hashtable ht = new Hashtable(int capacity, float loadFactor);
+
+
+//Properties
 
 
 
