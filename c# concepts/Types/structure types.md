@@ -34,4 +34,4 @@ Unlike classes, structs can be instantiated(creating object) without using a new
 - struct cannot include a parameterless constructor or a destructor.
 - struct can implement interfaces, same as class.
 - struct **cannot inherit another structure or class**, and it **cannot be the base of a class.**
-- struct members cannot be specified as abstract, sealed, virtual, or protected.
+- struct members **cannot be specified** as `abstract`, `sealed`, `virtual`, or `protected`.
