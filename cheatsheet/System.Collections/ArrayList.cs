@@ -117,8 +117,21 @@ list.RemoveAt(index);
 public virtual void RemoveRange (int index, int count);
 list.RemoveRange(index, count);
 
-//Returns an ArrayList whose elements are copies of the specified value
+//Returns an ArrayList whose elements are copies of the specified value.
 public static System.Collections.ArrayList Repeat (object? value, int count);
 ArrayList list = list.Repeat(value, count);
+
+//Reverses the order of the elements in the ArrayList or a portion of it.
+public virtual void Reverse ();
+list.Reverse();
+
+public virtual void Reverse (int index, int count);
+list.Reverse(index, count);       //Reverses the order of the elements in the specified range 
+
+
+
+
+
+
 
 
