@@ -5,6 +5,8 @@
 
 using System.Collections;
 
+public class ArrayList : ICloneable, System.Collections.IList
+
 //Declare an ArrayList
 ArrayList list = new ArrayList();               //empty and has the default capacity.
 ArrayList list = new ArrayList(ICollection c);  //contains elements copied from the specified collection and that has the same initial capacity as the number of elements copied.
