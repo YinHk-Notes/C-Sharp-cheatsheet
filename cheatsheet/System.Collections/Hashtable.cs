@@ -28,6 +28,9 @@ public virtual object? this[object key] { get; set; }         //Gets or sets the
 //Adds an element with the specified key and value into the Hashtable.
 public virtual void Add (object key, object? value);
 
+//Removes the element with the specified key from the Hashtable.
+public virtual void Remove (object key);
+
 //Removes all elements from the Hashtable.
 public virtual void Clear ();
 
@@ -51,14 +54,14 @@ public virtual void CopyTo (Array array, int arrayIndex);
 public virtual System.Collections.IDictionaryEnumerator GetEnumerator ();
 
 //Returns the hash code for the specified key.
+protected virtual int GetHash (object key);
 
+//Implements the ISerializable interface and returns the data needed to serialize the Hashtable.
+public virtual void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);
 
+//Compares a specific Object with a specific key in the Hashtable.
+protected virtual bool KeyEquals (object? item, object key);
 
-
-
-
-
-
-
-
+//Returns a synchronized (thread-safe) wrapper for the Hashtable.
+public static System.Collections.Hashtable Synchronized (System.Collections.Hashtable table);
 
