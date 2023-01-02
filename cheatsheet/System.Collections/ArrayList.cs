@@ -55,13 +55,15 @@ list.CopyTo(array, arrayIndex);  //index in array at which copying begins
 public virtual void CopyTo (int index, Array array, int arrayIndex, int count);
 list.CopyTo(index, array, arrayIndex, count);
 
+//Returns a list wrapper with a fixed size, where elements are allowed to be modified, but not added or removed.
+public static System.Collections.ArrayList FixedSize (System.Collections.ArrayList list);
+list.FixedSize(list);
 
+public static System.Collections.IList FixedSize (System.Collections.IList list);
+list.FixedSiz(list);
 
-
-
-
-
-
-
+//Returns an enumerator that iterates through the ArrayList.
+public virtual System.Collections.IEnumerator GetEnumerator ();
+IEnumerator e = list.GetEnumerator();
 
 
