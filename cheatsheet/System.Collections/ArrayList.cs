@@ -88,6 +88,15 @@ list.Insert(index, value);
 public virtual void InsertRange (int index, System.Collections.ICollection c);
 list.InsertRange(index, c);
 
+//Returns the zero-based index of the last occurrence of a value in the ArrayList or in a portion of it.
+public virtual int LastIndexOf (object? value);
+int i = list.LastIndexOf(value);
+
+public virtual int LastIndexOf (object? value, int startIndex);
+int i = list.LastIndexOf(value, start);    //start: starting index of the search
+
+public virtual int LastIndexOf (object? value, int startIndex, int count);
+int i = list.LastIndexOf(value, start, count);   //count: the number of elements in the section to search.
 
 
 
