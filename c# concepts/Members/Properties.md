@@ -4,9 +4,8 @@
 
 Properties **enable a class to expose a public way of getting and setting values**,  while hiding implementation or verification code.  Properties combine aspects of both **fields** and **methods**.
 
-<aside>
-💬 類似field, 但可public 得到和設定其value
-</aside>
+
+> 💬 Similar to `Field`, but `public`let us to `get` and `set` the value.
 
 - Properties **enable a class to expose a public way of getting and setting values**, while hiding implementation or verification code.
 - A [get](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/get) property accessor is used to **return the property value**, and a [set](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/set) property accessor is used to **assign a new value**. These accessors can have different access levels. For more information, see [Restricting Accessor Accessibility](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/restricting-accessor-accessibility).**
