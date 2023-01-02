@@ -117,6 +117,8 @@ list.RemoveAt(index);
 public virtual void RemoveRange (int index, int count);
 list.RemoveRange(index, count);
 
-
+//Returns an ArrayList whose elements are copies of the specified value
+public static System.Collections.ArrayList Repeat (object? value, int count);
+ArrayList list = list.Repeat(value, count);
 
 
