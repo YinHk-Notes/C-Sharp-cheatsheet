@@ -98,8 +98,9 @@ int i = list.LastIndexOf(value, start);    //start: starting index of the search
 public virtual int LastIndexOf (object? value, int startIndex, int count);
 int i = list.LastIndexOf(value, start, count);   //count: the number of elements in the section to search.
 
-
-
+//Returns a list wrapper that is "read-only".
+public static System.Collections.ArrayList ReadOnly (System.Collections.ArrayList list);
+ArrayList listWrapper = list.ReadOnly(list);
 
 
 
