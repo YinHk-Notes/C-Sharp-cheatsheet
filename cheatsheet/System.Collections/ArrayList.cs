@@ -106,5 +106,16 @@ public static System.Collections.IList ReadOnly (System.Collections.IList list);
 IList listWrapper = list.ReadOnly(list);
 
 //Removes the first occurrence of a specific object from the ArrayList.
+public virtual void Remove (object? obj);
+list.Remove(value);
+
+//Removes the element at the specified index of the ArrayList.
+public virtual void RemoveAt (int index);
+list.RemoveAt(index);
+
+
+
+
+
 
 
