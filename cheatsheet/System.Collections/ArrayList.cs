@@ -81,10 +81,12 @@ public virtual int IndexOf (object? value, int startIndex, int count);
 int i = list.IndexOf(value, start, count);   //count: the number of elements in the section to search.
 
 //Inserts an element into the ArrayList at the specified index
+public virtual void Insert (int index, object? value);
+list.Insert(index, value);
 
-
-
-
+//Inserts the elements of a collection into the ArrayList at the specified index.
+public virtual void InsertRange (int index, System.Collections.ICollection c);
+list.InsertRange(index, c);
 
 
 
