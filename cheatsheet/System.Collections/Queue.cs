@@ -34,10 +34,8 @@ public virtual object? Dequeue ();
 //Adds an object to the end of the Queue.
 public virtual void Enqueue (object? obj);
 
-
-
-
-
+//Returns an enumerator that iterates through the Queue.
+public virtual System.Collections.IEnumerator GetEnumerator ();
 
 
 
