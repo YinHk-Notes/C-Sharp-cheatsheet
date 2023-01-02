@@ -1,11 +1,11 @@
-// Implements the IList interface using an array whose size is dynamically increased as required.
-// Inheritance: Object -> ArrayList
-// Derived: System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection
-// Implements: ICollection, IEnumerable, IList, ICloneable
+//Implements the IList interface using an array whose size is dynamically increased as required.
+//Inheritance: Object -> ArrayList
+//Derived: System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection
+//Implements: ICollection, IEnumerable, IList, ICloneable
 
 using System.Collections;
 
-// Declare an ArrayList
+//Declare an ArrayList
 ArrayList list = new ArrayList();               //empty and has the default capacity.
 ArrayList list = new ArrayList(ICollection c);  //contains elements copied from the specified collection and that has the same initial capacity as the number of elements copied.
 ArrayList list = new ArrayList(int capacity);   //empty and has the specified initial capacity.
@@ -44,6 +44,19 @@ list.Clone();
 //Check whether an element is in the ArrayList, return true or false
 public virtual bool Contains (object? item);
 list.Contains(element);
+
+//Copies the entire ArrayList to an Array
+public virtual void CopyTo (Array array);
+list.CopyTo(array);   //tarting at the beginning of the target array.
+
+public virtual void CopyTo (Array array, int arrayIndex);
+list.CopyTo(array, arrayIndex);  //index in array at which copying begins
+
+public virtual void CopyTo (int index, Array array, int arrayIndex, int count);
+list.CopyTo(index, array, arrayIndex, count);
+
+
+
 
 
 
