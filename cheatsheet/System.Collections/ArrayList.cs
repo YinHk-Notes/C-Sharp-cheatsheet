@@ -154,8 +154,7 @@ public virtual Array ToArray (Type type);          //The element Type of the des
 int[] array = (int[]) list.ToArray( typeof( integer ) );
 String array = (String[]) list.ToArray( typeof( string ) );
 
-
-
-
-
+//Sets the capacity to the actual number of elements in the ArrayList.
+public virtual void TrimToSize ();
+list.TrimToSize();
 
