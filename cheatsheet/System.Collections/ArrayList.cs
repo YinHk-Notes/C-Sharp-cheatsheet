@@ -146,8 +146,13 @@ list.sort(index, count, comparer);      //Sorts the elements in a range of eleme
 public static System.Collections.ArrayList Synchronized (System.Collections.ArrayList list);
 ArrayList.Synchronized(list);
 
+//Copies the elements of the ArrayList to a new array
+public virtual object?[] ToArray ();
+object?[] array = list.ToArray();
 
-
+public virtual Array ToArray (Type type);          //The element Type of the destination array to create and copy elements to.
+int[] array = (int[]) list.ToArray( typeof( integer ) );
+String array = (String[]) list.ToArray( typeof( string ) );
 
 
 
