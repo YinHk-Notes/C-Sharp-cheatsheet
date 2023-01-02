@@ -49,4 +49,3 @@ public virtual object?[] ToArray ();
 //Sets the capacity to the actual number of elements in the Queue.
 public virtual void TrimToSize ();
 
-
