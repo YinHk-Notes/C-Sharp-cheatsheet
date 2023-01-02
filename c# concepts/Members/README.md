@@ -50,7 +50,8 @@ Properties **enable a class to expose a public way of getting and setting values
 **syntax:**
 
 ```csharp
-<Access Specifier> <Return Type> <property Name>{
+<Access Specifier> <Return Type> <property Name>
+{
 	get{ return the field’s value  ;}
 	set{  the field’s variable  = value;}
 }
@@ -62,14 +63,17 @@ Eg:
 
 class Person{
   
-	private string name; // field
-  public string Name   // property{
+  private string name; // field
+  public string Name   // property
+  {
     get { return name; }
     set { name = value; }
   }
 }
-class Program{
-  static void Main(string[] args){
+class Program
+{
+  static void Main(string[] args)
+  {
 
     Person myObj = new Person();
     myObj.Name = "Liam";
@@ -82,12 +86,15 @@ class Program{
 **OR**
 
 ```csharp
-class Person{
+class Person
+{
   public string Name  // property
   { get; set; }
 }
-class Program{
-  static void Main(string[] args){
+class Program
+{
+  static void Main(string[] args)
+  {
 
     Person myObj = new Person();
     myObj.Name = "Liam";
