@@ -37,6 +37,16 @@ public virtual void Enqueue (object? obj);
 //Returns an enumerator that iterates through the Queue.
 public virtual System.Collections.IEnumerator GetEnumerator ();
 
+//Returns the object at the beginning of the Queue without removing it.
+public virtual object? Peek ();
 
+//Returns a new Queue that wraps the original queue, and is thread safe.
+public static System.Collections.Queue Synchronized (System.Collections.Queue queue);
+
+//Copies the Queue elements to a new array.
+public virtual object?[] ToArray ();
+
+//Sets the capacity to the actual number of elements in the Queue.
+public virtual void TrimToSize ();
 
 
