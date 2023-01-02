@@ -27,7 +27,7 @@ public string day;
 ### Constant
 
 Constants are **declared with the const modifier.**
-Constants are immutable values which are known at compile time and do not change for the life of the program. Constants are declared with the const modifier. Only the C# built-in types (excluding [System.Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) may be declared as const. eg
+Constants are immutable values which are known at compile time and do not change for the life of the program. Constants are declared with the const modifier. **Only the C# built-in types** (excluding [System.Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) **may be declared as `const`**. eg
 
 ```csharp
 const int months = 12;
