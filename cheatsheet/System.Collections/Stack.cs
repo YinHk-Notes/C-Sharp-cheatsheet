@@ -32,6 +32,15 @@ public virtual void CopyTo (Array array, int index);
 //Returns an IEnumerator for the Stack.
 public virtual System.Collections.IEnumerator GetEnumerator ();
 
+//Returns the object at the top of the Stack without removing it.
+public virtual object? Peek ();
+
+//Removes and returns the object at the top of the Stack.
+public virtual object? Pop ();
+
+
+
+
 
 
 
