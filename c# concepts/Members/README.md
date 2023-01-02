@@ -52,8 +52,8 @@ Properties **enable a class to expose a public way of getting and setting values
 ```csharp
 <Access Specifier> <Return Type> <property Name>
 {
-	get{ return the field’s value  ;}
-	set{  the field’s variable  = value;}
+	get{ return the field’s value; }
+	set{ the field’s variable  = value; }
 }
 ```
 
@@ -103,24 +103,18 @@ class Program
 }
 ```
 
-<aside>
-💬 Propety’s name is **same** to the field’s name, but need to **capitalize first word**.
 
-</aside>
+> 💬 Propety’s name is **same** to the field’s name, but need to **capitalize first word**.
+
+
 
 **The get accessor:** 
 
-<aside>
-📌 The body of the get accessor resembles that of a method. It must **return a value of the property type**.
-</aside>
+> 📌 The body of the get accessor resembles that of a method. It must **return a value of the property type**.
 
 **The set accessor:** 
 
-<aside>
-📌 a method whose return type is [void](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/void). It uses an implicit parameter called value, whose type is the type of the property.
-</aside>
-
-
+> 📌 a method whose return type is [void](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/void). It uses an implicit parameter called value, whose type is the type of the property.
 
 
 
