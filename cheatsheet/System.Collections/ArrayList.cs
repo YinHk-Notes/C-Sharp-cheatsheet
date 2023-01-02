@@ -128,10 +128,19 @@ list.Reverse();
 public virtual void Reverse (int index, int count);
 list.Reverse(index, count);       //Reverses the order of the elements in the specified range 
 
+//Copies the elements of a collection over a range of elements in the ArrayList.
+public virtual void SetRange (int index, System.Collections.ICollection c);
+list.SetRange(index, c);         
 
+//Sorts the elements in the ArrayList or a portion of it.
+public virtual void Sort ();
+list.sort();
 
+public virtual void Sort (System.Collections.IComparer? comparer);
+list.sort(comparer);      //Sorts the elements in the entire ArrayList using the specified comparer.
 
-
+public virtual void Sort (int index, int count, System.Collections.IComparer? comparer);
+list.sort(index, count, comparer);      //Sorts the elements in a range of elements in ArrayList using the specified comparer.
 
 
 
