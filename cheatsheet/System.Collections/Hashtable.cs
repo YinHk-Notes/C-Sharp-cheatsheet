@@ -41,9 +41,16 @@ public virtual bool ContainsKey (object key);
 //Determines whether the Hashtable contains a specific value.
 public virtual bool ContainsValue (object? value);
 
+//Determines whether the Hashtable contains a specific value.
+public virtual bool ContainsValue (object? value);
 
+//Copies the Hashtable elements to a one-dimensional Array instance at the specified index.
+public virtual void CopyTo (Array array, int arrayIndex);
 
+//Returns an IDictionaryEnumerator that iterates through the Hashtable.
+public virtual System.Collections.IDictionaryEnumerator GetEnumerator ();
 
+//Returns the hash code for the specified key.
 
 
 
