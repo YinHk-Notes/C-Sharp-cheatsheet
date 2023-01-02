@@ -70,6 +70,23 @@ IEnumerator e = list.GetEnumerator();
 public virtual System.Collections.ArrayList GetRange (int index, int count);
 ArrayList subList = list.GetRange(index, count);      //index: starting, count: number of elements in the range.
 
+//Returns index of the first occurrence of a element in the ArrayList.
+public virtual int IndexOf (object? value);
+int i = list.IndexOf(value);
+
+public virtual int IndexOf (object? value, int startIndex);
+int i = list.IndexOf(value, start);   //start: starting index of the search
+
+public virtual int IndexOf (object? value, int startIndex, int count);
+int i = list.IndexOf(value, start, count);   //count: the number of elements in the section to search.
+
+//Inserts an element into the ArrayList at the specified index
+
+
+
+
+
+
 
 
 
