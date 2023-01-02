@@ -57,10 +57,10 @@ list.CopyTo(index, array, arrayIndex, count);
 
 //Returns a list wrapper with a fixed size, where elements are allowed to be modified, but not added or removed.
 public static System.Collections.ArrayList FixedSize (System.Collections.ArrayList list);
-list.FixedSize(list);
+ArrayList.FixedSize(list);
 
 public static System.Collections.IList FixedSize (System.Collections.IList list);
-list.FixedSiz(list);
+ArrayList.FixedSiz(list);
 
 //Returns an enumerator that iterates through the ArrayList.
 public virtual System.Collections.IEnumerator GetEnumerator ();
@@ -100,10 +100,10 @@ int i = list.LastIndexOf(value, start, count);   //count: the number of elements
 
 //Returns a list wrapper that is "read-only".
 public static System.Collections.ArrayList ReadOnly (System.Collections.ArrayList list);
-ArrayList listWrapper = list.ReadOnly(list);   //Returns a read-only ArrayList wrapper.
+ArrayList listWrapper = ArrayList.ReadOnly(list);   //Returns a read-only ArrayList wrapper.
 
 public static System.Collections.IList ReadOnly (System.Collections.IList list);
-IList listWrapper = list.ReadOnly(list);
+IList listWrapper = ArrayList.ReadOnly(list);
 
 //Removes the first occurrence of a specific object from the ArrayList.
 public virtual void Remove (object? obj);
@@ -119,7 +119,7 @@ list.RemoveRange(index, count);
 
 //Returns an ArrayList whose elements are copies of the specified value.
 public static System.Collections.ArrayList Repeat (object? value, int count);
-ArrayList list = list.Repeat(value, count);
+ArrayList list = ArrayList.Repeat(value, count);
 
 //Reverses the order of the elements in the ArrayList or a portion of it.
 public virtual void Reverse ();
