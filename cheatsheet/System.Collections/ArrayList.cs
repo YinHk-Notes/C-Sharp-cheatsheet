@@ -113,8 +113,9 @@ list.Remove(value);
 public virtual void RemoveAt (int index);
 list.RemoveAt(index);
 
-
-
+//Removes a range of elements from the ArrayList.
+public virtual void RemoveRange (int index, int count);
+list.RemoveRange(index, count);
 
 
 
