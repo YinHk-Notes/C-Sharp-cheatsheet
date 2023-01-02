@@ -10,6 +10,14 @@ ArrayList list = new ArrayList();               //empty and has the default capa
 ArrayList list = new ArrayList(ICollection c);  //contains elements copied from the specified collection and that has the same initial capacity as the number of elements copied.
 ArrayList list = new ArrayList(int capacity);   //empty and has the specified initial capacity.
 
+//Properties
+public virtual int Capacity { get; set; }       //Gets or sets the number of elements that the ArrayLis can contain.
+public virtual int Count { get; }               //Gets the number of elements in the ArrayList.
+public virtual bool IsFixedSize { get; }        //Gets a value indicating whether the ArrayList has a fixed size.
+public virtual bool IsReadOnly { get; }         //Gets a value indicating whether the ArrayList is read-only.
+public virtual bool IsSynchronized { get; }     //Gets a value indicating whether access to the ArrayList is synchronized.
+public virtual object? this[int index] { get; set; }    //Gets or sets the element at the specified index.
+
 
 //Add an object o to the end of of the ArrayList, return the index of the value to be added.
 public virtual int Add (object? value);
