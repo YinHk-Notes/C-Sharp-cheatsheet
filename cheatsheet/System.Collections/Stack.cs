@@ -38,20 +38,13 @@ public virtual object? Peek ();
 //Removes and returns the object at the top of the Stack.
 public virtual object? Pop ();
 
+//Inserts an object at the top of the Stack.
+public virtual void Push (object? obj);
 
+//Returns a synchronized (thread safe) wrapper for the Stack.
+public static System.Collections.Stack Synchronized (System.Collections.Stack stack);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+//Copies the Stack to a new array.
+public virtual object?[] ToArray ();
 
 
