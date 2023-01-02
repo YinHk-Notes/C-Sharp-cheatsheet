@@ -100,10 +100,11 @@ int i = list.LastIndexOf(value, start, count);   //count: the number of elements
 
 //Returns a list wrapper that is "read-only".
 public static System.Collections.ArrayList ReadOnly (System.Collections.ArrayList list);
-ArrayList listWrapper = list.ReadOnly(list);
+ArrayList listWrapper = list.ReadOnly(list);   //Returns a read-only ArrayList wrapper.
 
+public static System.Collections.IList ReadOnly (System.Collections.IList list);
+IList listWrapper = list.ReadOnly(list);
 
-
-
+//Removes the first occurrence of a specific object from the ArrayList.
 
 
