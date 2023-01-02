@@ -142,5 +142,15 @@ list.sort(comparer);      //Sorts the elements in the entire ArrayList using the
 public virtual void Sort (int index, int count, System.Collections.IComparer? comparer);
 list.sort(index, count, comparer);      //Sorts the elements in a range of elements in ArrayList using the specified comparer.
 
+//Returns a list wrapper that is synchronized (thread safe).
+public static System.Collections.ArrayList Synchronized (System.Collections.ArrayList list);
+ArrayList.Synchronized(list);
+
+
+
+
+
+
+
 
 
