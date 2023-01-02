@@ -66,4 +66,15 @@ list.FixedSiz(list);
 public virtual System.Collections.IEnumerator GetEnumerator ();
 IEnumerator e = list.GetEnumerator();
 
+//Returns an ArrayList which represents a subset of the elements in the source ArrayList
+public virtual System.Collections.ArrayList GetRange (int index, int count);
+ArrayList subList = list.GetRange(index, count);      //index: starting, count: number of elements in the range.
+
+
+
+
+
+
+
+
 
