@@ -46,5 +46,3 @@ public static System.Collections.Stack Synchronized (System.Collections.Stack st
 
 //Copies the Stack to a new array.
 public virtual object?[] ToArray ();
-
-
