@@ -83,6 +83,36 @@ public static int FindLastIndex<T> (T[] array, Predicate<T> match);
 public static int FindLastIndex<T> (T[] array, int startIndex, Predicate<T> match);
 public static int FindLastIndex<T> (T[] array, int startIndex, int count, Predicate<T> match);
 
+//Performs the specified action on each element of the specified array.
+public static void ForEach<T> (T[] array, Action<T> action);
+
+//Returns an IEnumerator for the Array.
+public System.Collections.IEnumerator GetEnumerator ();
+
+//Gets a 32-bit integer that represents the number of elements in the specified dimension of the Array.
+public int GetLength (int dimension);
+
+//Gets a 64-bit integer that represents the number of elements in the specified dimension of the Array.
+public long GetLongLength (int dimension);
+  
+//Gets the index of the first element of the specified dimension in the array.
+public int GetLowerBound (int dimension);
+
+//Gets the index of the last element of the specified dimension in the array.
+public int GetUpperBound (int dimension);
+
+//Gets the value of the specified element in the current Array.
+public object? GetValue (int index);
+
+//Searches for the specified object and returns the index of its first occurrence
+public static int IndexOf (Array array, object? value);
+public static int IndexOf<T> (T[] array, T value);
+
+//Returns the index of the last occurrence of a value
+public static int LastIndexOf (Array array, object? value);
+public static int LastIndexOf<T> (T[] array, T value);
+
+//
 
 
 
