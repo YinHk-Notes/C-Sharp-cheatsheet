@@ -56,7 +56,7 @@ public void CopyTo (Array array, long index);
 public static T[] Empty<T> ();
 
 //Determines whether the specified array contains elements that match the conditions defined by the specified predicate
-public static bool Exists<T> (T[] array, Predicate<T> match);
+public static bool Exists<T> (T[] array, Predicate<T> match);    //The Predicate<T> that defines the conditions of the elements to search for.
 
 //Assigns the given value of type to the elements of the specified array which are within the range of startIndex (inclusive) and the next count number of indices.
 public static void Fill<T> (T[] array, T value, int startIndex, int count);
@@ -65,7 +65,31 @@ public static void Fill<T> (T[] array, T value, int startIndex, int count);
 public static void Fill<T> (T[] array, T value);
 
 //Searches for an element and returns the first occurrence.
-public static T? Find<T> (T[] array, Predicate<T> match);
+public static T? Find<T> (T[] array, Predicate<T> match);      //The Predicate<T> that defines the conditions of the elements to search for.
+
+//Retrieves all the elements that match the conditions defined by the specified predicate.
+public static T[] FindAll<T> (T[] array, Predicate<T> match);
+
+//Searches for an element that matches the conditions defined by a specified predicate, and returns the index of the first occurrence.
+public static int FindIndex<T> (T[] array, Predicate<T> match);
+public static int FindIndex<T> (T[] array, int startIndex, Predicate<T> match);  
+public static int FindIndex<T> (T[] array, int startIndex, int count, Predicate<T> match);
+
+//Searches for an element that matches the conditions defined by the specified predicate, and returns the last occurrence.
+public static T? FindLast<T> (T[] array, Predicate<T> match);
+
+//Searches for an element that matches the conditions defined by a specified predicate, and returns the index of the last occurrence.
+public static int FindLastIndex<T> (T[] array, Predicate<T> match);
+public static int FindLastIndex<T> (T[] array, int startIndex, Predicate<T> match);
+public static int FindLastIndex<T> (T[] array, int startIndex, int count, Predicate<T> match);
+
+
+
+
+
+
+
+
 
 
 
