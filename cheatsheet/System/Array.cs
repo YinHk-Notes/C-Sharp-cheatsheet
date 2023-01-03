@@ -55,8 +55,17 @@ public void CopyTo (Array array, long index);
 //Returns an empty array.
 public static T[] Empty<T> ();
 
-//
+//Determines whether the specified array contains elements that match the conditions defined by the specified predicate
+public static bool Exists<T> (T[] array, Predicate<T> match);
 
+//Assigns the given value of type to the elements of the specified array which are within the range of startIndex (inclusive) and the next count number of indices.
+public static void Fill<T> (T[] array, T value, int startIndex, int count);
+
+//Assigns the given value of type T to each element of the specified array.
+public static void Fill<T> (T[] array, T value);
+
+//Searches for an element and returns the first occurrence.
+public static T? Find<T> (T[] array, Predicate<T> match);
 
 
 
