@@ -104,6 +104,9 @@ public int GetUpperBound (int dimension);
 //Gets the value of the specified element in the current Array.
 public object? GetValue (int index);
 
+//Sets the specified element in the current Array to the specified value.
+public void SetValue (object? value, int index);
+
 //Searches for the specified object and returns the index of its first occurrence
 public static int IndexOf (Array array, object? value);
 public static int IndexOf<T> (T[] array, T value);
@@ -112,7 +115,15 @@ public static int IndexOf<T> (T[] array, T value);
 public static int LastIndexOf (Array array, object? value);
 public static int LastIndexOf<T> (T[] array, T value);
 
-//
+//Changes the number of elements of an array to the specified new size.
+public static void Resize<T> (ref T[]? array, int newSize);
+
+//Reverses the order of the elements in a one-dimensional Array or in a portion of the Array.
+public static void Reverse (Array array);
+public static void Reverse (Array array, int index, int length);  ////Reverses the sequence of a subset of the elements in the array.
+public static void Reverse<T> (T[] array);
+public static void Reverse<T> (T[] array, int index, int length);
+
 
 
 
