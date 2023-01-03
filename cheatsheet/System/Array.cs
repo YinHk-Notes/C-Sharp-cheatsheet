@@ -39,6 +39,19 @@ public object Clone ();
 //opies a range of elements from an Array starting at the specified source index and pastes them to another Array starting at the specified destination index. Guarantees that all changes are undone if the copy does not succeed completely.
 public static void ConstrainedCopy (Array sourceArray, int sourceIndex, Array destinationArray, int destinationIndex, int length);
 
+//Converts an array of one type to an array of another type.
+public static TOutput[] ConvertAll<TInput,TOutput> (TInput[] array, Converter<TInput,TOutput> converter);
+
+//金onverts an array of one type to an array of another type.
+public static TOutput[] ConvertAll<TInput,TOutput> (TInput[] array, Converter<TInput,TOutput> converter);
+
+//
+
+
+
+
+
+
 
 
 
