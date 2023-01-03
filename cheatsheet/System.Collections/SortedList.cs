@@ -29,6 +29,9 @@ public virtual System.Collections.ICollection Values { get; } //Gets the values 
 //Adds an element with the specified key and value to a SortedList object.
 public virtual void Add (object key, object? value);
 
+//Removes the element with the specified key from a SortedList object.
+public virtual void Remove (object key);
+
 //Removes all elements from a SortedList object.
 public virtual void Clear ();
 
@@ -50,10 +53,23 @@ public virtual void CopyTo (Array array, int arrayIndex);
 //Gets the value at the specified index of a SortedList object.
 public virtual object? GetByIndex (int index);
 
+//Returns an IDictionaryEnumerator object that iterates through a SortedList object.
+public virtual System.Collections.IDictionaryEnumerator GetEnumerator ();
 
+//Gets the key at the specified index of a SortedList object.
+public virtual object GetKey (int index);
 
+//Gets the keys in a SortedList object.
+public virtual System.Collections.IList GetKeyList ();
 
+//Gets the values in a SortedList object.
+public virtual System.Collections.IList GetValueList ();
 
+//Returns the zero-based index of the specified key in a SortedList object.
+public virtual int IndexOfKey (object key);
+
+//Returns the zero-based index of the first occurrence of the specified value in a SortedList object.
+public virtual int IndexOfValue (object? value);
 
 
 
