@@ -1,7 +1,10 @@
 ## System.Collections.Generic
 Contains interfaces and classes that define generic collections, which allow users to create strongly typed collections that provide better type safety and performance than non-generic strongly typed collections.
 
+The `System.Collections` namespace contains the non-generic collection types and `System.Collections.Generic` namespace includes generic collection types.
 
+> In most cases, it is recommended to **use the generic collections** because they perform faster than non-generic collections and also minimize exceptions by giving compile-time errors.
+> 
 ### Useful generic collection
 | Generic Collections | Description |
 | --- | --- |
