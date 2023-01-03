@@ -32,6 +32,45 @@ public virtual void Add (object key, object? value);
 //Removes all elements from a SortedList object.
 public virtual void Clear ();
 
+//Creates a shallow copy of a SortedList object.
+public virtual object Clone ();
+
+//Determines whether a SortedList object contains a specific key.
+public virtual bool Contains (object key);
+
+//Determines whether a SortedList object contains a specific key.
+public virtual bool ContainsKey (object key);
+
+//Determines whether a SortedList object contains a specific value.
+public virtual bool ContainsValue (object? value);
+
+//Copies SortedList elements to a one-dimensional Array object, starting at the specified index in the array.
+public virtual void CopyTo (Array array, int arrayIndex);
+
+//Gets the value at the specified index of a SortedList object.
+public virtual object? GetByIndex (int index);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
