@@ -124,8 +124,14 @@ public static void Reverse (Array array, int index, int length);  ////Reverses t
 public static void Reverse<T> (T[] array);
 public static void Reverse<T> (T[] array, int index, int length);
 
-
-
+//Sorts the elements in an array.
+public static void Sort (Array array);   //using the IComparable implementation.
+public static void Sort (Array array, System.Collections.IComparer? comparer);  //using the specified IComparer.
+public static void Sort (Array keys, Array? items, int index, int length);  //using the IComparable implementation of each key.
+public static void Sort (Array keys, Array? items, int index, int length, System.Collections.IComparer? comparer); //using the specified IComparer.
+public static void Sort<T> (T[] array);
+public static void Sort<T> (T[] array, System.Collections.Generic.IComparer<T>? comparer);
+public static void Sort<T> (T[] array, Comparison<T> comparison);
 
 
 
