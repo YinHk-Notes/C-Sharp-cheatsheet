@@ -133,20 +133,6 @@ public static void Sort<T> (T[] array);
 public static void Sort<T> (T[] array, System.Collections.Generic.IComparer<T>? comparer);
 public static void Sort<T> (T[] array, Comparison<T> comparison);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//Determines whether every element in the array matches the conditions defined by the specified predicate.
+public static bool TrueForAll<T> (T[] array, Predicate<T> match);
 
