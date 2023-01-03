@@ -32,6 +32,9 @@ public virtual void Add (object key, object? value);
 //Removes the element with the specified key from a SortedList object.
 public virtual void Remove (object key);
 
+//Removes the element at the specified index of a SortedList object.
+public virtual void RemoveAt (int index);
+
 //Removes all elements from a SortedList object.
 public virtual void Clear ();
 
@@ -71,26 +74,12 @@ public virtual int IndexOfKey (object key);
 //Returns the zero-based index of the first occurrence of the specified value in a SortedList object.
 public virtual int IndexOfValue (object? value);
 
+//Replaces the value at a specific index in a SortedList object.
+public virtual void SetByIndex (int index, object? value);
 
+//Returns a synchronized (thread-safe) wrapper for a SortedList object.
+public static System.Collections.SortedList Synchronized (System.Collections.SortedList list);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//Sets the capacity to the actual number of elements in a SortedList object.
+public virtual void TrimToSize ();
 
