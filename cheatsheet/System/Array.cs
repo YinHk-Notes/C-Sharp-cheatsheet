@@ -42,10 +42,21 @@ public static void ConstrainedCopy (Array sourceArray, int sourceIndex, Array de
 //Converts an array of one type to an array of another type.
 public static TOutput[] ConvertAll<TInput,TOutput> (TInput[] array, Converter<TInput,TOutput> converter);
 
-//金onverts an array of one type to an array of another type.
+//Converts an array of one type to an array of another type.
 public static TOutput[] ConvertAll<TInput,TOutput> (TInput[] array, Converter<TInput,TOutput> converter);
 
+//Copies a range of elements in one Array to another Array and performs type casting and boxing as required.
+public static void Copy (Array sourceArray, Array destinationArray, int length);
+
+//Copies all the elements of the current one-dimensional array to the specified one-dimensional array.
+public void CopyTo (Array array, int index);
+public void CopyTo (Array array, long index);
+
+//Returns an empty array.
+public static T[] Empty<T> ();
+
 //
+
 
 
 
