@@ -182,6 +182,28 @@ public class Person
 }
 ```
 
+**Computed properties** \
+```cs
+public class Person
+{
+    public string FirstName { get; set; }
+
+    public string LastName { get; set; }
+
+    public string FullName { get { return $"{FirstName} {LastName}"; } }
+}
+
+//or
+public class Person
+{
+    public string FirstName { get; set; }
+
+    public string LastName { get; set; }
+
+    public string FullName => $"{FirstName} {LastName}";
+}
+```
+
 > 💬 Propety’s name is **same** to the field’s name, but need to **capitalize first word**.
 
 
