@@ -141,6 +141,19 @@ public class Person
 }
 ```
 
+**Read-only** \
+You can also restrict modifications to a property so that it can only be set in a constructor.
+```cs
+public class Person
+{
+    public Person(string firstName) => FirstName = firstName;
+
+    public string FirstName { get; }
+
+    // Omitted for brevity.
+}
+```
+
 > 💬 Propety’s name is **same** to the field’s name, but need to **capitalize first word**.
 
 
