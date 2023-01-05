@@ -66,7 +66,7 @@ class Program
   }
 }
 ```
-
+When a property implementation is a single expression, you can use **expression-bodied members** for the `getter` or `setter`:
 
 Eg:
 ```cs
