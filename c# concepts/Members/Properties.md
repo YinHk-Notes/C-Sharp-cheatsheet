@@ -112,6 +112,20 @@ public class Person
 
     // Omitted for brevity.
 }
+
+//or 
+
+public class Person
+{
+    public string FirstName
+    {
+        get => _firstName;
+        set => _firstName = (!string.IsNullOrWhiteSpace(value)) ? value : throw new ArgumentException("First name must not be blank");
+    }
+    private string _firstName;
+
+    // Omitted for brevity.
+}
 ```
 
 > 💬 Propety’s name is **same** to the field’s name, but need to **capitalize first word**.
