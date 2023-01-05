@@ -154,6 +154,34 @@ public class Person
 }
 ```
 
+**Init-only** \
+Callers can't use object initializers to assign a value to the property. To support initializers, you can make the set accessor an init accessor.
+```cs
+public class Person
+{
+    public Person() { }
+    public Person(string firstName) => FirstName = firstName;
+
+    public string FirstName { get; init; }
+
+    // Omitted for brevity.
+}
+```
+The preceding example allows a caller to create a Person using the default constructor, even when that code doesn't set the FirstName property. Beginning in C# 11, you can require callers to set that property:
+```cs
+public class Person
+{
+    public Person() { }
+
+    [SetsRequiredMembers]
+    public Person(string firstName) => FirstName = firstName;
+
+    public required string FirstName { get; init; }
+
+    // Omitted for brevity.
+}
+```
+
 > 💬 Propety’s name is **same** to the field’s name, but need to **capitalize first word**.
 
 
