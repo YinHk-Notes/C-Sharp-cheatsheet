@@ -204,6 +204,66 @@ public class Person
 }
 ```
 
+**Cached evaluated properties** \
+```cs
+public class Person
+{
+    public string FirstName { get; set; }
+
+    public string LastName { get; set; }
+
+    private string _fullName;
+    public string FullName
+    {
+        get
+        {
+            if (_fullName is null)
+                _fullName = $"{FirstName} {LastName}";
+            return _fullName;
+        }
+    }
+}
+
+
+public class Person
+{
+    private string _firstName;
+    public string FirstName
+    {
+        get => _firstName;
+        set
+        {
+            _firstName = value;
+            _fullName = null;
+        }
+    }
+
+    private string _lastName;
+    public string LastName
+    {
+        get => _lastName;
+        set
+        {
+            _lastName = value;
+            _fullName = null;
+        }
+    }
+
+    private string _fullName;
+    public string FullName
+    {
+        get
+        {
+            if (_fullName is null)
+                _fullName = $"{FirstName} {LastName}";
+            return _fullName;
+        }
+    }
+}
+```
+
+
+
 > 💬 Propety’s name is **same** to the field’s name, but need to **capitalize first word**.
 
 
