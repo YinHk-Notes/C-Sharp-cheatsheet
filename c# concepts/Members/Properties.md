@@ -131,8 +131,8 @@ public class Person
 **Access control** \
 You can create read-only properties, or give different accessibility to the `set` and `get` accessors
 ```cs
-//Suppose that your Person class should only enable changing the value of the FirstName property from other methods in that class. 
-//You could give the set accessor private accessibility instead of publi
+//Suppose that your Person class should only enable changing the value of the FirstName property from other methods 
+//in that class. You could give the set accessor private accessibility instead of public
 public class Person
 {
     public string FirstName { get; private set; }
