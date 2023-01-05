@@ -52,8 +52,8 @@ class Program
 ```csharp
 class Person
 {
-  public string Name  // property
-  { get; set; }
+  //property
+  public string Name  { get; set; }
 }
 class Program
 {
