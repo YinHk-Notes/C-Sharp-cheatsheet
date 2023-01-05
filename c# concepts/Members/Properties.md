@@ -1,7 +1,5 @@
 ## Properties
 
-### Properties
-
 Properties **enable a class to expose a public way of getting and setting values**,  while hiding implementation or verification code.  Properties combine aspects of both **fields** and **methods**.
 
 
@@ -92,6 +90,27 @@ public class SaleItem
         get => _cost;
         set => _cost = value;
     }
+}
+```
+
+**Validation** \
+You can write code in the set accessor to ensure that the values represented by a property are always valid.
+```cs
+public class Person
+{
+    public string FirstName
+    {
+        get => _firstName;
+        set
+        {
+            if (string.IsNullOrWhiteSpace(value))
+                throw new ArgumentException("First name must not be blank");
+            _firstName = value;
+        }
+    }
+    private string _firstName;
+
+    // Omitted for brevity.
 }
 ```
 
