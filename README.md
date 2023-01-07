@@ -14,7 +14,8 @@ https://github.com/dotnet/sdk \
 https://dotnet.microsoft.com/en-us/download
 
 ### .NET doc
-https://learn.microsoft.com/en-us/dotnet/
+https://learn.microsoft.com/en-us/dotnet/ \
+https://learn.microsoft.com/zh-tw/dotnet/fundamentals/
 
 ### .NET API Reference
 https://learn.microsoft.com/en-us/dotnet/api/?view=net-7.0
