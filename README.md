@@ -6,11 +6,12 @@ My learning note & material for C#
 ### .NET
 Application Framework. .NET is an open source developer platform for building desktop, web, and mobile applications and many different types of applications that can run natively on any operating system. With .NET, you can use multiple languages, editors, and libraries to build for web, mobile, desktop, games, IoT, and more. The .NET system includes tools, libraries, and languages that support modern, scalable, and high-performance software development. 
 
-https://dotnet.microsoft.com/zh-cn/
+https://dotnet.microsoft.com/zh-cn/ \
 https://aws.amazon.com/what-is/net/?nc1=h_ls
 
 ### .NET sdk
-https://github.com/dotnet/sdk
+https://github.com/dotnet/sdk \
+https://dotnet.microsoft.com/en-us/download
 
 ### .NET doc
 https://learn.microsoft.com/en-us/dotnet/
