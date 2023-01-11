@@ -106,6 +106,8 @@ uint y = x >> 2;
 |`?[]`|to perform a member or element access operation only if an operand is non-null. If a evaluates to null, the result of `a?.[x]` is null. If a evaluates to non-null, the result of `a?.[x]`|`a?.[x]`|
 |`()`|Use parentheses, (), to call a method or invoke a delegate.| `callback()` |
 |`^`|^ (index from end): to indicate that the element position is from the end of a sequence. For a sequence of length length, `^n` points to the element with offset length - n from the start of a sequence. For example, `^1` points to the last element of a sequence and `^length` points to the first element of a sequence.| var lines = new List<string> { "one", "two", "three", "four" }; string prelast = lines[^2]; //output: three|
+|`..`|specifies the start and end of a range of indices as its operands. The left-hand operand is an inclusive start of a range. The right-hand operand is an exclusive end of a range. `a.. is equivalent to a..^0`, `..b is equivalent to 0..b`, `.. is equivalent to 0..^0`|int[] numbers = new[] { 0, 10, 20, 30, 40, 50 }; int amountToDrop = numbers.Length / 2; int[] rightHalf = numbers[amountToDrop..]; // 30 40 50 |
+  
 
 ### `sizeof(type)` 
 The `sizeof()` operator returns the number of bytes occupied by a variable of a given type.
