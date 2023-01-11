@@ -103,8 +103,9 @@ uint y = x >> 2;
 |`.`|to access a member of a namespace or a type|`using System.Collections.Generic;`|
 |`[]`|to access an array element or a type indexer|`int[] fib = new int[10];`|
 |`?.`|to perform a member or element access operation only if an operand is non-null. If a evaluates to null, the result of `a?.x` is null. If a evaluates to non-null, the result of `a?.x`|`a?.x` |
-|?[]|to perform a member or element access operation only if an operand is non-null. If a evaluates to null, the result of `a?.[x]` is null. If a evaluates to non-null, the result of `a?.[x]`|`a?.[x]`|
-
+|`?[]`|to perform a member or element access operation only if an operand is non-null. If a evaluates to null, the result of `a?.[x]` is null. If a evaluates to non-null, the result of `a?.[x]`|`a?.[x]`|
+|`()`|Use parentheses, (), to call a method or invoke a delegate.| `callback()` |
+|`^`|^ (index from end): to indicate that the element position is from the end of a sequence. For a sequence of length length, `^n` points to the element with offset length - n from the start of a sequence. For example, `^1` points to the last element of a sequence and `^length` points to the first element of a sequence.| var lines = new List<string> { "one", "two", "three", "four" }; string prelast = lines[^2]; //output: three|
 
 ### `sizeof(type)` 
 The `sizeof()` operator returns the number of bytes occupied by a variable of a given type.
