@@ -147,7 +147,7 @@ Console.WriteLine(a);  //0
 ```
   
 ### Lambda expressions
-use a lambda expression to create an anonymous function. Use the lambda declaration operator => to separate the lambda's parameter list from its body.
+use a lambda expression to create an anonymous function. Use the **lambda declaration operator** `=>` to separate the lambda's parameter list from its body.
 
 ```cs
 (parameters) => expression  
@@ -163,7 +163,7 @@ Func<double, double> square = static x => x * x;
 https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-expressions
   
 ### `=>`
-The `=>` token is supported in two forms: as the lambda operator and as a separator of a member name and the member implementation in an expression body definition. 
+The `=>` token is supported in two forms: as the **lambda operator** and as a separator of a member name and the member implementation in an **expression body definition**. 
   
 
 https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/
