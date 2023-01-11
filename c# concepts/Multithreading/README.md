@@ -95,6 +95,7 @@ A process by default makes use of a single thread to run our application code bu
 The advantage is that the execution takes place simultaneously. So, when multiple threads try to execute the application code, then the operating system allocates some time period for each thread to execute.
 
 ```cs
+//Here, the main method is going to be executed by the Main thread and the Main thread is going to create the child threads.
 using System.Threading;
 using System;
 namespace ThreadingDemo
