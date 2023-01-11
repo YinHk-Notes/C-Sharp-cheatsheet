@@ -96,6 +96,15 @@ uint y = x >> 2;
 | ^= | bitwise exclusive OR and assignment operator | C ^= 2 is same as C = C ^ 2 |
 | l= | bitwise inclusive OR and assignment operator | C l= 2 is same as C = C l 2 |
 
+### Member access operators
+
+| Operator | Description | Example |
+| --- | --- | --- |
+|`.`|to access a member of a namespace or a type|`using System.Collections.Generic;`|
+|`[]`|to access an array element or a type indexer|`int[] fib = new int[10];`|
+|`?.`|to perform a member or element access operation only if an operand is non-null. If a evaluates to null, the result of `a?.x` is null. If a evaluates to non-null, the result of `a?.x`|`a?.x` |
+|?[]|to perform a member or element access operation only if an operand is non-null. If a evaluates to null, the result of `a?.[x]` is null. If a evaluates to non-null, the result of `a?.[x]`|`a?.[x]`|
+
 
 ### `sizeof(type)` 
 The `sizeof()` operator returns the number of bytes occupied by a variable of a given type.
