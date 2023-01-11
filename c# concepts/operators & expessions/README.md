@@ -78,7 +78,7 @@ A^B = 0011 0001
 | >>= | Right shift AND assignment operator | C >>= 2 is same as C = C >> 2 |
 | &= | Bitwise AND assignment operator | C &= 2 is same as C = C & 2 |
 | ^= | bitwise exclusive OR and assignment operator | C ^= 2 is same as C = C ^ 2 |
-| |= | bitwise inclusive OR and assignment operator | C |= 2 is same as C = C | 2 |
+| l= | bitwise inclusive OR and assignment operator | C l= 2 is same as C = C l 2 |
 
 
 
