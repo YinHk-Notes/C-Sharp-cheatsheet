@@ -35,7 +35,7 @@
 ### Bitwise operators
 Bitwise operator works on bits and perform bit by bit operation. The truth tables for `&`, `|`, and `^` are as follows:
 
-| p | q | p & q | p | q | p ^ q |
+| p | q | p & q | p l q | p ^ q |
 | --- | --- | --- | --- | --- |
 | 0 | 0 | 0 | 0 | 0 |
 | 0 | 1 | 0 | 1 | 1 |
