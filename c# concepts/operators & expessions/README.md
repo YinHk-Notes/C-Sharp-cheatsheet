@@ -132,7 +132,15 @@ Known as the **ternary conditional operator**. evaluates a Boolean expression an
 ```cs
  condition ? expressionA : expressionB //if true => expressionA, otherwise expressionB
 ```
-
+### `??` and `??=`
+`??` returns the value of its left-hand operand if it isn't null; otherwise, it evaluates the right-hand operand and returns its result. The ?? operator doesn't evaluate its right-hand operand if the left-hand operand evaluates to non-null.
+```cs
+int? a = null;
+Console.WriteLine((a ?? 3)); // expected: 3 since a is null 
+```
+  
+  
+  
 
 https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/
 
