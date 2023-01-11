@@ -32,6 +32,18 @@
 | `^` | Logical exclusive OR operator.  | t ^ t = f, t ^ f = t, f ^ t = t, f ^ f = f |
 
 
+### Bitwise operators
+Bitwise operator works on bits and perform bit by bit operation. The truth tables for `&`, `|`, and `^` are as follows:
+
+| p | q | p & q | p | q | p ^ q |
+| --- | --- | --- | --- | --- |
+| 0 | 0 | 0 | 0 | 0 |
+| 0 | 1 | 0 | 1 | 1 |
+| 1 | 1 | 1 | 1 | 0 |
+| 1 | 0 | 0 | 1 | 1 |
+
+
+
 https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/
 
 
