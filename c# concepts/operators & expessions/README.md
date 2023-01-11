@@ -164,11 +164,11 @@ https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lam
   
 ### `=>`
 The `=>` token is supported in two forms: as the **lambda operator** and as a separator of a member name and the member implementation in an **expression body definition**. 
-  
+
+### `::`
+The namespace alias operator.  Use the namespace alias qualifier :: to access a member of an aliased namespace. You can use the `::` qualifier only between two identifiers. The left-hand identifier can be one of a namespace alias, an extern alias, or the global alias. 
+
+
 
 https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/
-
-
-
-
 
