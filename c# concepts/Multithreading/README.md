@@ -5,7 +5,10 @@
 - The Thread class in C# also provides the current state of a thread. 
 - The Thread class in C# is a sealed class, so it **cannot be inherited**.
 
+
 By default, every process has at least one thread that is responsible for executing the application code and that thread is called Main Thread. So, every application by default is a **single-threaded application**.
+
+These new threads run in **parallel to one another**, and usually synchronize their results with the main thread once completed.
 
 ```cs
 using System;
