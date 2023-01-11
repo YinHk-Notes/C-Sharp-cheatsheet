@@ -109,6 +109,18 @@ uint y = x >> 2;
 |`..`|specifies the start and end of a range of indices as its operands. The left-hand operand is an inclusive start of a range. The right-hand operand is an exclusive end of a range. `a.. is equivalent to a..^0`, `..b is equivalent to 0..b`, `.. is equivalent to 0..^0`|int[] numbers = new[] { 0, 10, 20, 30, 40, 50 }; int amountToDrop = numbers.Length / 2; int[] rightHalf = numbers[amountToDrop..]; // 30 40 50 |
   
 
+| Range operator expression | Description |
+| --- | --- |
+| .. | All values in the collection. |
+| ..end | Values from the start to the end exclusively. |
+| start.. | Values from the start inclusively to the end. |
+| start..end | Values from the start inclusively to the end exclusively. |
+| ^start.. | Values from the start inclusively to the end counting from the end. |
+| ..^end | Values from the start to the end exclusively counting from the end. |
+| start..^end | Values from start inclusively to end exclusively counting from the end. |
+| ^start..^end | Values from start inclusively to end exclusively both counting from the end. |  
+  
+  
 ### `sizeof(type)` 
 The `sizeof()` operator returns the number of bytes occupied by a variable of a given type.
 
