@@ -65,6 +65,24 @@ A^B = 0011 0001
 | << | Binary Left Shift Operator. The left operands value is moved left by the number of bits specified by the right operand. | A << 2 = 240, which is 1111 0000 |
 | >> | Binary Right Shift Operator. The left operands value is moved right by the number of bits specified by the right operand. | A >> 2 = 15, which is 0000 1111 |
 
+### Assignment Operators
+| Operator | Description | Example |
+| --- | --- | --- |
+| = | Simple assignment operator, Assigns values from right side operands to left side operand | C = A + B assigns value of A + B into C |
+| += | Add AND assignment operator, It adds right operand to the left operand and assign the result to left operand | C += A is equivalent to C = C + A |
+| -= | Subtract AND assignment operator, It subtracts right operand from the left operand and assign the result to left operand | C -= A is equivalent to C = C - A |
+| *= | Multiply AND assignment operator, It multiplies right operand with the left operand and assign the result to left operand | C *= A is equivalent to C = C * A |
+| /= | Divide AND assignment operator, It divides left operand with the right operand and assign the result to left operand | C /= A is equivalent to C = C / A |
+| %= | Modulus AND assignment operator, It takes modulus using two operands and assign the result to left operand | C %= A is equivalent to C = C % A |
+| <<= | Left shift AND assignment operator | C <<= 2 is same as C = C << 2 |
+| >>= | Right shift AND assignment operator | C >>= 2 is same as C = C >> 2 |
+| &= | Bitwise AND assignment operator | C &= 2 is same as C = C & 2 |
+| ^= | bitwise exclusive OR and assignment operator | C ^= 2 is same as C = C ^ 2 |
+| |= | bitwise inclusive OR and assignment operator | C |= 2 is same as C = C | 2 |
+
+
+
+
 
 https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/
 
