@@ -65,6 +65,22 @@ A^B = 0011 0001
 | << | Binary Left Shift Operator. The left operands value is moved left by the number of bits specified by the right operand. | A << 2 = 240, which is 1111 0000 |
 | >> | Binary Right Shift Operator. The left operands value is moved right by the number of bits specified by the right operand. | A >> 2 = 15, which is 0000 1111 |
 
+```cs
+//Left shift
+uint x = 0b_1100_1001_0000_0000_0000_0000_0001_0001;
+uint y = x << 4;
+// Before: 11001001000000000000000000010001
+// After:  10010000000000000000000100010000
+
+
+//Right shift
+uint x = 0b_1001;
+uint y = x >> 2;
+// Before: 1001
+// After:  0010
+```
+
+
 ### Assignment Operators
 | Operator | Description | Example |
 | --- | --- | --- |
