@@ -1,7 +1,7 @@
 ## Multithreading
 
 
-By default, every process has at least one thread that is responsible for executing the application code and that thread is called Main Thread. So, every application by default is a single-threaded application.
+By default, every process has at least one thread that is responsible for executing the application code and that thread is called Main Thread. So, every application by default is a **single-threaded application**.
 
 ```cs
 using System;
