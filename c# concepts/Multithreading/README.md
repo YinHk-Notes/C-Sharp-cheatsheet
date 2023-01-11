@@ -90,6 +90,9 @@ namespace ThreadingDemo
     }
 }
 ```
+A process by default makes use of a single thread to run our application code but a process can have multiple threads, and multiple threads can run our application code simultaneously. 
+
+The advantage is that the execution takes place simultaneously. So, when multiple threads try to execute the application code, then the operating system allocates some time period for each thread to execute.
 
 https://www.huanlintalk.com/2013/04/csharp-notes-multithreading-1.html
 
