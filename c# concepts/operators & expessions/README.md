@@ -127,7 +127,11 @@ The `sizeof()` operator returns the number of bytes occupied by a variable of a 
 ### `typeof()`
 Returns the type of a class.
 
-
+### `?:`
+Known as the **ternary conditional operator**. evaluates a Boolean expression and returns the result of one of the two expressions, depending on whether the Boolean expression evaluates to true or false.
+```cs
+ condition ? expressionA : expressionB //if true => expressionA, otherwise expressionB
+```
 
 
 https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/
