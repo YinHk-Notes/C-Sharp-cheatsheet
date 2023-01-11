@@ -1,5 +1,9 @@
 ## Multithreading
 
+- In C#, the Thread class is used to create threads.
+- Thread class also **allows us to set the priority of a thread**. 
+- The Thread class in C# also provides the current state of a thread. 
+- The Thread class in C# is a sealed class, so it **cannot be inherited**.
 
 By default, every process has at least one thread that is responsible for executing the application code and that thread is called Main Thread. So, every application by default is a **single-threaded application**.
 
