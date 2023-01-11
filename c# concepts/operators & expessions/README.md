@@ -97,6 +97,12 @@ uint y = x >> 2;
 | l= | bitwise inclusive OR and assignment operator | C l= 2 is same as C = C l 2 |
 
 
+### `sizeof(type)` 
+The `sizeof()` operator returns the number of bytes occupied by a variable of a given type.
+
+### `typeof()`
+Returns the type of a class.
+
 
 
 
