@@ -111,14 +111,14 @@ uint y = x >> 2;
 
 | Range operator expression | Description |
 | --- | --- |
-| .. | All values in the collection. |
-| ..end | Values from the start to the end exclusively. |
-| start.. | Values from the start inclusively to the end. |
-| start..end | Values from the start inclusively to the end exclusively. |
-| ^start.. | Values from the start inclusively to the end counting from the end. |
-| ..^end | Values from the start to the end exclusively counting from the end. |
-| start..^end | Values from start inclusively to end exclusively counting from the end. |
-| ^start..^end | Values from start inclusively to end exclusively both counting from the end. |  
+| `..` | All values in the collection. |
+| `..end` | Values from the start to the end exclusively. |
+| `start..` | Values from the start inclusively to the end. |
+| `start..end` | Values from the start inclusively to the end exclusively. |
+| `^start..` | Values from the start inclusively to the end counting from the end. |
+| `..^end` | Values from the start to the end exclusively counting from the end. |
+| `start..^end` | Values from start inclusively to end exclusively counting from the end. |
+| `^start..^end` | Values from start inclusively to end exclusively both counting from the end. |  
   
   
 ### `sizeof(type)` 
