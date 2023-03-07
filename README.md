@@ -3,6 +3,12 @@
 ## C#
 My learning note & material for C#
 
+
+### What does C# use for?
+- Desktop software (Window application)
+- Video Games (Unity)
+- Web application
+
 ### .NET
 Application Framework. .NET is an open source developer platform for building desktop, web, and mobile applications and many different types of applications that can run natively on any operating system. With .NET, you can use multiple languages, editors, and libraries to build for web, mobile, desktop, games, IoT, and more. The .NET system includes tools, libraries, and languages that support modern, scalable, and high-performance software development. 
 
