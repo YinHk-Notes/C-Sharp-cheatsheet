@@ -5,15 +5,14 @@ a virtual method has an implementation in a base class as well as derived the cl
 
 **virtual** keyword is used to modify a method, property, indexer, or event declaration and allow for it to be overridden in a derived class.
 
-<aside>
-📌 It is an error to use the `virtual` modifier on a static property.
 
-</aside>
+> 📌 It is an error to use the **`virtual`** modifier on a static property.
 
-<aside>
-📌 A virtual inherited property can be overridden in a derived class by including a property declaration that uses the `override` modifier.
 
-</aside>
+
+> 📌 A **virtual inherited property** can be overridden in a derived class by including a property declaration that uses the **`override`** modifier.
+
+
 
 ### ref
 [https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/virtual](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/virtual)
