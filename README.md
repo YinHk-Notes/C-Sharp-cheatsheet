@@ -29,6 +29,9 @@ https://learn.microsoft.com/en-us/dotnet/api/?view=net-7.0
 ### tutorial - 4 hour
 https://youtu.be/wxznTygnRfQ
 
+### Best IDE for C#
+Visual studio
+
 ### ref
 https://learn.microsoft.com/en-us/dotnet/csharp/
 
