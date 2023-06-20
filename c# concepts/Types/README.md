@@ -89,3 +89,11 @@ int a;
 
 [Casting and type conversions - C# Programming Guide](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/casting-and-type-conversions)
 
+### Unmanaged types
+A type is an **unmanaged type** if it's any of the following types:
+
+-   `sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `nint`, `nuint`, `char`, `float`, `double`, `decimal`, or `bool`
+-   Any enum type
+-   Any pointer type
+-   Any user-defined struct type that contains fields of unmanaged types only.
+
