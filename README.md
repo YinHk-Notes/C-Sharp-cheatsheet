@@ -29,6 +29,11 @@ https://learn.microsoft.com/en-us/dotnet/api/?view=net-7.0
 ### tutorial - 4 hour
 https://youtu.be/wxznTygnRfQ
 
+### Documentation comments (XML format) for C#
+C# provides a mechanism for programmers to document their code using a comment syntax that contains XML text. In source code files, comments having a certain form can be used to direct a tool to produce XML from those comments and the source code elements, which they precede. Comments using such syntax are called documentation comments. 
+
+https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/documentation-comments
+
 ### Best IDE for C#
 Visual studio
 
