@@ -1,4 +1,6 @@
 ## interface
+An **interface** is a completely **"abstract class"**, which can only contain abstract methods and properties (with empty bodies).
+
 - An interface **defines a contract**. Any **class** or **struct** that implements that contract **must** provide an implementation of the members defined in the interface. An interface **may define a default implementation for members**. It **may also define static members** in order to provide a single implementation for common functionality.
 
 - An interface is a **completely "abstract class",** which can **only contain abstract methods** and **properties** (with empty bodies)
@@ -201,3 +203,19 @@ C# 8.0 allows `private`, `protected`, `internal`, `public`, `virtual`, `abstract
 ***4.可以同時繼承多個介面***
 
 ***5.繼承介面的類別必須實作所有的屬性與方法***
+
+
+
+### ref 
+
+https://www.w3schools.com/cs/cs_interface.php
+
+
+
+
+
+
+
+
+
+
