@@ -15,6 +15,16 @@ An **interface** is a completely **"abstract class"**, which can only contain ab
 - An interface cannot contain a constructor (as it cannot be used to create objects)
 - A class or struct can **implement multiple interfaces**.
 
+
+An interface can be **a member of a namespace or a class**. An interface declaration can contain declarations (signatures without any implementation) of the following members:
+    
+- Methods
+- Properties
+- Indexers
+- Events
+
+
+
 **Why and when to use interfaces?**
 - To achieve security - hide certain details and only show the important details of an object (interface).
 - C# does not support "multiple inheritance" (a class can only inherit from one base class). However, it can be achieved with interfaces, because the class can implement multiple interfaces.
