@@ -19,6 +19,33 @@ An **interface** is a completely **"abstract class"**, which can only contain ab
 - To achieve security - hide certain details and only show the important details of an object (interface).
 - C# does not support "multiple inheritance" (a class can only inherit from one base class). However, it can be achieved with interfaces, because the class can implement multiple interfaces.
 
+
+```cs
+interface ISampleInterface
+{
+    void SampleMethod();
+}
+
+class ImplementationClass : ISampleInterface
+{
+    // Explicit interface member implementation:
+    void ISampleInterface.SampleMethod()
+    {
+        // Method implementation.
+    }
+
+    static void Main()
+    {
+        // Declare an interface instance.
+        ISampleInterface obj = new ImplementationClass();
+
+        // Call the member.
+        obj.SampleMethod();
+    }
+}
+```
+
+
 ```cs
 // Interface
 interface IAnimal 
