@@ -111,7 +111,7 @@ class FileInfo : IFile
     }
 }
 ```
-> Interface members **must be implemented with the public modifier**; otherwise, the compiler will give compile-time errors.
+> **Note**: Interface members **must be implemented with the public modifier**; otherwise, the compiler will give compile-time errors.
 
 ### Implementing Multiple Interfaces
 seperate by `,`
