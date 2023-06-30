@@ -2,7 +2,7 @@
 An **interface** is a completely **"abstract class"**, which can only contain **abstract method**s and **properties** (with **empty bodies**).
 
 - An interface **defines a contract**. Any **class** or **struct** that implements that contract **must** provide an implementation of the members defined in the interface. An interface **may define a default implementation for members**. It **may also define static members** in order to provide a single implementation for common functionality.
-
+  
 - An interface is a **completely "abstract class",** which can **only contain abstract methods** and **properties** (with empty bodies)
 
 - An interface can contain **declarations of methods, properties, indexers, and events**. However, it **cannot contain fields, auto-implemented properties**.
@@ -10,7 +10,7 @@ An **interface** is a completely **"abstract class"**, which can only contain **
 - Like abstract classes, interfaces cannot be used to create objects.
 - Interface methods do not have a body - the **body is provided by the "implement" class**
 - On implementation of an interface, you **must override** all of its methods, but you do not have to use the **override** keyword when implementing an interface.
-- Interfaces can contain properties and methods, but not fields/variables
+- Interfaces can contain **properties** and **methods**, but **not** **fields/variables**.
 - Interface members are by default **`abstract`** and **`public`**
 - An interface **cannot contain a constructor** (as it **cannot be used to create objects**)
 - A class or struct can **implement multiple interfaces**.
