@@ -228,7 +228,8 @@ https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/inte
 interfaces \
 https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/interfaces
 
-
+Update interfaces with default interface methods \
+https://learn.microsoft.com/en-us/dotnet/csharp/advanced-topics/interface-implementation/default-interface-methods-versions
 
 
 
