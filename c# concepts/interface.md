@@ -27,7 +27,7 @@ An interface can be **a member of a namespace or a class**. An interface declara
 
 **Why and when to use interfaces?**
 - To achieve security - hide certain details and only show the important details of an object (interface).
-- C# does not support "multiple inheritance" (a class can only inherit from one base class). However, it can be achieved with interfaces, because the class can implement multiple interfaces.
+- C# does not support **"multiple inheritance"** (a class can **only inherit from one base class**). However, it can be achieved with **interfaces**, because the class can **implement multiple interfaces**.
 
 ```cs
 interface ISampleInterface
