@@ -222,6 +222,13 @@ C# 8.0 allows `private`, `protected`, `internal`, `public`, `virtual`, `abstract
 
 https://www.w3schools.com/cs/cs_interface.php
 
+interface \
+https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/interface
+
+interfaces \
+https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/interfaces
+
+
 
 
 
