@@ -122,6 +122,7 @@ interface IFile
 
 class FileInfo : IFile
 {
+    // Explicit interface member implementation:
     void IFile.ReadFile()
     {
         Console.WriteLine("Reading File");
