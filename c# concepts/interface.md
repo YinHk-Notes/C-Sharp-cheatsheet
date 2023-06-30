@@ -111,7 +111,29 @@ class FileInfo : IFile
     }
 }
 ```
-> **Note**: Interface members **must be implemented with the public modifier**; otherwise, the compiler will give compile-time errors.
+> **Note**: Interface members **must be implemented with the public modifier**; otherwise, the compiler will give compile-time errors. If explicitly implement **interface members**, **public modifier is not needed**.
+
+```cs
+interface IFile
+{
+    void ReadFile();
+    void WriteFile(string text);
+}
+
+class FileInfo : IFile
+{
+    void IFile.ReadFile()
+    {
+        Console.WriteLine("Reading File");
+    }
+
+    void IFile.WriteFile(string text)
+    {
+        Console.WriteLine("Writing to file");
+    }
+}
+
+```
 
 ### Implementing Multiple Interfaces
 seperate by `,`
