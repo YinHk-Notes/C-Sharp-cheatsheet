@@ -55,34 +55,6 @@ class ImplementationClass : ISampleInterface
 ```
 
 
-
-
-```cs
-interface ISampleInterface
-{
-    void SampleMethod();
-}
-
-class ImplementationClass : ISampleInterface
-{
-    // Explicit interface member implementation:
-    void ISampleInterface.SampleMethod()
-    {
-        // Method implementation.
-    }
-
-    static void Main()
-    {
-        // Declare an interface instance.
-        ISampleInterface obj = new ImplementationClass();
-
-        // Call the member.
-        obj.SampleMethod();
-    }
-}
-```
-
-
 ```cs
 // Interface
 interface IAnimal 
@@ -107,30 +79,6 @@ class Program
     Pig myPig = new Pig();  // Create a Pig object
     myPig.animalSound();
   }
-}
-```
-
-```cs
-interface ISampleInterface
-{
-    void SampleMethod();
-}
-
-class ImplementationClass : ISampleInterface
-{
-    // Explicit interface member implementation:
-    void ISampleInterface.SampleMethod()
-    {
-        // Method implementation.
-    }
-    static void Main()
-    {
-        // Declare an interface instance.
-        ISampleInterface obj = new ImplementationClass();
-
-        // Call the member.
-        obj.SampleMethod();
-    }
 }
 ```
 
