@@ -231,7 +231,8 @@ https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/interfaces
 Update interfaces with default interface methods \
 https://learn.microsoft.com/en-us/dotnet/csharp/advanced-topics/interface-implementation/default-interface-methods-versions
 
-
+Mix functionality in when creating classes using interfaces with default interface methods \
+https://learn.microsoft.com/en-us/dotnet/csharp/advanced-topics/interface-implementation/mixins-with-default-interface-methods
 
 
 
