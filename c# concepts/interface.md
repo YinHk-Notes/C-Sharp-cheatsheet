@@ -1,5 +1,5 @@
 ## interface
-An **interface** is a completely **"abstract class"**, which can only contain abstract methods and properties (with empty bodies).
+An **interface** is a completely **"abstract class"**, which can only contain **abstract method**s and **properties** (with **empty bodies**).
 
 - An interface **defines a contract**. Any **class** or **struct** that implements that contract **must** provide an implementation of the members defined in the interface. An interface **may define a default implementation for members**. It **may also define static members** in order to provide a single implementation for common functionality.
 
