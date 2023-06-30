@@ -234,9 +234,11 @@ https://learn.microsoft.com/en-us/dotnet/csharp/advanced-topics/interface-implem
 Mix functionality in when creating classes using interfaces with default interface methods \
 https://learn.microsoft.com/en-us/dotnet/csharp/advanced-topics/interface-implementation/mixins-with-default-interface-methods
 
+Explicit Interface Implementation \
+https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation
 
+How to explicitly implement interface members \
+https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/interfaces/how-to-explicitly-implement-interface-members
 
-
-
-
-
+How to explicitly implement members of two interfaces \
+https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/interfaces/how-to-explicitly-implement-members-of-two-interfaces
