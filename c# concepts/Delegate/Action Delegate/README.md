@@ -12,8 +12,39 @@ In other words, an Action delegate can be used with a method that has a **void**
 - **Action delegate** can be used with **anonymous methods** or **lambda expressions**.
 
 
-Example 
+Example:
 
+C# Delegate:
+```cs
+public delegate void Print(int val);
+
+static void ConsolePrint(int i)
+{
+    Console.WriteLine(i);
+}
+
+static void Main(string[] args)
+{           
+    Print prnt = ConsolePrint;
+    prnt(10);
+}
+
+```
+
+Switch to **Action delegate**:
+```cs
+static void ConsolePrint(int i)
+{
+    Console.WriteLine(i);
+}
+
+static void Main(string[] args)
+{
+    Action<int> printActionDel = ConsolePrint;
+    printActionDel(10);
+}
+
+```
 
 ### ref 
 https://www.tutorialsteacher.com/csharp/csharp-action-delegate
