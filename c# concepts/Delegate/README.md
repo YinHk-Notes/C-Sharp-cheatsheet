@@ -8,9 +8,9 @@ A **delegate** is a **type** that represents **references to methods with a part
 
 There are three steps involved while working with delegates:
 
-1.  Declare a delegate
-2.  Set a target method
-3.  Invoke a delegate
+1.  **Declare a delegate**
+2.  **Set a target method**
+3.  **Invoke a delegate**
 
 A **delegate** can be declared using the delegate keyword followed by a function signature
 
