@@ -45,10 +45,14 @@ A **delegate** can be declared using the delegate keyword followed by a function
 ```cs
 public delegate void Del(string message);
 
-
 ```
 
-#### Create a target method for a delegate
+```cs
+// Declare a delegate.
+delegate void Del(string str);
+```
+
+#### Create a target method for a delegate with a matching signature
 ```CS
 // Create a method for a delegate.
 public static void DelegateMethod(string message)
@@ -56,6 +60,17 @@ public static void DelegateMethod(string message)
     Console.WriteLine(message);
 }
 ```
+
+```cs
+
+// Declare a method with the same signature as the delegate.
+static void Notify(string name)
+{
+    Console.WriteLine($"Notification received for: {name}");
+}
+```
+
+
 
 #### Instantiate the delegate & set target method
 
@@ -70,6 +85,19 @@ Del handler = new Del(DelegateMethod);
 
 // Or set lambda expression
 Del handler = (string msg) =>  Console.WriteLine(msg);
+
+```
+
+```cs
+// Create an instance of the delegate.
+Del del1 = new Del(Notify);
+
+// C# 2.0 provides a simpler way to declare an instance of Del.
+Del del2 = Notify;
+
+// Instantiate Del by using an anonymous method.
+Del del3 = delegate(string name)
+    { Console.WriteLine($"Notification received for: {name}"); };
 
 ```
 
