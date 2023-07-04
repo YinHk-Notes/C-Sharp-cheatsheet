@@ -4,7 +4,7 @@ if we want to **pass a function as a parameter**? How does C# handles the callba
 
 A **delegate** is a **type** that represents **references to methods with a particular parameter list and return type**. When you instantiate a delegate, you can associate its instance with any method with a compatible signature and return type. You can **invoke (or call) the method** through the **delegate instance**.
 
-**Delegates** are used to **pass methods as arguments to other methods**. 
+**Delegates** are also used to **pass methods as arguments to other methods**. 
 
 
 Delegates have the following properties:
