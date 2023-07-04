@@ -46,6 +46,35 @@ static void Main(string[] args)
 
 ```
 
+> **Note**: We can initialize an Action delegate using the **`new`** keyword or by directly assigning a method:
+
+```cs
+Action<int> printActionDel = ConsolePrint;
+
+//Or
+
+Action<int> printActionDel = new Action<int>(ConsolePrint);
+```
+
+
+> **Note**: An **Anonymous method** can also be assigned to an Action delegate
+
+```cs
+static void Main(string[] args)
+{
+    Action<int> printActionDel = delegate(int i)
+                                {
+                                    Console.WriteLine(i);
+                                };
+
+    printActionDel(10);
+}
+```
+
+
+
+
+
 ### ref 
 https://www.tutorialsteacher.com/csharp/csharp-action-delegate
 
