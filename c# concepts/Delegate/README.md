@@ -245,6 +245,45 @@ Called lambda expression: Hello World
 > If a multicast delegate returns a value then it **returns the value from the last assigned target method**.
 
 
+### Generic Delegate
+A generic delegate can be defined the same way as a delegate but using generic type parameters or return type.
+
+
+> The generic type must be specified when you set a target method.
+
+
+Eg:
+```cs
+public delegate T add<T>(T param1, T param2); // generic delegate
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        add<int> sum = Sum;
+        Console.WriteLine(sum(10, 20));
+
+        add<string> con = Concat;
+        Console.WriteLine(conct("Hello ","World!!"));
+    }
+
+    public static int Sum(int val1, int val2)
+    {
+        return val1 + val2;
+    }
+
+    public static string Concat(string str1, string str2)
+    {
+        return str1 + str2;
+    }
+}
+
+/*
+Console output:
+30
+HelloWorld!!
+
+```
 
 
 
