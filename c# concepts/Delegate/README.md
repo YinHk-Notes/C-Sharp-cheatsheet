@@ -166,6 +166,79 @@ class ClassB
 }
 ```
 
+### Multicast Delegate (Combine delegates)
+
+The delegate can point to multiple methods. A delegate that points multiple methods is called a multicast delegate. The **"+"** or **"+="** operator adds a function to the invocation list, and the **"-"** and **"-="** operator removes it.
+
+
+
+
+Eg:
+```cs
+public delegate void MyDelegate(string msg);
+public class Program
+{
+	public static void Main()
+	{
+		MyDelegate del1 = ClassA.MethodA;
+		MyDelegate del2 = ClassB.MethodB;
+		
+		MyDelegate del = del1 + del2;
+		Console.WriteLine("After del1 + del2");
+		del("Hello World");
+		
+		MyDelegate del3 = (string msg) => Console.WriteLine("Called lambda expression: " + msg);
+		del += del3;
+		Console.WriteLine("After del1 + del2 + del3");
+		del("Hello World");
+		
+		del = del - del2;
+		Console.WriteLine("After del - del2");
+		del("Hello World");
+		
+		del -= del1;
+		Console.WriteLine("After del1 - del1");
+		del("Hello World");
+	}
+}
+
+public class ClassA
+{
+	public static void MethodA(string message)
+	{
+		Console.WriteLine("Called ClassA.MethodA() with parameter: " + message);
+	}
+}
+
+public class ClassB
+{
+	public static void MethodB(string message)
+	{
+		Console.WriteLine("Called ClassB.MethodB() with parameter: " + message);
+	}
+}
+
+
+/*
+Console output:
+
+After del1 + del2
+Called ClassA.MethodA() with parameter: Hello World
+Called ClassB.MethodB() with parameter: Hello World
+After del1 + del2 + del3
+Called ClassA.MethodA() with parameter: Hello World
+Called ClassB.MethodB() with parameter: Hello World
+Called lambda expression: Hello World
+After del - del2
+Called ClassA.MethodA() with parameter: Hello World
+Called lambda expression: Hello World
+After del1 - del1
+Called lambda expression: Hello World
+
+ */
+
+```
+
 
 
 ### ref
