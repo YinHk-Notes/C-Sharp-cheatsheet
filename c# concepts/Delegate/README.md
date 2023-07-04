@@ -76,6 +76,7 @@ handler("Hello World!");
 
 ```
 
+![](./img/Delegate.png)
 
 Eg:
 
