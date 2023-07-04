@@ -279,10 +279,10 @@ class Program
 }
 
 /*
-Console output:
-30
-HelloWorld!!
-
+	Console output:
+	30
+	HelloWorld!!
+*/
 ```
 
 
