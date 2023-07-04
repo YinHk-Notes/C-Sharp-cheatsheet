@@ -6,6 +6,18 @@ A **delegate** is a **type** that represents **references to methods with a part
 
 **Delegates** are used to **pass methods as arguments to other methods**. 
 
+
+Delegates have the following properties:
+
+-   Delegates are similar to C++ function pointers, but delegates are fully object-oriented, and unlike C++ pointers to member functions, delegates encapsulate both an object instance and a method.
+-   Delegates allow methods to be passed as parameters.
+-   Delegates can be used to define callback methods.
+-   Delegates can be chained together; for example, multiple methods can be called on a single event.
+-   Methods don't have to match the delegate type exactly. For more information, see [Using Variance in Delegates](chrome-extension://pcmpcfapbekmbjjkdalcgopdkipoggdi/_generated_background_page.html../concepts/covariance-contravariance/using-variance-in-delegates).
+-   Lambda expressions are a more concise way of writing inline code blocks. Lambda expressions (in certain contexts) are compiled to delegate types. For more information about lambda expressions, see [Lambda expressions](chrome-extension://pcmpcfapbekmbjjkdalcgopdkipoggdi/_generated_background_page.html../../language-reference/operators/lambda-expressions).
+
+
+### Using delegate
 There are three steps involved while working with delegates:
 
 1.  **Declare a delegate**
