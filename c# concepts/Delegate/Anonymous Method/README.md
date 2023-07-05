@@ -60,6 +60,26 @@ saveButton.Click += delegate(Object o, EventArgs e)
 - **Anonymou**s method can be used as **event handlers**.
 
 
+### Named vs. Anonymous Methods
+A delegate can be associated with a named method. When you instantiate a delegate by using a named method
+
+Delegates constructed with a named method can encapsulate either a static method or an instance method.
+
+Name method in **delegate**:
+```cs
+// Declare a delegate.
+delegate void Del(int x);
+
+// Define a named method.
+void DoWork(int k) { /* ... */ }
+
+// Instantiate the delegate using the method as a parameter.
+Del d = obj.DoWork;
+```
+
+The **delegate** operator creates an **anonymous method** that can be converted to a **delegate type**. 
+
+
 
 ### ref 
 https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/delegates/delegates-with-named-vs-anonymous-methods
