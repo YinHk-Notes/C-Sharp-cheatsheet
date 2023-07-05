@@ -31,7 +31,7 @@ static void Main(string[] args)
 
 ```
 
-Switch to **Action delegate**:
+Switch nprmal delegate to **Action delegate**:
 ```cs
 static void ConsolePrint(int i)
 {
