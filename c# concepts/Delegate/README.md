@@ -6,6 +6,7 @@ A **delegate** is a **type** that represents **references to methods with a part
 
 **Delegates** are also used to **pass methods as arguments to other methods**. 
 
+A **delegate** is a type that holds a reference to a method. A delegate is declared with a signature that shows the return type and parameters for the methods it references, and it can hold references only to methods that match its signature.
 
 Delegates have the following properties:
 
