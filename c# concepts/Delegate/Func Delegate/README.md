@@ -25,6 +25,37 @@ public delegate TResult Func<in T1,in T2,in T3,in T4,in T5,in T6,in T7,in T8,in 
 ```
 
 
+> **Note**: A Func delegate type can include 0 to 16 input parameters of different types. However, it must include an out parameter for the result.
+
+
+> **Func** with an **Anonymous Method**
+
+```cs
+Func<int> getRandomNumber = delegate()
+                            {
+                                Random rnd = new Random();
+                                return rnd.Next(1, 100);
+                            };
+
+```
+> **Func** with **Lambda Expressio**n
+
+```cs
+Func<int> getRandomNumber = () => new Random().Next(1, 100);
+
+//Or 
+
+Func<int, int, int>  Sum  = (x, y) => x + y;
+```
+
+
+
+
+- **Func** is built-in delegate type.
+- **Func** delegate type must return a value.
+- **Func** delegate type can have zero to 16 input parameters.
+- **Func** delegate does not allow ref and out parameters.
+- **Func** delegate type can be used with an **anonymous method** or **lambda expression**.
 
 
 
