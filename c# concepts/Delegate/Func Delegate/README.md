@@ -9,7 +9,7 @@ It has zero or atmost 16 input parameters and one out parameter. The last parame
 > The last parameter in the angle brackets <> is considered the return type, and the remaining parameters are considered input parameter types.
 
 
-![](./img/Func_delegate.png)
+![](../img/Func_delegate.png)
 
 
 Eg:
