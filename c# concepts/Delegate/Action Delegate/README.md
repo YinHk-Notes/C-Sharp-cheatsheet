@@ -57,7 +57,7 @@ Action<int> printActionDel = new Action<int>(ConsolePrint);
 ```
 
 
-> **Note**: An **Anonymous method** can also be assigned to an Action delegate
+> **Note**: An **Anonymous method** can also be assigned to an **Action delegate**.
 
 ```cs
 static void Main(string[] args)
@@ -70,6 +70,21 @@ static void Main(string[] args)
     printActionDel(10);
 }
 ```
+
+> Note: A **Lambda expression** also can be used with an **Action delegate**.
+
+```cs
+
+static void Main(string[] args)
+{
+
+    Action<int> printActionDel = i => Console.WriteLine(i);
+       
+    printActionDel(10);
+}
+
+```
+
 
 
 
