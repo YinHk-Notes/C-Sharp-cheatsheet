@@ -19,6 +19,12 @@ public class ProcessBusinessLogic
 }
 ```
 
+
+### event Action<>
+```cs
+public event Action<bool, int, Blah> DiagnosticsEvent;
+```
+
 ### ref 
 https://www.tutorialsteacher.com/csharp/csharp-event
 
