@@ -2,6 +2,9 @@
 
 An **event** is a notification sent by an object to signal the occurrence of an action.
 
+
+> The **`event`** keyword is used to declare an event in a **publisher class**.
+
 ### Declare an Event
 
 An event can be declared in two steps:
