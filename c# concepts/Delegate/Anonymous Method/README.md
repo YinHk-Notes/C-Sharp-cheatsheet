@@ -18,6 +18,41 @@ static void Main(string[] args)
 ```
 
 
+> **Anonymous methods** can also be passed to a method that accepts the **delegate** as a parameter.
+
+```cs
+public delegate void Print(int value);
+
+class Program
+{
+    public static void PrintHelperMethod(Print printDel,int val)
+    { 
+        val += 10;
+        printDel(val);
+    }
+
+    static void Main(string[] args)
+    {
+        PrintHelperMethod(delegate(int val) { Console.WriteLine("Anonymous method: {0}", val); }, 100);
+    }
+}
+```
+
+
+
+> **Anonymous methods** can be used as **event handlers**.
+
+```cs
+saveButton.Click += delegate(Object o, EventArgs e)
+{ 
+    System.Windows.Forms.MessageBox.Show("Save Successfully!"); 
+};
+```
+
+
+
+
+
 - **Anonymous** method can be defined using the **delegate** keyword
 - **Anonymous** method must be assigned to a delegate.
 - **Anonymous** method can access outer variables or functions.
