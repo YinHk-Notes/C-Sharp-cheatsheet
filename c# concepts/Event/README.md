@@ -13,3 +13,5 @@ An event can be declared in two steps:
 
 ### ref 
 https://www.tutorialsteacher.com/csharp/csharp-event
+
+https://learn.microsoft.com/en-us/dotnet/standard/events/
