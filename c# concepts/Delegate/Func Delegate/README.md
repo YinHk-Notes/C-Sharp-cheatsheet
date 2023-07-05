@@ -12,7 +12,6 @@ It has zero or atmost 16 input parameters and one out parameter. The last parame
 ![](../img/Func_delegate.png)
 
 
-Eg:
 ```cs
 public delegate TResult Func<out TResult>();
 ```
@@ -26,6 +25,27 @@ public delegate TResult Func<in T1,in T2,in T3,in T4,in T5,in T6,in T7,in T8,in 
 
 
 > **Note**: A Func delegate type can include 0 to 16 input parameters of different types. However, it must include an out parameter for the result.
+
+
+Eg:
+```cs
+static int Sum(int x, int y)
+    {
+        return x + y;
+    }
+
+    static void Main(string[] args)
+    {
+        Func<int,int, int> add = Sum;
+
+        int result = add(10, 10);
+
+        Console.WriteLine(result); 
+    }
+```
+
+
+
 
 
 > **Func** with an **Anonymous Method**
