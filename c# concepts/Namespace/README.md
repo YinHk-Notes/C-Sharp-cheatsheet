@@ -33,3 +33,11 @@ namespace N1     // N1
     }
 }
 ```
+
+
+
+### ref 
+https://www.c-sharpcorner.com/article/working-with-namespaces-in-C-Sharp/
+
+
+
