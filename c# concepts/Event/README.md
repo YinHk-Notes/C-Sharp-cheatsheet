@@ -46,4 +46,6 @@ https://www.tutorialsteacher.com/csharp/csharp-event
 
 https://learn.microsoft.com/en-us/dotnet/standard/events/
 
+https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/event
+
 https://medium.com/nerd-for-tech/c-delegates-actions-events-summary-please-8fab0244a40a
