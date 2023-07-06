@@ -11,10 +11,19 @@
 - They're delimited by using the `.` operator.
 - The using directive obviates the requirement to specify the name of the namespace for every class.
 - The global namespace is the "root" namespace: global`::`System will always refer to the .NET System namespace.
+- Namespaces in C# can be nested
 
 
 
-The namespace keyword is used to declare a scope. The ability to create scopes within your project helps organise code and lets you create globally-unique types.
+The namespace keyword is used to **declare a scope**. The ability to create scopes within your project helps organise code and lets you create globally-unique types.
+
+
+A namespace in C# is a logically **arranged class, struct, interface, enum, or delegate**. **Namespaces in C# can be nested**, meaning you can define a class and include it in another class.
+
+A class in a specific namespace and a class from another **`.cs`** file can be called by **`using <namespace>;`**.
+
+
+
 
 ```cs
 namespace N1     // N1
@@ -34,9 +43,64 @@ namespace N1     // N1
 }
 ```
 
+### How to access other class
+- Use **`using <namespace>`** to Include a Class Into Another Class in C#
+- Use **Inheritance** to Include a Class Into Another Class in C#
 
 
+### Use **`using <namespace>`
 
+Example:
+
+```cs
+// WelcomeClass.cs
+
+namespace SubClassNamS
+{
+    public class WelcomeClass
+    {
+        public static void Welcome()
+        {
+            // To show a message box when this method from `WelcomeClass` will be called by another class
+            MessageBox.Show("Hello World!", "Test Subject", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+    }
+}
+```
+
+
+```cs
+// Form1.cs
+
+// Use `using` Namespace of another class from a different file
+using static SubClassNamS.WelcomeClass;
+
+namespace IncludeClass
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        // Button `Button1` click event
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // No need to mention `WelcomeClass` here
+            Welcome();
+        }
+    }
+}
+```
+> Including `SubClassNamS.WelcomeClass` enables us to access `WelcomeClass` from the `SubClassNamS` namespace.
+
+> This method helps you import or include a `WelcomeClass` class into the `Form1` class by introducing its methods and members using namespace in C#.
 
 
 ### ref 
