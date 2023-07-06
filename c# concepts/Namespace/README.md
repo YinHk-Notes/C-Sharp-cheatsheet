@@ -73,6 +73,42 @@ namespace ExampleNameSpace
 
 ```
 
+Examplpe:
+```cs
+namespace App
+{
+    public class MyClass
+    {
+        public MyClass()
+        {
+            myVariable = 1;
+        }
+    
+        public int myVariable;
+
+        public static int StaticVariable = 3;
+    
+    }
+}
+```
+
+```cs
+using App; // at the beginning of your .cs file
+MyClass myClass = new MyClass();
+var v = myClass.myVariable; // defined in the App namespace
+var stat = MyClass.StaticVariable;
+```
+
+or you can use the full identifier
+```cs
+App.MyClass myClass = new App.MyClass();
+var v = myClass.myVariable;
+var stat = App.MyClass.StaticVariable;
+```
+
+
+
+
 
 ### How to access other class
 - Use **`using <namespace>`** to Include a Class Into Another Class in C#
