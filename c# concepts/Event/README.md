@@ -5,6 +5,7 @@ An **event** is a notification sent by an object to signal the occurrence of an 
 **Events** are user actions such as key press, clicks, mouse movements, etc., or some occurrence such as system generated notifications. Applications need to respond to events when they occur. 
 
 > The **`event`** keyword is used to declare an **event** in a **publisher class**.
+> Declare the event using the **`event`** keyword
 
 
 ### Publisher class 
@@ -16,7 +17,33 @@ A **publisher** is an object that contains the **definition of the event** and t
 
 A **subscriber** is an object that **accepts the event** and **provides an event handler**. The delegate in the publisher class **invokes the method (event handler) of the subscriber class**.
 
+Eg:
+```cs
+public class SampleEventArgs
+{
+    public SampleEventArgs(string text) { Text = text; }
+    public string Text { get; } // readonly
+}
 
+public class Publisher
+{
+    // Declare the delegate (if using non-generic pattern).
+    public delegate void SampleEventHandler(object sender, SampleEventArgs e);
+
+    // Declare the event.
+    public event SampleEventHandler SampleEvent;
+
+    // Wrap the event in a protected virtual method
+    // to enable derived classes to raise the event.
+    protected virtual void RaiseSampleEvent()
+    {
+        // Raise the event in a thread-safe manner using the ?. operator.
+        SampleEvent?.Invoke(this, new SampleEventArgs("Hello"));
+    }
+}
+
+
+````
 
 ### Declare an Event
 
