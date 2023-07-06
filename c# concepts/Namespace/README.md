@@ -36,8 +36,14 @@ namespace N1     // N1
 
 
 
+
+
+
 ### ref 
 https://www.c-sharpcorner.com/article/working-with-namespaces-in-C-Sharp/
+
+https://www.delftstack.com/howto/csharp/csharp-include-class/
+
 
 
 
