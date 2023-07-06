@@ -59,7 +59,7 @@ namespace ExampleNameSpace
 }
 
 ```
-
+We can wrap other classes in the same namespace to make them available to each other:
 ```cs
 namespace ExampleNameSpace
 {
