@@ -11,7 +11,8 @@
 - They're delimited by using the `.` operator.
 - The using directive obviates the requirement to specify the name of the namespace for every class.
 - The global namespace is the "root" namespace: global`::`System will always refer to the .NET System namespace.
-- Namespaces in C# can be nested
+- Namespaces in C# can be nested.
+- If two classes are in the same namespace, they will **'know'** about each other and be in the **same scope**.
 
 
 
@@ -42,6 +43,36 @@ namespace N1     // N1
     }
 }
 ```
+
+### Class with same namespace
+
+To give a class a namespace, we simply wrap the class in another set of curly braces and declare the namespace like this:
+```cs
+namespace ExampleNameSpace
+{
+
+  public class ExampleClass
+  {
+    // all ExampleClass methods, fields, and properties here
+  }
+
+}
+
+```
+
+```cs
+namespace ExampleNameSpace
+{
+
+  public class SecondClass
+  {
+    // all SecondClass methods, fields, and properties here
+  }
+
+}
+
+```
+
 
 ### How to access other class
 - Use **`using <namespace>`** to Include a Class Into Another Class in C#
