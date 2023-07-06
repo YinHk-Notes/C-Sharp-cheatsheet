@@ -121,6 +121,25 @@ public Employee(int weeklySalary, int numberOfWeeks)
 }
 ```
 
+If no constructor declared, default constructor is automatically provided
+```cs
+class Person {  
+    //This class has no constructor  
+    public void getPersonProfile() {  
+        Console.WriteLine("Base class:getPersonProfile() have no constructor");  
+    }  
+}  
+class Program {  
+    static void Main(string[] args) {  
+        //Create object of person  
+        Person p = new Person();  
+        p.getPersonProfile();  
+    }  
+}  
+
+
+```
+
 ### static constructor
 A `static` constructor is used to initialize any static data, or to perform a particular action that needs to be performed once only.
 A class or struct can also have a static constructor, which initializes `static` members of the type.
