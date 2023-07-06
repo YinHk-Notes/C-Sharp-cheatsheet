@@ -5,7 +5,8 @@
 - The advantage of a constructor, is that it is called when an object of a class is created. It can be used to set initial values for fields
 - Constructors enable the programmer to set default values, limit instantiation, and write code that is flexible and easy to read.
 - A constructor is a method whose name is the same as the name of its class.
-- Cobstructor does not include a return type. 
+- Cobstructor does not include a return type.
+- If a class contains **no instance constructor declarations**, a **default instance constructor is automatically provided**. 
 
 ```cs
 class Car
@@ -131,6 +132,10 @@ A class or struct can also have a static constructor, which initializes `static`
 - A static constructor doesn't take access modifiers or have parameters.
 - Static constructors cannot be inherited or overloaded.
 - A static constructor is used to initialize any static data, or to perform a particular action that needs to be performed only once.
+- The only classes in C# which don't have any instance constructors are static classes, and they can't have constructors.
+
+
+
 ```cs
 class SimpleClass
 {
@@ -207,3 +212,5 @@ class TestCounter
 ```
 
 
+### ref
+https://www.c-sharpcorner.com/blogs/can-a-class-work-without-constructor-in-c-sharp
