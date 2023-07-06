@@ -108,6 +108,9 @@ https://www.c-sharpcorner.com/article/working-with-namespaces-in-C-Sharp/
 
 https://www.delftstack.com/howto/csharp/csharp-include-class/
 
+https://www.learnhowtoprogram.com/fidgetech-3-c-and-net/3-0-lessons-25-34-objects-and-methods/3-0-0-28-namespaces-and-file-structure
+
+
 
 
 
