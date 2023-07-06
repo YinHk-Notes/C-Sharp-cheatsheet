@@ -48,7 +48,7 @@ namespace N1     // N1
 - Use **Inheritance** to Include a Class Into Another Class in C#
 
 
-### Use **`using <namespace>`
+### Use `using <namespace>`
 
 Example:
 
