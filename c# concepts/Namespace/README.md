@@ -170,6 +170,19 @@ namespace IncludeClass
 > This method helps you import or include a `WelcomeClass` class into the `Form1` class by introducing its methods and members using namespace in C#.
 
 
+### Same namespace across multiple different files
+
+> Namespaces can (and usually are) split across multiple code files.
+
+> The Contacts namespace will contain all classes defined across files that define that namespace.
+
+
+> The classes in those namespaces are compiled separately, but (generally, leaving out external resources for now) into a single output file (i.e. an exe or a dll).
+
+
+
+
+
 ### ref 
 https://www.c-sharpcorner.com/article/working-with-namespaces-in-C-Sharp/
 
