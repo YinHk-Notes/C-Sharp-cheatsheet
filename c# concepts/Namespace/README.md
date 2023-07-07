@@ -111,11 +111,14 @@ var stat = App.MyClass.StaticVariable;
 
 
 ### How to access other class
-- Use **`using <namespace>`** to Include a Class Into Another Class in C#
+- If a class in different namespace, use **`using <namespace>`** to Include a Class Into Another Class in C#.
+- If a class in same namespace, no need to use **`using <namespace>`** or specify the **full identifier**. Just direct refer a class.
 - Use **Inheritance** to Include a Class Into Another Class in C#
 
 
 ### Use `using <namespace>`
+
+
 
 Example:
 
