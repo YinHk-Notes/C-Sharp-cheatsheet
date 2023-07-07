@@ -1,7 +1,6 @@
-### .NET 架構
+
 
 C# 程式會在 .NET 上執行，這是稱為 Common Language Runtime 的虛擬執行系統， (CLR) 和一組類別庫。
-
 
 
 
@@ -66,3 +65,5 @@ https://www.tutorialspoint.com/csharp/csharp_program_structure.htm
 https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/run-program?view=vs-2022
 
 https://learn.microsoft.com/zh-tw/dotnet/csharp/tour-of-csharp/
+
+https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-console?view=vs-2022
