@@ -185,6 +185,9 @@ namespace IncludeClass
 
 > The classes in those namespaces are compiled separately, but (generally, leaving out external resources for now) into a single output file (i.e. an exe or a dll).
 
+### Define packages and namespaces
+https://learn.microsoft.com/zh-tw/previous-versions/visualstudio/visual-studio-2015/modeling/define-packages-and-namespaces?view=vs-2015&redirectedfrom=MSDN
+
 
 ### ref 
 https://www.c-sharpcorner.com/article/working-with-namespaces-in-C-Sharp/
@@ -192,6 +195,8 @@ https://www.c-sharpcorner.com/article/working-with-namespaces-in-C-Sharp/
 https://www.delftstack.com/howto/csharp/csharp-include-class/
 
 https://www.learnhowtoprogram.com/fidgetech-3-c-and-net/3-0-lessons-25-34-objects-and-methods/3-0-0-28-namespaces-and-file-structure
+
+https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/using-directive
 
 
 
