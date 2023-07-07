@@ -45,8 +45,42 @@ public class Publisher
 
 ````
 
+
+### Subscribe & Unsubscribe the event
 > registers with the event using "+=" operator
+
 > unscribe with the event using "-=" perator
+
+Eg:
+```cs
+
+void HandleCustomEvent(object sender, CustomEventArgs a)  
+{  
+   // Do something useful here.  
+}
+
+```
+
+
+```cs
+
+publisher.RaiseCustomEvent += HandleCustomEvent;
+
+```
+```cs
+publisher.RaiseCustomEvent += (object o, CustomEventArgs e) =>
+{  
+  string s = o.ToString() + " " + e.ToString();  
+  Console.WriteLine(s);  
+};
+```
+
+
+```cs
+publisher.RaiseCustomEvent -= HandleCustomEvent;
+```
+
+
 
 ### Event handlers
 To respond to an event, you define an event handler method in the event receiver. 
