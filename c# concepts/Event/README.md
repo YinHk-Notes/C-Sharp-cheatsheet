@@ -8,7 +8,7 @@ An **event** is a notification sent by an object to signal the occurrence of an 
 > Declare the event using the **`event`** keyword
 
 
-### Publisher class 
+### Publisher class & Subscriber class
 The **events** are **declared and raise**d in a class and associated with the **event handlers using delegates** within the same class or some other class. The class containing the event is used to **publish the event**. This is called the **"publisher class"**.
 
 Some other class that **accepts this event** is called the **"subscriber class"**. Events use the **publisher-subscriber model**.
