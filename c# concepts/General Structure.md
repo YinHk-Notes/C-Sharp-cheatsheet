@@ -46,3 +46,12 @@ namespace YourNamespace
     }
 }
 ```
+
+- The **Main** method is the entry point for all C# programs. The Main method states what the class does when executed.
+- C# is case sensitive.
+- The program execution starts at the Main method.
+- Unlike Java, program file name could be different from the class name.
+- All statements and expression must end with a semicolon (;).
+
+
+
