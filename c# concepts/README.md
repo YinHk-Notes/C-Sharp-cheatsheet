@@ -1,3 +1,7 @@
+### .NET 架構
+
+C# 程式會在 .NET 上執行，這是稱為 Common Language Runtime 的虛擬執行系統， (CLR) 和一組類別庫。
+
 
 
 
