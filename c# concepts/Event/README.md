@@ -45,6 +45,8 @@ public class Publisher
 
 ````
 
+> registers with the event using "+=" operator
+> unscribe with the event using "-=" perator
 
 ### Event handlers
 To respond to an event, you define an event handler method in the event receiver. 
