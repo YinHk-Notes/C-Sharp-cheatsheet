@@ -175,6 +175,9 @@ namespace IncludeClass
 
 > `using <namespace>` directive imports the types contained in the given namespace, but specifically **does not import nested namespaces.** This is to avoid naming conflics and explains why we must import both `System` to use `Console` and `System.Collections.Generic` to use `List`s even though the latter namespace is nested in the former.
 
+> When we create namespaces, we want to make sure they tell us something useful by naming them in a descriptive manner. A convention in C# is to use our directory structure to define our namespaces.
+
+
 
 ### Same namespace across multiple different files
 
