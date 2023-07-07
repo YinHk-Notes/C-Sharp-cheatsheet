@@ -101,12 +101,87 @@ var stat = MyClass.StaticVariable;
 ```
 
 or you can use the **full identifier**
+```
+Namespace-Name.Member-Name
+```
+```
+MyNamespace.MyClass myClass = new MyNamespace.MyClass();
+```
+Eg:
 ```cs
 App.MyClass myClass = new App.MyClass();
 var v = myClass.myVariable;
 var stat = App.MyClass.StaticVariable;
 ```
 
+
+```cs
+using System;
+
+namespace MyNamespace
+{
+    public class SampleClass
+    {
+        public static void myMethod()
+        {
+            Console.WriteLine("Creating my namespace");
+        }
+    }
+}
+ 
+namespace MyProgram
+{
+    public class MyClass
+    {
+        public static void Main()
+        {
+            MyNamespace.SampleClass.myMethod();
+        }
+    }
+}
+```
+
+### Nested Namespace 
+```
+namespace MyNamespace
+{
+    namespace NestedNamespace
+    {
+        // Body of nested namespace
+	}
+}
+```
+> The nested namespace and its members can also be accessed using the `dot (.)` operator.
+
+```cs
+using System;
+ 
+// Nested Namespace
+namespace MyNamespace
+{
+    namespace Nested
+    {
+        public class SampleClass
+        {
+            public static void myMethod()
+            {
+                Console.WriteLine("Nested Namespace Example");
+            }
+        }
+    }
+}
+ 
+namespace MyProgram
+{
+    public class MyClass
+    {
+        public static void Main()
+        {
+            MyNamespace.Nested.SampleClass.myMethod();
+        }
+    }
+}
+```
 
 
 
