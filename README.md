@@ -45,6 +45,8 @@ Visual studio
 ### ref
 https://learn.microsoft.com/en-us/dotnet/csharp/
 
+https://www.programiz.com/csharp-programming
+
 https://www.javatpoint.com/c-sharp-tutorial
 
 https://www.tutorialspoint.com/csharp/index.htm
