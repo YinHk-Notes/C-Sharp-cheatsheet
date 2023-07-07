@@ -99,7 +99,7 @@ var v = myClass.myVariable; // defined in the App namespace
 var stat = MyClass.StaticVariable;
 ```
 
-or you can use the full identifier
+or you can use the **full identifier**
 ```cs
 App.MyClass myClass = new App.MyClass();
 var v = myClass.myVariable;
