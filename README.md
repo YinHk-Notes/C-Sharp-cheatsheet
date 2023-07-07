@@ -15,6 +15,7 @@ Application Framework. .NET is an open source developer platform for building de
 https://dotnet.microsoft.com/zh-cn/ \
 https://aws.amazon.com/what-is/net/?nc1=h_ls
 
+https://learn.microsoft.com/zh-tw/dotnet/core/introduction
 ### .NET sdk
 https://github.com/dotnet/sdk \
 https://dotnet.microsoft.com/en-us/download
