@@ -1,9 +1,10 @@
 ## Namespace
 
 ### Why using namespace?
-- namespaces used to organize its many classes.
-- declaring your own namespaces can help you **control the scope of class and method** names in larger programming projects.
-- similar to **"Package"** in java
+- Namespaces used to organize its many classes.
+- Namespace also solves the problem of naming conflict.
+- Declaring your own namespaces can help you **control the scope of class and method** names in larger programming projects.
+- Similar to **"Package"** in java
 
 ### Namespaces have the following properties:
 
