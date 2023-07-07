@@ -45,6 +45,13 @@ public class Publisher
 
 ````
 
+
+### Event handlers
+To respond to an event, you define an event handler method in the event receiver. 
+> This method **must match the signature of the delegate for the event** you're handling. 
+
+
+
 ### Declare an Event
 
 An event can be declared in two steps:
