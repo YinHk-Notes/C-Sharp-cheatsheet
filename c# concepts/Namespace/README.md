@@ -173,6 +173,9 @@ namespace IncludeClass
 > This method helps you import or include a `WelcomeClass` class into the `Form1` class by introducing its methods and members using namespace in C#.
 
 
+> `using <namespace>` directive imports the types contained in the given namespace, but specifically **does not import nested namespaces.** This is to avoid naming conflics and explains why we must import both `System` to use `Console` and `System.Collections.Generic` to use `List`s even though the latter namespace is nested in the former.
+
+
 ### Same namespace across multiple different files
 
 > Namespaces can (and usually are) split across multiple code files.
@@ -181,9 +184,6 @@ namespace IncludeClass
 
 
 > The classes in those namespaces are compiled separately, but (generally, leaving out external resources for now) into a single output file (i.e. an exe or a dll).
-
-
-
 
 
 ### ref 
