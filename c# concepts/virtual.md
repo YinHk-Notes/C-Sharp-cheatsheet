@@ -73,3 +73,8 @@ class MyDerivedClass : MyBaseClass
 
 ### ref
 [https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/virtual](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/virtual)
+
+https://www.csharptutorial.net/csharp-tutorial/csharp-virtual/
+
+
+
