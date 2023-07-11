@@ -5,6 +5,30 @@ a **virtual** method has an **implementation** in a base class as well as derive
 
 **virtual** keyword is used to modify a method, property, indexer, or event declaration and allow for it to be overridden in a derived class.
 
+If a member in the subclass has the same name as the one in the base class, the member in the subclass replaces (or hides) the member in the base class.
+
+
+if you want a member in the subclass to override the member with the same name in the base class, you need to:
+
+-   First, use the **`virtual`** modifier in the declaration of the member of the base class
+-   Second, use the **`override`** modifier in the declaration of the member in the subclass.
+
+```cs
+class Person
+{
+    public string Name { get; set; }
+
+    public virtual string Introduce() => $"Hi, I'm {Name}.";
+}
+
+class Employee : Person
+{
+    public string JobTitle { get; set; }
+
+    public override string Introduce() => $"Hi, I'm {Name}. I'm a {JobTitle}.";
+}
+```
+
 
 > 📌 It is an error to use the **`virtual`** modifier on a static property.
 
@@ -26,7 +50,7 @@ The **`virtual`** keyword is used to **modify a method, property, indexer, or ev
 
 
 
-
+Example:
 ```cs
 
 class MyBaseClass
