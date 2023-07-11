@@ -22,7 +22,7 @@ The **`virtual`** keyword is used to **modify a method, property, indexer, or ev
 > You cannot use the **`virtual`** modifier with the **`static`**, **`abstract`**, **`private`**, or **`override`** modifiers.
 
 
-
+> A virtual inherited property can be overridden in a derived class by including a property declaration that uses the **`override`** modifier.
 
 
 
