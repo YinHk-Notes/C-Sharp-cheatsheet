@@ -19,7 +19,7 @@ The **`virtual`** keyword is used to **modify a method, property, indexer, or ev
 > **Note**: By default, methods are **non-virtual**. You **cannot override a non-virtual method**.
 
 
-
+> You cannot use the **`virtual`** modifier with the **`static`**, **`abstract`**, **`private`**, or **`override`** modifiers.
 
 
 
