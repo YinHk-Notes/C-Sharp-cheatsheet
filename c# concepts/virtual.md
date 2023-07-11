@@ -29,6 +29,9 @@ class Employee : Person
 }
 ```
 
+-   Use the C# `virtual` modifier for a member in the base class if you want to override it in the member with the same name of the subclasses.
+-   Use the base keyword to explicitly reference the method in a base class from a subclass.
+
 
 > 📌 It is an error to use the **`virtual`** modifier on a static property.
 
