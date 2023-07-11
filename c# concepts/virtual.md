@@ -15,5 +15,16 @@ a **virtual** method has an **implementation** in a base class as well as derive
 
 The **`virtual`** keyword is used to **modify a method, property, indexer, or event declaration** and allow for it to be overridden in a derived class.
 
+
+> **Note**: By default, methods are **non-virtual**. You **cannot override a non-virtual method**.
+
+
+
+
+
+
+
+
+
 ### ref
 [https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/virtual](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/virtual)
