@@ -67,3 +67,9 @@ https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/run-program?vi
 https://learn.microsoft.com/zh-tw/dotnet/csharp/tour-of-csharp/
 
 https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-console?view=vs-2022
+
+https://www.csharptutorial.net/
+
+
+
+
