@@ -1,5 +1,8 @@
 ## Abstract Class
-In C#, we cannot create objects of an abstract class. We use the `abstract` keyword to create an abstract class. For example,
+We use the **`abstract`** keyword to create an abstract class.
+> In C#, we **cannot create objects of an abstract class**. 
+
+For example,
 
 ```cs
 // create an abstract class
