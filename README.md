@@ -46,6 +46,11 @@ Visual studio
 ### C# compiler 
 - **Mono** : https://www.mono-project.com/
 
+https://dotnetfiddle.net/
+
+https://www.programiz.com/csharp-programming/online-compiler/
+
+
 
 ### ref
 https://learn.microsoft.com/en-us/dotnet/csharp/
