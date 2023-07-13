@@ -16,7 +16,9 @@ abstract class Language {
 Language obj = new Language();
 ```
 
-An abstract class can have both abstract methods (method without body) and non-abstract methods. For example,
+An abstract class can have both **abstract methods (method without body)** and **non-abstract methods**. 
+
+For example,
 
 ```cs
 abstract class Language {
