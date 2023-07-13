@@ -33,7 +33,41 @@ abstract class Language {
 }
 ```
 
+### inheritance
+As we cannot create objects of an abstract class, we **must create a derived clas**s from it. So that we can access members of the abstract class using the object of the derived class.
 
+
+For example,
+```cs
+using System;
+namespace AbstractClass {
+
+  abstract class Language {
+
+    // non-abstract method
+    public void display() {
+      Console.WriteLine("Non abstract method");
+    }
+  }
+
+  // inheriting from abstract class
+  class Program : Language {
+
+    static void Main (string [] args) {
+      
+      // object of Program class
+      Program obj = new Program();
+
+      // access method of an abstract class
+      obj.display();
+
+      Console.ReadLine();
+    }
+  }
+}
+```
+
+> **Note**: We can use abstract class only as a **base** class. This is why **abstract** classes **cannot be** **"sealed"**. 
 
 ### ref 
 https://www.programiz.com/csharp-programming/abstract-class
