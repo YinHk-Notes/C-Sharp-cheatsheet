@@ -42,6 +42,11 @@ https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/language-spec
 ### Best IDE for C#
 Visual studio
 
+
+### C# compiler 
+- **Mono** : https://www.mono-project.com/
+
+
 ### ref
 https://learn.microsoft.com/en-us/dotnet/csharp/
 
