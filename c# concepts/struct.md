@@ -1,7 +1,16 @@
 ## struct
 
 
+### Declaration
 
+eg:
+```cs
+struct Coordinate
+{
+    public int x;
+    public int y;
+}
+```
 
 
 
