@@ -32,7 +32,21 @@ Console.WriteLine(point.y); //output: 0
 
 If you declare a variable of **`struct**` type without using **`new`** keyword, it does not call any constructor, so all the members remain unassigned. Therefore, you must assign values to each member before accessing them, otherwise, it will give a compile-time error.
 
+```cs
+struct Coordinate
+{
+    public int x;
+    public int y;
+}
 
+Coordinate point;
+Console.Write(point.x); // Compile time error  
+
+point.x = 10;
+point.y = 20;
+Console.Write(point.x); //output: 10  
+Console.Write(point.y); //output: 20
+```
 
 
 
