@@ -15,6 +15,24 @@ struct Coordinate
 
 
 
+
+A **`struct`** object can be created with or without the new operator, same as primitive type variables.
+
+```cs
+struct Coordinate
+{
+    public int x;
+    public int y;
+}
+
+Coordinate point = new Coordinate();
+Console.WriteLine(point.x); //output: 0  
+Console.WriteLine(point.y); //output: 0
+```
+
+
+
+
 ### ref
 https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/struct
 
