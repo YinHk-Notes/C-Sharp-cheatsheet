@@ -11,6 +11,8 @@ Structs share most of the same syntax as classes,but more limited than classes i
 - Unlike classes, structs can be instantiated(creating object) without using a **`new`** operator.
 - Structs can declare **constructors** that **have parameters**.
 - Structs **do not support inheritance**, but they can **implement interfaces**.
+- A struct **cannot be null**, and a struct variable cannot be assigned null unless the variable is declared as a **nullable type**.
+
 
 
 
