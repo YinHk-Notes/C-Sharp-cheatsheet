@@ -34,19 +34,6 @@ class BookClass
 }
 ```
 
-### Best Practices for Using Structs and Classes
-
-- When using structs, it’s important to keep their size small, so they’re stored on the stack instead of the heap. This can help to improve performance and reduce memory usage.
-
-- When using classes, it’s a good idea to use **inheritance** to create hierarchies of objects with shared properties and methods. This can help to reduce code duplication and make your code more maintainable.
-
-- Another important consideration when using structs and classes in C# is to use them appropriately based on their intended purpose. Structs are best used for small, simple data structures that don’t require a lot of functionality, while classes are better suited for more complex objects with behavior and functionality.
-
-
-
-
-
-
 ### Declaration
 
 eg:
@@ -101,6 +88,15 @@ However, there are some cases where classes are faster than structs. For example
 Another advantage of using structs is that they are **value types**, meaning that they are copied by value rather than by reference. This can be useful in situations where you want to ensure that the original data is not modified by any subsequent operations.
 
 On the other hand, classes are **reference types**, which means that they are passed by reference. This can be useful in situations where you want to modify the original data without creating a new copy of it.
+
+
+### Best Practices for Using Structs and Classes
+
+- When using structs, it’s important to keep their size small, so they’re stored on the stack instead of the heap. This can help to improve performance and reduce memory usage.
+
+- When using classes, it’s a good idea to use **inheritance** to create hierarchies of objects with shared properties and methods. This can help to reduce code duplication and make your code more maintainable.
+
+- Another important consideration when using structs and classes in C# is to use them appropriately based on their intended purpose. Structs are best used for small, simple data structures that don’t require a lot of functionality, while classes are better suited for more complex objects with behavior and functionality.
 
 
 
