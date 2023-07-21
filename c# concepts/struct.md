@@ -68,7 +68,7 @@ Console.Write(point.y); //output: 20
 ```
 
 ### Structs vs Classes
-Due to their memory allocation differences, structs are generally **faster** than classes. If you’re working with a large amount of data, structs can be more efficient because they don’t require the overhead of heap memory allocation.
+Due to their memory allocation differences, **structs are generally** **faster** **than classes**. If you’re working with a large amount of data, structs can be more efficient because they don’t require the overhead of heap memory allocation.
 
 However, there are some cases where classes are faster than structs. For example, when copying large objects, classes can be more efficient because they only copy a reference to the object instead of the object itself.
 
