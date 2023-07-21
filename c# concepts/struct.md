@@ -100,6 +100,20 @@ On the other hand, classes are **reference types**, which means that they are pa
 
 
 
+### Common Mistakes to Avoid
+
+- One common mistake when using structs is to make them too large. If your struct is too large, it will be stored on the heap instead of the stack, which can cause **performance issues**.
+
+- Another mistake is to use a class when a struct would be more appropriate. If you’re working with simple data types, using a struct can be more efficient and improve performance.
+
+- It’s also important to note that structs are **value types**, while classes are **reference types**. This means that when you pass a struct to a method or assign it to a variable, a copy of the struct is created. This can lead to unexpected behavior if you’re not careful.
+
+- Additionally, structs cannot inherit from other structs or classes, and they cannot be used as a base for other types. If you need to create a more complex data structure, a class may be a better choice.
+
+
+
+
+
 ### ref
 https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/struct
 
