@@ -18,7 +18,21 @@ Structs share most of the same syntax as classes,but more limited than classes i
 - Struct members **cannot be specified as abstract, sealed, virtual, or protected**.
 
 
+```cs
+struct Book
+{
+    public string Title;
+    public string Author;
+    public int Pages;
+}
 
+class BookClass
+{
+    public string Title;
+    public string Author;
+    public int Pages;
+}
+```
 
 
 ### Declaration
