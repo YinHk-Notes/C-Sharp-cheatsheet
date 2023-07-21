@@ -75,3 +75,9 @@ https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types
 https://www.programiz.com/csharp-programming/struct
 
 https://www.tutorialsteacher.com/csharp/csharp-struct
+
+**Choosing Between Class and Struct** \
+https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/choosing-between-class-and-struct
+
+
+
