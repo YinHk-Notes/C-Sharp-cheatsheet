@@ -67,6 +67,15 @@ Console.Write(point.x); //output: 10
 Console.Write(point.y); //output: 20
 ```
 
+### Structs vs Classes
+Due to their memory allocation differences, structs are generally **faster** than classes. If you’re working with a large amount of data, structs can be more efficient because they don’t require the overhead of heap memory allocation.
+
+However, there are some cases where classes are faster than structs. For example, when copying large objects, classes can be more efficient because they only copy a reference to the object instead of the object itself.
+
+Another advantage of using structs is that they are **value types**, meaning that they are copied by value rather than by reference. This can be useful in situations where you want to ensure that the original data is not modified by any subsequent operations.
+
+On the other hand, classes are **reference types**, which means that they are passed by reference. This can be useful in situations where you want to modify the original data without creating a new copy of it.
+
 
 
 ### ref
@@ -79,5 +88,5 @@ https://www.tutorialsteacher.com/csharp/csharp-struct
 **Choosing Between Class and Struct** \
 https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/choosing-between-class-and-struct
 
-
+https://www.bytehide.com/blog/struct-vs-class-csharp
 
