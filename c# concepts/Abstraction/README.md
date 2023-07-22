@@ -3,7 +3,7 @@ Data **abstraction** is the process of **hiding certain details and showing only
 
 Abstraction can be achieved with either **abstract classes** or **interfaces**.
 
-
+> **Note**: Abstraction can also be achieved with **Interfaces**
 
 ### Abstract Classes and Methods
 
