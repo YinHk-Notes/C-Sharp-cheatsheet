@@ -88,3 +88,7 @@ abstract class MyClass
 
 ### ref 
 https://www.w3schools.com/cs/cs_abstract.php
+
+https://www.programiz.com/csharp-programming/abstract-class
+
+https://www.csharptutorial.net/csharp-tutorial/csharp-abstract-class/
