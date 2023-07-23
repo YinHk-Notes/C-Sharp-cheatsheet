@@ -74,6 +74,16 @@ class Program
 ### Why And When To Use Abstract Classes and Methods?
 > To achieve **security** - **hide certain details** and **only show the important details** of an object.
 
+### Abstract properties
+Like an abstract method, an abstract property consists of the abstract keyword and provides no implementation for the `get` or `set` access modifier.
+Eg:
+```cs
+abstract class MyClass
+{
+    public abstract string AbstractProperty { get; set; }
+    public abstract string AbstractMethod();    
+}
+```
 
 
 ### ref 
