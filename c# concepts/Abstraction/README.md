@@ -143,10 +143,7 @@ namespace AbstractClass {
     
     protected string name;
     // abstract method
-    public abstract string Name {
-      get;
-      set;
-    }
+    public abstract string Name { get; set; }
   }
 
   // inheriting from abstract class
