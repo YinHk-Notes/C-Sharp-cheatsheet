@@ -8,6 +8,8 @@
 - `private`
 - `file`
 
+> **Encapsulation** is implemented by using **access specifiers**. An access specifier defines the **scope and visibility of a class member**. 
+
 |Modifier|Description|
 |-|-|
 |`public`|	The code is accessible for all classes. Access is not restricted.|
