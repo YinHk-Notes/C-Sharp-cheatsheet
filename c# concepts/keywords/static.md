@@ -27,3 +27,5 @@ Although a field cannot be declared as **`static` const**, a [const](https://doc
 > ⚠️ C# **does not support `static` local variables** (that is, variables that are declared in method scope)
 
 
+### ref
+https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/static
