@@ -3,6 +3,8 @@
 C# allows variables to be declared as **explicit type or implicit type**.  
 The C# `var` keyword is used to **declare implicit type variable**s in C#. 
 
+A common use of var is with a constructor invocation expression. The use of var allows you to not repeat a type name in a variable declaration and object instantiation
+
 ```cs
 var name = "C# Corner"; // Implicitly typed.  
 string name = "C# Corner"; // Explicitly typed.  
