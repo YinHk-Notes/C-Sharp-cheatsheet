@@ -1,6 +1,8 @@
 ## Abstract Class
 We use the **`abstract`** keyword to create an abstract class.
-> In C#, we **cannot create objects of an abstract class**. 
+> In C#, we **cannot create objects of an abstract class**.
+> An abstract class may contain abstract members including **abstract methods** and **abstract properties**.
+> Abstract methods and properties do not contain implementation.
 
 For example,
 
@@ -67,7 +69,9 @@ namespace AbstractClass {
 }
 ```
 
-> **Note**: We can use abstract class only as a **base** class. This is why **abstract** classes **cannot be** **"sealed"**. 
+> **Note**: We can use abstract class only as a **base** class. This is why **abstract** classes **cannot be** **"sealed"**.
+
+> The **subclasses** of an abstract class **must implement the abstract methods and properties**.
 
 ### ref 
 https://www.programiz.com/csharp-programming/abstract-class
