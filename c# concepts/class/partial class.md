@@ -49,5 +49,14 @@ partial class Moon { }
 class Moon {}
 
 ```
+
+```cs
+partial class Earth : Planet, IRotate { }
+partial class Earth : IRevolve { }
+
+//equivalent to
+class Earth : Planet, IRotate, IRevolve { }
+
+```
 ### ref
 https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods
