@@ -29,5 +29,25 @@ The `partial` keyword indicates that other parts of the class, struct, or interf
 
 > If any part is declared abstract, then the whole type is considered abstract. If any part is declared sealed, then the whole type is considered sealed. If any part declares a base type, then the whole type inherits that class.
 
+
+At compile time, attributes of partial-type definitions are merged. For example, consider the following declarations:
+
+Eg:
+```cs
+[SerializableAttribute]
+partial class Moon { }
+
+[ObsoleteAttribute]
+partial class Moon { }
+
+```
+
+```cs
+
+[SerializableAttribute]
+[ObsoleteAttribute]
+class Moon {}
+
+```
 ### ref
 https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods
