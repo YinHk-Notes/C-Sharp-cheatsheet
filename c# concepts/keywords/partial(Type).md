@@ -27,6 +27,7 @@ namespace PC
 
 ```
 
+> Splitting a class, struct or interface type over several files can be useful when you are working with large projects, or with automatically generated code such as that provided by the Windows Forms Designer. A **partial type** may contain a **partial method**.
 
 ### ref
 https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/partial-type
