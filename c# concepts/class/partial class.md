@@ -61,6 +61,29 @@ class Earth : Planet, IRotate, IRevolve { }
 
 
 ### Restrictions
+- All partial-type definitions meant to be parts of the same type must be modified with `partial`. 
+    ```cs
+    public partial class A { }
+    //public class A { }  // Error, must also be marked partial
+    ```
+- The `partial` modifier can only appear immediately before the keywords `class`, `struct`, or `interface`.
+- Nested partial types are allowed in partial-type definitions as illustrated in the following example:
+  
+    ```cs
+    partial class ClassWithNestedClass
+    {
+        partial class NestedClass { }
+    }
+
+    partial class ClassWithNestedClass
+    {
+        partial class NestedClass { }
+    }
+    ```
+- All partial-type definitions meant to be parts of the same type must be defined in the same assembly and the same module (.exe or .dll file). Partial definitions cannot span multiple modules.
+- The class name and generic-type parameters must match on all partial-type definitions. Generic types can be partial. Each partial declaration must use the same parameter names in the same order.
+- 
+
 
 
 ### ref
