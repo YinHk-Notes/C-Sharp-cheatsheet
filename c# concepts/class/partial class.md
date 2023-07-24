@@ -27,5 +27,7 @@ The `partial` keyword indicates that other parts of the class, struct, or interf
 
 > All the parts must be available at compile time to form the final type. All the parts must have the same accessibility, such as `public`, `private`, and so on.
 
+> If any part is declared abstract, then the whole type is considered abstract. If any part is declared sealed, then the whole type is considered sealed. If any part declares a base type, then the whole type inherits that class.
+
 ### ref
 https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods
