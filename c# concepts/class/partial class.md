@@ -58,5 +58,10 @@ partial class Earth : IRevolve { }
 class Earth : Planet, IRotate, IRevolve { }
 
 ```
+
+
+### Restrictions
+
+
 ### ref
 https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods
