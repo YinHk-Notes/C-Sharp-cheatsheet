@@ -1,5 +1,27 @@
 ## Partial Classes
+There are several situations when splitting a class definition is desirable:
 
+-   When working on large projects, spreading a class over separate files enables multiple programmers to work on it at the same time.
+-   When working with automatically generated source, code can be added to the class without having to recreate the source file. Visual Studio uses this approach when it creates Windows Forms, Web service wrapper code, and so on. You can create code that uses these classes without having to modify the file created by Visual Studio.
+-   When using source generators to generate additional functionality in a class.
+
+
+Eg:
+```cs
+public partial class Employee
+{
+    public void DoWork()
+    {
+    }
+}
+
+public partial class Employee
+{
+    public void GoToLunch()
+    {
+    }
+}
+```
 
 ### ref
 https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods
