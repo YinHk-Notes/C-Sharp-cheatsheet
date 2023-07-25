@@ -29,6 +29,12 @@ partial void OnNameChanged()
 }
 ```
 
+- Partial method declarations must begin with the contextual keyword partial.
+- Partial method signatures in both parts of the partial type must match.
+- Partial methods can have static and unsafe modifiers.
+- Partial methods can be generic. Constraints are put on the defining partial method declaration, and may optionally be repeated on the implementing one. Parameter and type parameter names do not have to be the same in the implementing declaration as in the defining one.
+- You can make a delegate to a partial method that has been defined and implemented, but not to a partial method that has only been defined.
+
 ### ref
 https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods
 
