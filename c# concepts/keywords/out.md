@@ -2,6 +2,8 @@
 
 `out` allows you to pass parameters using **references** and to **change the values** of those parameters as well.
 
+`out` keyword is used to pass arguments to method as a **reference type**.
+
 `out` is used to state that the parameter passed must be modified by the method.
 
 
