@@ -33,4 +33,10 @@ Console.WriteLine(number);
 > An argument that is passed to a `ref` or `in` parameter must be initialized before it's passed.
 
 
+### Reference return values
+Reference return values (or ref returns) are values that a method returns by reference to the caller. That is, the caller can modify the value returned by a method, and that change is reflected in the state of the object in the called method.
+
+A reference return value is defined by using the ref keyword
+
+
 https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/ref
