@@ -4,6 +4,13 @@
 
 `out` is used to state that the parameter passed must be modified by the method.
 
+
+
+You can use the out keyword in two contexts:
+- As a **parameter modifier**, which lets you pass an argument to a method **by reference** rather than by **value**.
+- In **generic type parameter** declarations for **interfaces** and **delegates**, which specifies that a **type** parameter is **covariant**.
+
+
 > The `out` keyword is identical to the `ref` keyword, with the exception that `ref` needs the variable to be initialized prior to being passed. It is similar to `ref` keyword. But the main difference between `ref` and `out` keyword is that ref needs that the variable must be initialized before it passed to the method. But out parameter doesn’t require the variables to be initialized before it passed to the method.
 
 -   In c#, `out` keyword is used to pass arguments to the method as a **reference type**.
