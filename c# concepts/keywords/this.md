@@ -2,7 +2,7 @@
 The `this` keyword refers to the current instance of the class and is also used as a modifier of the first parameter of an extension method.
 
 
-- Refers to the current instance of a class
+- Refers to the current instance of a class:
   ```cs
     using System;
  
@@ -24,36 +24,79 @@ The `this` keyword refers to the current instance of the class and is also used 
       }
     }
   }
-```
--  Invoke Constructor of the Same Class Using `this` \
-   While working with constructor overloading, we might have to invoke one constructor from another constructor. \
+  ```
+-  Invoke Constructor of the Same Class Using **`this`**: \
+   While working with **constructor overloading**, we might have to invoke one constructor from another constructor. \
    eg:
+
+    ```cs
+        using System;
+ 
+        namespace ThisKeyword {
+        class Test {
+    
+          Test(int num1, int num2)
+          {
+
+              Console.WriteLine("Constructor with two parameter");
+          }
+    
+          // invokes the constructor with 2 parameters
+          Test(int num) : this(33, 22)
+          {
+
+              Console.WriteLine("Constructor with one parameter");
+          }
+
+          public static void Main(String[] args)
+          {
+
+              Test t1 = new Test(11); 
+              Console.ReadLine();   
+          }
+        }
+        }
+    ```
+
+> **Note**: Calling one constructor from another constructor is known as **constructor chaining**.
+
+- `this` as an object argument \
+  We can use **`this`** keyword to pass the current object as an argument to a method.
 
   ```cs
     using System;
  
     namespace ThisKeyword {
-    class Test {
-    
-      Test(int num1, int num2) {
+      class Test {
+        int num1;
+        int num2;
+      
+        Test() {
+          num1 = 22;
+          num2 = 33;
+        }
 
-        Console.WriteLine("Constructor with two parameter");
-      }
-    
-      // invokes the constructor with 2 parameters
-      Test(int num) : this(33, 22) {
+        // method that accepts this as argument   
+        void passParameter(Test t1) {
+            Console.WriteLine("num1: " + num1);
+            Console.WriteLine("num2: " + num2);
+        }
 
-        Console.WriteLine("Constructor with one parameter");
-      }
-
-      public static void Main(String[] args) {
-
-        Test t1 = new Test(11); 
-        Console.ReadLine();   
+        void display() {
+            // passing this as a parameter
+            passParameter(this);
+        }
+  
+        public static void Main(String[] args) {
+            Test t1 = new Test();
+            t1.display();
+            Console.ReadLine();
+        }
       }
     }
-  }
-```
+
+  ```
+
 
 
 
