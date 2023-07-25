@@ -4,6 +4,7 @@
 
 > The `out` keyword is identical to the `ref` keyword, with the exception that `ref` needs the variable to be initialized prior to being passed. It is similar to `ref` keyword. But the main difference between `ref` and `out` keyword is that ref needs that the variable must be initialized before it passed to the method. But out parameter doesn’t require the variables to be initialized before it passed to the method.
 
+-   In c#, `out` keyword is used to pass arguments to the method as a **reference type**.
 -   It is also similar to the in keyword but the _in_ keyword does not allow the method that called to change the argument value but `ref` allows.
 -   For using _out_ keyword as a parameter both the method definition and calling method must use the _out_ keyword explicitly.
 -   The out parameters are not allowed to use in asynchronous methods.
