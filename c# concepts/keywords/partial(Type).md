@@ -1,7 +1,7 @@
 ## partial type
 Partial type definitions allow for the definition of a **class**, **struct**, **interface**, or **record** to be **split into multiple files**.
 
-Eg:
+Eg: \
 In File1.cs:
 ```cs
 namespace PC
