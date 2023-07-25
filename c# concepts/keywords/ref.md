@@ -11,8 +11,11 @@ You use the ref keyword in the following contexts:
 ### Passing an argument by reference
 When used in a method's parameter list, the `ref` keyword indicates that an argument is passed by reference, not by value.
 
+`ref` is used to state that the parameter passed **may be modified by the method**.
 
 To use a `ref` parameter, both the method definition and the calling method must explicitly use the `ref` keyword
+
+if we use `ref` to pass the variable by reference, the variable is not copied into the method. Instead, the method follows the reference to access the original variable. Hence any change the called method makes to the value of the variable will be made to the original variable.
 
 Eg:
 ```cs
