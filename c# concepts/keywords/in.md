@@ -9,6 +9,9 @@ The `in` keyword **doesn’t allow parameter values to be changed**.
 This is useful for parameters that are not modified by the called method, but must be passed by reference in order for the calling method to access the results.
 
 
+Variables passed as in arguments **must be initialized** before being passed in a method call. However, the called method **may not assign a value or modify the argument**.
+
+
 ```cs
 int readonlyArgument = 44;
 InArgExample(readonlyArgument);
@@ -21,9 +24,34 @@ void InArgExample(in int number)
 }
 ```
 
+**Overloading** based on the presence of in is allowed:
+
+Eg:
+```cs
+class InOverloads
+{
+    public void SampleMethod(in int i) { }
+    public void SampleMethod(int i) { }
+}
+```
+
+
 
 > Note: The `in` keyword can also be used with a generic type parameter to specify that the type parameter is contravariant, as part of a `foreach` statement, or as part of a `join` clause in a LINQ query.
-> 
+
+
+### Limitations on `in` parameters
+
+You can't use the in, ref, and out keywords for the following kinds of methods:
+
+- Async methods, which you define by using the `async` modifier.
+- Iterator methods, which include a `yield` return or `yield break` statement.
+- The first argument of an extension method cannot have the in modifier unless that argument is a struct.
+- The first argument of an extension method where that argument is a generic type (even when that type is constrained to be a struct.)
+
+
+
+
 ### ref
 https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/in-parameter-modifier \
 https://www.pluralsight.com/guides/csharp-in-out-ref-parameters \
