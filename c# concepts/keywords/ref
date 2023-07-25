@@ -27,7 +27,7 @@ Console.WriteLine(number);
 // Output: 45
 ```
 
-
+> An argument that is passed to a `ref` or `in` parameter must be initialized before it's passed.
 
 
 https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/ref
