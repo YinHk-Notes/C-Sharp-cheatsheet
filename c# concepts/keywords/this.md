@@ -25,10 +25,10 @@ The `this` keyword refers to the current instance of the class and is also used 
     }
   }
 ```
+-  Invoke Constructor of the Same Class Using `this` \
+   While working with constructor overloading, we might have to invoke one constructor from another constructor. \
+   eg:
 
-- Invoke Constructor of the Same Class Using `this`
-  While working with constructor overloading, we might have to invoke one constructor from another constructor. \
-  eg:
   ```cs
     using System;
  
