@@ -13,7 +13,7 @@ Defining a property involves providing a property name. Indexers are not defined
 
 
 -   Indexers enable objects to be indexed in a similar manner to arrays.
--   A **`get`** accessor returns a value. A `set` accessor assigns a value.
+-   A **`get`** accessor returns a value. A **`set`** accessor assigns a value.
 -   The **`value`** keyword is used to define the value being assigned by the set accessor.
 -   Indexers do not have to be indexed by an integer value; it is up to you how to define the specific look-up mechanism.
 -   Indexers can be overloaded.
