@@ -40,6 +40,14 @@ element-type this[int index] {
 ```
 
 ```cs
+// Indexer declaration
+public int this[int index]
+{
+    // get and set accessors
+}
+```
+
+```cs
 using System;
 
 class SampleCollection<T>
