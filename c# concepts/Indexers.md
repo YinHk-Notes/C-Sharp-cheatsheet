@@ -38,7 +38,7 @@ element-type this[int index] {
 }
 
 ```
-
+Eg:
 ```cs
 // Indexer declaration
 public int this[int index]
