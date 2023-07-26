@@ -97,7 +97,7 @@ The `this` keyword refers to the current instance of the class and is also used 
 
   ```
 - **`this`** to declare a C# indexer: \
-  **Indexers** allow objects of a class to be indexed just like arrays. We use this keyword to declare an indexer in C#.
+  **Indexers** allow **objects of a class** to be indexed just like arrays. We use this keyword to declare an indexer in C#.
   ```cs
 
     using System;
