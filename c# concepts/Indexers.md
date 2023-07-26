@@ -185,6 +185,90 @@ class Program
 }
 ```
 
+### Indexers in Interfaces
+Indexers can be declared on an interface.
+
+Accessors of interface indexers differ from the accessors of class indexers in the following ways:
+
+-   Interface accessors do not use modifiers.
+-   An interface accessor typically does not have a body.
+
+The purpose of the accessor is to indicate whether the indexer is read-write, read-only, or write-only. You may provide an implementation for an indexer defined in an interface, but this is rare. Indexers typically define an API to access data fields, and data fields cannot be defined in an interface.
+
+```cs
+public interface ISomeInterface
+{
+    //...
+    // Indexer declaration:
+    element-type this[int index]
+    {
+        get;
+        set;
+    }
+}
+```
+Eg: 
+```
+// Indexer on an interface:
+public interface IIndexInterface
+{
+    // Indexer declaration:
+    int this[int index]
+    {
+        get;
+        set;
+    }
+}
+
+// Implementing the interface.
+class IndexerClass : IIndexInterface
+{
+    private int[] arr = new int[100];
+    public int this[int index]   // indexer declaration
+    {
+        // The arr object will throw IndexOutOfRange exception.
+        get => arr[index];
+        set => arr[index] = value;
+    }
+}
+
+```
+```cs
+IndexerClass test = new IndexerClass();
+System.Random rand = System.Random.Shared;
+// Call the indexer to initialize its elements.
+for (int i = 0; i < 10; i++)
+{
+    test[i] = rand.Next();
+}
+for (int i = 0; i < 10; i++)
+{
+    System.Console.WriteLine($"Element #{i} = {test[i]}");
+}
+
+/* Sample output:
+    Element #0 = 360877544
+    Element #1 = 327058047
+    Element #2 = 1913480832
+    Element #3 = 1519039937
+    Element #4 = 601472233
+    Element #5 = 323352310
+    Element #6 = 1422639981
+    Element #7 = 1797892494
+    Element #8 = 875761049
+    Element #9 = 393083859
+*/
+```
+
+You could also use the explicit interface member implementation by using the fully qualified name of the interface member. 
+
+```cs
+string IIndexInterface.this[int index]
+{
+}
+
+```
+
 
 
 
