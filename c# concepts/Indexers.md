@@ -9,6 +9,8 @@ The indexed value can be set or retrieved without explicitly specifying a type o
 
 When you define an indexer for a class, this class behaves similar to a virtual array. You can then access the instance of this class using the **array access operator `[]`**.
 
+Defining a property involves providing a property name. Indexers are not defined with names, but with the **`this`** keyword, which refers to the object instance.
+
 
 -   Indexers enable objects to be indexed in a similar manner to arrays.
 -   A `get` accessor returns a value. A `set` accessor assigns a value.
