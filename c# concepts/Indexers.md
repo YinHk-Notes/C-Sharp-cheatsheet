@@ -9,6 +9,16 @@ The indexed value can be set or retrieved without explicitly specifying a type o
 
 When you define an indexer for a class, this class behaves similar to a virtual array. You can then access the instance of this class using the **array access operator `[]`**.
 
+
+-   Indexers enable objects to be indexed in a similar manner to arrays.
+-   A `get` accessor returns a value. A `set` accessor assigns a value.
+-   The `value` keyword is used to define the value being assigned by the set accessor.
+-   Indexers do not have to be indexed by an integer value; it is up to you how to define the specific look-up mechanism.
+-   Indexers can be overloaded.
+-   Indexers can have more than one formal parameter, for example, when accessing a two-dimensional array.
+
+
+
 **syntax:** 
 
 ```cs
