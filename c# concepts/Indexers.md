@@ -46,7 +46,7 @@ public int this[int index]
     // get and set accessors
 }
 ```
-
+For generic, eg:
 ```cs
 using System;
 
