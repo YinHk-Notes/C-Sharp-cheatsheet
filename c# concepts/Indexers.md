@@ -9,7 +9,7 @@ The indexed value can be set or retrieved without explicitly specifying a type o
 
 When you define an indexer for a class, this class behaves similar to a virtual array. You can then access the instance of this class using the **array access operator `[]`**.
 
-**syntax:** \
+**syntax:** 
 
 ```cs
 element-type this[int index] {
