@@ -58,7 +58,7 @@ The `this` keyword refers to the current instance of the class and is also used 
         }
     ```
 
-> **Note**: Calling one constructor from another constructor is known as **constructor chaining**.
+  > **Note**: Calling one constructor from another constructor is known as **constructor chaining**.
 
 - `this` as an object argument \
   We can use **`this`** keyword to pass the current object as an argument to a method.
@@ -96,9 +96,48 @@ The `this` keyword refers to the current instance of the class and is also used 
     }
 
   ```
+- **`this`** to declare a C# indexer: \
+  **Indexers** allow objects of a class to be indexed just like arrays. We use this keyword to declare an indexer in C#.
+  ```cs
 
+    using System;
+    namespace ThisKeyword {
+      
+      class Student {
+      
+          private string[] name = new string[3];
+  
+          // declaring an indexer
+          public string this[int index] {
 
+          // returns value of array element
+          get {
+              return name[index];
+          }
+      
+          // sets value of array element
+          set { 
+            name[index] = value;
+          }
+        }
+      }
+  
+    class Program {
+  
+      public static void Main() {
+        Student s1 = new Student();
+        s1[0] = "Ram";
+        s1[1] = "Shyam";
+        s1[2] = "Gopal";
 
+        for (int i = 0; i < 3; i++) {
+
+          Console.WriteLine(s1[i] + " ");
+          }
+        }
+      }
+    }
+  ```
 
 ### ref
 https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/this
