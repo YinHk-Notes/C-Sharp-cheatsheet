@@ -4,7 +4,7 @@ An **indexer** allows an **object to be indexed** such as an array.
 
 **Indexers** allow **instances of a class** or **struct** to be indexed just like arrays.
 
-The indexed value can be set or retrieved without explicitly specifying a type or instance member.
+The **indexed value** can be set or retrieved **without explicitly specifying** a type or instance member.
 
 
 When you define an indexer for a class, this class behaves similar to a virtual array. You can then access the instance of this class using the **array access operator `[]`**.
@@ -39,6 +39,34 @@ element-type this[int index] {
 
 ```
 
+```cs
+using System;
+
+class SampleCollection<T>
+{
+   // Declare an array to store the data elements.
+   private T[] arr = new T[100];
+
+   // Define the indexer to allow client code to use [] notation.
+   public T this[int i]
+   {
+      get { return arr[i]; }
+      set { arr[i] = value; }
+   }
+}
+
+class Program
+{
+   static void Main()
+   {
+      var stringCollection = new SampleCollection<string>();
+      stringCollection[0] = "Hello, World";
+      Console.WriteLine(stringCollection[0]);
+   }
+}
+// The example displays the following output:
+//       Hello, World.
+```
 
 
 ### ref
