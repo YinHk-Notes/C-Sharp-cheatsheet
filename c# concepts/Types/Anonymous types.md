@@ -50,3 +50,6 @@ var students = new[] {
     };
 
 ```
+
+### ref
+https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/anonymous-types
