@@ -15,6 +15,14 @@ Restriction:
 - No additional parameters are permitted after the `params` keyword in a method declaration.
 - Only one `params` keyword is permitted in a method declaration.
 
+When you call a method with a `params` parameter, you can pass in:
+
+-   A comma-separated list of arguments of the type of the array elements.
+-   An array of arguments of the specified type.
+-   No arguments. If you send no arguments, the length of the `params` list is zero.
+
+
+
 Eg:
 ```cs
 public static int TotalMarks(params int[] list)
