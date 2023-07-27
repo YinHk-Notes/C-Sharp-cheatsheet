@@ -1,4 +1,4 @@
-### `var`
+### Implicitly typed local variables
 
 C# allows variables to be declared as **explicit type or implicit type**.  
 
