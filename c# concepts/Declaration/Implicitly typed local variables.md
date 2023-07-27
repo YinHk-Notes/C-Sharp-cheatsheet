@@ -46,3 +46,8 @@ https://www.c-sharpcorner.com/UploadFile/5ef30d/var-keyword-in-C-Sharp-programmi
 
 https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/declarations#implicitly-typed-local-variables
 
+https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables
+
+https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/how-to-use-implicitly-typed-local-variables-and-arrays-in-a-query-expression
+
+
