@@ -43,7 +43,7 @@ List<int>? ys = new();
 
 ```
 
-## Declare the array with the `var` keyword in C#
+### Declare the array with the `var` keyword in C#
 We can use the var keyword to declare array data types where we don't have predefined datatypes
 
 ```cs
