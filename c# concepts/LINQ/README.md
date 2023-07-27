@@ -58,10 +58,47 @@ class IntroToLINQ
 }
 ```
 
+### Query expression
+A _query expression_ is a query expressed in query syntax. A query expression is a first-class language construct. It is just like any other expression and can be used in any context in which a C# expression is valid. A query expression consists of a set of clauses written in a declarative syntax similar to SQL or XQuery. Each clause in turn contains one or more C# expressions, and these expressions may themselves be either a query expression or contain a query expression.
+
+### Query variable
+In LINQ, a query variable is any variable that stores a _query_ instead of the _results_ of a query. More specifically, a query variable is always an enumerable type that will produce a sequence of elements when it is iterated over in a `foreach` statement or a direct call to its `IEnumerator.MoveNext` method.
+
+```cs
+// Data source.
+int[] scores = { 90, 71, 82, 93, 75, 82 };
+
+// Query Expression.
+IEnumerable<int> scoreQuery = //query variable
+    from score in scores //required
+    where score > 80 // optional
+    orderby score descending // optional
+    select score; //must end with select or group
+
+// Execute the query to produce the results
+foreach (int testScore in scoreQuery)
+{
+    Console.WriteLine(testScore);
+}
+
+// Output: 93 90 82 82
+```
+
+```cs
+//Query syntax
+IEnumerable<City> queryMajorCities =
+    from city in cities
+    where city.Population > 100000
+    select city;
+
+// Method-based syntax
+IEnumerable<City> queryMajorCities2 = cities.Where(c => c.Population > 100000);
+```
+
 
 ### ref 
 https://learn.microsoft.com/en-us/dotnet/csharp/linq/
 
 https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries
 
-
+https://learn.microsoft.com/en-us/dotnet/csharp/linq/query-expression-basics
