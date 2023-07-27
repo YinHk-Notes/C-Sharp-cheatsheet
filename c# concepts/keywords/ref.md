@@ -36,7 +36,15 @@ Console.WriteLine(number);
 ### Reference return values
 Reference return values (or ref returns) are values that a method returns by reference to the caller. That is, the caller can modify the value returned by a method, and that change is reflected in the state of the object in the called method.
 
-A reference return value is defined by using the `ref` keyword
-
+A reference return value is defined by using the `ref` keyword:
+- In the method signature.
+  ```cs
+    public ref decimal GetCurrentPrice()
+  ```
+- Between the `return` token and the variable returned in a `return` statement in the method.
+  ```cs
+    return ref DecimalArray[0];
+  ```
+  
 
 https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/ref
