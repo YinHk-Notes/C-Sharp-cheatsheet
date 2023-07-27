@@ -24,16 +24,20 @@ class Age
 }
 ```
 
-You can assign a value to a `readonly` field only in the following contexts:
- - When the variable is initialized in the declaration, for example:
-   ```cs
-      public readonly int y = 5;
-   ```
- - In an instance constructor of the class that contains the instance field declaration.
- - In the `static` constructor of the class that contains the `static` field declaration.
+   You can assign a value to a `readonly` field only in the following contexts:
+   - When the variable is initialized in the declaration, for example:
+      ```cs
+         public readonly int y = 5;
+      ```
+   - In an instance constructor of the class that contains the instance field declaration.
+   - In the `static` constructor of the class that contains the `static` field declaration.
 
-2. In a `readonly` **struct** type definition, readonly indicates that the structure type is **immutable**.
-   https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/struct#readonly-struct
+
+
+
+
+2.  In a `readonly` **struct** type definition, readonly indicates that the structure type is **immutable**.
+    https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/struct#readonly-struct
 
 ### ref 
 https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/readonly
