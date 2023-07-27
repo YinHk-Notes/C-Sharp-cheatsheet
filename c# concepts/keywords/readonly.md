@@ -38,6 +38,17 @@ class Age
 
 2.  In a `readonly` **struct** type definition, readonly indicates that the structure type is **immutable**.
     https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/struct#readonly-struct
+3. In a `readonly struct` type definition, `readonly` indicates that the structure type is immutable.
+   https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/struct#readonly-instance-members
+4. In a `ref` `readonly` method return, the `readonly` modifier indicates that method returns a reference and **writes aren't allowed** to that reference.
+   ```cs
+      private static readonly SamplePoint s_origin = new SamplePoint(0, 0, 0);
+      public static ref readonly SamplePoint Origin => ref s_origin;
+   ```
+
+
+
+
 
 ### ref 
 https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/readonly
