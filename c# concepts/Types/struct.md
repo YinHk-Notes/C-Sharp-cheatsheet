@@ -80,6 +80,15 @@ Console.Write(point.x); //output: 10
 Console.Write(point.y); //output: 20
 ```
 
+### `readonly` struct
+You use the readonly modifier to declare that a structure type is immutable. All data members of a readonly struct must be read-only as follows:
+
+- Any field declaration must have the `readonly` modifier.
+- Any property, including auto-implemented ones, must be read-only. In C# 9.0 and later, a property may have an init accessor.
+
+
+https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/struct#readonly-struct
+
 ### Structs vs Classes
 Due to their memory allocation differences, **structs are generally** **faster** **than classes**. If you’re working with a large amount of data, structs can be more efficient because they don’t require the overhead of heap memory allocation.
 
