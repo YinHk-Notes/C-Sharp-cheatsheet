@@ -36,9 +36,43 @@ class Age
 
 
 
-2.  In a `readonly` **struct** type definition, readonly indicates that the structure type is **immutable**.
+2. In a `readonly` **struct** type definition, readonly indicates that the structure type is **immutable**.
     https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/struct#readonly-struct
-3. In a `readonly struct` type definition, `readonly` indicates that the structure type is immutable.
+3. In an **instance member declaration** within a structure type, `readonly` indicates that an instance member **doesn't modify the state of the structure**.
+   ```cs
+         // C# program to illustrate how
+         // to create a readonly member
+         using System;
+
+         public struct Customer
+         {
+
+	         public string Name { get; }
+	         public int Price { get; }
+
+	         // Readonly member
+	         public readonly string Product { get; }
+
+	         public Customer(string name, string product, int price)
+	         {
+
+		         this.Name = name;
+		         this.Product = product;
+		         this.Price = price;
+	         }
+          }
+
+          class GFG {
+               // Main method
+	            static public void Main()
+	            {
+		               Customer a = new Customer("Sumit", "Mobile Phone", 2398);
+		               Console.WriteLine("Customer name: " + a.Name);
+		               Console.WriteLine("Product: " + a.Product);
+		               Console.WriteLine("Price: " + a.Price);
+	            }
+            }
+      ```
    https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/struct#readonly-instance-members
 4. In a `ref` `readonly` method return, the `readonly` modifier indicates that method returns a reference and **writes aren't allowed** to that reference.
    ```cs
