@@ -11,8 +11,26 @@ public delegate bool Predicate<in T>(T obj);
 
 ```
 
+```cs
+var data = new List<int> { 1, -2, 3, 0, 2, -1 };
+
+var predicate = new Predicate<int>(isPositive);
+var filtered = data.FindAll(predicate);
+
+Console.WriteLine(string.Join(",", filtered));
+
+bool isPositive(int val)
+{
+    return val > 0;
+}
+```
+
+
+
 ### ref
 https://www.tutorialsteacher.com/csharp/csharp-predicate
 
 https://learn.microsoft.com/en-us/dotnet/api/system.predicate-1?view=net-7.0
+
+https://zetcode.com/csharp/predicate/
 
