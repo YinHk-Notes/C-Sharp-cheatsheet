@@ -5,14 +5,14 @@ Asynchronous programming is a programming technique that allows code to be execu
 
 Asynchronous programming allows programs to perform these operations without blocking the calling thread. When an asynchronous operation is started, the program continues to execute other code while it waits for the operation to complete. The program is notified when the operation is complete and can continue with the following line of code.
 
-Asynchronous programming can be implemented using various techniques, such as callbacks, events, and promises. In C#, the "async" and "await" keywords provide a convenient way to write asynchronous code that looks similar to synchronous code, making it easier to read and maintain.
+Asynchronous programming can be implemented using various techniques, such as callbacks, events, and promises. In C#, the **`async`** and **`await`** keywords provide a convenient way to write asynchronous code that looks similar to synchronous code, making it easier to read and maintain.
 
 
 **`async`** specify that a method is **asynchronous**.
 
 **async programming** in C# can be accomplished by implementing the **Task-based** Asynchronous Pattern
 
-
+Eg:
 ```cs
 
 public async Task<User> GetLoggedUserEmailAsync()
