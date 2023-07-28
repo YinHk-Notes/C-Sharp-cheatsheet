@@ -122,6 +122,8 @@ class Car : Vehicle
   ...
 }
 
+// The error message will be something like this:
+// 'Car': cannot derive from sealed type 'Vehicle'
 
 ```
 
