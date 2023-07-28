@@ -95,6 +95,9 @@ public class TestOverriding
 } 
 
 ```
+-   Method overriding is possible only in derived classes. Because a method is overridden in the derived class from the base class.
+-   A **non-virtual** or a `static` method **can’t be overridden**.
+-   Both the `override` method and the `virtual` method **must** have the **same access level modifier**.
 
 
 https://www.geeksforgeeks.org/c-sharp-method-overriding/
