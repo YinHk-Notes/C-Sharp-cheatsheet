@@ -60,7 +60,6 @@ You can compile a C# program by using the command-line instead of the Visual Stu
 
 
 ### ref 
-https://www.tutorialspoint.com/csharp/csharp_program_structure.htm
 
 https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/run-program?view=vs-2022
 
@@ -68,7 +67,7 @@ https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/
 
 https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-console?view=vs-2022
 
-https://www.csharptutorial.net/
+
 
 
 
