@@ -65,6 +65,19 @@ The variables in C#, are categorized into the following types:
 In other words, they refer to a memory location. Using multiple variables, the reference types can refer to a memory location. If the data in the memory location is changed by one of the variables, the other variable automatically reflects this change in value.
 
 
+### Type-testing operators and cast expressions
+
+- **`is`**: \
+  The `is` operator checks if the run-time type of an expression result is compatible with a given type.
+- **`as`**: \
+  The `as` operator explicitly converts the result of an expression to a given reference or nullable value type.
+- `typeof`: \
+  The `typeof` operator obtains the `System.Type` instance for a type. The argument to the `typeof` operator must be the name of a type or a type parameter.
+
+
+
+https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/type-testing-and-cast#as-operator
+
 ### **C# Type Casting**
 
 Type casting is when you assign a value of one data type to another [type.In](http://type.in/) C#, there are two types of casting:
@@ -87,7 +100,7 @@ int a;
 ```
 
 
-[Casting and type conversions - C# Programming Guide](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/casting-and-type-conversions)
+https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/casting-and-type-conversions
 
 ### Unmanaged types
 A type is an **unmanaged type** if it's any of the following types:
