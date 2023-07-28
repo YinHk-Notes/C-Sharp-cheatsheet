@@ -1,4 +1,4 @@
-## `typeof
+## `typeof`
 
 The `typeof` operator obtains the **`System.Type`** instance for a type. The argument to the typeof operator ***must be the name of a type** or a ***type parameter**.
 
