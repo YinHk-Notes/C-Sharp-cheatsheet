@@ -6,6 +6,7 @@ The argument to the `sizeof` operator must be the name of an **unmanaged type** 
 
 
 |Expression	| Constant value |
+| - | - |
 | sizeof(sbyte)	| 1 |
 | sizeof(byte)	| 1 |
 | sizeof(short)	| 2 |
