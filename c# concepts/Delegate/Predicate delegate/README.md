@@ -1,11 +1,16 @@
-## Predicate Delegate
+## Predicate<T> Delegate
 A **Predicate** is a **delegate** that accepts **one or more generic parameters** and **returns a boolean value**.
 
 Predicate delegates are typically used to perform search operations based on a set of criteria.
 
 
+```cs
+public delegate bool Predicate<in T>(T obj);
 
+```
 
 ### ref
 https://www.tutorialsteacher.com/csharp/csharp-predicate
+
+https://learn.microsoft.com/en-us/dotnet/api/system.predicate-1?view=net-7.0
 
