@@ -99,7 +99,8 @@ int a;
  a = (int)x;   //1234
 ```
 #### Cast expression
-A cast expression of the form `(T)E` performs an explicit conversion of the result of expression `E` to type `T`. If no explicit conversion exists from the type of `E` to type `T`, a compile-time error occurs. At run time, an explicit conversion might not succeed and a cast expression might throw an exception.
+A cast expression of the form **`(T)E`** performs an explicit conversion of the result of expression **`E`** to type **`T`**. If no explicit conversion exists from the **type of `E`** to **type `T`**, a compile-time error occurs. 
+At run time, an explicit conversion might not succeed and a **cast expression might throw an exception**.
 
 https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/type-testing-and-cast#cast-expression
 
