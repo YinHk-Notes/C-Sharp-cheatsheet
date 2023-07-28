@@ -50,3 +50,12 @@ while (i < 10) // condition
 ```
 condition ? statement 1 : statement 2
 ```
+
+
+### Jump statements
+The jump statements unconditionally transfer control.
+- **`break`**: terminates the closest enclosing iteration process.
+- **`continue`**: starts a new iteration of the closest enclosing iteration process.
+- **`return`**: terminates execution of the function in which it appears and returns control and the function's result.
+- **`goto`**: transfers control to a statement that is marked by a **label**.
+- 
