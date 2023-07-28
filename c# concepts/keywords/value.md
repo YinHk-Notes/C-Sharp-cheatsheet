@@ -4,6 +4,7 @@ The contextual keyword `value` is used in the set accessor in **property** and *
 
 The word `value` references the value that client code is attempting to assign to the property or indexer.
 
+Eg:
 ```cs
 class MyBaseClass
 {
