@@ -109,8 +109,28 @@ class GFG {
 }
 
 ```
+If you don't want other classes to inherit from a class, use the **`sealed`** keyword:
+
+```cs
+sealed class Vehicle 
+{
+  ...
+}
+
+class Car : Vehicle 
+{
+  ...
+}
+
+
+```
+
+
+### ref
 
 https://www.geeksforgeeks.org/c-sharp-inheritance-in-interfaces/
+
+https://www.w3schools.com/cs/cs_inheritance.php
 
 
 
