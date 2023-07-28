@@ -16,6 +16,23 @@ catch (ArgumentException e)
 }
 ```
 
+You can provide several catch clauses
+```cs
+try
+{
+    var result = await ProcessAsync(-3, 4, cancellationToken);
+    Console.WriteLine($"Processing succeeded: {result}");
+}
+catch (ArgumentException e)
+{
+    Console.WriteLine($"Processing failed: {e.Message}");
+}
+catch (OperationCanceledException)
+{
+    Console.WriteLine("Processing is cancelled.");
+}
+
+```
 
 
 ### ref
