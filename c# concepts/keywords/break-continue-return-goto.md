@@ -143,7 +143,7 @@ void CheckMatrices(Dictionary<string, int[][]> matrixLookup, int target)
 // Not found 4 in matrix B.
 ```
 
-> **Note**: When you work with nested loops, consider refactoring separate loops into separate methods. That may lead to a simpler, more readable code without the **`goto`** statement.
+> **Note**: You can use the goto statement to **get out of a nested loop**. When you work with nested loops, consider refactoring separate loops into separate methods. That may lead to a simpler, more readable code without the **`goto`** statement.
 
 
 
