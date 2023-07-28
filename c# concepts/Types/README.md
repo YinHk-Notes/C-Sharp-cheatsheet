@@ -106,6 +106,9 @@ https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/typ
 
 https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/casting-and-type-conversions
 
+#### User-defined conversions
+https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/conversions#105-user-defined-conversions
+
 ### Unmanaged types
 A type is an **unmanaged type** if it's any of the following types:
 
