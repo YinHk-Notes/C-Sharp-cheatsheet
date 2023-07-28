@@ -134,7 +134,9 @@ https://www.geeksforgeeks.org/c-sharp-inheritance-in-interfaces/
 
 https://www.w3schools.com/cs/cs_inheritance.php
 
+https://www.programiz.com/csharp-programming/inheritance
 
+https://www.tutorialspoint.com/csharp/csharp_inheritance.htm
 
-
+https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/tutorials/inheritance
 
