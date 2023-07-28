@@ -99,7 +99,45 @@ ref int FindFirst(int[] numbers, Func<int, bool> predicate)
 
 
 ### `goto`
-transfers control to a statement that is marked by a label
+transfers control to a statement that is marked by a label.
+
+`label` is an identifier. When `goto label;` is encountered, the control of the program is transferred to `label:`. Then the code below `label:` is executed.
+
+
+```cs
+goto label;
+... 
+...
+label:
+  ...
+  ...
+```
+```cs
+using System;
+
+namespace CSharpGoto {
+
+  class Program {
+    public static void Main(string[] args) {
+      
+      // label
+      repeat: 
+        Console.WriteLine("Enter a number less than 10");
+        int num = Convert.ToInt32(Console.ReadLine());  
+
+        if(num >= 10) {
+          // transfers control to repeat
+          goto repeat;
+        }
+
+        Console.WriteLine(num + " is less than 10");
+        Console.ReadLine();
+    }
+  }
+}
+```
+
+
 ```cs
 var matrices = new Dictionary<string, int[][]>
 {
@@ -143,10 +181,94 @@ void CheckMatrices(Dictionary<string, int[][]> matrixLookup, int target)
 // Not found 4 in matrix B.
 ```
 
+```cs
+using System;
+
+namespace CSharpGoto {
+
+  class Program {
+
+    static void Main() {
+    for(int i = 0; i <= 10; i++) {
+
+      if(i == 5) {
+        // transfers control to End label
+        goto End;
+      }
+
+      Console.WriteLine(i);
+    }
+
+    // End label
+    End:
+      Console.WriteLine("Loop End");
+      Console.ReadLine();
+    }
+  }
+}
+```
+
 > **Note**: You can use the goto statement to **get out of a nested loop**. When you work with nested loops, consider refactoring separate loops into separate methods. That may lead to a simpler, more readable code without the **`goto`** statement.
 
+```cs
+using System;
 
+namespace CSharpGoto {
+
+  class Program {
+    public static void Main(string[] args) {
+      
+      // label
+      repeat: 
+        Console.WriteLine("Enter a number less than 10");
+        int num = Convert.ToInt32(Console.ReadLine());  
+
+        if(num >= 10) {
+          // transfers control to repeat
+          goto repeat;
+        }
+
+        Console.WriteLine(num + " is less than 10");
+        Console.ReadLine();
+    }
+  }
+}
+```
+
+```cs
+using System;
+
+namespace CSharpGoto {
+
+  class Program {
+
+    public static void Main(string[] args) {
+
+      Console.Write("Choose your coffee? milk or black: ");
+      string coffeeType = Console.ReadLine();
+
+      switch (coffeeType) {
+        case "milk":
+          Console.WriteLine("Can I have a milk coffee?");
+          break;
+
+        case "black":
+          Console.WriteLine("Can I have a black coffee?");
+          // transfer code to case "milk" 
+          goto case "milk";
+     
+        default:
+          Console.WriteLine("Not available.");
+            break;
+        }
+      Console.ReadLine();
+    }
+  }
+}
+
+```
 
 ### ref 
 https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/jump-statements
 
+https://www.programiz.com/csharp-programming/goto
