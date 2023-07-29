@@ -6,6 +6,8 @@ Polymorphism uses those methods to perform different tasks. This allows us to pe
 
 Polymorphism simply means occurring in more than one form.
 
+Polymorphism is the ability of an object to take on many forms.
+
 Polymorphism is an important concept of object-oriented programming. It simply means **more than one form.**
 
 **Polymorphism** is an object-oriented programming concept that refers to the ability of a *variable*, *function,* or *object* to take on *multiple* forms.
