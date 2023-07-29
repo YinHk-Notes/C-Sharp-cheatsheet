@@ -3,7 +3,7 @@
 
 Generics in C# is its most powerful feature. It allows you to define the type-safe data structures.
 
-
+C# allows you to define generic classes, interfaces, abstract classes, fields, methods, static methods, properties, events, delegates, and operators using the type parameter and without the specific data type.
 
 ### ref
 
