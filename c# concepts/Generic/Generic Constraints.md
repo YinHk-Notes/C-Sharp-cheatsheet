@@ -17,3 +17,5 @@ GenericTypeName<T> where T  : contraint1, constraint2
 https://www.tutorialsteacher.com/csharp/constraints-in-generic-csharp
 
 
+https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/constraints-on-type-parameters
+
