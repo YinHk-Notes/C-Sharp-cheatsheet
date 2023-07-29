@@ -107,7 +107,6 @@ class Program
 > 💬 Propety’s name is **same** to the field’s name, but need to **capitalize first word**.
 
 
-
 **The get accessor:** 
 
 > 📌 The body of the get accessor resembles that of a method. It must **return a value of the property type**.
@@ -116,14 +115,3 @@ class Program
 
 > 📌 a method whose return type is [void](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/void). It uses an implicit parameter called **value**, whose type is the type of the property.
 
-
-
-[Fields](https://www.notion.so/Fields-cee8a2b63e21426f9125e3c76ce68494)
-
-[Constant](https://www.notion.so/Constant-05eccd7af10f40f8b7c2b7a76ada485b)
-
-[Properties](https://www.notion.so/Properties-cf3a1994cb4442d8b2964e63d2043d22)
-
-[Constructor](https://www.notion.so/Constructor-3a73e2e69e7a439c87dcfab35e534d9f)
-
-[method](https://www.notion.so/method-8f0bd3bed61d4bef9d0ca61c245df702)
