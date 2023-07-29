@@ -13,10 +13,9 @@ Polymorphism is an important concept of object-oriented programming. It simply m
 **Types of polymorphism:**
 
 - **Compile time** polymorphism
-    - Example: Method overloading
+    - Example:  **Method overloading**
 - **Runtime** polymorphism
-    - Example: Method overriding
-
+    - Example:  **Method overriding**
 
 
 
