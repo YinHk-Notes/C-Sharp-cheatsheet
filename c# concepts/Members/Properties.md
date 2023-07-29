@@ -340,7 +340,34 @@ class Skill
 
 ```
 
+```cs
+private string name;
 
+public string Name
+{
+    get { return this.name; }
+    set { this.name = value; }
+}
+```
+
+**Auto Property Initializers** \
+To initialize a property value of a class, we used to set the property value in a class constructor. In the code listed in Listing 1, the Name property of the Author class is initialized in the class’s constructor. 
+
+Eg:
+```cs
+class Author
+{
+    public string Name { get; set; }
+    public string Book { get; set; }
+    public double Price { get; set; }
+
+    public Author()
+    {
+        Name = "Mahesh Chand";
+    }
+}
+
+```
 
 ### Summary
 
