@@ -182,7 +182,7 @@ public class Person
 }
 ```
 
-**Computed properties** \
+**Computed properties** 
 ```cs
 public class Person
 {
