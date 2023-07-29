@@ -1,9 +1,12 @@
 ## Properties
 
+A property is a member that provides a flexible mechanism to **read, write, or compute the value of a `private` field**.
+
 Properties **enable a class to expose a public way of getting and setting values**,  while hiding implementation or verification code.  Properties combine aspects of both **fields** and **methods**.
 
-
 > 💬 Similar to `Field`, but `public`let us to `get` and `set` the value.
+
+Properties can be used as if they're public data members, but they're special methods called **accessors**. This feature enables data to be accessed easily and still helps **promote the safety and flexibility of methods**.
 
 - Properties **enable a class to expose a public way of getting and setting values**, while hiding implementation or verification code.
 - A [get](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/get) property accessor is used to **return the property value**, and a [set](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/set) property accessor is used to **assign a new value**. These accessors can have different access levels. For more information, see [Restricting Accessor Accessibility](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/restricting-accessor-accessibility).
