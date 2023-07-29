@@ -342,20 +342,21 @@ class Skill
 
 
 
-
+### Summary
 
 > 💬 Propety’s name is **same** to the field’s name, but need to **capitalize first word**.
 
 
 **The get accessor:** 
 
-> 📌 The body of the get accessor resembles that of a method. It must **return a value of the property type**.
+> 📌 The body of the `get` accessor resembles that of a method. It must **return a value of the property type**.
 
 **The set accessor:** 
 
 > 📌 a method whose return type is [void](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/void). It uses an implicit parameter called **value**, whose type is the type of the property.
 
 
+### ref
 
 https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/properties
 
