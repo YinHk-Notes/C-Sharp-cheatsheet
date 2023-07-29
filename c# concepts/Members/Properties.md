@@ -204,7 +204,7 @@ public class Person
 }
 ```
 
-**Cached evaluated properties** \
+**Cached evaluated properties** 
 ```cs
 public class Person
 {
