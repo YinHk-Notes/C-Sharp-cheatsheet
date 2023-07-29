@@ -9,8 +9,8 @@ Properties **enable a class to expose a public way of getting and setting values
 Properties can be used as if they're public data members, but they're special methods called **accessors**. This feature enables data to be accessed easily and still helps **promote the safety and flexibility of methods**.
 
 - Properties **enable a class to expose a public way of getting and setting values**, while hiding implementation or verification code.
-- A [get](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/get) property accessor is used to **return the property value**, and a [set](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/set) property accessor is used to **assign a new value**. These accessors can have different access levels. For more information, see [Restricting Accessor Accessibility](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/restricting-accessor-accessibility).
-- The [value](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/value) keyword is used to define the value being assigned by the set accessor.
+- A **`get`** property accessor is used to **return the property value**, and a **`set`** property accessor is used to **assign a new value**. These accessors can have different access levels. 
+- The **`value`** keyword is used to define the value being **assigned by the `set` accessor**.
 
 **syntax:**
 
