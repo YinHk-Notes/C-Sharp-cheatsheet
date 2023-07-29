@@ -366,8 +366,89 @@ class Author
         Name = "Mahesh Chand";
     }
 }
+```
+
+**`static` properties** \
+C# also supports `static` properties, which belong to the class rather than to the objects of the class. All the rules applicable to a `static` member also apply to `static` properties.
+
+```cs
+using System;
+
+class MyClass
+{
+    private static int _x;
+    public static int X
+    {
+        get
+        {
+            return _x;
+        }
+        set
+        {
+            _x = value;
+        }
+    }
+}
+
+class MyClient
+{
+    public static void Main()
+    {
+        MyClass.X = 10; // Setting the value of the static property
+        int xVal = MyClass.X; // Retrieving the value of the static property
+        Console.WriteLine(xVal); // Displays 10
+    }
+}
+```
+> **set/get** accessor of the static property can access only other static members of the class.
+
+**Abstract properties** \
+
+A property inside a class can be declared as abstract by using the keyword `abstract`.
+
+abstract property in a class carries no code at all. For example, the **get/set** accessors are represented **with a semicolon**. In the derived class, we **must implement both `sets` and `get` assessors**.
+
+
+```cs
+//C# : Property : Abstract
+//Author: rajeshvs@msn.com
+using System;
+
+abstract class Abstract
+{
+    public abstract int X { get; set; }
+}
+
+class Concrete : Abstract
+{
+    public override int X
+    {
+        get
+        {
+            Console.Write(" GET");
+            return 10;
+        }
+        set
+        {
+            Console.Write(" SET");
+        }
+    }
+}
+
+class MyClient
+{
+    public static void Main()
+    {
+        Concrete c1 = new Concrete();
+        c1.X = 10;
+        Console.WriteLine(c1.X);
+    }
+}
+
 
 ```
+
+
 
 ### Summary
 
