@@ -9,7 +9,19 @@
     - declare **fields/variables** as **`private`**.
     - provide **`public`**, **`get`** and **`set`** methods, through **properties**, to access and update the value of a **`private`** field
 
+Eg:
+```cs
+class Person
+{
+  private string name; // field
 
+  public string Name   // property
+  {
+    get { return name; }   // get method
+    set { name = value; }  // set method
+  }
+}
+```
 
 
 ### ref
