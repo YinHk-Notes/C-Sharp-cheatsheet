@@ -278,3 +278,12 @@ public class Person
 
 
 https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/properties
+
+https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/using-properties
+
+https://www.w3schools.com/cs/cs_properties.php
+
+https://www.c-sharpcorner.com/article/understanding-properties-in-C-Sharp/
+
+https://www.csharptutorial.net/csharp-tutorial/csharp-property/
+
