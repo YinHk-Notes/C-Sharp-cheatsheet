@@ -7,7 +7,7 @@
 -   Encapsulation makes sure that **"sensitive" data** is hidden from users.
 -   **Encapsulation can be achieved by**:
     - declare **fields/variables** as **`private`**.
-    - provide **`public`**, **`get`** and **`se**t` methods, through **properties**, to access and update the value of a **`private`** field
+    - provide **`public`**, **`get`** and **`set`** methods, through **properties**, to access and update the value of a **`private`** field
 
 
 
