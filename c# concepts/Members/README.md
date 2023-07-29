@@ -40,7 +40,7 @@ const int days = 365;
 Properties **enable a class to expose a public way of getting and setting values**,  while hiding implementation or verification code.  Properties combine aspects of both **fields** and **methods**.
 
 <aside>
-💬 類似field, 但可public 得到和設定其value
+💬 Similar to field, but with `public` access modifier you can **get and set its value**.
 </aside>
 
 - Properties **enable a class to expose a public way of getting and setting values**, while hiding implementation or verification code.
