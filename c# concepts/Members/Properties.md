@@ -403,7 +403,6 @@ class MyClient
 > **set/get** accessor of the static property can access only other static members of the class.
 
 **Abstract properties** \
-
 A property inside a class can be declared as abstract by using the keyword `abstract`.
 
 abstract property in a class carries no code at all. For example, the **get/set** accessors are represented **with a semicolon**. In the derived class, we **must implement both `sets` and `get` assessors**.
