@@ -31,4 +31,5 @@ The `System.Collections` namespace contains the non-generic collection types and
 - Better Performance with Generics
 
 
-
+### ref
+https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic?view=net-7.0
