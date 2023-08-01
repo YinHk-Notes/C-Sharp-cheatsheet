@@ -47,7 +47,26 @@ public class Student : Person
 }
 ```
 
+
+```cs
+public class Foo{
+    public required string  Name{ get; init; }
+}
+
+var foo = new Foo();
+
+// Compile Error
+// Error    CS9035    Required member 'Foo.Name' must be set in the object initializer or attribute constructor.    RequiredMembers (net7.0)
+
+```
+
 ### ref
 https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/required
 
 https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-11.0/required-members
+
+https://www.c-sharpcorner.com/blogs/c-sharp-11-exploring-required-modifier
+
+
+
+
