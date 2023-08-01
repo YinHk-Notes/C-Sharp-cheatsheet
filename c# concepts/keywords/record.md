@@ -31,7 +31,7 @@ For records, value equality means that two variables of a record type are equal 
 #### Immutability
 An immutable type is one that prevents you from changing any property or field values of an object after it's instantiated.
 
-### `init`
+### Init-Only Setters
 To make the `record` type immutable, you **must** use `init` properties in your record type
 
 ```cs
