@@ -1,5 +1,6 @@
 ## `with`
-Available in C# 9.0 and later, a `with` expression produces a **copy of its operand with the specified properties and fields modified**.
+Available in C# 9.0 and later, a `with` expression produces a **copy of its operand with the specified properties and fields modified**. Copy a object with its properties and fields allow to be modified.
+
 
 You use the **object initializer syntax** to specify what members to modify and their **new values**.
 
