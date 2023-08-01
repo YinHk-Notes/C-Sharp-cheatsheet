@@ -31,6 +31,19 @@ For records, value equality means that two variables of a record type are equal 
 #### Immutability
 An immutable type is one that prevents you from changing any property or field values of an object after it's instantiated.
 
+### `init`
+To make the `record` type immutable, you **must** use `init` properties in your record type
+
+```cs
+public record Member
+{
+    public int ID { get; init; }
+    public string FirstName { get; init; }
+    public string LastName { get; init; }
+    public string Address { get; init; }
+}
+```
+
 
 ### `With` expression
 You can use a `with` expression to copy an immutable class/struct and change one of the properties.
