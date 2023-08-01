@@ -128,7 +128,8 @@ class MyCustomException: Exception
 A custom exception class should have three standard constructors:
 
 ```cs
-class MyCustomException: Exception
+[Serializable]
+public class MyCustomException: Exception
 {
     MyCustomException(): base() { }
     MyCustomException(string message) : base(message) { }
