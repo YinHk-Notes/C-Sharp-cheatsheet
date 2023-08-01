@@ -25,6 +25,7 @@ ClassName
 ```
 
 ### Creating objects
+Using `new` keywords for instantiating an object
 ```
 ClassName objName = new ClassName();
 ```
