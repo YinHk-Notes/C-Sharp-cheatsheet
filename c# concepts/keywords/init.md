@@ -36,7 +36,7 @@ class Person_InitExampleAutoProperty
     public int YearOfBirth { get; init; }
 }
 ```
-The `init` accessor can be used as an expression-bodied member: 
+The `init` accessor can be used as an **expression-bodied** member: 
 ```CS
 
 class Person_InitExampleExpressionBodied
