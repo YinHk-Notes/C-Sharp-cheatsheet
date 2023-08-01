@@ -45,7 +45,7 @@ public record Member
 ```
 
 
-### `With` expression
+### Using `with` expression to modify its property
 You can use a `with` expression to copy an immutable class/struct and change one of the properties.
 
 Eg:
