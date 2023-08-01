@@ -90,8 +90,57 @@ namespace ErrorHandlingApplication {
 }
 ```
 
+### rethrow exceptions
+In some cases, you may want to re-throw an exception after you have caught it in the **`catch`** block.
+
+```cs
+try
+{
+    // Some code that might throw an exception
+}
+catch (Exception ex)
+{
+    // Handle the exception
+    Console.WriteLine($"An exception occurred: {ex.Message}");
+
+    // Rethrow the exception
+    throw;
+}
+```
+
+> rethrow exception using the `throw` statement.
+
 ### User-Defined Exceptions
+C# provides you with many built-in exception classes. Sometimes, these built-in exception classes are not sufficient to describe the error in your application. In this case, you can define custom exception classes.
+
+By definition, a custom exception is an exception that you create to represent a specific error in your application.
+
 You can create a user-defined exception class which is derived from the **Exception** class.
+
+To create a custom exception, you define a class that inherits from the `System.Exception` class. By convention, an exception class ends with `Exception` like `MyCustomException`:
+
+```cs
+class MyCustomException: Exception
+{
+}
+```
+
+A custom exception class should have three standard constructors:
+
+```cs
+class MyCustomException: Exception
+{
+    MyCustomException(): base() { }
+    MyCustomException(string message) : base(message) { }
+    MyCustomException(string message, Exception innerException) : base(message, innerException) { }
+}
+
+```
+
+-   The first constructor is a default constructor that takes no arguments.
+-   The second constructor takes a string message that describes the exception.
+-   The third constructor takes both a message and an inner exception, which you can use to chain exceptions together to describe the error in more detail.
+
 
 ```cs
 using System;
@@ -125,7 +174,6 @@ public class Temperature {
       }
    }
 }
-
 
 ```
 
