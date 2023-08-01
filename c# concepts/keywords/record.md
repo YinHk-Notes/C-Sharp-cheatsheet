@@ -28,3 +28,5 @@ An immutable type is one that prevents you from changing any property or field v
 https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/records
 
 https://www.codeguru.com/csharp/record-types-c-sharp
+
+https://www.c-sharpcorner.com/article/c-sharp-9-0-introduction-to-record-types/
