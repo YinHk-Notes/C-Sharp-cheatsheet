@@ -143,3 +143,5 @@ namespace ConsoleApplication1
 ### ref 
 https://www.c-sharpcorner.com/blogs/how-to-access-private-variables-of-a-class-in-another-class-in-c-sharp
 
+https://www.w3schools.com/cs/cs_classes.php
+
