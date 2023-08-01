@@ -1,6 +1,6 @@
 ## `record`
 
-A **`record`** in C# is a class or struct that provides special syntax and behavior for working with **data models**. The `record` modifier instructs the compiler to synthesize members that are useful for types whose primary role is storing data.
+A **`record`** type in C# is a class or struct that provides special syntax and behavior for working with **data models**. The `record` modifier instructs the compiler to synthesize members that are useful for types whose primary role is storing data.
 
 You can take advantage of `record` types to build immutable value types. A record type is defined using the record keyword. The `record` keyword defines `record` types. A `record` type is a **value type** and an **immutable type** that **can not be changed once created**.
 
