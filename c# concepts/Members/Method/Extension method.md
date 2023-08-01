@@ -17,6 +17,8 @@ Extension methods, as the name suggests, are additional methods. Extension metho
 -   Extension methods can be added to custom, .NET Framework or third party classes, structs or interfaces.
 -   The first parameter of the extension method must be of the type for which the extension method is applicable, preceded by the **`this`** keyword.
 -   Extension methods can be used anywhere in the application by including the namespace of the extension method.
+-   An extension method is actually a special kind of `static` method defined in a `static` class.
+-   The only difference between a regular static method and an extension method is that the first parameter of the extension method specifies the type that it is going to operator on, preceded by the **`this`** keyword.
 
 
 
@@ -71,10 +73,46 @@ public class GFG {
 }
 }
 
+```
+
+```cs
+namespace ExtensionMethods
+{
+    public static class IntExtensions
+     {
+        public static bool IsGreaterThan(this int i, int value)
+        {
+            return i > value;
+        }
+    }
+}
 
 
+
+
+using ExtensionMethods;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int i = 10;
+
+        bool result = i.IsGreaterThan(100);  //IsGreaterThan method now is a method of int data type (Int32 struct).
+
+        Console.WriteLine(result);
+    }
+}
 
 ```
+
+
+
+#### Steps
+1. Create a Class for Extension Methods
+2. Define an Extension Method
+3. The first parameter use **`this`** modifier specify the class or struct to bind.
+
 
 ### ref
 https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/extension-methods
