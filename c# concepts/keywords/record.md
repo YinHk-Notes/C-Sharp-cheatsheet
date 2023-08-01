@@ -20,7 +20,36 @@ For records, value equality means that two variables of a record type are equal 
 An immutable type is one that prevents you from changing any property or field values of an object after it's instantiated.
 
 
+### `With` expression
+You can use a `with` expression to copy an immutable class/struct and change one of the properties.
 
+Eg:
+```cs
+public record Person(string FirstName, string LastName)
+{
+    public string[] PhoneNumbers { get; init; }
+}
+
+public static void Main()
+{
+    Person person1 = new("Nancy", "Davolio") { PhoneNumbers = new string[1] };
+    Console.WriteLine(person1);
+    // output: Person { FirstName = Nancy, LastName = Davolio, PhoneNumbers = System.String[] }
+
+    Person person2 = person1 with { FirstName = "John" };
+    Console.WriteLine(person2);
+    // output: Person { FirstName = John, LastName = Davolio, PhoneNumbers = System.String[] }
+    Console.WriteLine(person1 == person2); // output: False
+
+    person2 = person1 with { PhoneNumbers = new string[1] };
+    Console.WriteLine(person2);
+    // output: Person { FirstName = Nancy, LastName = Davolio, PhoneNumbers = System.String[] }
+    Console.WriteLine(person1 == person2); // output: False
+
+    person2 = person1 with { };
+    Console.WriteLine(person1 == person2); // output: True
+}
+```
 
 
 
