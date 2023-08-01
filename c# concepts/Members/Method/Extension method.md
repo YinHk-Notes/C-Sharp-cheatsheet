@@ -13,6 +13,12 @@ Extension methods, as the name suggests, are additional methods. Extension metho
 -   Extension methods allow existing classes to be extended without relying on inheritance or changing the class's source code.
 -   If the class is sealed, there is no concept of extending its functionality. For this, a new concept is introduced, in other words, extension methods.
 -   This feature is important for all developers, especially if you would like to use the dynamism of the C# enhancements in your class's design.
+-   Extension methods are additional custom methods which were originally not included with the class.
+-   Extension methods can be added to custom, .NET Framework or third party classes, structs or interfaces.
+-   The first parameter of the extension method must be of the type for which the extension method is applicable, preceded by the **`this`** keyword.
+-   Extension methods can be used anywhere in the application by including the namespace of the extension method.
+
+
 
 ### How to use? 
 For example,  you have a class or a structure which contains three methods and you want to add two new methods in this class or structure, 
