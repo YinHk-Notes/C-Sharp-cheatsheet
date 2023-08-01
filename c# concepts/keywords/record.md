@@ -4,6 +4,18 @@ A **`record`** type in C# is a **class or struct** that provides special syntax 
 
 You can take advantage of `record` types to build immutable value types. A `record` type is defined using the `record` keyword. The `record` keyword defines `record` types. A `record` type is a **value type** and an **immutable type** that **can not be changed once created**.
 
+Eg:
+```cs
+public record Person(string FirstName, string LastName);
+
+public static void Main()
+{
+    Person person = new("Nancy", "Davolio");
+    Console.WriteLine(person);
+    // output: Person { FirstName = Nancy, LastName = Davolio }
+}
+```
+
 ### When to use records
 
 Consider using a `record` in place of a class or struct in the following scenarios:
