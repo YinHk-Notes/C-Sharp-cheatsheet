@@ -1,5 +1,5 @@
 //Object
-//
+//Object class is the base class of every type in .NET.
 
 using System;
 
