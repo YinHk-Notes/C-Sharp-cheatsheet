@@ -5,7 +5,6 @@ using System.Collections.Generic;
 
 public class List<T> : System.Collections.Generic.ICollection<T>, System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.IList<T>, System.Collections.Generic.IReadOnlyCollection<T>, System.Collections.Generic.IReadOnlyList<T>, System.Collections.IList
 
-
 //Constructors
 public List ();
 public List (System.Collections.Generic.IEnumerable<T> collection);  // contains elements copied from the specified collection and has sufficient capacity to accommodate the number of elements copied.
@@ -75,19 +74,51 @@ public int FindLastIndex (Predicate<T> match);
 //Performs the specified action on each element of the List<T>
 public void ForEach (Action<T> action);
 
+//Returns an enumerator that iterates through the List<T>.
+public System.Collections.Generic.List<T>.Enumerator GetEnumerator ();
 
+//Creates a shallow copy of a range of elements in the source List<T>.
+public System.Collections.Generic.List<T> GetRange (int index, int count);
 
+//Returns the zero-based index of the first occurrence of a value in the List<T>
+public int IndexOf (T item, int index);
 
+//Inserts an element into the List<T> at the specified index.
+public void Insert (int index, T item);
 
+//Inserts the elements of a collection into the List<T> at the specified index.
+public void InsertRange (int index, System.Collections.Generic.IEnumerable<T> collection);
 
+//Searches for the specified object and returns the zero-based index of the last occurrence
+public int LastIndexOf (T item);
 
+//emoves the first occurrence of a specific object
+public bool Remove (T item);
 
+//Removes all the elements that match the conditions defined by the specified predicate.
+public int RemoveAll (Predicate<T> match);
 
+//Removes the element at the specified index of the List<T>.
+public void RemoveAt (int index);
 
+//Removes a range of elements from the List<T>
+public void RemoveRange (int index, int count);
 
+//Reverses the order of the elements in the List<T> or a portion of it.
+public void Reverse ();
+public void Reverse (int index, int count);  //Reverses the order of the elements in the specified range.
 
+//orts the elements in the entire List<T> using the specified Comparison<T>.
+public void Sort (Comparison<T> comparison);
 
+//Copies the elements of the List<T> to a new array.
+public T[] ToArray ();
 
+//Sets the capacity to the actual number of elements in the List<T>, if that number is less than a threshold value.
+public void TrimExcess ();
+
+//Determines whether every element in the List<T> matches the conditions defined by the specified predicate.
+public bool TrueForAll (Predicate<T> match);
 
 
 
