@@ -11,7 +11,31 @@ Syntax:
 GenericTypeName<T> where T  : contraint1, constraint2
 ```
 
+eg:
+```cs
+class DataStore<T> where T : class
+{
+    public T Data { get; set; }
+}
 
+
+/*
+
+Above, we applied the class constraint,
+which means only a reference type can be passed as an argument while creating the DataStore class object.
+So, you can pass reference types such as class, interface, delegate, or array type.
+Passing value types will give a compile-time error, so we cannot pass primitive data types or struct types.
+
+DataStore<string> store = new DataStore<string>(); // valid
+DataStore<MyClass> store = new DataStore<MyClass>(); // valid
+DataStore<IMyInterface> store = new DataStore<IMyInterface>(); // valid
+DataStore<IEnumerable> store = new DataStore<IMyInterface>(); // valid
+DataStore<ArrayList> store = new DataStore<ArrayList>(); // valid
+//DataStore<int> store = new DataStore<int>(); // compile-time error 
+
+
+ */
+```
 
 ### ref
 https://www.tutorialsteacher.com/csharp/constraints-in-generic-csharp
