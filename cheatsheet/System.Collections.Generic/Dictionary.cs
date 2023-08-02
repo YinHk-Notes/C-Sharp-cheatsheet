@@ -43,6 +43,54 @@ public bool ContainsKey (TKey key);
 //Determines whether the Dictionary<TKey,TValue> contains a specific value.
 public bool ContainsValue (TValue value);
 
+//Ensures that the dictionary can hold up to a specified number of entries without any further expansion
+public int EnsureCapacity (int capacity);
+
+//Returns an enumerator that iterates through the Dictionary<TKey,TValue>.
+public System.Collections.Generic.Dictionary<TKey,TValue>.Enumerator GetEnumerator ();
+
+//Implements the ISerializable interface and returns the data needed to serialize the Dictionary<TKey,TValue> instance.
+public virtual void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);
+
+//Implements the ISerializable interface and raises the deserialization event when the deserialization is complete.
+public virtual void OnDeserialization (object? sender);
+
+
+public bool Remove (TKey key); //Removes the value with the specified key
+//Removes the value with the specified key from the Dictionary<TKey,TValue>, and copies the element to the value parameter.
+public bool Remove (TKey key, out TValue value);
+
+
+//Sets the capacity of this dictionary to hold up a specified number of entries
+public void TrimExcess (int capacity);
+//Sets the capacity of this dictionary to what it would be if it had been originally initialized with all its entries.
+public void TrimExcess ();
+
+//Attempts to add the specified key and value to the dictionary.
+public bool TryAdd (TKey key, TValue value);
+
+//Gets the value associated with the specified key.
+public bool TryGetValue (TKey key, out TValue value);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
