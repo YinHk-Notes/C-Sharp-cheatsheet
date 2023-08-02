@@ -40,3 +40,5 @@ The 3rd element is 3
 
 */
 ```
+
+> **Note**: You must call the Tuple<T1,T2,T3,T4,T5,T6,T7,TRest>.Tuple<T1,T2,T3,T4,T5,T6,T7,TRest> constructor to create a tuple with nine or more components unless your language provides a special syntax for this purpose. The static (`Shared` in Visual Basic) methods of the Tuple class cannot be used to create a tuple with nine or more components.
