@@ -15,6 +15,8 @@ The `System.Collections` namespace contains the non-generic collection types and
 
 ![](./generic_figure.jpg)
 
+![](./collection-overview-1-i1.png)
+
 ### Useful generic collection
 | Generic Collections | Description |
 | --- | --- |
