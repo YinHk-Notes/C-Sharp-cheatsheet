@@ -11,7 +11,7 @@ The `System.Collections` namespace contains the non-generic collection types and
 
 > Generic collection types also generally perform better than the corresponding nongeneric collection types (and better than types that are derived from nongeneric base collection types) when the collection elements are value types, because with generics, there's no need to box the elements.
 
-![](./generic+figure.jpg)
+![](./generic_figure.jpg)
 
 ### Useful generic collection
 | Generic Collections | Description |
