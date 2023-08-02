@@ -1,5 +1,5 @@
 //IEnumerator
-//Supports a simple iteration over a non-generic collection.
+//Supports a simple iteration over a non-generic collection. An IEnumerator object that can be used to iterate through the collection.
 
 Using System.Collections;
 
@@ -12,10 +12,6 @@ public object Current { get; }    // Gets the element in the collection at the c
 //Methods
 public bool MoveNext ();          // Advances the enumerator to the next element of the collection
 public void Reset ();             // Sets the enumerator to its initial position, which is before the first element in the collection
-
-
-
-
 
 
 
