@@ -9,7 +9,17 @@ public static void Notify(int i) { }
 
 Del<int> m1 = new Del<int>(Notify);
 ```
+```cs
+Del<int> m2 = Notify;
+```
 
+```cs
+class Stack<T>
+{
+    public delegate void StackDelegate(T[] items);
+}
+
+```
 
 ### ref 
 https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/generic-delegates
