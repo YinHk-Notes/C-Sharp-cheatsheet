@@ -34,7 +34,7 @@ https://www.youtube.com/watch?v=T9BeejD3i0g
 
 
 
-### Documentation comments (XML format) for C#
+### Documentation comments (XML format) for C# (similar to Javadoc and JDoc)
 C# provides a mechanism for programmers to document their code using a comment syntax that contains XML text. In source code files, comments having a certain form can be used to direct a tool to produce XML from those comments and the source code elements, which they precede. Comments using such syntax are called documentation comments. 
 
 C# source files can have structured comments that produce API documentation for the types defined in those files. 
@@ -43,6 +43,11 @@ https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/language-spec
 
 https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/xmldoc/
 
+#### Recommended tags
+https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/xmldoc/recommended-tags
+
+#### Examples
+https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/xmldoc/examples
 
 ### Best IDE for C#
 Visual studio
