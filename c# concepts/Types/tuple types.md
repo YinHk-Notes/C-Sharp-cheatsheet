@@ -1,5 +1,5 @@
 ## Tuple types
-Provides concise syntax to group multiple data elements in a lightweight data structure.
+Provides concise syntax to **group multiple data elements** in a lightweight data structure.
 
 ```cs
 (double, int) t1 = (4.5, 3);
