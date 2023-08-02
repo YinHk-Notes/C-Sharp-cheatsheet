@@ -1,5 +1,13 @@
 ## `in` (parameter modifier)
 
+The `in` keyword is used in the following contexts:
+
+- generic type parameters in generic interfaces and delegates.
+- As a parameter modifier, which lets you pass an argument to a method by reference rather than by value.
+- `foreach` statements for iteration.
+- `from` clauses in LINQ query expressions.
+- `join` clauses in LINQ query expressions.
+
 `in` is used to state that the parameter passed **cannot be modified by the method**.
 
 The `in` keyword in C# is used to specify that a method parameter is passed by reference, but the called method cannot modify the argument.
@@ -10,6 +18,7 @@ This is useful for parameters that are not modified by the called method, but mu
 
 
 Variables passed as in arguments **must be initialized** before being passed in a method call. However, the called method **may not assign a value or modify the argument**.
+
 
 
 ```cs
@@ -49,7 +58,18 @@ You can't use the in, ref, and out keywords for the following kinds of methods:
 - The first argument of an extension method cannot have the in modifier unless that argument is a struct.
 - The first argument of an extension method where that argument is a generic type (even when that type is constrained to be a struct.)
 
+### `foreach` statement
 
+Eg:
+```cs
+var fibNumbers = new List<int> { 0, 1, 1, 2, 3, 5, 8, 13 };
+foreach (int element in fibNumbers)
+{
+    Console.Write($"{element} ");
+}
+// Output:
+// 0 1 1 2 3 5 8 13
+```
 
 
 ### ref
