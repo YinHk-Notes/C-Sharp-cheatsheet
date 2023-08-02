@@ -1,6 +1,12 @@
 ## Generics and Arrays
 
+```cs
 
+class DataStore<T>
+{
+    public T[] data = new T[10];
+}
+```
 
 
 ### ref 
