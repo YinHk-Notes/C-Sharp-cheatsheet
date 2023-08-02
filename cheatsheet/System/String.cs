@@ -41,6 +41,21 @@ public static string Concat (object? arg0, object? arg1);
 public static string Concat (object? arg0, object? arg1, object? arg2);
 public static string Concat (object? arg0); //Creates the string representation of a specified object.
 
+//contains
+public bool Contains (char value); //Returns a value indicating whether a specified character 
+public bool Contains (string value);
+public bool Contains (char value, StringComparison comparisonType);
+public bool Contains (string value, StringComparison comparisonType);
+
+
+//Creates a new instance of String with the same value as a specified String.
+[System.Obsolete("This API should not be used to create mutable strings. See https://go.microsoft.com/fwlink/?linkid=2084035 for alternatives.")]
+public static string Copy (string str);
+
+
+
+
+
 
 
 
