@@ -49,6 +49,10 @@ https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/xmldoc/recomm
 #### Examples
 https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/xmldoc/examples
 
+### project file
+https://learn.microsoft.com/en-us/aspnet/web-forms/overview/deployment/web-deployment-in-the-enterprise/understanding-the-project-file
+
+
 ### Best IDE for C#
 Visual studio
 
