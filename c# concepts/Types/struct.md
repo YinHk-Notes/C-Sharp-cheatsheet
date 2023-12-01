@@ -1,6 +1,6 @@
 ## struct
 
-**`struct`** is the value type data type that represents data structures. It can contain a parameterized constructor, static constructor, constants, fields, methods, properties, indexers, operators, events, and nested types.
+**`struct`** is the value type data type that represents data structures. It can contain a **parameterized constructor**, **static constructor**, **constants**, **fields**, **methods**, **properties**, **indexers**, **operators**, **events**, and **nested types**.
 
 Structs share most of the same syntax as classes,but more limited than classes in the following ways:
 
