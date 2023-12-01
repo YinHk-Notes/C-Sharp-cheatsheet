@@ -83,7 +83,7 @@ Console.Write(point.y); //output: 20
 ### `readonly` struct
 You use the readonly modifier to declare that a structure type is immutable. All data members of a readonly struct must be read-only as follows:
 
-- Any field declaration must have the `readonly` modifier.
+- Any field declaration must have the **`readonly`** modifier.
 - Any property, including auto-implemented ones, must be read-only. In C# 9.0 and later, a property may have an init accessor.
 
 
