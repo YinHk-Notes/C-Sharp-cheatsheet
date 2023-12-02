@@ -17,7 +17,7 @@ Extension methods, as the name suggests, are additional methods. Extension metho
 -   Extension methods can be added to custom, .NET Framework or third party classes, structs or interfaces.
 -   The first parameter of the extension method must be of the type for which the extension method is applicable, preceded by the **`this`** keyword.
 -   Extension methods can be used anywhere in the application by including the namespace of the extension method.
--   An extension method is actually a special kind of `static` method defined in a `static` class.
+-   An extension method is actually a special kind of **`static`** method defined in a **`static`** class.
 -   The only difference between a regular static method and an extension method is that the first parameter of the extension method specifies the type that it is going to operator on, preceded by the **`this`** keyword.
 
 
