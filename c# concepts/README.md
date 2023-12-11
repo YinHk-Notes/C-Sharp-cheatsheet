@@ -58,6 +58,10 @@ You can compile a C# program by using the command-line instead of the Visual Stu
 -   You can see the output Hello World printed on the screen.
 
 
+How to run a program depends on what you start from, the type of program, and whether you want to run under the debugger. In the simplest case, to build and run an open project in Visual Studio:
+
+-   Press **F5**, choose **Debug** > **Start with debugging** from the Visual Studio menu, or select the green **Start** arrow and project name on the Visual Studio toolbar.
+-   Or, to run without debugging, press **Ctrl**+**F5** or choose **Debug** > **Start without debugging** from the Visual Studio menu.
 
 ### ref 
 
