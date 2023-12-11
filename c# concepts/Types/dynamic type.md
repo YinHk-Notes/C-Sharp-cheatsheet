@@ -2,7 +2,7 @@
 The dynamic type is a **`static`** type, but an object of type dynamic **bypasses `static` type checking**
 In C# 4.0 (.NET 4.5) introduced a new type called **`dynamic`** that **avoids compile-time type checking**.
 
-A `dynamic` type **escapes type checking at compile-time**; instead, it resolves type at run time.
+A `dynamic` type **escapes type checking at compile-time**; instead, it **resolves type at run time**.
 
 eg:
 ```cs
