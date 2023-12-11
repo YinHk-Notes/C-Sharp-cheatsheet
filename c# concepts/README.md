@@ -105,6 +105,13 @@ https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/
 
 https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-console?view=vs-2022
 
+https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-debugger?view=vs-2022
+
+https://learn.microsoft.com/en-us/visualstudio/ide/compiling-and-building-in-visual-studio?view=vs-2022
+
+https://learn.microsoft.com/en-us/visualstudio/test/getting-started-with-unit-testing?toc=%2Fvisualstudio%2Fget-started%2Fcsharp%2Ftoc.json&bc=%2Fvisualstudio%2Fget-started%2Fcsharp%2Fbreadcrumb%2Ftoc.json&view=vs-2022&tabs=dotnet%2Cmstest
+
+https://learn.microsoft.com/en-us/visualstudio/deployment/?view=vs-2022
 
 
 
