@@ -157,7 +157,7 @@ You can compile a C# program by using the command-line instead of the Visual Stu
     
 -   Save the file as **helloworld.cs**
     
--   Open the command prompt tool and go to the directory where you saved the file.
+-   Open the command prompt tool in Visual studio(**Ctrl + `**) and go to the directory where you saved the file.
     
 -   Type **"csc helloworld.cs"** and press enter to compile your code.
     
