@@ -4,7 +4,7 @@
 
 Structs **share most of the same syntax** as classes, but **more limited than classes** in the following ways:
 
-- Within a struct declaration, fields **cannot be initialized** unless they are declared as **`const`** or **`static`**.
+- Within a struct declaration, fields **cannot be initialized** unless they are declared as **`const`** or **`static`**. ( Beginning with C# 11, if you don't initialize all fields in a struct, the compiler adds code to the constructor that initializes those fields to the default value.)
 - A struct **cannot declare a parameterless constructor** (a constructor without parameters) or a finalizer.
 - Structs are **copied on assignment**. When a struct is assigned to a new variable, **all the data** is **copied**, and any modification to the new copy does not change the data for the original copy. This is important to remember when working with **collections of value types** such as **`Dictionary<string, myStruct>`**.
 - Structs are **value types**, unlike classes, which are reference types.
