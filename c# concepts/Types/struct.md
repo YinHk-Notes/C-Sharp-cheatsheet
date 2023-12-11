@@ -8,10 +8,10 @@ Structs **share most of the same syntax** as classes, but **more limited than cl
 - A struct **cannot declare a parameterless constructor** (a constructor without parameters) or a finalizer.
 - Structs are **copied on assignment**. When a struct is assigned to a new variable, **all the data** is **copied**, and any modification to the new copy does not change the data for the original copy. This is important to remember when working with **collections of value types** such as **`Dictionary<string, myStruct>`**.
 - Structs are **value types**, unlike classes, which are reference types.
-- Unlike classes, structs can be instantiated(creating object) without using a **`new`** operator.
+- Unlike classes, **structs can be instantiated**(creating object) without using a **`new`** operator.
 - Structs can declare **constructors** that **have parameters**.
 - Structs **do not support inheritance**, but they can **implement interfaces**.
-- A struct **cannot be null**, and a struct variable cannot be assigned null unless the variable is declared as a **nullable type**.
+- A struct **cannot be null**, and a struct variable **cannot be assigned null** unless the variable is declared as a **nullable type**.
 - Structs can include **constructors**, **constants**, **fields**, **methods**, **properties**, **indexers**, **operators**, **events** & **nested types**.
 - Structs **cannot include a parameterless constructor** or a **destructor**.
 - Structs **cannot inherit another structure** or class, and it cannot be the base of a class.
