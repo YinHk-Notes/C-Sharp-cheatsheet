@@ -70,7 +70,7 @@ In other words, they refer to a memory location. Using multiple variables, the r
 - **`is`**: \
   The `is` operator checks if the run-time type of an expression result is compatible with a given type.
 - **`as`**: \
-  The `as` operator explicitly converts the result of an expression to a given reference or nullable value type.
+  The `as` operator explicitly converts the result of an expression to a given **reference** or **nullable** value type.
 - `typeof`: \
   The `typeof` operator obtains the `System.Type` instance for a type. The argument to the `typeof` operator must be the name of a type or a type parameter.
 
