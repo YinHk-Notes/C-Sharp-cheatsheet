@@ -101,6 +101,16 @@ Let's add the C# `void Main` snippet to our file.
 
 > **Note**: Available code snippets vary for different programming languages. You can look at the available code snippets for your language by choosing **Edit** > **IntelliSense** > **Insert Snippet** or pressing **Ctrl**+**K**, **Ctrl**+**X**, and then choosing the folder for your programming language.
 
+> **Note**: To view all the available snippets for a language, select **Tools > Code Snippets Manager** from the menu bar (or, press Ctrl+K, Ctrl+B) and then select the language you want from the drop-down menu at the top of the dialog box.
+
+In Visual Studio, there are several different ways you can add a code snippet to a code file:
+
+-   On the menu bar, choose **Edit** > **IntelliSense** > **Insert Snippet**
+    
+-   From the right-click or context menu in the code editor, choose **Snippet** > **Insert Snippet**
+    
+-   From the keyboard, press **Ctrl**+**K**,**Ctrl**+**X**
+
 https://learn.microsoft.com/en-us/visualstudio/ide/code-snippets?view=vs-2022
 
 https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-editor?view=vs-2022
