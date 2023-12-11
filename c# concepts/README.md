@@ -84,7 +84,7 @@ Start by creating a new file and adding some code to it.
 Visual Studio provides useful code snippets that you can use to quickly and easily generate commonly used code blocks. 
 
 
-Let's add the C# `void Main` snippet to our file.
+Let's add the C# **`void Main`** snippet to our file.
 
 1.  Place your cursor just above the final closing brace **`}`** in the file, and type the characters `svm`. `svm` stands for `static void Main`—don't worry if you don't know what that means yet.
     
@@ -136,7 +136,7 @@ If you are using Visual Studio.Net for compiling and executing C# programs, take
 
 -   Start Visual Studio.
     
--   On the menu bar, choose File -> New -> Project.
+-   On the menu bar, choose **File > New > Project**.
     
 -   Choose Visual C# from templates, and then choose Windows.
     
