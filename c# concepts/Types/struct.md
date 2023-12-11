@@ -15,7 +15,7 @@ Structs **share most of the same syntax** as classes, but **more limited than cl
 - Structs can include **constructors**, **constants**, **fields**, **methods**, **properties**, **indexers**, **operators**, **events** & **nested types**.
 - Structs **cannot include a parameterless constructor** or a **destructor**.
 - Structs **cannot inherit another structure** or **class**, and it **cannot be the base of a class**.
-- **Struct members** **cannot be specified as abstract, sealed, virtual, or protected**.
+- **Struct members** **cannot be specified as `abstract`, `sealed`, `virtual`, or `protected`**.
 
 
 ```cs
