@@ -32,7 +32,8 @@ double? D = null;
 ```
 
 Conversion from a **nullable value type** to an **underlying type**.
-Use the `'??'` operator to assign a nullable type to a non-nullable type
+Use the `'??'` operator to **assign a nullable type to a non-nullable type**
+
 ```cs
 int? a = 28;
 int b = a ?? -1;
