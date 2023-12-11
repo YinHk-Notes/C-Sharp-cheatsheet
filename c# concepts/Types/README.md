@@ -44,7 +44,7 @@ The variables in C#, are categorized into the following types:
 
 - **Pointer Types**
     
-  Store the memory address of another type. Pointers in C# have the same capabilities as the pointers in C or C++.
+  **Store the memory address of another type**. Pointers in C# have the same capabilities as the pointers in C or C++.
   
   **unsafe code** (Pointer type is available only in unsafe code)
   
