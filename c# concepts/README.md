@@ -95,6 +95,10 @@ Let's add the C# `void Main` snippet to our file.
    You'll see the `static void Main()` method signature get added to the file. The Main() method is the entry point for C# applications.
 
 
+
+
+> **Note**: Press **Tab** twice to accept auggested code snippets provided by Visual studio
+
 > **Note**: Available code snippets vary for different programming languages. You can look at the available code snippets for your language by choosing **Edit** > **IntelliSense** > **Insert Snippet** or pressing **Ctrl**+**K**, **Ctrl**+**X**, and then choosing the folder for your programming language.
 
 https://learn.microsoft.com/en-us/visualstudio/ide/code-snippets?view=vs-2022
