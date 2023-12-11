@@ -2,7 +2,7 @@
 
 **`struct`** is the value type data type that represents data structures. It can contain a **parameterized constructor**, **static constructor**, **constants**, **fields**, **methods**, **properties**, **indexers**, **operators**, **events**, and **nested types**.
 
-Structs share most of the same syntax as classes,but more limited than classes in the following ways:
+Structs share most of the same syntax as classes, but **more limited than classes** in the following ways:
 
 - Within a struct declaration, fields **cannot be initialized** unless they are declared as **`const`** or **`static`**.
 - A struct **cannot declare a parameterless constructor** (a constructor without parameters) or a finalizer.
