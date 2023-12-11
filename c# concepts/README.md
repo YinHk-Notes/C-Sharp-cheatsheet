@@ -2,8 +2,42 @@
 
 C# 程式會在 .NET 上執行，這是稱為 Common Language Runtime 的虛擬執行系統， (CLR) 和一組類別庫。
 
+### Write & edit code in C#
+
+#### Create a new code file
 
 
+Start by creating a new file and adding some code to it.
+
+1.  Open Visual Studio. Press **Esc**, or choose **Continue without code** on the start window, to open the development environment.
+    
+2.  From the **File** menu on the menu bar, choose **New** > **File**, or press **Ctrl**+**N**.
+    
+3.  In the **New File** dialog box, under the **General** category, choose **Visual C# Class**, and then choose **Open**.
+    
+    A new file opens in the editor with the skeleton of a C# class. You don't have to create a full Visual Studio project to gain some of the benefits that the code editor offers—all you need is a code file.
+
+
+#### Use code snippets
+Visual Studio provides useful code snippets that you can use to quickly and easily generate commonly used code blocks. 
+
+
+Let's add the C# `void Main` snippet to our file.
+
+1.  Place your cursor just above the final closing brace **`}`** in the file, and type the characters `svm`. `svm` stands for `static void Main`—don't worry if you don't know what that means yet.
+    
+    A pop-up dialog box appears with information about the `svm` code snippet.
+
+2. Press **Tab** twice to insert the code snippet.
+
+   You'll see the `static void Main()` method signature get added to the file. The Main() method is the entry point for C# applications.
+
+
+> **Note**: Available code snippets vary for different programming languages. You can look at the available code snippets for your language by choosing **Edit** > **IntelliSense** > **Insert Snippet** or pressing **Ctrl**+**K**, **Ctrl**+**X**, and then choosing the folder for your programming language.
+
+https://learn.microsoft.com/en-us/visualstudio/ide/code-snippets?view=vs-2022
+
+https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-editor?view=vs-2022
 
 ### Compiling and Executing C# Program
 
