@@ -10,7 +10,7 @@ dynamic MyDynamicVar = 1;
 ```
 
 ```cs
-lass Program
+class Program
 {
     static void Main(string[] args)
     {
