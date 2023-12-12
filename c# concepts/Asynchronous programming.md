@@ -1,6 +1,6 @@
 ## Asynchronous programming
 
-Asynchronous programming is a programming technique that allows code to be executed concurrently without blocking the execution of the calling thread. In other words, asynchronous code can run in the background while other code is executing. In synchronous programming, each line of code is executed sequentially, and the program waits for each operation to complete before moving on to the next one. This can lead to performance problems, particularly in programs that need to perform long-running operations like **I/O** or **network requests**.
+Asynchronous programming is a programming technique that allows code to be **executed concurrently** without blocking the execution of the calling thread. In other words, asynchronous code can **run in the background while other code is executing**. **In synchronous programming, each line of code is executed sequentially, and the program waits for each operation to complete before moving on to the next one.** This can lead to performance problems, particularly in programs that need to perform long-running operations like **I/O** or **network requests**.
 
 
 Asynchronous programming allows programs to perform these operations without blocking the calling thread. When an asynchronous operation is started, the program continues to execute other code while it waits for the operation to complete. The program is notified when the operation is complete and can continue with the following line of code.
