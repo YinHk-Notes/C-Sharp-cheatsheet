@@ -12,7 +12,7 @@ When you define an indexer for a class, this class behaves similar to a virtual 
 Defining a property involves providing a property name. Indexers are not defined with names, but with the **`this`** keyword, which refers to the object instance.
 
 
--   Indexers enable objects to be indexed in a similar manner to arrays.
+-   Indexers enable objects to be indexed in a **similar manner to arrays**.
 -   A **`get`** accessor returns a value. A **`set`** accessor assigns a value.
 -   The **`value`** keyword is used to define the value being assigned by the set accessor.
 -   Indexers do not have to be indexed by an integer value; it is up to you how to define the specific look-up mechanism.
