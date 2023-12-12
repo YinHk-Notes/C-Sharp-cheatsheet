@@ -11,14 +11,14 @@ Extension methods, as the name suggests, are additional methods. Extension metho
 
 
 -   Extension methods allow existing classes to be extended without relying on inheritance or changing the class's source code.
--   If the class is sealed, there is no concept of extending its functionality. For this, a new concept is introduced, in other words, extension methods.
+-   If the class is **`sealed`**, there is no concept of extending its functionality. For this, a new concept is introduced, in other words, extension methods.
 -   This feature is important for all developers, especially if you would like to use the dynamism of the C# enhancements in your class's design.
 -   Extension methods are additional custom methods which were originally not included with the class.
 -   Extension methods can be added to custom, .NET Framework or third party classes, structs or interfaces.
 -   The first parameter of the extension method must be of the type for which the extension method is applicable, preceded by the **`this`** keyword.
--   Extension methods can be used anywhere in the application by including the namespace of the extension method.
+-   Extension methods can be used anywhere in the application by including the **namespace of the extension method**.
 -   An extension method is actually a special kind of **`static`** method defined in a **`static`** class.
--   The only difference between a regular static method and an extension method is that the first parameter of the extension method specifies the type that it is going to operator on, preceded by the **`this`** keyword.
+-   The only difference between a regular static method and an extension method is that the **first parameter** of the extension method specifies the type that it is going to operator on, preceded by the **`this`** keyword.
 
 
 
@@ -109,8 +109,8 @@ class Program
 
 
 #### Steps
-1. Create a Class for Extension Methods
-2. Define an Extension Method
+1. Create a **`static`** Class for Extension Methods
+2. Define an Extension Method(**`static` method**)
 3. The first parameter use **`this`** modifier specify the class or struct to bind.
 
 
