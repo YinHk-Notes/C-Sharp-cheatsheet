@@ -212,12 +212,12 @@ public class Program
 {
     public static void Main()
     {
-        IFile file1 = new FileInfo();
+        IFile file1 = new FileInfo(); //using interface as a reference type
         file1.ReadFile(); 
         file1.WriteFile("content"); 
         file1.DisplayName();
 
-        FileInfo file2 = new FileInfo();
+        FileInfo file2 = new FileInfo(); //using class as a reference type
         //file2.DisplayName(); //compile-time error 
     }
 }
