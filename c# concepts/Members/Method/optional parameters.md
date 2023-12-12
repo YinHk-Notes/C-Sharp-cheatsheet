@@ -34,7 +34,8 @@ It can be implemented in the following ways:
    ```
 
 2. Using OptionalAttribute `[Optional]`
-   Need to import `System.Runtime.InteropServices` namespace.
+
+   > **Note**: But require to import **`System.Runtime.InteropServices`** namespace.
    ```cs
        using System.Runtime.InteropServices;
 
@@ -54,7 +55,7 @@ It can be implemented in the following ways:
           }
       }
    ```
-3. Using Method Overloading
+4. Using Method Overloading
 
     ```cs
         namespace ConsoleApp2
@@ -81,7 +82,7 @@ It can be implemented in the following ways:
 
     ```
 
-4. Using **`Params`** Keyword \
+5. Using **`Params`** Keyword \
    Using **`params`**, we can pass a number of parameters to a method and implement optional parameters concept.
 
    There are some restrictions using the params keyword:
