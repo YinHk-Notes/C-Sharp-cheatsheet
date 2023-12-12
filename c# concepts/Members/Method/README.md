@@ -45,7 +45,7 @@ An override method provides a new implementation of the method inherited from a 
 - An override method **must** have the same signature as the overridden base method.
 - return type of an override method can derive from the return type of the corresponding base method.
 
-In C# we can use `virtual` keyword with base class method and `override` keyword with derived class method to achieve methood overriding.
+In C# we can use **`virtual`** keyword with base class method and **`override`** keyword with derived class method to achieve methood overriding.
 
 Eg:
 ```cs
