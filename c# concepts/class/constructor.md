@@ -204,8 +204,9 @@ public class Child : Person
 ```
 
 ### private constructor 
-A private constructor is a special instance constructor. It is generally used in classes that contain `static` members only
-If a class has one or more private constructors and no public constructors, other classes (except nested classes) cannot create instances of this class.
+A private constructor is a special instance constructor. It is generally used in classes that contain **`static`** members only
+
+If a class has one or more private constructors and **no public constructors**, other classes (except nested classes) **cannot create instances of this class**.
 ```cs
 public class Counter
 {
