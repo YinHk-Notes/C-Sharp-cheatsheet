@@ -76,7 +76,7 @@ public class Employee
     }
 }
 ```
-Constructors that take parameters must be called through a **`new`** statement or a **`base`** statement.
+Constructors that take parameters **must be called** through a **`new`** statement or a **`base`** statement.
 A constructor can use the `base` keyword to call **the constructor of a base class**. 
 ```cs
 public class Manager : Employee
