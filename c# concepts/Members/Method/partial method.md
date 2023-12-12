@@ -10,7 +10,7 @@ A partial method isn't required to have an **implementation** in the following c
 - It doesn't have any accessibility modifiers (including the default private).
 - It returns void.
 - It doesn't have any out parameters.
-- It doesn't have any of the following modifiers virtual, override, sealed, new, or extern.
+- It doesn't have any of the following modifiers `virtual`, `override`, `sealed`, `new`, or `extern`.
 
 
 Partial methods enable the implementer of one part of a class to **declare a method**. The **implementer** of another part of the class can define that method.
