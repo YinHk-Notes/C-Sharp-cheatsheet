@@ -227,10 +227,20 @@ class TestCounter
         // If you uncomment the following statement, it will generate
         // an error because the constructor is inaccessible:
         // Counter aCounter = new Counter();   // Error
+
+        Counter.currentCount = 100;
+        Counter.IncrementCount();
+        Console.WriteLine("New count: {0}", Counter.currentCount);
+
+        // Keep the console window open in debug mode.
+        Console.WriteLine("Press any key to exit.");
+        Console.ReadKey();
     }
 }
+// Output: New count: 101
 ```
 
+> **Note**: **Private constructors** are used to **prevent creating instances of a class** when there are **no instance fields or methods**, such as the Math class, or when a method is called to obtain an instance of a class. If all the methods in the class are **`static`**, consider making the complete class **`static`**.
 
 ### ref
 https://www.c-sharpcorner.com/blogs/can-a-class-work-without-constructor-in-c-sharp
