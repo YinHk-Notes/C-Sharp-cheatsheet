@@ -193,7 +193,7 @@ interface IFile
     }
 }
 ```
-Note that a class does not inherit default methods from its interfaces; so, you cannot access it using the class instance.
+Note that a class **does not inherit default methods** from its interfaces; so, you cannot access it using the class instance.
 ```cs
 class FileInfo : IFile
 {
