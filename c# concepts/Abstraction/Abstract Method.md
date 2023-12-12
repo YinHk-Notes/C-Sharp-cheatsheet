@@ -49,7 +49,7 @@ namespace AbstractClass {
 
 ```
 
-> **Note**: Note: Unlike the C# inheritance, we cannot use `virtual` with the abstract methods of the base class. This is because an abstract class is implicitly virtual.
+> **Note**: Note: Unlike the C# inheritance, we cannot use `virtual` with the abstract methods of the base class. This is because an abstract class is **implicitly virtual**.
 
 
 
