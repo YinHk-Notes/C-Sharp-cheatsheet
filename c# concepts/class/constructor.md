@@ -100,9 +100,9 @@ public Manager(int initialData) : base()
     //Add further instructions here.
 }
 ```
-> If a base class doesn't offer a parameterless constructor, the derived class must make an explicit call to a base constructor by using base
+> If a base class doesn't offer a parameterless constructor, the derived class **must** make an **explicit call** to a base constructor by using **`base`**
 
-A constructor can invoke another constructor in the same object by using the `this` keyword. Used tocalled previous same constructor in the same class.
+A constructor can **invoke another constructor in the same object** by using the **`this`** keyword. Used to called previous same constructor in the same class.
 ```cs
 public Employee(int weeklySalary, int numberOfWeeks) : this(weeklySalary * numberOfWeeks)
 {
