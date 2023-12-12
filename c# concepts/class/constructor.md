@@ -242,5 +242,7 @@ class TestCounter
 
 > **Note**: **Private constructors** are used to **prevent creating instances of a class** when there are **no instance fields or methods**, such as the Math class, or when a method is called to obtain an instance of a class. If all the methods in the class are **`static`**, consider making the complete class **`static`**.
 
+https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/private-constructors
+
 ### ref
 https://www.c-sharpcorner.com/blogs/can-a-class-work-without-constructor-in-c-sharp
