@@ -71,3 +71,4 @@ class Car : Vehicle
 }
 ```
 
+> **Note**: C# does not support **"multiple inheritance"** (a class can only inherit from **one base class**). 
