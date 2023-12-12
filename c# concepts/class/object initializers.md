@@ -1,9 +1,9 @@
 ## Object initializers
-Object initializers let you assign values to any accessible **fields or properties** of an object at creation time **without having to invoke a constructor followed by lines of assignment statements**.
+**Object initializers** let you assign values to any accessible **fields or properties** of an object at creation time **without having to invoke a constructor followed by lines of assignment statements**.
 
 The object initializer syntax enables you to specify arguments for a constructor or omit the arguments (and parentheses syntax).
 
-Object initializer is a new way to initialize an object of a **class or collection**. Object initializers allow you to assign values to the fields or properties at the time of creating an object without invoking a constructor.
+**Object initializer** is a new way to initialize an object of a **class or collection**. Object initializers **allow you to assign values to the fields or properties at the time of creating an object without invoking a constructor**.
 
 
 Eg:
