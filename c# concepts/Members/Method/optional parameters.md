@@ -83,10 +83,10 @@ It can be implemented in the following ways:
     ```
 
 5. Using **`Params`** Keyword \
-   Using **`params`**, we can pass a number of parameters to a method and implement optional parameters concept.
+   Using **`params`**, we can pass **a number of parameters** to a method and implement optional parameters concept.
 
-   There are some restrictions using the params keyword:
-   - You can only use the `params` keyword for one parameter in your method declaration.
+   There are some restrictions using the **`params`** keyword:
+   - You can only use the **`params`** keyword for one parameter in your method declaration.
    - `Params` **must be always the last parameter** in method.
 
    ```cs
