@@ -1,7 +1,7 @@
 ## Anonymous Method
 An anonymous method is a method which doesn’t contain any method name. No need to specify method name.
 
-An Anonymous method is defined using the `delegate` keyword and the user can assign this method to a variable of the `delegate` type.
+An Anonymous method is defined using the **`delegate`** keyword and the user can assign this method to a variable of the **`delegate`** type.
 
 ```cs
 delegate(parameter_list){
