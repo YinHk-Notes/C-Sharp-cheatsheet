@@ -1,5 +1,5 @@
 ## Func delegate
-C# includes built-in generic delegate types **`Func`** and **`Action`**, so that you **don't need to define custom delegates manually** in most cases.
+C# includes built-in generic delegate types **`Func`** and **`Action`**, so that you **don't need to define custom delegates manually** in most cases (No need to declare delegate).
 
 **`Func`** is a generic delegate included in the System namespace.
 
