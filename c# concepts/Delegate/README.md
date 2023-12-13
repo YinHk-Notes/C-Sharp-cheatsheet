@@ -14,15 +14,15 @@ Delegates have the following properties:
 -   Delegates are similar to C++ function pointers, but delegates are fully object-oriented, and unlike C++ pointers to member functions, delegates encapsulate both an object instance and a method.
 -   Delegates allow methods to be passed as parameters.
 -   Delegates can be used to define callback methods.
--   Delegates can be chained together; for example, multiple methods can be called on a single event.
+-   Delegates can be **chained together**; for example, **multiple methods can be calle**d on a single event.
 -   Methods don't have to match the delegate type exactly. For more information, see [Using Variance in Delegates](chrome-extension://pcmpcfapbekmbjjkdalcgopdkipoggdi/_generated_background_page.html../concepts/covariance-contravariance/using-variance-in-delegates).
 -   Lambda expressions are a more concise way of writing inline code blocks. Lambda expressions (in certain contexts) are compiled to delegate types. For more information about lambda expressions, see [Lambda expressions](chrome-extension://pcmpcfapbekmbjjkdalcgopdkipoggdi/_generated_background_page.html../../language-reference/operators/lambda-expressions).
--   A [delegate](chrome-extension://pcmpcfapbekmbjjkdalcgopdkipoggdi/_generated_background_page.html../../language-reference/builtin-types/reference-types) is a type that safely encapsulates a method, similar to a function pointer in C and C++. Unlike C function pointers, delegates are object-oriented, type safe, and secure. The type of a delegate is defined by the name of the delegate.
--   Delegate type variable can refer to any method with the same signature as the delegate.
+-   A [delegate](chrome-extension://pcmpcfapbekmbjjkdalcgopdkipoggdi/_generated_background_page.html../../language-reference/builtin-types/reference-types) is a type that **safely encapsulates a method**, similar to a function pointer in C and C++. Unlike C function pointers, delegates are object-oriented, **type safe, and secure**. The type of a delegate is defined by the **name of the delegate**.
+-   **Delegate type variable** can refer to **any method with the same signature as the delegate**.
 -   Syntax: `[access modifier] delegate [return type] [delegate name]([parameters])`
--   A target method's signature must match with delegate signature.
+-   A target method's signature **must match** with delegate signature.
 -   Delegates can be invoke like a normal function or `Invoke()` method.
--   Multiple methods can be assigned to the delegate using **"+" or "+="** operator and removed using **"-" or "-="** operator. It is called multicast delegate.
+-   **Multiple methods can be assigned** to the delegate using **"+" or "+="** operator and removed using **"-" or "-="** operator. It is called **multicast delegate**.
 -   Delegate is used to **declare an event** and **anonymous methods** in C#.
 
 ### Using delegate
