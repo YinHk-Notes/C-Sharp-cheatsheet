@@ -271,7 +271,7 @@ Called lambda expression: Hello World
 
 ```
 
-> If a multicast delegate returns a value then it **returns the value from the last assigned target method**.
+> **Note**: If a multicast delegate returns a value then it **returns the value from the last assigned target method**.
 
 
 ### Generic Delegate
