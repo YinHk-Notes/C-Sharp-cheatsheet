@@ -15,9 +15,9 @@ Delegates have the following properties:
 -   Delegates allow methods to be passed as parameters.
 -   Delegates can be used to define callback methods.
 -   Delegates can be **chained together**; for example, **multiple methods can be calle**d on a single event.
--   Methods don't have to match the delegate type exactly. For more information, see [Using Variance in Delegates](chrome-extension://pcmpcfapbekmbjjkdalcgopdkipoggdi/_generated_background_page.html../concepts/covariance-contravariance/using-variance-in-delegates).
--   Lambda expressions are a more concise way of writing inline code blocks. Lambda expressions (in certain contexts) are compiled to delegate types. For more information about lambda expressions, see [Lambda expressions](chrome-extension://pcmpcfapbekmbjjkdalcgopdkipoggdi/_generated_background_page.html../../language-reference/operators/lambda-expressions).
--   A [delegate](chrome-extension://pcmpcfapbekmbjjkdalcgopdkipoggdi/_generated_background_page.html../../language-reference/builtin-types/reference-types) is a type that **safely encapsulates a method**, similar to a function pointer in C and C++. Unlike C function pointers, delegates are object-oriented, **type safe, and secure**. The type of a delegate is defined by the **name of the delegate**.
+-   Methods don't have to match the delegate type exactly. 
+-   Lambda expressions are a more concise way of writing inline code blocks. Lambda expressions (in certain contexts) are compiled to delegate types. For more information about lambda expressions
+-   A delegate is a type that **safely encapsulates a method**, similar to a function pointer in C and C++. Unlike C function pointers, delegates are object-oriented, **type safe, and secure**. The type of a delegate is defined by the **name of the delegate**.
 -   **Delegate type variable** can refer to **any method with the same signature as the delegate**.
 -   Syntax: `[access modifier] delegate [return type] [delegate name]([parameters])`
 -   A target method's signature **must match** with delegate signature.
