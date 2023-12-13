@@ -203,7 +203,7 @@ class ClassB
 
 ### Multicast Delegate (Combine delegates)
 
-The delegate can point to multiple methods. A delegate that points multiple methods is called a multicast delegate. The **"+"** or **"+="** operator adds a function to the invocation list, and the **"-"** and **"-="** operator removes it.
+The delegate can point to multiple methods. A delegate that points multiple methods is called a **multicast delegate**. The **"+"** or **"+="** operator adds a function to the invocation list, and the **"-"** and **"-="** operator removes it.
 
 Eg:
 ```cs
