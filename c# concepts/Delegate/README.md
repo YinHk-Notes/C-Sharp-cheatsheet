@@ -21,7 +21,7 @@ Delegates have the following properties:
 -   **Delegate type variable** can refer to **any method with the same signature as the delegate**.
 -   Syntax: **`[access modifier] delegate [return type] [delegate name]([parameters])`**
 -   A target method's signature **must match** with delegate signature.
--   Delegates can be invoke like a normal function or `Invoke()` method.
+-   Delegates can be invoke like a normal function or **`Invoke()`** method.
 -   **Multiple methods can be assigned** to the delegate using **"+" or "+="** operator and removed using **"-" or "-="** operator. It is called **multicast delegate**.
 -   Delegate is used to **declare an event** and **anonymous methods** in C#.
 
