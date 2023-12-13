@@ -19,7 +19,7 @@ Delegates have the following properties:
 -   Lambda expressions are a more concise way of writing inline code blocks. Lambda expressions (in certain contexts) are compiled to delegate types. For more information about lambda expressions
 -   A delegate is a type that **safely encapsulates a method**, similar to a function pointer in C and C++. Unlike C function pointers, delegates are object-oriented, **type safe, and secure**. The type of a delegate is defined by the **name of the delegate**.
 -   **Delegate type variable** can refer to **any method with the same signature as the delegate**.
--   Syntax: `[access modifier] delegate [return type] [delegate name]([parameters])`
+-   Syntax: **`[access modifier] delegate [return type] [delegate name]([parameters])`**
 -   A target method's signature **must match** with delegate signature.
 -   Delegates can be invoke like a normal function or `Invoke()` method.
 -   **Multiple methods can be assigned** to the delegate using **"+" or "+="** operator and removed using **"-" or "-="** operator. It is called **multicast delegate**.
