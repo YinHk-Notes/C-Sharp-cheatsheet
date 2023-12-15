@@ -11,6 +11,7 @@ A **delegate** is a type that holds a reference to a method. A delegate is decla
 Delegates have the following properties:
 
 -   Delegate is the **reference type** data type that defines the signature.
+-   Delegate holds references only to methods that match its signature.
 -   Delegates are similar to C++ function pointers, but delegates are fully object-oriented, and unlike C++ pointers to member functions, delegates encapsulate both an object instance and a method.
 -   Delegates allow methods to be passed as parameters.
 -   Delegates can be used to define callback methods.
