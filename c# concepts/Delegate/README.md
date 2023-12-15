@@ -322,3 +322,5 @@ https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/delegates/
 https://www.tutorialsteacher.com/csharp/csharp-delegates
 
 https://www.infoworld.com/article/3057152/how-to-work-with-action-func-and-predicate-delegates-in-c-sharp.html
+
+https://medium.com/nerd-for-tech/c-delegates-actions-events-summary-please-8fab0244a40a
