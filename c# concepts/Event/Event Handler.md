@@ -31,6 +31,9 @@ public delegate void EventHandler(object? sender, EventArgs e);
 
 - **e EventArgs**: An object that contains no event data.
 
+
+> You can pass the **`EventArgs.Empty`** value when **no data is provided**. The **`EventHandler`** delegate includes the **`EventArgs`** class as a parameter.
+
 ```cs
 using System;
 
