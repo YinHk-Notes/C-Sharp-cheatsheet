@@ -11,12 +11,13 @@ Event hander use in subscriber class, define an event handler and subscribe to a
 **.NET** Framework includes built-in delegate types **`EventHandler`** and **`EventHandler<TEventArgs>`** 
 for the most common events. 
 
-Typically, any **`event`** should include two parameters: 
-- The source of the **`event`**
-- **`event`** data
 
 - Use the **`EventHandler`** delegate for all events that do not include event data.
 - Use **`EventHandler<TEventArgs>`** delegate for events that include data to be sent to handlers
+
+Typically, any **`event`** should include two parameters: 
+- The source of the **`event`**
+- **`event`** data
 
 
 
