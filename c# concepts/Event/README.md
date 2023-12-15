@@ -203,7 +203,7 @@ public event Action<bool, int, Blah> DiagnosticsEvent;
 
 ### Raising an Event
 
-```
+```cs
 public delegate void Notify();  // delegate
                     
 public class ProcessBusinessLogic
