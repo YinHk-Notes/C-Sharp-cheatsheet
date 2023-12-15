@@ -44,6 +44,9 @@ Some other class that **accepts this event** is called the **"subscriber class"*
 
 - A **subscriber** is an object that **accepts the event** and **provides an event handler**. The **delegate** in the publisher class **invokes the method (event handler) of the subscriber class**.
 
+
+![](./event-eventHandler.png)_
+
 Eg:
 ```cs
 public class SampleEventArgs
