@@ -119,8 +119,8 @@ publisher.RaiseCustomEvent -= HandleCustomEvent;
 
 ### Event handlers
 To respond to an event, you define an event handler method in the event receiver. 
-> This method **must match the signature of the delegate for the event** you're handling. 
 
+> This method **must match the signature of the delegate for the event** you're handling. 
 
 
 ### Declare an Event
@@ -139,7 +139,6 @@ public class ProcessBusinessLogic
 
 }
 ```
-
 
 ### event Action<>
 ```cs
@@ -191,9 +190,7 @@ class Program
 }
 ```
 
-
-
-### Example of raising event, publisher, subscriber and consume event
+### Example of raising event, publisher and subscriber 
 
 ```cs
 using System;
@@ -284,6 +281,12 @@ namespace DotNetEvents
     }
 }
 ```
+
+#### Step:
+- Create a publisher class to declare an event, raise an event and provide method to invoke event.
+- Create a subscriber class to subscribe/unsubscribe an event and provide an event handler.
+- Provide class of event data(If needed) for passing event data, inherited from **`EventArgs`** class. The event data used in publisher class for raising event.
+- Instantiate both publisher and subscriber class in **`Main()`** method, running event handling logic using their methods.
 
 ### ref 
 https://www.tutorialsteacher.com/csharp/csharp-event
