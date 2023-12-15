@@ -11,6 +11,10 @@ Most events **send some data** to the **subscribers**. The **`EventArgs`** class
 
 When you want to create a customized event data class, create a class that derives from **`EventArgs`**, and then provide any members needed to pass data that is related to the event. 
 
+Pass event data using **`EventHandler<TEventArgs>`**.
+
+Derive **`EventArgs`** base class to create **custom event data** class.
+
 **.NET** includes many **built-in event data** classes.
 
 For example, the **`SerialDataReceivedEventArgs`** class is the event data class for the **`SerialPort.DataReceived event`**. **.NET** follows a naming pattern of ending all event data classes with **`EventArgs`**. You determine which event data class is associated with an event by looking at the delegate for the event. 
