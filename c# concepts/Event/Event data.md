@@ -20,7 +20,7 @@ For example, the **`SerialDataReceivedEventHandler`** delegate includes the **`S
 
 ### Passing Event Data
 
-You can Use **`EventHandler<TEventArgs>`** to pass data to the handler
+You can Use **`EventHandler<TEventArgs>`** delegate to pass data to the handler. A method that will handle an event when the event provides data.
 
 ```cs
 class Program
