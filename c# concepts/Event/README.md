@@ -8,6 +8,32 @@ An **event** is a notification sent by an object to **signal the occurrence of a
 > Declare the event using the **`event`** keyword
 
 
+- An event is a message sent by an object to signal the occurrence of an action. The action can be caused by user interaction, such as a button click, or it can result from some other program logic, such as changing a property's value.
+- The object that **raises the event** is called the **event sender**. 
+- The event sender doesn't know which object or method will **receive (handle) the events** it raises.
+- The event is typically a member of the event sender; for example, the **`Click`** event is a member of the **`Button`** class, and the **`PropertyChanged`** event is a member of the class that implements the **`INotifyPropertyChanged`** interface.
+- Typically, to **raise an event**, you add a method that is marked as **`protected`** and **`virtual`** (in C#)
+- Name this method **`OnEventName`**; for example, **`OnDataReceived`**.
+- The method should take one parameter that specifies an event data object, which is an object of type **`EventArgs`** or a derived type.
+- You provide this method to enable derived classes to **override the logic** for **raising the event**.
+- A derived class should always call the **`OnEventName`** method of the base class to ensure that registered **`delegates`** receive the event.
+- 
+
+Declare an **`event`** associated with the **EventHandler delegate** and being **raised**
+```cs
+class Counter
+{
+    public event EventHandler ThresholdReached;
+
+    protected virtual void OnThresholdReached(EventArgs e)
+    {
+        ThresholdReached?.Invoke(this, e);
+    }
+
+    // provide remaining implementation for the class
+}
+```
+
 ### Publisher class & Subscriber class
 The **events** are **declared and raise**d in a class and associated with the **event handlers using delegates** within the same class or some other class. The class containing the event is used to **publish the event**. This is called the **"publisher class"**.
 
