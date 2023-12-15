@@ -193,7 +193,7 @@ class Program
 
 
 
-### Example of raising event, publisher and subscriber
+### Example of raising event, publisher, subscriber and consume event
 
 ```cs
 using System;
