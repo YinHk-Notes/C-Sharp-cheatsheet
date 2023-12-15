@@ -95,7 +95,7 @@ namespace ConsoleApplication1
 }
 ```
 
-**`EventHandler<TEventArgs>`** Delegate
+**`EventHandler<TEventArgs>` Delegate**
 
 ```cs
 public delegate void EventHandler<TEventArgs>(object? sender, TEventArgs e);
