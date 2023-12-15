@@ -26,6 +26,10 @@ Typically, any **`event`** should include two parameters:
 public delegate void EventHandler(object? sender, EventArgs e);
 ```
 
+- **sender Object**: The source of the event.
+
+- **e EventArgs**: An object that contains no event data.
+
 ```cs
 using System;
 
@@ -100,6 +104,9 @@ namespace ConsoleApplication1
 ```cs
 public delegate void EventHandler<TEventArgs>(object? sender, TEventArgs e);
 ```
+
+- **sender Object**: The source of the event.
+- **e TEventArgs**: An object that contains the event data.
 
 ```cs
 using System;
