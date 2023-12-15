@@ -225,13 +225,14 @@ public class ProcessBusinessLogic
 }
 ```
 
-### Consume an Event
+### Consume an Event & event handler
 
 ```cs
 class Program
 {
     public static void Main()
     {
+        // consume an event
         ProcessBusinessLogic bl = new ProcessBusinessLogic();
         bl.ProcessCompleted += bl_ProcessCompleted; // register with an event
         bl.StartProcess();
