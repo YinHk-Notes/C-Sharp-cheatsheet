@@ -19,7 +19,7 @@ An **event** is a notification sent by an object to **signal the occurrence of a
 - A derived class should always call the **`OnEventName`** method of the base class to ensure that registered **`delegates`** receive the event.
 
 
-Declare an **`event`** associated with the **EventHandler delegate** and being **raised**
+Declare an **`event`** associated with the **EventHandler delegate** and being **raised**:
 ```cs
 class Counter
 {
