@@ -15,7 +15,7 @@ Some other class that **accepts this event** is called the **"subscriber class"*
 
 - A **publisher** is an object that contains the **definition of the event** and the **delegate**. The event-delegate association is also defined in this object. A **publisher class** object **invokes the event** and it is **notified to other objects**.
 
-- A **subscriber** is an object that **accepts the event** and **provides an event handler**. The delegate in the publisher class **invokes the method (event handler) of the subscriber class**.
+- A **subscriber** is an object that **accepts the event** and **provides an event handler**. The **delegate** in the publisher class **invokes the method (event handler) of the subscriber class**.
 
 Eg:
 ```cs
