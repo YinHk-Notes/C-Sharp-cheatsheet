@@ -18,7 +18,7 @@ For example, the **`SerialDataReceivedEventArgs`** class is the event data class
 For example, the **`SerialDataReceivedEventHandler`** delegate includes the **`SerialDataReceivedEventArgs`** class as one of its parameters.
 
 
-### Passing Event Data
+### Passing an Event Data
 
 You can Use **`EventHandler<TEventArgs>`** delegate to pass data to the handler. A method that will handle an event when the event provides data.
 
@@ -67,6 +67,77 @@ public class ProcessBusinessLogic
 }
 
 ```
+
+### Passing more than one Event Data
+If you want to pass more than one value as event data, then create a class deriving from the **`EventArgs`** base class
+
+eg: 
+
+```cs
+class ProcessEventArgs : EventArgs
+{
+    public bool IsSuccessful { get; set; }
+    public DateTime CompletionTime { get; set; }
+}
+
+```
+
+
+Full example for Passing Custom EventArgs:
+
+```cs
+class Program
+{
+    public static void Main()
+    {
+        ProcessBusinessLogic bl = new ProcessBusinessLogic();
+        bl.ProcessCompleted += bl_ProcessCompleted; // register with an event
+        bl.StartProcess();
+    }
+
+    // event handler
+    public static void bl_ProcessCompleted(object sender, ProcessEventArgs e)
+    {
+        Console.WriteLine("Process " + (e.IsSuccessful? "Completed Successfully": "failed"));
+        Console.WriteLine("Completion Time: " + e.CompletionTime.ToLongDateString());
+    }
+}
+
+public class ProcessBusinessLogic
+{
+    // declaring an event using built-in EventHandler
+    public event EventHandler<ProcessEventArgs> ProcessCompleted; 
+
+    public void StartProcess()
+    {
+        var data = new ProcessEventArgs();
+		
+        try
+        {
+            Console.WriteLine("Process Started!");
+			
+            // some code here..
+            
+            data.IsSuccessful = true;
+            data.CompletionTime = DateTime.Now;
+            OnProcessCompleted(data);
+        }
+        catch(Exception ex)
+        {
+            data.IsSuccessful = false;
+            data.CompletionTime = DateTime.Now;
+            OnProcessCompleted(data);
+        }
+    }
+
+    protected virtual void OnProcessCompleted(ProcessEventArgs e)
+    {
+        ProcessCompleted?.Invoke(this, e);
+    }
+}
+```
+
+
 
 ### ref
 https://learn.microsoft.com/en-us/dotnet/standard/events/
