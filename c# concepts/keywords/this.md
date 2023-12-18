@@ -1,5 +1,5 @@
 ## `this`
-The `this` keyword refers to the current instance of the class and is also used as a modifier of the first parameter of an extension method.
+The **`this`** keyword refers to the **current instance of the class** and is also used as a **modifier of the first parameter** of an extension method.
 
 
 - Refers to the current instance of a class:
@@ -25,7 +25,7 @@ The `this` keyword refers to the current instance of the class and is also used 
     }
   }
   ```
--  Invoke Constructor of the Same Class Using **`this`**: \
+-  **Invoke Constructor of the Same Class** Using **`this`**: \
    While working with **constructor overloading**, we might have to invoke one constructor from another constructor. \
    eg:
 
