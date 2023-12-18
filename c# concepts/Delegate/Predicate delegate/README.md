@@ -93,3 +93,5 @@ https://zetcode.com/csharp/predicate/
 
 https://www.youtube.com/watch?v=zFcLTc1qHlM&t=1s
 
+https://www.youtube.com/watch?v=LlZpno4_ylw
+
