@@ -9,7 +9,7 @@ public interface IEnumerable
 
 //Methods
 
-//// <returns> Returns an enumerator that iterates through a collection </returns>
+// <returns> Returns an enumerator that iterates through a collection </returns>
 public System.Collections.IEnumerator GetEnumerator ();     
 
 /// <summary> Casts the elements of an IEnumerable to the specified type </summary>
