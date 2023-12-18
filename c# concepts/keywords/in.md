@@ -51,7 +51,7 @@ class InOverloads
 
 ### Limitations on `in` parameters
 
-You can't use the in, ref, and out keywords for the following kinds of methods:
+You can't use the **`in`**, **`ref`**, and **`out`** keywords for the following kinds of methods:
 
 - Async methods, which you define by using the `async` modifier.
 - Iterator methods, which include a `yield` return or `yield break` statement.
