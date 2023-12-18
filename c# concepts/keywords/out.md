@@ -25,7 +25,7 @@ You can use the out keyword in two contexts:
 -   At the time of method call, `out` parameter can be declared inline. But the inline out parameters can be accessed in the same block of code where it calls.
 -   Method overloading can also be done using `out` parameters.
 -   Properties cannot be passed as `out` parameters as these are not variables.
--   Up to C# 6.0, a user first declares the variable then it can only pass as an out argument. But from C# 7.0, excepting a separate variable declaration, the user can also declare the out variable in the argument list of the method call.
+-   Up to C# 6.0, a user first declares the variable then it can only pass as an `out` argument. But from C# 7.0, excepting a separate variable declaration, the user can also declare the out variable in the argument list of the method call.
 
 ```cs
 // No need to initialize 
