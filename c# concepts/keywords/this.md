@@ -166,22 +166,22 @@ The **`this`** keyword refers to the **current instance of the class** and is al
 		}
 	
 
-	// Now we create a new class in which
-	// Geek class access all the five methods
-	public class GFG {
+		// Now we create a new class in which
+		// Geek class access all the five methods
+		public class GFG {
 
-		// Main Method
-		public static void Main(string[] args)
-		{
-			Geek g = new Geek();
-			g.M1();
-			g.M2();
-			g.M3();
-			g.M4();
-			g.M5("Method Name: M5");
+			// Main Method
+			public static void Main(string[] args)
+			{
+				Geek g = new Geek();
+				g.M1();
+				g.M2();
+				g.M3();
+				g.M4();
+				g.M5("Method Name: M5");
+			}
 		}
 	}
-}
 ```
 
 ### ref
