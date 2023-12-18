@@ -19,8 +19,8 @@ You can use the out keyword in two contexts:
 -   In c#, `out` keyword is used to pass arguments to the method as a **reference type**.
 -   It is also similar to the in keyword but the _in_ keyword does not allow the method that called to change the argument value but `ref` allows.
 -   For using `out` keyword as a parameter both the method definition and calling method must use the _out_ keyword explicitly.
--   The out parameters are not allowed to use in asynchronous methods.
--   The out parameters are not allowed to use in iterator methods.
+-   The `out` parameters are not allowed to use in asynchronous methods.
+-   The `out` parameters are not allowed to use in iterator methods.
 -   There can be more than one out parameter in a method.
 -   At the time of method call, out parameter can be declared inline. But the inline out parameters can be accessed in the same block of code where it calls.
 -   Method overloading can also be done using out parameters.
