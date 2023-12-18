@@ -32,6 +32,8 @@ Console.WriteLine(number);
 
 > An argument that is passed to a `ref` or `in` parameter **must be initialized before it's passed**.
 
+> The `out` keyword is identical to the `ref` keyword,
+> with the exception that `ref` needs the variable to **be initialized prior to being passed**. It is similar to `ref` keyword. But the main difference between `ref` and `out` keyword is that ref needs that the variable **must be initialized before it passed to the method**. But `out` parameter **doesn’t require the variables to be initialized before it passed to the method**.
 
 ### Reference return values
 Reference return values (or ref returns) are values that a method returns by reference to the caller. That is, the caller can modify the value returned by a method, and that change is reflected in the state of the object in the called method.
