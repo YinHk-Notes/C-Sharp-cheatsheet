@@ -9,7 +9,7 @@ You use the ref keyword in the following contexts:
 - In a `ref struct` definition, to declare a `ref` field.
 
 ### Passing an argument by reference
-When used in a method's parameter list, the `ref` keyword indicates that an argument is passed by reference, not by value.
+When used in a method's parameter list, the `ref` keyword indicates that **an argument is passed by reference**, **not by value**.
 
 `ref` is used to state that the parameter passed **may be modified by the method**.
 
@@ -30,7 +30,7 @@ Console.WriteLine(number);
 // Output: 45
 ```
 
-> An argument that is passed to a `ref` or `in` parameter must be initialized before it's passed.
+> An argument that is passed to a `ref` or `in` parameter **must be initialized before it's passed**.
 
 
 ### Reference return values
