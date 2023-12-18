@@ -14,7 +14,7 @@ The `in` keyword in C# is used to specify that a method parameter is **passed by
 
 The `in` keyword **doesn’t allow parameter values to be changed**.
 
-This is useful for parameters that are not modified by the called method, but **must be passed by reference** in order for the calling method to access the results.
+This is useful for parameters that **are not modified by the called method**, but **must be passed by reference** in order for the calling method to access the results.
 
 
 Variables passed as in arguments **must be initialized** before being passed in a method call. However, the called method **may not assign a value or modify the argument**.
