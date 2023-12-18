@@ -91,3 +91,5 @@ https://learn.microsoft.com/en-us/dotnet/api/system.predicate-1?view=net-7.0
 
 https://zetcode.com/csharp/predicate/
 
+https://www.youtube.com/watch?v=zFcLTc1qHlM&t=1s
+
