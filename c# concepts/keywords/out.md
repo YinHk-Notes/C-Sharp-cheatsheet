@@ -22,8 +22,8 @@ You can use the out keyword in two contexts:
 -   The `out` parameters are not allowed to use in asynchronous methods.
 -   The `out` parameters are not allowed to use in iterator methods.
 -   There can be more than one out parameter in a method.
--   At the time of method call, out parameter can be declared inline. But the inline out parameters can be accessed in the same block of code where it calls.
--   Method overloading can also be done using out parameters.
+-   At the time of method call, `out` parameter can be declared inline. But the inline out parameters can be accessed in the same block of code where it calls.
+-   Method overloading can also be done using `out` parameters.
 -   Properties cannot be passed as out parameters as these are not variables.
 -   Up to C# 6.0, a user first declares the variable then it can only pass as an out argument. But from C# 7.0, excepting a separate variable declaration, the user can also declare the out variable in the argument list of the method call.
 
