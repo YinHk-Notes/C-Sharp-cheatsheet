@@ -1,8 +1,8 @@
 ## `init`
 
-Use the `init` keyword to define an accessor method in a **property or indexer** of the object.
+Use the `init` keyword to define an **accessor method** in a **property or indexer** of the object.
 
-An init-only setter assigns a value to the property or the indexer element **only** during object construction. This enforces immutability, so that once the object is initialized, it can't be changed again.
+An **init-only** setter **assigns a value** to the property or the indexer element **only** during object construction. This enforces **immutability**, so that once the object is **initialized**, it **can't be changed** again.
 
 Once the property initialized set once, its value can't be change because it is immutable.
 
