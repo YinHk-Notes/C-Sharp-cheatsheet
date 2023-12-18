@@ -4,7 +4,7 @@
 
 `out` keyword is used to pass arguments to method as a **reference type**.
 
-`out` is used to state that the parameter passed must be modified by the method.
+`out` is used to state that the **parameter** passed **must be modified by the method**.
 
 
 
