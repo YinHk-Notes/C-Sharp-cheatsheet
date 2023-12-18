@@ -29,7 +29,7 @@ Console.WriteLine(readonlyArgument);     // value is still 44
 void InArgExample(in int number)
 {
     // Uncomment the following line to see error CS8331
-    //number = 19;
+    // number = 19;
 }
 ```
 
