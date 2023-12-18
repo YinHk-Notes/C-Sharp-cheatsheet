@@ -61,7 +61,7 @@ The **`this`** keyword refers to the **current instance of the class** and is al
   > **Note**: Calling one constructor from another constructor is known as **constructor chaining**.
 
 - `this` as an object argument \
-  We can use **`this`** keyword to pass the current object as an argument to a method.
+  We can use **`this`** keyword to **pass the current object as an argument** to a method.
 
   ```cs
     using System;
