@@ -9,7 +9,7 @@ All **must be passed by reference**
 
 - **`out`** : the parameter passed can be changed in the method + not required to be initialized before being passed in a method call
 
-- **``ref`** : the parameter passed can be changed in the method + must be initialized before being passed in a method call
+- **`ref`** : the parameter passed can be changed in the method + must be initialized before being passed in a method call
 
 
 
