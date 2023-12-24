@@ -89,3 +89,18 @@ Console.WriteLine(day); //output: 4
 var wd = (WeekDays) 5; // int to enum conversion
 Console.WriteLine(wd);//output: Saturday
 ```
+
+### Convert String to Enum in C#
+
+| Method | Description |
+| --- | --- |
+| Enum.TryParse() | Converts the string representation of one or more enum member names or numeric values to an equivalent enum objects. It returns true if the conversion succeeded and false if failed. It is recommended to use the Enum.TryParse() over Enum.Parse() method. |
+| Enum.Parse() | Converts the string representation of one or more enum member name or numeric value to an equivalent enum object. |
+
+
+https://www.tutorialsteacher.com/articles/convert-string-to-enum-in-csharp
+
+
+
+
+
