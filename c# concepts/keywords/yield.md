@@ -54,3 +54,5 @@ The yield statement has the two following forms:
 ### ref
 https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/yield
 
+https://www.codingame.com/playgrounds/5806/what-is-yield-return-in-c
+
