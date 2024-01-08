@@ -47,7 +47,7 @@ The **`System.SystemException`** class is the base class for all predefined syst
 
 ### throw exception
 
-The `throw` keyword allows you to raise an exception. Here’s the syntax of how to use the `throw` keyword:
+The `throw` keyword allows you **to raise an exception**. Here’s the syntax of how to use the `throw` keyword:
 
 ```cs
 throw exception;
