@@ -35,6 +35,24 @@ ClassName objName = new ClassName();
 ClassName objName
 ```
 
+```cs
+
+class Script
+{
+	static void Main(string[] args)
+	{
+		Console.WriteLine("Hi there!");
+		Script script = new Script();
+		script.myMethod();
+	}
+
+	public void myMethod()
+   {
+      //....
+   }
+
+}
+```
 
 ### Access other class
 ```cs
