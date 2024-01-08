@@ -2,7 +2,7 @@
 
 The `readonly` keyword is a modifier that can be used in four contexts:
 
-1. In a **field declaration**, `readonly` indicates that assignment to the field can **only occur as part of the declaration** or in a **constructor** in the **same class**.
+1. In a **field declaration**, `readonly` indicates that assignment to the field can **only occur as part of the declaration** or in a **constructor** in the **same class**. \
    You are allowed to declare a field using `readonly` modifier. It indicates that the assignment to the fields is only the part of the declaration or in a constructor to the same class.
     A `readonly` field can be assigned and reassigned multiple times within the field declaration and constructor. \
     A `readonly` field **can't be assigned after the constructor exits**. This rule has different implications for value types and reference types:
