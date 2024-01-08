@@ -1,7 +1,7 @@
 ## const
 To declare a local constant, use the `const` keyword
 
-You use the const keyword to declare a constant field or a local constant. Constant fields and locals aren't variables and may not be modified. Constants can be numbers, Boolean values, strings, or a null reference.
+You use the const keyword to declare a constant field or a local constant. Constant fields and locals aren't variables and **cannot be modified**. Constants can be numbers, Boolean values, strings, or a null reference.
 
 
 
