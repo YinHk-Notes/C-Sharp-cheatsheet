@@ -45,6 +45,8 @@ The **`System.SystemException`** class is the base class for all predefined syst
 - **`System.OutOfMemoryException`** : Handles errors generated from insufficient free memory.
 - **`System.StackOverflowException`** : Handles errors generated from stack overflow.
 
+https://learn.microsoft.com/en-us/dotnet/api/system.exception?view=net-8.0
+
 ### throw exception
 
 The `throw` keyword allows you **to raise an exception**. Here’s the syntax of how to use the `throw` keyword:
