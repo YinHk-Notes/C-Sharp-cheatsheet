@@ -35,7 +35,7 @@ ClassName objName = new ClassName();
 ClassName objName
 ```
 
-#### Acess the object's method inside `Main()`
+#### Access the object's method inside `Main()` with same class
 
 Eg:
 
