@@ -5,9 +5,9 @@ You use the const keyword to declare a constant field or a local constant. Const
 
 
 
-> When you declare a local constant, you **must** also **initialize it**.
+> When you declare a local constant, you **must** also **initialize it immediately**.
 
-> Note: The readonly keyword differs from the const keyword. A const field can only be initialized at the declaration of the field. A readonly field can be initialized either at the declaration or in a constructor. Therefore, readonly fields can have different values depending on the constructor used.
+> **Note**: The **`readonly`** keyword differs from the const keyword. A **`const`** field can only be **initialized at the declaration** of the field. A **`readonly`** field can be **initialized either at the declaration or in a constructor**. Therefore, **`readonly`** fields can have **different values depending on the constructor used**.
 
 eg:
 ```cs
