@@ -26,8 +26,8 @@ The variables in C#, are categorized into the following types:
     | int | 32 | -2147483648 to 2147483647 | 0 |
     | uint | 32 | 0 to 4294967295 | 0 |
     | long | 64 | -9223372036854775808 to 9223372036854775807 | 0L |
-    | double | 64 | (+/-)5.0 x 10-324 to (+/-)1.7 x 10308 | 0.0D |
-    | float | 32 | -3.4 x 1038 to + 3.4 x 1038 | 0.0F |
+    | double | 64 | Stores fractional numbers. Sufficient for storing 15 decimal digits, (+/-)5.0 x 10-324 to (+/-)1.7 x 10308 | 0.0D |
+    | float | 32 | Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits, -3.4 x 1038 to + 3.4 x 1038 | 0.0F |
     | decimal | 128 | 128 | 0.0M |
     | ulong | 64 | 0 to 18446744073709551615 | 0 |
     | char | 16 | 0 to 65535 | '\0’ |
