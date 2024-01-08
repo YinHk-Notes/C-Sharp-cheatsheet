@@ -35,6 +35,7 @@ ClassName objName = new ClassName();
 ClassName objName
 ```
 
+#### Acess the object's method inside `Main()`
 ```cs
 
 class Script
