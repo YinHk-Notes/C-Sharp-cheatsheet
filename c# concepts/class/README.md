@@ -36,20 +36,25 @@ ClassName objName
 ```
 
 #### Acess the object's method inside `Main()`
-```cs
 
+Eg:
+
+```cs
 class Script
 {
 	static void Main(string[] args)
 	{
-		Console.WriteLine("Hi there!");
 		Script script = new Script();
-		script.myMethod();
+		int num;
+		int result = script.GetNumber(out num);
 	}
-	public void myMethod()
-   	{
-               //....
-   	}
+
+	public int GetNumber(out int num)
+	{
+		num = 99;
+		return num + 1;
+	}
+
 }
 ```
 
