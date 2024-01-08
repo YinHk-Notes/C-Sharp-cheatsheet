@@ -11,7 +11,7 @@ By default, it is mandatory to pass both parameter values when we call the metho
 
 It can be implemented in the following ways:
 
-1. Using Default Values
+1. **Using Default Values** \
    It is the common way to implement Optional Parameters. Here we need to set the default values of the parameters in the method definition.
    ```cs
        
@@ -33,7 +33,7 @@ It can be implemented in the following ways:
        }
    ```
 
-2. Using OptionalAttribute `[Optional]`
+2. **Using OptionalAttribute `[Optional]`**
 
    > **Note**: But require to import **`System.Runtime.InteropServices`** namespace.
    ```cs
@@ -55,7 +55,7 @@ It can be implemented in the following ways:
           }
       }
    ```
-4. Using Method Overloading
+4. **Using Method Overloading**
 
     ```cs
         namespace ConsoleApp2
@@ -82,7 +82,7 @@ It can be implemented in the following ways:
 
     ```
 
-5. Using **`Params`** Keyword \
+5. **Using **`Params`** Keyword** \
    Using **`params`**, we can pass **a number of parameters** to a method and implement optional parameters concept.
 
    There are some restrictions using the **`params`** keyword:
