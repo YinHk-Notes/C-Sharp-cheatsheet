@@ -36,7 +36,7 @@ abstract class Language {
 ```
 
 ### inheritance
-As we cannot create objects of an abstract class, we **must create a derived clas**s from it. So that we can access members of the abstract class using the object of the derived class.
+As we **cannot create objects of an abstract class**, we **must create a derived clas**s from it. So that we can access members of the abstract class using the object of the derived class.
 
 
 For example,
