@@ -82,7 +82,6 @@ class Earth : Planet, IRotate, IRevolve { }
     ```
 - All partial-type definitions meant to be parts of the same type must be defined in the same assembly and the same module (.exe or .dll file). Partial definitions cannot span multiple modules.
 - The class name and generic-type parameters must match on all partial-type definitions. Generic types can be partial. Each partial declaration must use the same parameter names in the same order.
-- 
 
 
 
