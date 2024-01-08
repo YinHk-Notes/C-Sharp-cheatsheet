@@ -9,7 +9,7 @@ An **interface** is a completely **"abstract class"**, which can only contain **
 
 - Like abstract classes, interfaces **cannot be used to create objects**.
 - Interface methods do not have a body - the **body is provided by the "implement" class**
-- On implementation of an interface, you **must override** all of its methods, but you do not have to use the **override** keyword when implementing an interface.
+- On implementation of an interface, you **must override** all of its methods, but you do not have to use the **`override`** keyword when implementing an interface.
 - Interfaces can contain **properties** and **methods**, but **not** **fields/variables**.
 - Interface members are by default **`abstract`** and **`public`**
 - An interface **cannot contain a constructor** (as it **cannot be used to create objects**)
