@@ -2,6 +2,7 @@
 The `override` modifier is required to extend or modify the **`abstract`** or **`virtual`** implementation of an **inherited method**, **property**, **indexer**, or **event**.
 
 
+modify **`virtual`** method:
 ```cs
 class Person
 {
@@ -18,7 +19,7 @@ class Employee : Person
 }
 ```
 
-
+modify **`abstract`** method:
 ```cs
 
 using System;
