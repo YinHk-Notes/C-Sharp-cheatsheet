@@ -45,12 +45,10 @@ class Script
 		Script script = new Script();
 		script.myMethod();
 	}
-
 	public void myMethod()
-   {
-      //....
-   }
-
+   	{
+               //....
+   	}
 }
 ```
 
