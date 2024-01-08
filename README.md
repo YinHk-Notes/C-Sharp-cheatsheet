@@ -54,9 +54,14 @@ https://learn.microsoft.com/en-us/aspnet/web-forms/overview/deployment/web-deplo
 
 
 ### Best IDE for C#
-**Visual studio**
+- **Visual studio**
+- **VSCode**
 
-https://visualstudio.microsoft.com/zh-hant/vs/getting-started/
+#### How to format C# code in VSCode
+**Select the code > right click > Format selection**
+
+or **Ctrl + K Ctrl + F**
+
 
 ### C# compiler 
 **Mono** : https://www.mono-project.com/
@@ -64,6 +69,8 @@ https://visualstudio.microsoft.com/zh-hant/vs/getting-started/
 https://dotnetfiddle.net/
 
 https://www.programiz.com/csharp-programming/online-compiler/
+
+
 
 
 
