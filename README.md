@@ -59,7 +59,7 @@ https://learn.microsoft.com/en-us/aspnet/web-forms/overview/deployment/web-deplo
 https://visualstudio.microsoft.com/zh-hant/vs/getting-started/
 
 ### C# compiler 
-- **Mono** : https://www.mono-project.com/
+**Mono** : https://www.mono-project.com/
 
 https://dotnetfiddle.net/
 
