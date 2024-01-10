@@ -12,6 +12,9 @@ class Script
 		//delegate 
 		MessageDelegate del = MyDelegate.Message;
 		del.Invoke("This is a simple example of delegate");
+		//Multicast delegate
+		del += MyDelegate.AnotherMessage;
+		del.Invoke("delegate");
 
 	}
 }
@@ -22,6 +25,11 @@ class MyDelegate
 	public static void Message(string message)
 	{
 		Console.WriteLine($"{message}");
+	}
+
+	public static void AnotherMessage(string message)
+	{
+		Console.WriteLine($"Another {message}");
 	}
 
 }
