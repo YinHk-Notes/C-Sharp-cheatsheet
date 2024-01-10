@@ -36,6 +36,10 @@
 | Derived class (different assembly) | ✔️ | ✔️ | ✔️ | ❌ | ❌ | ❌ |
 | Non-derived class (different assembly) | ✔️ | ❌ | ❌ | ❌ | ❌ | ❌ |
 
+
+> **`Classes`**, **`records`**, and **`structs`** declared directly within a namespace (in other words, that aren't nested within other classes or structs) can be either **`public`** or **`internal`**. **`internal`** is the **default** if no access modifier is specified.
+
+
 ### `internal`
 ```cs
 public class BaseClass
