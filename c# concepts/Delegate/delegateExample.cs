@@ -39,7 +39,7 @@ class Script
 		int multiple = list.Find(predicate);
 		Console.WriteLine(multiple);
 		List<int> multiples = list.FindAll(predicate);
-		foreach (int i in multiples)
+		foreach (var i in multiples)
 		{
 			Console.WriteLine(i);
 		}
