@@ -6,7 +6,7 @@ C# includes built-in generic delegate types **`Func`** and **`Action`**, so that
 
 It has zero or atmost 16 input parameters and one out parameter. The last parameter is considered as an out parameter.
 
-> The last parameter in the angle brackets <> is considered the return type, and the remaining parameters are considered input parameter types.
+> The last parameter in the angle brackets **`<>`** is considered the **return type**, and the **remaining** parameters are considered **input parameter types**.
 
 
 ![](../img/Func_delegate.png)
