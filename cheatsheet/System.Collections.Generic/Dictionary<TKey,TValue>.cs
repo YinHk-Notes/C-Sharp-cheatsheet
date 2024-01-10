@@ -20,6 +20,8 @@ public Dictionary (System.Collections.Generic.IEqualityComparer<TKey>? comparer)
 
 //Declare dictionary
 Dictionary<TKey,TValue> dictionary = new Dictionary<TKey,TValue>();
+Dictionary<TKey,TValue> dictionary = new Dictionary<TKey,TValue>(collection);
+Dictionary<TKey,TValue> dictionary = new Dictionary<TKey,TValue>(comparer);
 
 //Properties
 public System.Collections.Generic.IEqualityComparer<TKey> Comparer { get; } //Gets the IEqualityComparer<T> that is used to determine equality of keys for the dictionary.
