@@ -27,6 +27,11 @@ class Script
 		//Action delegate - without care about declaration of delegate
 		Action<string> del3 = MyDelegate.Message;
 		del3.Invoke("This is from Action delegate");
+
+		//Function delegate - without care about declaration of delegate
+		Func<int, string> del4 = MyDelegate.NumberToString;
+		string number = del4.Invoke(100);
+		Console.WriteLine(number);
 	}
 }
 
