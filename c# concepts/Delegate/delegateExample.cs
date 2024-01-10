@@ -32,6 +32,17 @@ class Script
 		Func<int, string> del4 = MyDelegate.NumberToString;
 		string number = del4.Invoke(100);
 		Console.WriteLine(number);
+
+		//Predicate delegate
+		Predicate<int> predicate = MyDelegate.FindMultiples;
+		List<int> list = new List<int>() { 1, 3, 5, 7, 9, 11, 13, 15 };
+		int multiple = list.Find(predicate);
+		Console.WriteLine(multiple);
+		List<int> multiples = list.FindAll(predicate);
+		foreach (int i in multiples)
+		{
+			Console.WriteLine(i);
+		}
 	}
 }
 
@@ -46,6 +57,18 @@ class MyDelegate
 	public static void AnotherMessage(string message)
 	{
 		Console.WriteLine($"Another {message}");
+	}
+
+	public static string NumberToString(int num)
+	{
+		string str = num.ToString();
+		return "The number is:" + str;
+	}
+	
+	//Check whether the integer is multiple of 3 
+	public static bool FindMultiples(int element)
+	{
+		return element % 3 == 0;
 	}
 
 }
