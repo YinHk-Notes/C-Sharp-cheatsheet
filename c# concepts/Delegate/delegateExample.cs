@@ -15,7 +15,12 @@ class Script
 		//Multicast delegate
 		del += MyDelegate.AnotherMessage;
 		del.Invoke("delegate");
-
+		//Anonymous method in delegate
+		MessageDelegate del2 = delegate (string message)
+		{
+			Console.WriteLine($"{message}");
+		};
+		del2.Invoke("This anonymous");
 	}
 }
 
