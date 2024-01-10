@@ -1,6 +1,6 @@
 ## `var`
 
-`var` is used to declare a implicitly-typed local variable. 
+**`var`** is used to declare a **implicitly-typed local variable**. 
 
 When you declare a local variable, you can let the compiler **infer the type of the variable from the initialization** expression. To do that use the `var` keyword instead of the name of a type
 
