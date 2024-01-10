@@ -1,5 +1,5 @@
 ## Action Delegate
-C# includes built-in generic delegate types **`Func`** and **`Action`**, so that you **don't need to define custom delegates manually** in most cases (**No need to declare delegate**).
+C# includes **built-in generic delegate types** **`Func`** and **`Action`**, so that you **don't need to define custom delegates manually** in most cases (**No need to declare delegate**).
 
 **Action** is a delegate type defined in the System namespace. An Action type **delegate** is the same as **`Func`** delegate except that the **Action delegate doesn't return a value**. 
 In other words, an Action delegate can be **used with a method that has a **`void`** return type**.
