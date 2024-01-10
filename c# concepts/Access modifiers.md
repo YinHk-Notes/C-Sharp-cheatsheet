@@ -49,6 +49,11 @@
 > Finalizers can't have accessibility modifiers.
 
 > Interfaces declared directly within a namespace can be **`public`** or **`internal`** and, just like classes and structs, interfaces default to **`internal`** access. Interface members are **`public`** by default because the purpose of an interface is to enable other types to access a **`class`** or **`struct`**.
+
+> Enumeration members are always **`public`**, and **no access modifiers can be applied**.
+
+> Delegates behave like classes and structs. By default, they have **`internal`** access when declared directly within a namespace, and **`private`** access when nested.
+
  
 ### `internal`
 ```cs
