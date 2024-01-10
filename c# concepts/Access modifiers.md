@@ -28,6 +28,14 @@
 |`interface`|`public`|`public` `protected` `internal` `private*` `protected internal` `private protected`|
 |`struct`|`private`|`public` `internal` `private`|
 
+| Caller's location | `public` | `protected internal` | `protected` | `internal` | `private protected` | `private` |
+| --- | --- | --- | --- | --- | --- | --- |
+| Within the class | ✔️️ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
+| Derived class (same assembly) | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ❌ |
+| Non-derived class (same assembly) | ✔️ | ✔️ | ❌ | ✔️ | ❌ | ❌ |
+| Derived class (different assembly) | ✔️ | ✔️ | ✔️ | ❌ | ❌ | ❌ |
+| Non-derived class (different assembly) | ✔️ | ❌ | ❌ | ❌ | ❌ | ❌ |
+
 ### `internal`
 ```cs
 public class BaseClass
