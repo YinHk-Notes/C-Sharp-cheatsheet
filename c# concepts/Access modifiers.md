@@ -39,7 +39,17 @@
 
 > **`Classes`**, **`records`**, and **`structs`** declared directly within a namespace (in other words, that aren't nested within other classes or structs) can be either **`public`** or **`internal`**. **`internal`** is the **default** if no access modifier is specified.
 
+> **`Class`** and **`struct`** members, including nested classes and structs, have **`private`** access by default. Private nested types aren't accessible from outside the containing type.
 
+> Struct members can't be declared as **`protected`**, **`protected internal`**, or **`private protected`** because **`structs`** **don't support inheritance**.
+
+
+> The type of any member field, property, or event must be at least as accessible as the member itself. Similarly, the return type and the parameter types of any method, indexer, or delegate must be at least as accessible as the member itself.
+
+> Finalizers can't have accessibility modifiers.
+
+> Interfaces declared directly within a namespace can be **`public`** or **`internal`** and, just like classes and structs, interfaces default to **`internal`** access. Interface members are **`public`** by default because the purpose of an interface is to enable other types to access a **`class`** or **`struct`**.
+ 
 ### `internal`
 ```cs
 public class BaseClass
@@ -241,4 +251,4 @@ public class HiddenWidget
 ### ref 
 https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers
 
-
+https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/accessibility-levels
