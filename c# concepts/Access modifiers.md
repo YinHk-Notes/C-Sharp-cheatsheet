@@ -12,13 +12,13 @@
 
 |Modifier|Description|
 |-|-|
-|`public`|	The code is accessible for all classes. Access is not restricted.|
-|`private`|The code is only accessible within the same class, cannot be accessed from any other class. Private members are accessible only within the body of the class or the struct in which they are declared. The type or member can be accessed only by code in the same **`class`** or **`struct`**.|
-|`protected`|	The code is accessible within the same class, or in a class that is inherited from that class. You will learn more about inheritance in a later chapter. Access is limited to the containing class or types derived from the containing class. A protected member is accessible within its class and by derived class instances.|
-|`internal`|	The code is only accessible within its own assembly, but not from another assembly. Access is limited to the current assembly. Used to limit the access to the elements of the class only to files from the same assembly, i.e. the same project in Visual Studio. When we create several projects in Visual Studio, the classes from will be compiled in different assemblies.|
+|`public`|	The code is accessible for all classes. **Access is not restricted**.|
+|`private`|The code is only accessible within the **same class**, **cannot be accessed from any other class**. Private members are accessible only within the body of the class or the struct in which they are declared. The type or member can be accessed only by code in the same **`class`** or **`struct`**.|
+|`protected`|	The code is **accessible within the same class**, or in a class that is **inherited from that class**. You will learn more about inheritance in a later chapter. Access is limited to the containing class or types derived from the containing class. A protected member is accessible within its class and by **derived class instances**.|
+|`internal`|	The code is only **accessible within its own assembly**, but **not from another assembly**. Access is limited to the **current assembly**. Used to **limit the access to the elements of the class only to files from the same assembly**, i.e. the **same project in Visual Studio**. When we create several projects in Visual Studio, the classes from will be compiled in different assemblies.|
 |`protected internal`| Access is limited to the **current assembly or types derived from the containing class**.|
-|`private protected`|Access is limited to the containing class or types derived from the containing class **within the current assembly**.|
-|`file`|restricts a top-level type's scope and visibility to the file in which it's declared.|
+|`private protected`|Access is **limited to the containing class** or **types derived from the containing class** **within the current assembly**.|
+|`file`|**restricts a top-level type's scope** and **visibility to the file** in which it's declared.|
 
 
 |Members|Default|Allowed declared accessibility|
