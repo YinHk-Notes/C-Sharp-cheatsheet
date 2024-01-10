@@ -16,6 +16,12 @@ List<T> list = new List<T>();
 List<T> list = new List<T>(collection);
 List<T> list = new List<T>(length);
 
+//eg: declare from collection elements
+string[] input = { "Brachiosaurus", "Amargasaurus", "Mamenchisaurus" };
+List<string> dinosaurs = new List<string>(input);
+
+var data = new List<int> { 1, -2, 3, 0, 2, -1 };
+
 
 //Properties
 public int Capacity { get; set; }  //Gets or sets the total number of elements 
