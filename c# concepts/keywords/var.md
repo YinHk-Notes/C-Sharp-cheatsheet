@@ -2,7 +2,7 @@
 
 **`var`** is used to declare a **implicitly-typed local variable**. 
 
-When you declare a local variable, you can let the compiler **infer the type of the variable from the initialization** expression. To do that use the `var` keyword instead of the name of a type
+When you declare a local variable, you can let the compiler **infer the type of the variable from the initialization** expression. To do that use the **`var`** keyword instead of the name of a type
 
 
 **Implicitly typed local variables** are strongly typed just as if you had declared the type yourself, but the compiler determines the type at run time depending on the value stored in them.
