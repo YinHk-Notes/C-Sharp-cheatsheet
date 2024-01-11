@@ -1,6 +1,6 @@
 ## Event
 
-An **event** is a notification sent by an object to **signal the occurrence of an action**.
+An **event** is a **notification** sent by an object to **signal the occurrence of an action**.
 
 **Events** are user actions such as key press, clicks, mouse movements, etc., or some occurrence such as system generated notifications. Applications need to respond to events when they occur. 
 
