@@ -9,7 +9,7 @@ An **event** is a **notification** sent by an object to **signal the occurrence 
 
 
 - In C#, an event is an **encapsulated delegate**. It is dependent on the **delegate**. The delegate **defines the signature for the event handler** method of the **subscriber class**.
-- An **`event`** is a **wrapper** around a **delegate**. It **depends on the delegate**. So use **`event`** keyword with **`delegate`** type variable to **declare an event**.
+- An **`event`** is a **wrapper** around a **delegate**. It **depends on the `delegate`**. So use **`event`** keyword with **`delegate`** type variable to **declare an event**.
 - Use built-in delegate **`EventHandler`** or **`EventHandler<TEventArgs>`** for **common event**s.
 - An **`event`** is a message sent by an object to signal the occurrence of an action. The action can be caused by user interaction, such as a button click, or it can result from some other program logic, such as changing a property's value.
 - The object that **raises the event** is called the **event sender**. 
