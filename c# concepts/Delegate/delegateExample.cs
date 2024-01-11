@@ -43,6 +43,16 @@ class Script
 		{
 			Console.WriteLine(i);
 		}
+
+		//Compariosn delegate
+		Comparison<int> compare = MyDelegate.CompareNumbers;
+		var numbers = new List<int> { -1, 20, 3, 9, 11, -3, 99, 150, 2, 0, 21, 1 };
+		numbers.Sort(compare);
+
+		foreach (var i in numbers)
+		{
+			Console.WriteLine(i);
+		}
 	}
 }
 
@@ -69,6 +79,13 @@ class MyDelegate
 	public static bool FindMultiples(int element)
 	{
 		return element % 3 == 0;
+	}
+
+	public static int CompareNumbers(int x, int y)
+	{
+		if (x - y > 0) return 1;
+		else if (x - y < 0) return -1;
+		else return 0;
 	}
 
 }
