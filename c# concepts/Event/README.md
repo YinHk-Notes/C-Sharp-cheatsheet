@@ -25,6 +25,7 @@ An **event** is a **notification** sent by an object to **signal the occurrence 
 - An Interface can include the **event** as a member.
 
 Declare an **`event`** associated with the **EventHandler delegate** and being **raised**:
+
 ```cs
 class Counter
 {
