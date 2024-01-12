@@ -37,6 +37,45 @@ public delegate void EventHandler(object? sender, EventArgs e);
 
 > You can pass the **`EventArgs.Empty`** value when **no data is provided**. The **`EventHandler`** delegate includes the **`EventArgs`** class as a parameter.
 
+```cs
+class Script
+{ 
+	static void Main(string[] args)
+	{
+		
+		Publisher pub = new Publisher();
+		Subscriber sub = new Subscriber(pub);
+		pub.InvokeEvent();
+	}
+}
+
+class Publisher
+{
+	
+	//EventHandler 
+	public event EventHandler messageLog;
+
+	//EvenHandler delegate
+	public void InvokeEvent() => OnCall();
+	protected virtual void OnCall() => messageLog?.Invoke(this, EventArgs.Empty);
+}
+
+class Subscriber
+{
+	public Subscriber(Publisher p)
+	{
+        p.messageLog += MessageHandler;
+	}
+
+	public void MessageHandler(object sender, EventArgs e)
+	{
+		Console.Beep(8000, 1000);
+		Console.WriteLine("This is a message");
+	}
+}
+```
+
+
 
 **`EventHandler<TEventArgs>` Delegate**
 
