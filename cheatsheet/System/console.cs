@@ -2,6 +2,7 @@
 // Inheritance: Object -> Console
 // Represents the standard input, output, and error streams for console applications. 
 // This class cannot be inherited.
+// https://learn.microsoft.com/en-us/dotnet/api/system.console?view=net-8.0
 
 using System;
 
