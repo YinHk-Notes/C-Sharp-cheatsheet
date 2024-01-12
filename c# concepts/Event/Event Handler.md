@@ -11,15 +11,15 @@
 **.NET** Framework includes **built-in delegate** types **`EventHandler`** and **`EventHandler<TEventArgs>`** 
 for the most common events. 
 
-
-- Use the **`EventHandler`** delegate for all events that do not include event data.
-- Use **`EventHandler<TEventArgs>`** delegate for events that include data to be sent to handlers
+- Use the **`EventHandler`** delegate for all events that do **not include event data**.
+- Use **`EventHandler<TEventArgs>`** delegate for events that **include data** to be sent to handlers
 
 Typically, any **`event`** should include two parameters: 
 - The source of the **`event`**
 - **`event`** data
 
-The **`EventHandler`** delegate is a predefined delegate that specifically represents an event handler method for an event that does not generate data. If your event does generate data, you must use the generic **`EventHandler<TEventArgs>`** delegate class
+The **`EventHandler`** delegate is a **predefined delegate** that specifically represents an event handler method for an **`event`** that does not generate data. \
+If your event does **generate data**, you **must** use the generic **`EventHandler<TEventArgs>`** delegate class
 
 **`EventHandler` Delegate**
 
