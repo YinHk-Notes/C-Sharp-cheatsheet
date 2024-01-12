@@ -5,7 +5,7 @@ Event data is **Data** that is **associated with an event**
 
 **Data** that is **associated with an event** can be provided through an **event data** class. **.NET** provides many event data classes that you can use in your applications. 
 
-Most events **send some data** to the **subscribers**. The **`EventArgs`** class is the base class for all the event data classes.
+Most events **send some data** to the **subscribers**. The **`EventArgs`** class is the **base class** for all the event data classes.
 
 **`EventArgs`** is also the class you use when an event doesn't have any data associated with it. When you create an event that is only meant to notify other classes that something happened and doesn't need to pass any data, include the **`EventArgs`** class as the second parameter in the delegate.  You can pass the **`EventArgs.Empty`** value when no data is provided. The **`EventHandler`** delegate includes the **`EventArgs`** class as a parameter.
 
@@ -24,7 +24,7 @@ For example, the **`SerialDataReceivedEventHandler`** delegate includes the **`S
 
 ### Passing an Event Data
 
-You can Use **`EventHandler<TEventArgs>`** delegate to pass data to the handler. A method that will handle an event when the event provides data.
+You can Use **`EventHandler<TEventArgs>`** delegate to **pass data to the handler**. A method that will handle an event when the event provides data. Passing only one event data no need to create class deriving from **`EventArgs`** class.
 
 ```cs
 class Program
@@ -73,7 +73,7 @@ public class ProcessBusinessLogic
 ```
 
 ### Passing more than one Event Data
-If you want to pass more than one value as event data, then create a class deriving from the **`EventArgs`** base class
+If you want to pass **more than one value** as event data, then create a class deriving from the **`EventArgs`** base class
 
 eg: 
 
@@ -140,6 +140,15 @@ public class ProcessBusinessLogic
     }
 }
 ```
+
+### Field
+
+
+Provides a value to use with events that do not have event data.
+```cs
+public static readonly EventArgs Empty;
+```
+
 
 
 
