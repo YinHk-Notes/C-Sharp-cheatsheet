@@ -132,6 +132,14 @@ namespace HelloWorldApplication {
 ```
 
 
+You can run, compile & debug your C# program in VSCode
+
+- install plug-in **"CS-Script"**: https://www.cs-script.net/
+
+- Create XXX.cs script file, and start scripting
+
+- Hit run button to compile code
+
 If you are using Visual Studio.Net for compiling and executing C# programs, take the following steps −
 
 -   Start Visual Studio.
