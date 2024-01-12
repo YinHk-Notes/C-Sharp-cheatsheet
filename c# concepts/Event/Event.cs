@@ -35,8 +35,6 @@ class Publisher
 	{
 		messageLog?.Invoke(this, EventArgs.Empty);
 	}
-
-
 }
 
 class Subscriber
