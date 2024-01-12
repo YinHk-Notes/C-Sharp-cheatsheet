@@ -15,11 +15,15 @@ for the most common events.  Use these build-in delegates in subscriber class in
 - Use **`EventHandler<TEventArgs>`** delegate for events that **include data** to be sent to handlers
 
 Typically, any **`event`** should include two parameters: 
-- The source of the **`event`**
+- The source of the **`event`** (The instance **raises the event**)
 - **`event`** data
 
-The **`EventHandler`** delegate is a **predefined delegate** that specifically represents an event handler method for an **`event`** that does not generate data. \
-If your event does **generate data**, you **must** use the generic **`EventHandler<TEventArgs>`** delegate class
+> The **`EventHandler`** delegate is a **predefined delegate** that specifically represents an event handler method for an **`event`** that does not generate data.
+
+> If your event does **generate data**, you **must** use the generic **`EventHandler<TEventArgs>`** delegate class
+
+The standard signature of an event handler delegate defines a method that **does not return a value**. This method's first parameter is of **type Object** and **refers to the instance** that **raises the event**. Its second parameter is derived from type **`EventArgs`** and **holds the event data**. If the **`event`** **does not generate event data**, the second parameter is simply the value of the **`EventArgs.Empty`** field. Otherwise, the second parameter is a type derived from **`EventArgs`** and supplies any fields or properties needed to **hold the event data**.
+
 
 **`EventHandler` Delegate**
 
