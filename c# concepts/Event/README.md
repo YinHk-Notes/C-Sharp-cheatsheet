@@ -18,8 +18,8 @@ An **event** is a **notification** sent by an object to **signal the occurrence 
 - Typically, to **raise an event**, you add a method that is marked as **`protected`** and **`virtual`** (in C#)
 - Name this method **`OnEventName`**; for example, **`OnDataReceived`**. Name the method which raises an event prefixed with **"On"** with the event name.
 - The signature of the **handler** method **must** match the **delegate signature**.
-- The method should take one parameter that specifies an event data object, which is an object of type **`EventArgs`** or a derived type.
-- You provide this method to enable derived classes to **override the logic** for **raising the event**.
+- The method should **take one parameter** that specifies an **`event` data object**, which is an object of type **`EventArgs`** or a **derived type**.
+- You provide this method to enable **derived classes** to **override the logic** for **raising the event**.
 - A derived class should always call the **`OnEventName`** method of the base class to ensure that registered **`delegates`** receive the event.
 - Events can be declared **`static`**, **`virtual`**, **`sealed`**, and **`abstract`**.
 - An Interface can include the **`event`** as a member.
