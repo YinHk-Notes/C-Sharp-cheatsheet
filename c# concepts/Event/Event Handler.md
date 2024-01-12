@@ -64,7 +64,7 @@ class Subscriber
 {
 	public Subscriber(Publisher p)
 	{
-        p.messageLog += MessageHandler;
+        	p.messageLog += MessageHandler;
 	}
 
 	public void MessageHandler(object sender, EventArgs e)
