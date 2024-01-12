@@ -52,7 +52,7 @@ Some other class that **accepts this event** is called the **"subscriber class"*
 
 ![](./event-eventHandler.png)_
 
-> The **publisher class** raises an event, and the **subscribe**r class registers for an event and provides the event-handler method.
+> The **publisher class** raises an event, and the **subscriber** class registers for an event and provides the event-handler method.
 
 Eg:
 ```cs
@@ -78,15 +78,13 @@ public class Publisher
         SampleEvent?.Invoke(this, new SampleEventArgs("Hello"));
     }
 }
-
-
 ````
 
 
 ### Subscribe & Unsubscribe the event
-> registers with the event using "+=" operator
+> registers with the event using **"+="** operator
 
-> unscribe with the event using "-=" perator
+> unscribe with the event using **"-="** perator
 
 Eg:
 ```cs
@@ -130,6 +128,11 @@ An event can be declared in two steps:
 
 1.  Declare a **delegate**.
 2.  Declare a variable of the delegate with **`event`** keyword.
+
+```cs
+[public] [event] [delegate method] [event name]
+```
+
 
 ```cs
 public delegate void Notify();  // delegate
