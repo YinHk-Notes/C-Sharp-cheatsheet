@@ -23,6 +23,7 @@ An **event** is a **notification** sent by an object to **signal the occurrence 
 - A derived class should always call the **`OnEventName`** method of the base class to ensure that registered **`delegates`** receive the event.
 - Events can be declared **`static`**, **`virtual`**, **`sealed`**, and **`abstract`**.
 - An Interface can include the **`event`** as a member.
+- To declare an **`event`**, should use **`public`**.
 
 Declare an **`event`** associated with the **EventHandler delegate** and being **raised**:
 
