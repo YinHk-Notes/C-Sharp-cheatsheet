@@ -106,12 +106,34 @@ class Program
 
 ```
 
+```cs
+class Script
+{
+	//main method 
+	static void Main(string[] args)
+	{
+		Script script = new Script();
+		//Extension method
+		script.ExtensionMethod("This is an extension method for this class");
+	}
+}
+
+static class Extension
+{
+	public static void ExtensionMethod(this Script s, string str)
+	{
+		Console.Beep(2000, 1000);
+		Console.WriteLine($"{str}");
+	}
+}
+```
 
 
 #### Steps
 1. Create a **`static`** Class for Extension Methods
 2. Define an Extension Method(**`static` method**)
-3. The first parameter use **`this`** modifier specify the class or struct to bind.
+3. use **`public`** as accesss modifier for the extension method
+4. The first parameter use **`this`** modifier specify the class or struct to bind.
 
 
 ### ref
