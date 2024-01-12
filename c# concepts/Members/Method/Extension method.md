@@ -109,7 +109,6 @@ class Program
 ```cs
 class Script
 {
-	//main method 
 	static void Main(string[] args)
 	{
 		Script script = new Script();
