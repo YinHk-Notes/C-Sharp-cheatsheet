@@ -9,7 +9,7 @@
 
 #### Built-in EventHandler Delegate
 **.NET** Framework includes **built-in delegate** types **`EventHandler`** and **`EventHandler<TEventArgs>`** 
-for the most common events.  Use these build-in delegates in subscriber class instead of declaring custom event & delegate. 
+for the most common events.  Use these build-in delegates in subscriber class instead of declaring custom delegate. 
 
 - Use the **`EventHandler`** delegate for all events that do **not include event data**.
 - Use **`EventHandler<TEventArgs>`** delegate for events that **include data** to be sent to handlers
