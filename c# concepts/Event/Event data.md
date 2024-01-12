@@ -75,6 +75,16 @@ public class ProcessBusinessLogic
 ### Passing more than one Event Data
 If you want to pass **more than one value** as event data, then create a class deriving from the **`EventArgs`** base class
 
+
+
+```cs
+class EventArgsName : EventArgs
+{
+    //Properties for event data
+}
+```
+
+
 eg: 
 
 ```cs
