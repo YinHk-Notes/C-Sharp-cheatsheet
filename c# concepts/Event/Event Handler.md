@@ -1,6 +1,6 @@
 ## Event Handler
 
-Event hander use in subscriber class, define an event handler and subscribe to an event.
+**Event hander** use in **subscriber** class, define an event handler and subscribe to an event.
 
 - To respond to an event, you define an event handler method in the event receiver.
 - This method **must match the signature of the delegate** for the event you're handling.
