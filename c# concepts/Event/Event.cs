@@ -6,7 +6,6 @@ class Script
 		Publisher pub = new Publisher();
 		Subscriber sub = new Subscriber(pub);
 		pub.onAlert();
-
 	}
 }
   
