@@ -60,6 +60,4 @@ class Subscriber
 		Console.Beep(8000, 1000);
 		Console.WriteLine("This is a message");
 	}
-
-
 }
