@@ -8,7 +8,7 @@ Event hander use in subscriber class, define an event handler and subscribe to a
 - To receive notifications when the event occurs, your event handler method must subscribe to the event.
 
 #### Built-in EventHandler Delegate
-**.NET** Framework includes built-in delegate types **`EventHandler`** and **`EventHandler<TEventArgs>`** 
+**.NET** Framework includes **built-in delegate** types **`EventHandler`** and **`EventHandler<TEventArgs>`** 
 for the most common events. 
 
 
