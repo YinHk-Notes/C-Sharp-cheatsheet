@@ -53,7 +53,7 @@ The following restrictions apply to implicitly-typed variable declarations:
     
 -   If a type named **`var`** is in scope, then the **`var`** keyword will resolve to that type name and will not be treated as part of an implicitly typed local variable declaration.
 
-mplicit typing with the var keyword can only be applied to variables at local method scope. Implicit typing is not available for class fields as the C# compiler would encounter a logical paradox as it processed the code: the compiler needs to know the type of the field, but it cannot determine the type until the assignment expression is analyzed, and the expression cannot be evaluated without knowing the type.
+Implicit typing with the var keyword can only be **applied to variables at local method scope**. Implicit typing is **not available for class fields** as the C# compiler would encounter a logical paradox as it processed the code: the compiler needs to know the type of the field, but it cannot determine the type until the assignment expression is analyzed, and the expression cannot be evaluated without knowing the type.
 
 ### ref
 https://www.c-sharpcorner.com/UploadFile/5ef30d/var-keyword-in-C-Sharp-programming/
