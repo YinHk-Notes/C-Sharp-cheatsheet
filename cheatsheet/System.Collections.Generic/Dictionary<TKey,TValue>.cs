@@ -26,8 +26,8 @@ foreach (var (i, j) in dict) { //... };
   
 //Declare dictionary
 Dictionary<TKey,TValue> dictionary = new Dictionary<TKey,TValue>();
-Dictionary<TKey,TValue> dictionary = new Dictionary<TKey,TValue>(collection);
-Dictionary<TKey,TValue> dictionary = new Dictionary<TKey,TValue>(comparer);
+Dictionary<TKey,TValue> dictionary = new Dictionary<TKey,TValue>(System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey,TValue>> collection);
+Dictionary<TKey,TValue> dictionary = new Dictionary<TKey,TValue>(System.Collections.Generic.IEqualityComparer<TKey>? comparer);
 
 //adding key/value pairs without using Add method, eg:
 Dictionary<string, string> My_dict2 =  new Dictionary<string, string>(){ {"a.1", "Dog"}, {"a.2", "Cat"}, {"a.3", "Pig"} }; 
