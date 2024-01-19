@@ -87,7 +87,7 @@ public T? FindLast (Predicate<T> match);
 public int FindLastIndex (Predicate<T> match);
 
 //Performs the specified action on each element of the List<T>
-public void ForEach (Action<T> action);
+public void ForEach (Action<T> enumerate);
 
 //Returns an enumerator that iterates through the List<T>.
 public System.Collections.Generic.List<T>.Enumerator GetEnumerator ();
