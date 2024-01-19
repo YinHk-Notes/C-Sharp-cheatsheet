@@ -1,5 +1,7 @@
 //Dictionary<TKey,TValue>
 //Represents a collection of keys and values.
+//https://www.geeksforgeeks.org/c-sharp-dictionary-with-examples/
+//https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2?view=net-8.0
 
 using System.Collections.Generic;
 
