@@ -20,6 +20,10 @@ public Dictionary (System.Collections.Generic.IEnumerable<System.Collections.Gen
 public Dictionary (System.Collections.Generic.IEqualityComparer<TKey>? comparer);
 
 
+//Iteration in dictionary
+foreach (var (i, j) in dict) { //... };
+
+  
 //Declare dictionary
 Dictionary<TKey,TValue> dictionary = new Dictionary<TKey,TValue>();
 Dictionary<TKey,TValue> dictionary = new Dictionary<TKey,TValue>(collection);
