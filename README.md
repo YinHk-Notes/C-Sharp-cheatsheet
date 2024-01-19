@@ -4,6 +4,13 @@
 My learning note & material for C#
 
 
+### What is C#?
+C# is object oriented language created by Microsoft. 
+
+> **Note**: OOP **focus on Object and Class**, there should be **object reference** for access non static members, methods or properties. 需要有物件參考，才可使用非靜態欄位、方法或屬性. For static, no object reference required.
+
+C# OOP has four basic concepts, Abstraction, Encapsulation, Inheritance, Polymorphism
+
 ### What does C# use for?
 - Desktop software (Window application)
 - Video Games (Unity)
