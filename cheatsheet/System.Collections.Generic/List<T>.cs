@@ -24,8 +24,8 @@ var data = new List<int> { 1, -2, 3, 0, 2, -1 };
 
 
 //Properties
-public int Capacity { get; set; }  //Gets or sets the total number of elements 
-public int Count { get; }          //Gets the number of elements contained in the List<T>.
+public int Capacity { get; set; }  //Gets or sets the total number of elements. Capacity is the number of elements that the List can store. 
+public int Count { get; }          //Gets the number of elements contained in the List<T>. Count is the number of elements that are actually in the List.
 public T this[int index] { get; set; }  //Gets or sets the element at the specified index.
 
 //Methods
