@@ -41,6 +41,20 @@ namespace ConsoleApplication1
 } 
 ```
 
+The following restrictions apply to implicitly-typed variable declarations:
+
+-   **`var`** can only be used when a local variable is **declared and initialized** in the **same statement**; the variable cannot be initialized to null, or to a method group or an anonymous function.
+    
+-   **`var`** **cannot be used on fields** at **class scope**.
+    
+-   Variables declared by using **`var`** cannot be used in the initialization expression. In other words, this expression is legal: **`int i = (i = 20);`** but this expression produces a compile-time error: **`var i = (i = 20);`**
+    
+-   Multiple implicitly-typed variables cannot be initialized in the same statement.
+    
+-   If a type named **`var`** is in scope, then the **`var`** keyword will resolve to that type name and will not be treated as part of an implicitly typed local variable declaration.
+
+mplicit typing with the var keyword can only be applied to variables at local method scope. Implicit typing is not available for class fields as the C# compiler would encounter a logical paradox as it processed the code: the compiler needs to know the type of the field, but it cannot determine the type until the assignment expression is analyzed, and the expression cannot be evaluated without knowing the type.
+
 ### ref
 https://www.c-sharpcorner.com/UploadFile/5ef30d/var-keyword-in-C-Sharp-programming/
 
