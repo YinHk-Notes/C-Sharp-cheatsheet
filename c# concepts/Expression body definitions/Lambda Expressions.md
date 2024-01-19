@@ -9,9 +9,17 @@ Use a **lambda expression** to create an **anonymous method**.
 ```cs
 (input-parameters) => { <sequence-of-statements> }
 ```
-
+```cs
+[Return type] [Method name] (input-parameters) => { <sequence-of-statements> }
+```
 
 Eg:
+
+```cs
+string GetListItem(int i, List<string> li) => li[i];
+
+```
+
 ```cs
 Func<int, int> square = x => x * x;
 Console.WriteLine(square(5));
@@ -38,6 +46,9 @@ eg:
 Func<int, string, bool> isTooLong = (int x, string s) => s.Length > x;
 
 ```
+
+
+
 
 ### ref
 https://www.geeksforgeeks.org/lambda-expressions-in-c-sharp/
