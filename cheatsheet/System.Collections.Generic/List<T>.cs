@@ -37,6 +37,9 @@ public T this[int index] { get; set; }  //Gets or sets the element at the specif
 //while Count is the number of elements that are actually in the List<T>.
 
 
+//Iteration in list
+foreach (var i in list) { //... };
+
 //Methods
 
 //Adds an object to the end of the List<T>.
