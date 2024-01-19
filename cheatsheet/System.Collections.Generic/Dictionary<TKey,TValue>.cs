@@ -25,6 +25,10 @@ Dictionary<TKey,TValue> dictionary = new Dictionary<TKey,TValue>();
 Dictionary<TKey,TValue> dictionary = new Dictionary<TKey,TValue>(collection);
 Dictionary<TKey,TValue> dictionary = new Dictionary<TKey,TValue>(comparer);
 
+//adding key/value pairs without using Add method, eg:
+Dictionary<string, string> My_dict2 =  new Dictionary<string, string>(){ {"a.1", "Dog"}, {"a.2", "Cat"}, {"a.3", "Pig"} }; 
+
+
 //Properties
 public System.Collections.Generic.IEqualityComparer<TKey> Comparer { get; } //Gets the IEqualityComparer<T> that is used to determine equality of keys for the dictionary.
 public int Count { get; }     //Gets the number of key/value pairs contained
