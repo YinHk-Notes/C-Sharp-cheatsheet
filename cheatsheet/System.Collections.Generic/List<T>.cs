@@ -28,6 +28,15 @@ public int Capacity { get; set; }  //Gets or sets the total number of elements. 
 public int Count { get; }          //Gets the number of elements contained in the List<T>. Count is the number of elements that are actually in the List.
 public T this[int index] { get; set; }  //Gets or sets the element at the specified index.
 
+
+//Count vs Capacity
+//Capacity is always greater than or equal to Count. 
+//If Count exceeds Capacity while adding elements, 
+//the capacity is increased by automatically reallocating the internal array before copying the old elements and 
+//adding the new elements. Capacity is the number of elements that the List<T> can store before resizing is required, 
+//while Count is the number of elements that are actually in the List<T>.
+
+
 //Methods
 
 //Adds an object to the end of the List<T>.
