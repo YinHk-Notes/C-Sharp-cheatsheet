@@ -12,7 +12,7 @@ public class Dictionary<TKey,TValue> : System.Collections.Generic.ICollection<Sy
 
 
 //Constructors
-public Dictionary ();
+public Dictionary();
 public Dictionary (System.Collections.Generic.IDictionary<TKey,TValue> dictionary); // contains elements copied from the specified IDictionary<TKey,TValue>
 //Initializes a new instance of the Dictionary<TKey,TValue> class that contains elements copied from the specified IEnumerable<T>.
 public Dictionary (System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey,TValue>> collection);
