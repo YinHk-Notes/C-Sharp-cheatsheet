@@ -97,6 +97,7 @@ public System.Collections.Generic.List<T>.Enumerator GetEnumerator ();
 
 //Creates a shallow copy of a range of elements in the source List<T>.
 public System.Collections.Generic.List<T> GetRange (int index, int count);
+List<T> subList = list<T>.GetRange(index, count);
 
 //Returns the zero-based index of the first occurrence of a value in the List<T>
 public int IndexOf (T item, int index);
