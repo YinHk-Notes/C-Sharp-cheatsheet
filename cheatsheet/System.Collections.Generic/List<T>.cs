@@ -113,10 +113,11 @@ public int LastIndexOf (T item);
 //emoves the first occurrence of a specific object
 public bool Remove (T item);
 
-//Removes all the elements that match the conditions defined by the specified predicate.
+//Removes all the elements that match the conditions defined by the specified predicate. 
+//Return the number of elements removed from the List<T>
 public int RemoveAll (Predicate<T> match);
 
-//Removes the element at the specified index of the List<T>.
+//Removes the element at the specified index of the List<T>. 
 public void RemoveAt (int index);
 
 //Removes a range of elements from the List<T>
