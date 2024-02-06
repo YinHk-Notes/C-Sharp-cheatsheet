@@ -228,7 +228,7 @@ public class Program
 C# 8.0 allows `private`, `protected`, `internal`, `public`, `virtual`, `abstract`, `sealed`, `static`, `extern`, and `partial` modifiers in an interface.
 - he default access level for all interface members is **`public`**.
 - An interface member whose declaration includes a body is a **`virtual`** member unless the **`sealed`** or **`private`** modifier is used.
-- A **`private`** or **`sealed`** function member of an interface **must have implementation body**.
+- A **`private`** or **`sealed`** function member of an interface **must have implementation body**. Usually can't declare `private`.
 - Interfaces may declare **`static`** members which can be accessed by interface name.
 
 
