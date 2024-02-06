@@ -74,7 +74,8 @@ In other words, they refer to a memory location. Using multiple variables, the r
 - `typeof`: \
   The `typeof` operator obtains the `System.Type` instance for a type. The argument to the `typeof` operator must be the name of a type or a type parameter.
 
-
+- `Object.GetType()`: \
+  Any class inherite `Object` class can use this method to check its type.
 
 https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/type-testing-and-cast#as-operator
 
