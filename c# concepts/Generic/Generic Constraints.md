@@ -3,6 +3,8 @@ C# allows you to use constraints to restrict client code to specify certain type
 
 It will give a compile-time error if you try to instantiate a generic type using a type that is not allowed by the specified constraints.
 
+> Apply constraints to generics using **`where`** keyword.
+
 You can specify **one or more constraints on the generic type** using the **`where`** clause after the generic type name.
 
 
@@ -37,6 +39,47 @@ DataStore<ArrayList> store = new DataStore<ArrayList>(); // valid
  */
 ```
 
+
+### Multiple Generic Constraints
+
+You can apply **multiple generic constraints**
+
+
+**Multiple constraints can be applied to the same type parameter**, and the constraints themselves can be **generic types**, as follows:
+
+```cs
+class EmployeeList<T> where T : Employee, IEmployee, System.IComparable<T>, new()
+{
+    // ...
+}
+```
+
+**Constraining multiple parameters**.  You can apply constraints to multiple parameters, and multiple constraints 
+
+eg:
+```cs
+class Base { }
+class Test<T, U>
+    where U : struct
+    where T : Base, new()
+{ }
+
+```
+
+eg:
+```cs
+//Declaring multiple generic with single class names
+public static void MultipleGenericExample2<T1, T2>() where T1 : ModelExample3, new() where T2 : ModelExample2, new()
+{
+    T1 t1 = new T1();
+    T2 t2 = new T2();
+}
+```
+
+
+
+
+
 | Constraint | Description |
 | --- | --- |
 | `where T : struct` | The type argument must be a non-nullable value type. For information about nullable value types, see Nullable value types. Because all value types have an accessible parameterless constructor, the struct constraint implies the new() constraint and can't be combined with the new() constraint. You can't combine the struct constraint with the unmanaged constraint. |
@@ -59,4 +102,6 @@ https://www.tutorialsteacher.com/csharp/constraints-in-generic-csharp
 
 
 https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/constraints-on-type-parameters
+
+https://medium.com/swlh/multiple-generic-constraints-net-1973fbaaf8de
 
