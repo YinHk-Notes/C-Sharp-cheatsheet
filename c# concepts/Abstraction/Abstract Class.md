@@ -2,7 +2,7 @@
 We use the **`abstract`** keyword to create an abstract class.
 > In C#, we **cannot create objects of an abstract class**.
 > An abstract class may contain abstract members including **abstract methods** and **abstract properties**.
-> Abstract methods and properties do not contain implementation.
+> Abstract methods and properties **do not contain implementation**.
 
 For example,
 
