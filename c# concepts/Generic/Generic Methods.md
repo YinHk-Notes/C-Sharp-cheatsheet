@@ -40,7 +40,7 @@ empIds.AddOrUpdate(1, 65);
 empIds.AddOrUpdate(2, 89);
 ```
 
-A non-generic class can include generic methods by specifying a type parameter in angle brackets with the method name
+A non-generic class can include generic methods by **specifying a type parameter in angle brackets** with the method name
 ```cs
 class Printer
 {
