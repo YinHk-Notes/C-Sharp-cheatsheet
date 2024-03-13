@@ -18,3 +18,5 @@ All parameters specified in these keywords **must be passed by a reference**
 |**`in`**|**F**|**T**|
 |**`out`**|**T**|**F**|
 |**`ref`**|**T**|**T**|
+
+> `out` & `ref` are used for specify the parameter passed can be modified and returned, while `int` can't
