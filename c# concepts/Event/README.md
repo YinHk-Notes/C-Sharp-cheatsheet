@@ -291,7 +291,7 @@ namespace DotNetEvents
 - Create a publisher class to **declare an event**, **raise an event** and **invoke delegate**.
 - Create a subscriber class to **subscribe/unsubscribe an event** and provide **an event handler**.
 - Provide class of event data(If needed) for passing event data, inherited from **`EventArgs`** class. The event data used in publisher class for raising event.
-- Instantiate both publisher and subscriber class in **`Main()`** method, running event handling logic using their methods.
+- **Instantiate both publisher and subscriber class** in **`Main()`** method, running event handling logic using their methods.
 
 ### ref 
 https://www.tutorialsteacher.com/csharp/csharp-event
