@@ -1,5 +1,5 @@
 ## `as`
-The `as` operator explicitly **converts the result of an expression to a given reference** or **nullable value type**. If the conversion isn't possible, the `as` operator returns `null`.
+The `as` operator explicitly **converts the result of an expression to a given reference** or **nullable value type**. If the conversion isn't possible, the `as` operator returns `null`. It is used for type casting.
 
 Unlike a cast expression, the `as` operator **never throws an exception**.
 
@@ -24,6 +24,10 @@ if (indexable != null)
     Console.WriteLine(indexable[0] + indexable[indexable.Count - 1]);  // output: 40
 }
 ```
+
+
+
+> **Note**: you can use generic instead of using this `as` for casting, while using generic to specify the type, type casting is redundant !
 
 ### ref
 https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/type-testing-and-cast#as-operator
