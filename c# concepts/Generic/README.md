@@ -13,6 +13,7 @@ A type parameter is a placeholder for a particular type specified when creating 
 
 A generic type is declared by specifying a type parameter in an angle brackets after a type name, e.g. `TypeName<T>` where `T` is a type parameter.
 
+> **Note**: using generic, no need to do type casting anymore
 
 ### ref
 
