@@ -56,8 +56,10 @@ namespace AbstractClass {
 
 ```
 
-- A **non-virtual** or a `static` method **can’t be overridden**.
-- Both the `override` method and the `virtual` method **must** have the **same access level modifier**.
+> A **non-virtual** or a `static` method **can’t be overridden**.
+
+> Both the `override` method and the `virtual` method **must** have the **same access level modifier**.
+
 
 ### ref
 https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/override
