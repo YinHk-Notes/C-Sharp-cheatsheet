@@ -11,7 +11,7 @@
 - The `static` modifier can be used with **classes**, **fields**, **methods**, **properties**, **operators**, **events**, and **constructors**. 
 - A **non-static class** can contain `static` **methods**, **fields**, **properties**, or **events**.
 - The `static` modifier can't be used with **indexers** or **finalizers**.
-- `static` class **should have `static` member only**, a `static` class can only contain `static` data members, `static` methods, and a `static` constructor. It is **not allowed to create objects of the static class**.  If the `static` keyword is applied to a class, all the members of the class must be `static`.
+- `static` class **should have `static` member only**, a `static` class can only contain `static` data members, `static` methods, and a `static` constructor. It is **not allowed to create objects of the static class**.  If the `static` keyword is applied to a class, **all the members** of the class **must be `static`**.
 - `static` class **cannot be instantiated** [create objects of the static class], and **cannot inherit a `static` class from another class**.
 - It is more typical to declare a **non-static class** with some `static` members, than to declare an entire class as `static`. Two common uses of **static fields** are to **keep a count of the number** of objects that have been instantiated, or to **store a value that must be shared among all instances**.
 
