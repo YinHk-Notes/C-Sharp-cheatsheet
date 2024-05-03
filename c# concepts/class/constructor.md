@@ -87,7 +87,7 @@ public class Manager : Employee
     }
 }
 ```
-If a base-class constructor isn't called explicitly by using the base keyword, the parameterless constructor, if there's one, is called implicitly. This means that the following constructor declarations are effectively the same:
+If a base-class constructor **isn't called explicitly** by using the **`base`** keyword, the **parameterless constructor**, if there's one, is **called implicitly**. This means that the following constructor declarations are effectively the **same**:
 ```cs
 public Manager(int initialData)
 {
