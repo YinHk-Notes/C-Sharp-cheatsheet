@@ -22,7 +22,7 @@ class KeyValuePair<TKey, TValue>
 ```
 
 ### Instantiating Generic Class
-You can create an instance of generic classes by specifying an actual type in **angle brackets**.
+You can create an instance of generic classes by specifying an **actual type** in **angle brackets**.
 
 eg:
 ```cs
