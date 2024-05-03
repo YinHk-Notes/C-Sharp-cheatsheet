@@ -1,7 +1,7 @@
 ## Named parameters
-Named parameters **free you from matching the order of parameters to the order of parameters in the parameter lists** of called methods. The argument for each parameter can be specified by **parameter name**. For example, a function that prints order details ( such as, seller name, order number & product name ) can be called by sending arguments by position, in the order defined by the function.
+Named parameters **free you from matching the order of parameters to the order of parameters in the parameter lists** of called methods. The **argument for each parameter** can be specified by **parameter name**. For example, a function that prints order details ( such as, seller name, order number & product name ) can be called by sending arguments by position, in the order defined by the function.
 
-Named parameters provides us the relaxation to remember or to look up the order of parameters in the parameter lists of called methods. The parameter for each argument can be specified by parameter name.
+> Named parameters provides us the **relaxation to remember or to look up the order of parameters in the parameter lists** of called methods. The parameter for each argument can be specified by parameter name.
 
 
 Eg:
