@@ -121,7 +121,7 @@ public Employee(int weeklySalary, int numberOfWeeks)
 }
 ```
 
-If no constructor declared, default constructor is automatically provided
+If **no constructor declared**, default constructor is **automatically** provided
 ```cs
 class Person {  
     //This class has no constructor  
