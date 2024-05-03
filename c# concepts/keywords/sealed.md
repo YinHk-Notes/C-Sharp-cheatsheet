@@ -1,6 +1,6 @@
 ## sealed
 
-You can use **`sealed`** modifier on class, method or property that overrides a virtual method or property in a base class.
+You can use **`sealed`** modifier on **class**, **method** or **property** that **overrides a virtual method or property in a base class**.
 
 > The **`sealed`** modifier prevents other classes from **inheriting** from it.
 
