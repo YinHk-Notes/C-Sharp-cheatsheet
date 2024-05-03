@@ -1,7 +1,7 @@
 ## Static
 
-- **static** Classes
-- **static** Class Members
+1. **static** Classes
+2. **static** Class Members
 
 > 📌 `static` means **not unique**
 
