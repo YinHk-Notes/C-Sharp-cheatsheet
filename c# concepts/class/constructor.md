@@ -144,7 +144,7 @@ class Program {
 A `static` constructor is used to **initialize any static data**, or to perform a particular action that needs to be performed **once only**.
 A class or struct can also have a static constructor, which **initializes `static` members of the type**.
 
-- static constructors are parameterless.
+- static constructors are **parameterless**.
 - If you don't provide a static constructor to initialize static fields, the C# compiler initializes static fields to their default value
 - A static constructor is called automatically. It initializes the class before the first instance is created or any static members declared in that class (not its base classes) are referenced.
 - A class or struct can **only have one static constructor**.
