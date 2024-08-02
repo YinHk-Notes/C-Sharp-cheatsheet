@@ -45,7 +45,15 @@ static int Sum(int x, int y)
 ```
 
 
+> Initialize an Func delegate using the **`new`** keyword or by directly assigning a method:
 
+
+```cs
+Func<int,int, int> add = Sum;
+
+//Or
+Func<int,int, int> add = new Func<int,int, int>(Sum);
+```
 
 
 > **Func** with an **Anonymous Method**
