@@ -11,7 +11,7 @@
 - It is generated only once for an application and upon each subsequent compilation the assembly gets updated. 
 - The entire process will run in the background of your application
 - There is no need for you to learn deeply about assemblies.
-- Assembly is the smallest unit of deployment of a .net application. It can be a dll or an exe.
+- Assembly is the smallest unit of deployment of a **`.Net`** application. It can be a dll or an exe.
 There are mainly two types to it:
   1. **Private Assembly**: The dll or exe which is sole property of one application only. It is generally stored in application root folder
   2. **Public/Shared assembly**: It is a dll which can be used by multiple applications at a time. A shared assembly is stored in GAC i.e Global Assembly Cache.
