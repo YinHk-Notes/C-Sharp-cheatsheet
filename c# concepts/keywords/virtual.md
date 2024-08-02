@@ -10,8 +10,8 @@ If a member in the subclass has the same name as the one in the base class, the 
 
 if you want a member in the subclass to override the member with the same name in the base class, you need to:
 
--   First, use the **`virtual`** modifier in the declaration of the member of the base class
--   Second, use the **`override`** modifier in the declaration of the member in the subclass.
+-   First, use the **`virtual`** modifier in the declaration of the member of the **base class**.
+-   Second, use the **`override`** modifier in the declaration of the member in the **subclass**.
 
 ```cs
 class Person
