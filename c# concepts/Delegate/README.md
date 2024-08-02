@@ -30,8 +30,9 @@ Delegates have the following properties:
 There are three steps involved while working with delegates:
 
 1.  **Declare a delegate**
-2.  **Set a target method**
-3.  **Invoke a delegate**
+2.  **Create a target method**
+3.  **Instantiate the delegate** & **assign it to the target method**
+4.  **Invoke a delegate**
 
 A **delegate** can be declared using the delegate keyword followed by a function signature
 
@@ -74,7 +75,7 @@ static void Notify(string name)
 
 
 
-#### Instantiate the delegate & set target method
+#### Instantiate the delegate & assign it to target method
 
 ```cs
 // Instantiate the delegate and Set target method
