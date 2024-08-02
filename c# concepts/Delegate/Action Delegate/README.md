@@ -12,7 +12,7 @@ In other words, an Action delegate can be **used with a method that has a **`voi
    public delegate void Action<in T>(T obj);
   ```
   ```cs
-   public delegate void Action<in T1,in T2>(T1 arg1, T2 arg2);
+   public delegate void Action<in T1, in T2>(T1 arg1, T2 arg2);
   ```
   ...
   ```cs
