@@ -38,7 +38,7 @@ public System.Collections.Generic.IEqualityComparer<TKey> Comparer { get; } //Ge
 public int Count { get; }     //Gets the number of key/value pairs contained
 public TValue this[TKey key] { get; set; }  //Gets or sets the value associated with the specified key
 public System.Collections.Generic.Dictionary<TKey,TValue>.KeyCollection Keys { get; } //Gets a collection containing the keys
-public System.Collections.Generic.Dictionary<TKey,TValue>.ValueCollection Values { get; } //Gets a collection containing the values
+public System.Collections.Generic.Dictionary<TKey,TValue>.ValueCollection Values { get; }; //Gets a collection containing the values
 
 
 //Methods
