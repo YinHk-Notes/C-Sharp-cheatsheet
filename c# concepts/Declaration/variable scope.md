@@ -31,9 +31,9 @@ class Student
 ```
 
 ### Method Level Variable Scope
-When we declare a variable inside a method, the variable cannot be accessed outside of the method. This is known as method level variable scope.
+When we declare a variable inside a method, the variable **cannot be accessed outside of the method**. This is known as **method level variable scope**.
 
-It cannot be accessed outside the method
+It **cannot be accessed outside the method**
 
 
 ### Block Level Variable Scope
