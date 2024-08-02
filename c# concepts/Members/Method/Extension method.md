@@ -132,7 +132,7 @@ static class Extension
 1. Create a **`static`** Class for Extension Methods
 2. Define an Extension Method(**`static` method**)
 3. use **`public`** as accesss modifier for the extension method
-4. The first parameter use **`this`** modifier specify the class or struct to bind.
+4. The **first parameter** use **`this`** modifier specify the class or struct to bind.
 
 
 ### ref
