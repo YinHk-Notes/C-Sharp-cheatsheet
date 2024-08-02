@@ -317,6 +317,11 @@ class Program
 ```
 
 
+### C# Built-in delegates
+- **Func**
+- **Action**
+- **Predicate**
+- **Comparision**
 
 ### ref
 https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/delegates/
