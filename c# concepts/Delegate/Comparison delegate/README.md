@@ -14,6 +14,8 @@ Return value **`int`**:
 - 0: x equals y
 - Greater than 0: x is greater than y.
 
+You **don't need to define custom delegates manually** in most cases (**No need to declare delegate**). Just **instantiate the delegate and set target method**!
+
 
 ```cs
 using System;
