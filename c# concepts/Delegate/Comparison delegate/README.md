@@ -16,6 +16,24 @@ Return value **`int`**:
 
 You **don't need to define custom delegates manually** in most cases (**No need to declare delegate**). Just **instantiate the delegate and set target method**!
 
+Eg: 
+```cs
+
+//Compariosn delegate
+Comparison<int> compare = CompareNumbers;
+var numbers = new List<int> { -1, 20, 3, 9, 11, -3, 99, 150, 2, 0, 21, 1 };
+numbers.Sort(compare);
+
+public static int CompareNumbers(int x, int y)
+{
+    if (x - y > 0) return 1;
+    else if (x - y < 0) return -1;
+    else return 0;
+}
+
+```
+
+
 
 ```cs
 using System;
