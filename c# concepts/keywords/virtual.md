@@ -33,7 +33,7 @@ class Employee : Person
 -   Use the base keyword to explicitly reference the method in a base class from a subclass.
 
 
-> 📌 It is an error to use the **`virtual`** modifier on a static property.
+> 📌 It is an error to use the **`virtual`** modifier on a **`static`** property.
 
 
 
