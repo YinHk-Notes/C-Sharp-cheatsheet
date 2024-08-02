@@ -5,6 +5,7 @@ A **Predicate** is a **delegate** that accepts **one or more generic parameters*
 
 **Predicates** in C# are implemented with **delegates**. The **Predicate delegate** represents the method that **defines a set of criteria** and **determines whether the specified object meets those criteria**.
 
+You **don't need to define custom delegates manually** in most cases (**No need to declare delegate**). Just **instantiate the delegate and set target method**!
 
 ```cs
 public delegate bool Predicate<in T>(T obj);
