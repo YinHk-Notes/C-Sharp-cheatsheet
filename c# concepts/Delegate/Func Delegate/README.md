@@ -74,7 +74,7 @@ Func<int, int, int>  Sum  = (x, y) => x + y;
 - **Func** is built-in delegate type.
 - **Func** delegate type must return a value.
 - **Func** delegate type can have zero to 16 input parameters.
-- **Func** delegate does not allow ref and out parameters.
+- **Func** delegate does not allow **`ref`** and **`out`** parameters.
 - **Func** delegate type can be used with an **anonymous method** or **lambda expression**.
 
 
