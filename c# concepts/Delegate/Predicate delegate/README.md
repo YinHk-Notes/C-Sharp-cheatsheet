@@ -12,6 +12,19 @@ public delegate bool Predicate<in T>(T obj);
 
 ```
 
+Eg:
+```cs
+Predicate<int> predicate = FindMultiples;
+//find multiple of 3
+List<int> list = new List<int>() { 1, 3, 5, 7, 9, 11, 13, 15 };
+int multiple = list.Find(predicate);
+
+public static bool FindMultiples(int element)
+{
+   return element % 3 == 0;
+}
+
+```
 
 ```cs
 using System;
