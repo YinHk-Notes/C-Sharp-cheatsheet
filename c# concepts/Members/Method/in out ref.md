@@ -13,10 +13,10 @@ All parameters specified in these keywords **must be passed by a reference**
 
 
 #### remark: 
-||Can be changed?|must be intialized?|
+||must be intialized?|Can be changed?|
 |-|-|-|
-|**`in`**|**F**|**T**|
-|**`out`**|**T**|**F**|
+|**`in`**|**T**|**F**|
+|**`out`**|**F**|**T**|
 |**`ref`**|**T**|**T**|
 
 > `out` & `ref` are used for specify the parameter passed can be modified and returned, while `int` can't
