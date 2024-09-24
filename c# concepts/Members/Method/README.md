@@ -60,14 +60,14 @@ class derived_class : base_class
 }
 class Main_Method
 {
- static void Main()
- {
-    derived_class d = new derived_class();
-    d.gfg();
+    static void Main()
+    {
+       derived_class d = new derived_class();
+       d.gfg();
     
-      base_class b = new derived_class();
-        b.gfg();
- }
+       base_class b = new derived_class();
+       b.gfg();
+    }
 }
 ```
 
