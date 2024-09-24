@@ -1,6 +1,6 @@
 ## Generic Methods
 
-A method declared with the **type parameters** for its **return type** or **parameters** is called a **generic method**.
+1. A method declared with the **type parameters** for its **return type** or **parameters** is called a **generic method**.
 
 ```cs
 class DataStore<T>
@@ -40,7 +40,7 @@ empIds.AddOrUpdate(1, 65);
 empIds.AddOrUpdate(2, 89);
 ```
 
-A non-generic class can include generic methods by **specifying a type parameter in angle brackets** with the method name
+2. A **non-generic** class can include generic methods by **specifying a type parameter in angle brackets** with the method name
 ```cs
 class Printer
 {
