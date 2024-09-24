@@ -42,7 +42,7 @@ Method Overriding is a technique that allows the invoking of functions from anot
 
 An override method provides a new implementation of the method inherited from a base class. The method that is overridden by an override declaration is known as the overridden base method.
 
-- An override method **must** have the same signature as the overridden base method.
+- An override method **must** have the **same signature** as the overridden base method.
 - return type of an override method can derive from the return type of the corresponding base method.
 
 In C# we can use **`virtual`** keyword with base class method and **`override`** keyword with derived class method to achieve methood overriding.
@@ -95,9 +95,9 @@ public class TestOverriding
 } 
 
 ```
--   Method overriding is possible only in derived classes. Because a method is overridden in the derived class from the base class.
+-   Method overriding is possible **only** in **derived classes**. Because a method is overridden in the derived class from the **base class**.
 -   A **non-virtual** or a `static` method **can’t be overridden**.
--   Both the `override` method and the `virtual` method **must** have the **same access level modifier**.
+-   Both the **`override`** method and the **`virtual`** method **must** have the **same access level modifier**.
 
 
 https://www.geeksforgeeks.org/c-sharp-method-overriding/
