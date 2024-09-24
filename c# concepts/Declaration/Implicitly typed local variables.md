@@ -43,7 +43,8 @@ namespace ConsoleApplication1
 
 The following restrictions apply to implicitly-typed variable declarations:
 
--   **`var`** can only be used when a local variable is **declared and initialized** in the **same statement**; the variable cannot be initialized to null, or to a method group or an anonymous function.
+-   **`var`** can only be used when a local variable is **declared and initialized** in the **same statement**; \
+    the variable **cannot be initialized** to **`null`**, or to a **method group** or an **anonymous function**.
     
 -   **`var`** **cannot be used on fields** at **class scope**.
     
