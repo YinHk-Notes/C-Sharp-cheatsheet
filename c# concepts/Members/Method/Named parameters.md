@@ -4,6 +4,16 @@ Named parameters **free you from matching the order of parameters to the order o
 > Named parameters provides us the **relaxation to remember or to look up the order of parameters in the parameter lists** of called methods. The parameter for each argument can be specified by parameter name.
 
 
+```cs
+public T NamedParameterFunction(T1 t1, T2 t2, T3 t3, ...);
+
+
+// Call the function & using named parameters
+NamedParameterFunction(t3: value3, t1: value1, t2: value2, ...); // Regardless the order
+```
+
+
+
 Eg:
 ```cs
 NamedParameterFunction(firstName: "Hello", lastName: "World")
