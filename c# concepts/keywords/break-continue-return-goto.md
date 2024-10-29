@@ -2,7 +2,7 @@
 
 ### `break` 
 
-**`break**` used to **terminate iteration proccess**.
+**`break`** used to **terminate iteration proccess**.
 
 ```cs
 int[] numbers = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
@@ -24,7 +24,7 @@ Console.WriteLine("End of the example.");
 ```
 
 ### `continue`
-`continue` is used to jump or skip or bypass the current step in the iteration.
+**`continue`** is used to **jump or skip or bypass the current step** in the iteration.
 
 ```cs
 for (int i = 0; i < 5; i++)
