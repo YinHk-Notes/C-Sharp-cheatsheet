@@ -28,10 +28,13 @@ switch(expression)
     break;
 }
 
-// Use the following for the end of each case
+// Use the following for the end of each case, otherwise compiler error CS0163 is reported
 // return;  
 // break;  
-// goto case i(x, y, z,...);  
+// goto case i(x, y, z,...);
+
+// Use 'break' for the end of default, therwise compiler error CS0163 is reported
+// break
 
 ```
 
