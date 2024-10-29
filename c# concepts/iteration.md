@@ -27,6 +27,12 @@ switch(expression)
     // code block
     break;
 }
+
+// Use the following for the end of each case
+// return;  
+// break;  
+// goto case i(x, y, z,...);  
+
 ```
 
 ### while loop
