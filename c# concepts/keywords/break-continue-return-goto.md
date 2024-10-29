@@ -2,7 +2,7 @@
 
 ### `break` 
 
-`break` used to terminate iteration proccess.
+**`break**` used to **terminate iteration proccess**.
 
 ```cs
 int[] numbers = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
@@ -49,7 +49,7 @@ for (int i = 0; i < 5; i++)
 
 
 ### `return`
-The `return` statement terminates execution of the function in which it appears and returns control and the function's result
+The **`return`** statement **terminates execution of the function** in which it appears and **returns control** and **the function's result**
 
 ```cs
 Console.WriteLine("First call:");
@@ -99,9 +99,9 @@ ref int FindFirst(int[] numbers, Func<int, bool> predicate)
 
 
 ### `goto`
-transfers control to a statement that is marked by a label.
+**Transfers control** to a statement that is marked by a **"label"**.
 
-`label` is an identifier. When `goto label;` is encountered, the control of the program is transferred to `label:`. Then the code below `label:` is executed.
+**`label` is an identifier**. When **`goto label;`** is encountered, the **control of the program is transferred to `label:`**. Then the code below **`label:`** is executed.
 
 
 ```cs
