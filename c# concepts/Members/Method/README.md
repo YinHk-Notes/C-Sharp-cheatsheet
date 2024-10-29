@@ -9,6 +9,13 @@ Syntax
 
 > Methods and Functions are the same in C#.                                                                                   However, Methods are used in C# and are functions that operate through a designated class. A method is a group of statements that together perform a task. Every C# program has at least one class with a method named **Main**.
 
+
+
+### Order of methods in the C# script
+It does not matter if you put function one at the top of the file and function two at the bottom, or vice versa.
+
+
+
 ### Void method
 
 void isn't allowed in the parameter list of a method. A method that takes no parameters and returns no value, 
