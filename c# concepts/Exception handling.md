@@ -1,6 +1,6 @@
 ## Exception handling
 
-An exception is a problem that arises during the execution of a program. A C# exception is a response to an exceptional circumstance that arises while a program is running.
+An **exception is a problem that arises during the execution of a program**. A C# exception is a response to an **exceptional circumstance that arises** while a program is running.
 
 
 Exceptions provide a way to transfer control from one part of a program to another. C# exception handling is built upon four keywords: **try**, **catch**, **finally**, and **throw**.
