@@ -109,6 +109,57 @@ You use `using` when working with objects that implement `IDisposable`. Common e
     -   You cannot reuse an object after it has been disposed.
 
 
+### **`IDisposable`** 
+
+#### What is IDisposable?
+
+The `IDisposable` interface in .NET is used to manage and release unmanaged resources such as:
+- File handles
+- Database connections
+- Network sockets
+
+It ensures proper cleanup of these resources, avoiding memory leaks and resource contention.
+
+
+
+#### Key Concepts
+
+- **Purpose**: To free unmanaged resources explicitly.
+- **Method**: The interface requires implementing a `Dispose` method to handle cleanup.
+- **Usage**: Allows for deterministic cleanup, even in cases where garbage collection is delayed.
+
+
+
+#### Common Use Cases
+
+1. Streams (`FileStream`, `MemoryStream`, etc.)
+2. Database connections (`SqlConnection`, `DbContext`)
+3. Unmanaged resources like file handles or COM objects.
+
+
+
+### Using `IDisposable`
+
+#### 1. Using the `using` Statement
+The `using` statement automatically calls the `Dispose` method when the block is exited.
+```csharp
+using (var resource = new ResourceHolder())
+{
+    // Use the resource
+}
+// `Dispose` is called automatically here.
+```
+
+#### 2. Manual Disposal
+If not using the using statement, you must call Dispose explicitly.
+
+```cs
+var resource = new ResourceHolder();
+// Use the resource
+resource.Dispose();
+
+```
+
 
 ### ref 
 https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/using \
