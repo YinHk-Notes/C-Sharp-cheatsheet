@@ -169,6 +169,16 @@ The `=>` token is supported in two forms: as the **lambda operator** and as a se
 The namespace alias operator.  Use the namespace alias qualifier :: to access a member of an aliased namespace. You can use the `::` qualifier only between two identifiers. The left-hand identifier can be one of a namespace alias, an extern alias, or the global alias. 
 
 
+### `i++` vs `i+1`
+**Key Differences**
 
+| **Aspect** | **`i++`** | **`i + 1`** |
+| --- | --- | --- |
+| **Modification** | Modifies `i` (increments by 1). | Does not modify `i`. |
+| **Return Value** | Returns the original value of `i`. | Returns `i` + 1. |
+| **Use Case** | When you want to increment `i` and use the original value. | When you want to calculate the incremented value without modifying `i`. |
+| **Example Output** | `i = 5; result = i++; // result = 5, i = 6` | `i = 5; result = i + 1; // result = 6, i = 5` |
+
+### ref
 https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/
 
