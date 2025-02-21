@@ -5,6 +5,7 @@
 - Namespace also solves the problem of naming conflict.
 - Declaring your own namespaces can help you **control the scope of class and method** names in larger programming projects.
 - Similar to **"Package"** in java
+- Used to declare a scope that contains a set of related objects.
 
 ### Namespaces have the following properties:
 
@@ -13,6 +14,7 @@
 - The using directive obviates the requirement to specify the name of the namespace for every class.
 - The global namespace is the "root" namespace: global`::`System will always refer to the .NET System namespace.
 - Namespaces in C# can be nested.
+- Namespaces implicitly have **public access**.
 - If two classes are in the same namespace, they will **'know'** about each other and be in the **same scope**.
 
 
@@ -44,6 +46,64 @@ namespace N1     // N1
     }
 }
 ```
+
+
+#### Within a namespace, you can **declare zero or more** of the following types:
+
+- class
+- interface
+- struct
+- enum
+- delegate
+- nested namespaces: can be declared except in **file scoped namespace declarations**
+
+
+> **Note**: The compiler adds a default namespace. This unnamed namespace, sometimes referred to as the global namespace, is present in every file. It contains declarations not included in a declared namespace. Any identifier in the global namespace is available for use in a named namespace.
+
+
+### Declare `namespace`
+
+```cs
+namespace SampleNamespace
+{
+    class SampleClass { }
+
+    interface ISampleInterface { }
+
+    struct SampleStruct { }
+
+    enum SampleEnum { a, b }
+
+    delegate void SampleDelegate(int i);
+
+    namespace Nested
+    {
+        class SampleClass2 { }
+    }
+}
+```
+#### File scoped namespace declarations
+**File scoped namespace declarations** enable you to declare that **all types in a file are in a single namespace**. The following example is similar to the previous example, but **uses a file scoped namespace declaration**:
+
+
+```cs
+using System;
+
+namespace SampleFileScopedNamespace;
+
+// The following types are all under SampleFileScopedNamespace namespace declared above
+class SampleClass { }
+
+interface ISampleInterface { }
+
+struct SampleStruct { }
+
+enum SampleEnum { a, b }
+
+delegate void SampleDelegate(int i);
+```
+
+
 
 ### Class with same namespace
 
@@ -141,6 +201,22 @@ namespace MyProgram
 }
 ```
 
+```vs
+namespace MyCompany.Proj1
+{
+    class MyClass
+    {
+    }
+}
+
+namespace MyCompany.Proj1
+{
+    class MyClass1
+    {
+    }
+}
+```
+
 ### Nested Namespace 
 ```
 namespace MyNamespace
@@ -183,8 +259,50 @@ namespace MyProgram
 }
 ```
 
+When you use **_file-scoped namespaces_**, the placement of `using` statements affects their scope within the file. File-scoped namespaces lower to the equivalent traditional namespace declaration that ends with a closing bracket at the end of the file. This behavior determines where `using` directives are applied as follows:
+
+-   If the `using` statements are placed before the file-scoped namespace declaration, they're treated as being outside of the namespace and are interpreted as fully qualified namespaces.
+-   If the `using` statements are placed after the file-scoped namespace declaration, they're scoped within the namespace itself.
+
+```cs
+// This using is outside the namespace scope, so it applies globally
+using System;
+
+namespace SampleNamespace; // File-scoped namespace declaration
+
+// This using is inside the namespace scope
+using System.Text;
+
+public class SampleClass
+{
+    // Class members...
+}
+```
+
+In the preceding example, `System` is globally accessible, while `System.Text` applies only within `SampleNamespace`.
+
+The preceding example doesn't include a nested namespace. File scoped namespaces can't include more namespace declarations. You can't declare a nested namespace or a second file-scoped namespace:
 
 
+```cs
+namespace SampleNamespace;
+
+class AnotherSampleClass
+{
+    public void AnotherSampleMethod()
+    {
+        System.Console.WriteLine(
+            "SampleMethod inside SampleNamespace");
+    }
+}
+
+namespace AnotherNamespace; // Not allowed!
+
+namespace ANestedNamespace // Not allowed!
+{
+   // declarations...
+}
+```
 
 ### How to access other class
 - If a class in different namespace, use **`using <namespace>`** to Include a Class Into Another Class in C#.
@@ -269,6 +387,8 @@ https://learn.microsoft.com/zh-tw/previous-versions/visualstudio/visual-studio-2
 
 
 ### ref 
+https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/namespace
+
 https://www.c-sharpcorner.com/article/working-with-namespaces-in-C-Sharp/
 
 https://www.delftstack.com/howto/csharp/csharp-include-class/
