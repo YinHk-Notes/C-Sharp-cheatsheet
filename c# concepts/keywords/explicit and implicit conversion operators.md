@@ -52,4 +52,4 @@ public static class UserDefinedConversions
 ### ref
 https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/user-defined-conversion-operators
 
-
+https://medium.com/@gustavorestani/c-implicit-and-explicit-operators-a-comprehensive-guide-5e6972cc8671
